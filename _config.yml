@@ -3,18 +3,20 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
+title: hexo
+subtitle: 'next'
+description: 'test theme'
 keywords:
-author: Hiraeth 
-language: en
+author: Hiraeth
+language: en 
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://hiraethecho.github.io/hexo
-permalink: :year_:month_:day_:title
+# url: http://example.com
+url: http://hiraethecho.github.io/hexo/
+root: /
+permalink: :year:month/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -97,7 +99,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
