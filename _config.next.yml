@@ -38,17 +38,14 @@ custom_file_path:
 
 # Schemes
 # scheme: Muse
-#scheme: Mist
+# scheme: Mist
 scheme: Pisces
-#scheme: Gemini
+# scheme: Gemini
 
 # Dark Mode
 darkmode: false
 
-
-# ---------------------------------------------------------------
 # Site Information Settings
-# ---------------------------------------------------------------
 
 favicon:
   small: /images/favicon-16x16-next.png
@@ -65,13 +62,13 @@ custom_logo: #/uploads/custom-logo.png
 creative_commons:
   # Available values: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | cc-zero
   license: by-nc-sa
-  # Available values: big | small
+  # # Available values: big | small
   size: small
   sidebar: false
-  post: false
-  # You can set a language value if you prefer a translated version of CC license, e.g. deed.zh
-  # CC licenses are available in 39 languages, you can find the specific and correct abbreviation you need on https://creativecommons.org
-  language:
+  # post: true
+  # # You can set a language value if you prefer a translated version of CC license, e.g. deed.zh
+  # # CC licenses are available in 39 languages, you can find the specific and correct abbreviation you need on https://creativecommons.org
+  # language:
 
 # Open graph settings
 # See: https://hexo.io/docs/helpers#open-graph
@@ -96,11 +93,18 @@ open_graph:
 # Value before `||` delimiter is the target link, value after `||` delimiter is the name of Font Awesome icon.
 # External url should start with http:// or https://
 menu:
-  #home: / || fa fa-home
-  #about: /about/ || fa fa-user
-  #tags: /tags/ || fa fa-tags
+  home: / || fa fa-home
+  about: /about/ || fa fa-user
+  tags: /tags/ || fa fa-tags
+  docs: /docs/ || fa fa-book
   #categories: /categories/ || fa fa-th
-  #archives: /archives/ || fa fa-archive
+  Docs:
+    default: /docs/ || fa fa-book
+
+    Getting Started:
+      default: /index2/ || fa fa-flag
+      test: /test/
+  archives: /archives/ || fa fa-archive
   #schedule: /schedule/ || fa fa-calendar
   #sitemap: /sitemap.xml || fa fa-sitemap
   #commonweal: /404/ || fa fa-heartbeat
@@ -121,6 +125,13 @@ sidebar:
   position: left
   #position: right
 
+avatar:
+  url: /images/logo.svg
+  # TODO: other image
+  rounded: true
+  # If true, the avatar will be rotated with the cursor.
+  rotated: true
+
   # Manual define the sidebar width. If commented, will be default for:
   # Muse | Mist: 320
   # Pisces | Gemini: 240
@@ -139,13 +150,6 @@ sidebar:
   offset: 12
 
 # Sidebar Avatar
-avatar:
-  # Replace the default image and set the url here.
-  url: #/images/avatar.gif
-  # If true, the avatar will be displayed in circle.
-  rounded: false
-  # If true, the avatar will be rotated with the cursor.
-  rotated: false
 
 # Posts / Categories / Tags in sidebar.
 site_state: true
@@ -155,8 +159,8 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
-  #GitHub: https://github.com/yourname || fab fa-github
-  #E-Mail: mailto:yourname@gmail.com || fa fa-envelope
+  GitHub: https://github.com/HiraethEcho || fab fa-github
+  E-Mail: wyz2016zxc@outlook.com || fa fa-envelope
   #Weibo: https://weibo.com/yourname || fab fa-weibo
   #Twitter: https://twitter.com/yourname || fab fa-twitter
   #FB Page: https://www.facebook.com/yourname || fab fa-facebook
@@ -177,7 +181,7 @@ links_settings:
   layout: block
 
 links:
-  #Title: https://example.com
+  bing: https://bing.com
 
 # Table of Contents in the Sidebar
 # Front-matter variable (nonsupport wrap expand_all).
@@ -218,7 +222,7 @@ footer:
   copyright:
 
   # Powered by Hexo & NexT
-  powered: true
+  powered: false
 
   # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, http://www.beian.gov.cn
   beian:
@@ -277,11 +281,12 @@ reward:
 
 # Subscribe through Telegram Channel, Twitter, etc.
 # Usage: `Key: permalink || icon` (Font Awesome)
+# at end of each blogs
 follow_me:
-  #Twitter: https://twitter.com/username || fab fa-twitter
-  #Telegram: https://t.me/channel_name || fab fa-telegram
-  #WeChat: /images/wechat_channel.png || fab fa-weixin
-  #RSS: /atom.xml || fa fa-rss
+  # Twitter: https://twitter.com/username || fab fa-twitter
+  # Telegram: https://t.me/channel_name || fab fa-telegram
+  # WeChat: /images/wechat_channel.png || fab fa-weixin
+  # RSS: /atom.xml || fa fa-rss
 
 # Related popular posts
 # Dependencies: https://github.com/sergeyzwezdin/hexo-related-posts
@@ -293,7 +298,7 @@ related_posts:
 # Easily browse and edit blog source code online.
 post_edit:
   enable: false
-  url: https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name/ # Link for view source
+  url: https://github.com/HiraethEcho/hexo/tree/manin/source/ # Link for view source
   #url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/ # Link for fork & edit
 
 # Show previous post and next post in post footer if exists
