@@ -1,6 +1,5 @@
 ---
 title: party
-date: 2023-06-23 00:21:52
 tags: blogs
 categories: 
   - wtf
