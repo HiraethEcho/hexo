@@ -98,7 +98,7 @@ menu:
   about: /about/ || fa fa-user
   tags: /tags/ || fa fa-tags
   # docs: /docs/ || fa fa-book
-  #categories: /categories/ || fa fa-th
+  categories: /categories/ || fa fa-th
   # Docs:
     # default: /docs/ || fa fa-calendar
     # index2: /index2/ || fa fa-flag
