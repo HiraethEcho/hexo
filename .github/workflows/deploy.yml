@@ -11,7 +11,7 @@ jobs:
     - name: Checkout              # 拉取当前执行 Actions 仓库的指定分支
       uses: actions/checkout@v2
       with:
-        ref: master
+        ref: main
 
     - name: Update Submodule      # 如果仓库有 submodule，在这里更新，没有则删掉此步骤
       run: |
