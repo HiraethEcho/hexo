@@ -16,17 +16,9 @@ jobs:
     - name: Setup Node            # 安装 Node 环境
       uses: actions/setup-node@v1
       with:
-        node-version: "10.x"
+        node-version: "12.x"
 
-    - name: Hexo Generate         # 安装 Hexo 依赖并且生成静态文件
-      run: |
-        rm -f .yarnclean
-        yarn --frozen-lockfile --ignore-engines --ignore-optional --non-interactive --silent --ignore-scripts --production=false
-        rm -rf ./public
-        yarn run hexo clean
-        yarn run hexo generate
-
-    - name: Hexo Deploy           # 部署步骤，这里以 hexo deploy 为例
+- name: Setup git
       env:
         SSH_PRIVATE: ${{ secrets.SSH_PRIVATE }}
         GIT_NAME: wyz
@@ -38,4 +30,27 @@ jobs:
         ssh-keyscan github.com >> ~/.ssh/known_hosts
         git config --global user.name "$GIT_NAME"
         git config --global user.email "$GIT_EMAIL"
+          npm install hexo-cli -g
+          npm install
+
+    - name: Hexo Generate         # 安装 Hexo 依赖并且生成静态文件
+      run: |
+        rm -f .yarnclean
+        yarn --frozen-lockfile --ignore-engines --ignore-optional --non-interactive --silent --ignore-scripts --production=false
+        rm -rf ./public
+        yarn run hexo clean
+        yarn run hexo generate
+
+    - name: Hexo Deploy           # 部署步骤，这里以 hexo deploy 为例
+      # env:
+      #   SSH_PRIVATE: ${{ secrets.SSH_PRIVATE }}
+      #   GIT_NAME: wyz
+      #   GIT_EMAIL: wyz2016zxc@outlook.com
+      run: |
+        # mkdir -p ~/.ssh/
+        # echo "$SSH_PRIVATE" | tr -d '\r' > ~/.ssh/id_rsa
+        # chmod 600 ~/.ssh/id_rsa
+        # ssh-keyscan github.com >> ~/.ssh/known_hosts
+        # git config --global user.name "$GIT_NAME"
+        # git config --global user.email "$GIT_EMAIL"
         yarn run hexo deploy
