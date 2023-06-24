@@ -1,56 +1,40 @@
-name: Deploy                      # Actions 显示的名字，随意设置
+name: Deploy
 
-on: [push]                        # 监听到 push 事件后触发
+on: [push]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
+    name: A job to deploy blog.
     steps:
-    - name: Checkout              # 拉取当前执行 Actions 仓库的指定分支
-      uses: actions/checkout@v2
+    - name: Checkout
+      uses: actions/checkout@v1
       with:
-        ref: main
-
-    - name: Setup Node            # 安装 Node 环境
-      uses: actions/setup-node@v1
+        submodules: true # Checkout private submodules(themes or something else).
+    
+    # Caching dependencies to speed up workflows. (GitHub will remove any cache entries that have not been accessed in over 7 days.)
+    - name: Cache node modules
+      uses: actions/cache@v1
+      id: cache
       with:
-        node-version: "12.x"
-
-- name: Setup git
-      env:
-        SSH_PRIVATE: ${{ secrets.SSH_PRIVATE }}
-        GIT_NAME: wyz
-        GIT_EMAIL: wyz2016zxc@outlook.com
+        path: node_modules
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+    - name: Install Dependencies
+      if: steps.cache.outputs.cache-hit != 'true'
+      run: npm ci
+    
+    # Deploy hexo blog website.
+    - name: Deploy
+      id: deploy
+      uses: sma11black/hexo-action@v1.0.3
+      with:
+        deploy_key: ${{ secrets.DEPLOY_KEY }}
+        user_name: your github username  # (or delete this input setting to use bot account)
+        user_email: your github useremail  # (or delete this input setting to use bot account)
+        commit_msg: ${{ github.event.head_commit.message }}  # (or delete this input setting to use hexo default settings)
+    # Use the output from the `deploy` step(use for test action)
+    - name: Get the output
       run: |
-        mkdir -p ~/.ssh/
-        echo "$SSH_PRIVATE" | tr -d '\r' > ~/.ssh/id_rsa
-        chmod 600 ~/.ssh/id_rsa
-        ssh-keyscan github.com >> ~/.ssh/known_hosts
-        git config --global user.name "$GIT_NAME"
-        git config --global user.email "$GIT_EMAIL"
-          npm install hexo-cli -g
-          npm install
-
-    - name: Hexo Generate         # 安装 Hexo 依赖并且生成静态文件
-      run: |
-        rm -f .yarnclean
-        yarn --frozen-lockfile --ignore-engines --ignore-optional --non-interactive --silent --ignore-scripts --production=false
-        rm -rf ./public
-        yarn run hexo clean
-        yarn run hexo generate
-
-    - name: Hexo Deploy           # 部署步骤，这里以 hexo deploy 为例
-      # env:
-      #   SSH_PRIVATE: ${{ secrets.SSH_PRIVATE }}
-      #   GIT_NAME: wyz
-      #   GIT_EMAIL: wyz2016zxc@outlook.com
-      run: |
-        # mkdir -p ~/.ssh/
-        # echo "$SSH_PRIVATE" | tr -d '\r' > ~/.ssh/id_rsa
-        # chmod 600 ~/.ssh/id_rsa
-        # ssh-keyscan github.com >> ~/.ssh/known_hosts
-        # git config --global user.name "$GIT_NAME"
-        # git config --global user.email "$GIT_EMAIL"
-        yarn run hexo deploy
+        echo "${{ steps.deploy.outputs.notify }}"
