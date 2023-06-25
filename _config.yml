@@ -106,4 +106,4 @@ theme: next
 deploy:
   type: git
   repo: git@github.com:HiraethEcho/hexo.git
-  branch : hexo
+  branch : gh-pages
