@@ -20,7 +20,7 @@ jobs:
         node-version: "18.x"
 
     - name: Install Dependencies
-      run: npm install hexo
+      run: npm  install -g hexo-cli
 
 
     - name: Hexo Generate         # 安装 Hexo 依赖并且生成静态文件
