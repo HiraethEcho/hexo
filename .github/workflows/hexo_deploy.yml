@@ -1,23 +1,38 @@
-on: push
-name: Deploy
+name: Pages
+
+on:
+  push:
+    branches:
+      - main  # default branch
+
 jobs:
-  build:
-    name: Build
+  pages:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-    - name: Clean
-      uses: heowc/action-hexo@main
-      with:
-        args: clean
-    - name: Generate
-      uses: heowc/action-hexo@main
-      with:
-        args: generate
-    - name: Deploy
-      uses: heowc/action-hexo@main
-      env:
-        EMAIL: wyz2016zxc@outlook.com
-        NAME: wyz
-        SSH_PRIVATE: ${{ secrets.DEPLOY_KEY }}
-      with:
-        args: deploy
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          # If your repository depends on submodule, please see: https://github.com/actions/checkout
+          # submodules: recursive
+      - name: Use Node.js 10
+        uses: actions/setup-node@v2
+        with:
+          node-version: '10'
+      - name: Cache NPM dependencies
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: ${{ runner.OS }}-npm-cache
+          restore-keys: |
+            ${{ runner.OS }}-npm-cache
+      - name: Install Dependencies
+        run: npm install
+      - name: Build
+        run: npm run build
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
