@@ -1,0 +1,2 @@
+Client ID: 4e5c2a31ef2321a3f85b
+Client sercet: a6d871c1cd5c268bcc2204aba0d186c3525ca139
