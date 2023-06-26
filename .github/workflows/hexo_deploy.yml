@@ -17,12 +17,11 @@ jobs:
     - name: Setup Node            # 安装 Node 环境
       uses: actions/setup-node@v1
       with:
-        node-version: "10.x"
+        node-version: "18.x"
 
     - name: Install Dependencies
       run: npm install
-    - name: Build
-      run: npm run build
+
 
     - name: Hexo Generate         # 安装 Hexo 依赖并且生成静态文件
       run: |
