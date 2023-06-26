@@ -138,7 +138,7 @@ site_state: true
 social:
   GitHub: https://github.com/HiraethEcho || fab fa-github
   # E-Mail: wyz2016zxc@outlook.com || fa fa-envelope
-  Weibo: https://weibo.com/Hiraeth_Echo || fab fa-weibo
+  Weibo: https://weibo.com/u/6559246373  || fab fa-weibo
   #Twitter: https://twitter.com/yourname || fab fa-twitter
   #FB Page: https://www.facebook.com/yourname || fab fa-facebook
   #StackOverflow: https://stackoverflow.com/yourname || fab fa-stack-overflow
@@ -321,7 +321,7 @@ preconnect: false
 # Set the text alignment in posts / pages.
 text_align:
   # Available values: start | end | left | right | center | justify | justify-all | match-parent
-  desktop: center
+  desktop: justify
   mobile: justify
 
 # Reduce padding / margin indents on devices with narrow width.
