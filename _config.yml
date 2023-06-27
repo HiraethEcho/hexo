@@ -102,6 +102,12 @@ exclude:
 ignore:
 
 # Extensions
+# search
+search:
+  path: search.json #之前就是这里出了问题导致图标错误，错误的教程是 search.xml
+  field: post
+  format: html
+  limit: 1000
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next
