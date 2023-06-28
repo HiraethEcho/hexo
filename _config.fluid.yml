@@ -769,9 +769,12 @@ disqus:
 gitalk:
   clientID: 4e5c2a31ef2321a3f85b
   clientSecret: a6d871c1cd5c268bcc2204aba0d186c3525ca139
+  id: location.pathname
   repo: hexo
   owner: HiraethEcoo
   admin: ['HiraethEcho']
+  github_id: HiraethEcho # GitHub repo owner
+  admin_user: HiraethEcho # GitHub repo owner and collaborators, only these guys can initialize gitHub issues
   language: zh-CN
   labels: ['Gitalk']
   perPage: 10
