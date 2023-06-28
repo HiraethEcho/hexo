@@ -8,7 +8,7 @@ subtitle: 'My blogs'
 description: 'test theme'
 keywords:
 author: Hiraeth
-language: en 
+# language: en 
 timezone: ''
 
 # URL
@@ -45,13 +45,15 @@ render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
-highlight:
-  enable: true
-  line_number: true
-  auto_detect: false
-  tab_replace: ''
-  wrap: true
-  hljs: false
+
+# highlight:
+#   enable: true
+#   line_number: true
+#   auto_detect: false
+#   tab_replace: ''
+#   wrap: true
+#   hljs: false
+
 prismjs:
   enable: false
   preprocess: true
@@ -110,8 +112,9 @@ search:
   limit: 1000
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
-
+# theme: next
+theme: fluid
+language: zh-CN
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
