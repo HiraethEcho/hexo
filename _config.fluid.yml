@@ -479,7 +479,7 @@ index:
 
     # 为空则按 hexo config.subtitle 显示
     # If empty, text based on `subtitle` in hexo config
-    text: "Es Muss Bein"
+    text: "Es Muss Sein!"
 
     # 通过 API 接口作为首页副标题的内容，必须返回的是 JSON 格式，如果请求失败则按 text 字段显示，该功能必须先开启 typing 打字机功能
     # Subtitle of the homepage through the API, must be returned a JSON. If the request fails, it will be displayed in `text` value. This feature must first enable the typing animation
@@ -724,7 +724,7 @@ post:
   # 评论插件
   # Comment plugin
   comments:
-    enable: true
+    enable: false
     # 指定的插件，需要同时设置对应插件的必要参数
     # The specified plugin needs to set the necessary parameters at the same time
     # Options: utterances | disqus | gitalk | valine | waline | changyan | livere | remark42 | twikoo | cusdis | giscus
