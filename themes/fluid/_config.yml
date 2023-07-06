@@ -1,4 +1,6 @@
 #---------------------------
+#This is covered by _config.fluid.yml
+#
 # Hexo Theme Fluid
 # Author: Fluid-dev
 # Github: https://github.com/fluid-dev/hexo-theme-fluid
@@ -649,7 +651,7 @@ post:
 
     # CreativeCommons license
     # Options: BY | BY-SA | BY-ND | BY-NC | BY-NC-SA | BY-NC-ND
-    license: 'BY'
+    # license: 'BY'
 
     # 显示作者
     author:
