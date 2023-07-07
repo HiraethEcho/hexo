@@ -1,6 +1,6 @@
 ---
 title: party
-tags: blogs
+tags: daily
 categories: 
   - life
 ---

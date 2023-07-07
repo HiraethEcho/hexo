@@ -614,7 +614,7 @@ post:
     # 置于板块的左侧或右侧
     # place in the board
     # Options: left | right
-    placement: left
+    placement: right
 
     # 文章的排序字段，前面带减号是倒序，不带减号是正序
     # Sort field for posts, with a minus sign is reverse order
@@ -633,7 +633,7 @@ post:
     # 置于板块的左侧或右侧
     # place in the board
     # Options: left | right
-    placement: right
+    placement: left
 
     # 目录会选择这些节点作为标题
     # TOC will select these nodes as headings
