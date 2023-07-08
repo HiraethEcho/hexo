@@ -1,7 +1,8 @@
 ---
 title: party
-tags: - friend
-      - alcohol
+tags: 
+    - friend
+    - alcohol
 categories: 生活杂记
 date: 2023-06-27 22:38:22
 archive:
