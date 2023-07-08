@@ -4,6 +4,7 @@ date: 2023-06-27 11:51:45
 tags: 
   - Existences
   - philosophy
+sticky: 100
 ---
 # Es Muss Sein!
 非这样不可！
