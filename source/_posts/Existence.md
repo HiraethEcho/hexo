@@ -1,10 +1,11 @@
 ---
-title: Existences
+title: 我存在！
 date: 2023-06-27 11:51:45
 tags: 
-  - Existences
+  - existence
   - philosophy
 sticky: 100
+categories: 长博客
 ---
 # Es Muss Sein!
 非这样不可！

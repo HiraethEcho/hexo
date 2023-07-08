@@ -461,11 +461,11 @@ index:
   # 首页 Banner 头图，可以是相对路径或绝对路径，以下相同
   # Path of Banner image, can be a relative path or an absolute path, the same on other pages
   banner_img: /img/default.png
-
+    # TODO: banners
   # 头图高度，屏幕百分比
   # Height ratio of banner image
   # Available: 0 - 100
-  banner_img_height: 100
+  banner_img_height: 60
 
   # 头图黑色蒙版的不透明度，available: 0 - 1.0， 1 是完全不透明
   # Opacity of the banner mask, 1.0 is completely opaque
@@ -533,6 +533,7 @@ index:
 #---------------------------
 post:
   banner_img: /img/default.png
+    # TODO: banners
   banner_img_height: 70
   banner_mask_alpha: 0.3
 
@@ -585,7 +586,7 @@ post:
   # 在文章开头显示文章更新时间，该时间默认是 md 文件更新时间，可通过 front-matter 中 `updated` 手动指定（和 date 一样格式）
   # Update date is displayed at the beginning of the post. The default date is the update date of the md file, which can be manually specified by `updated` in front-matter (same format as date)
   updated:
-    enable: true
+    enable: false
 
     # 格式参照 ISO-8601 日期格式化
     # ISO-8601 date format
@@ -724,7 +725,7 @@ post:
   # 评论插件
   # Comment plugin
   comments:
-    enable: true
+    enable: false
     # 指定的插件，需要同时设置对应插件的必要参数
     # The specified plugin needs to set the necessary parameters at the same time
     # Options: utterances | disqus | gitalk | valine | waline | changyan | livere | remark42 | twikoo | cusdis | giscus
@@ -887,6 +888,7 @@ giscus:
 #---------------------------
 archive:
   banner_img: /img/default.png
+    # TODO: banners
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
@@ -898,6 +900,7 @@ archive:
 category:
   enable: true
   banner_img: /img/default.png
+    # TODO: banners
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
@@ -927,6 +930,7 @@ category:
 tag:
   enable: true
   banner_img: /img/default.png
+    # TODO: banners
   banner_img_height: 80
   banner_mask_alpha: 0.3
   tagcloud:
@@ -944,9 +948,11 @@ tag:
 about:
   enable: true
   banner_img: /img/default.png
+    # TODO: banners
   banner_img_height: 60
   banner_mask_alpha: 0.3
   avatar: /img/avatar.png
+    # TODO: avatar
   name: "Hiraeth"
   intro: "This is me"
   # 更多图标可从 https://hexo.fluid-dev.com/docs/icon/ 查找，`class` 代表图标的 css class，添加 `qrcode` 后，图标不再是链接而是悬浮二维码
@@ -957,6 +963,7 @@ about:
     # - { class: "iconfont icon-douban-fill", link: "https://douban.com", tip: "豆瓣" }
     - { class: "iconfont icon-book", link: "https://hiraethecho.github.io/mkdocs", tip: "笔记" }
     - { class: "iconfont icon-wechat-fill", qrcode: "/img/wechat.jpg" }
+      # TODO: links
 
 
 #---------------------------
@@ -1042,7 +1049,7 @@ links:
   # 评论插件
   # Comment plugin
   comments:
-    enable: true
+    enable: false
     # 指定的插件，需要同时设置对应插件的必要参数
     # The specified plugin needs to set the necessary parameters at the same time
     # Options: utterances | disqus | gitalk | valine | waline | changyan | livere | remark42 | twikoo | cusdis | giscus
