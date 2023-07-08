@@ -777,13 +777,13 @@ gitalk:
   perPage: 10
   pagerDirection: last
   distractionFreeMode: true
-  createIssueManually: true
+  createIssueManually: false
   # 默认 proxy 可能会失效，解决方法请见下方链接
   # The default proxy may be invalid, refer to the links for solutions
   # https://github.com/gitalk/gitalk/issues/429
   # https://github.com/Zibri/cloudflare-cors-anywhere
-  proxy: https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token
-
+  # proxy: https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token
+  proxy: https://shielded-brushlands-08810.herokuapp.com/https://github.com/login/oauth/access_token
 # Valine
 # 基于 LeanCloud
 # Based on LeanCloud
