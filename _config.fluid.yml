@@ -353,9 +353,18 @@ navbar:
   # Navigation bar menu. `key` is used to associate languages/*.yml. If there is no association, the value of `key` itself will be displayed; if `icon` is a css class, it can be omitted; adding `name` can force the display of the specified name
   menu:
     - { key: "home", link: "/", icon: "iconfont icon-home-fill" }
-    - { key: "archive", link: "/archives/", icon: "iconfont icon-archive-fill" }
-    - { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" }
-    - { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
+    - {
+        key: 'Blogs',
+        icon: 'iconfont icon-books',
+        submenu: [
+           { key: "archive", link: "/archives/", icon: "iconfont icon-archive-fill" },
+           { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" },
+           { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
+          ]
+      }
+    # - { key: "archive", link: "/archives/", icon: "iconfont icon-archive-fill" }
+    # - { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" }
+    # - { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
     - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
     # - { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
 
@@ -719,11 +728,11 @@ post:
   mermaid:
     # 开启后文章默认可用，自定义页面如需使用，需在 Front-matter 中指定 `mermaid: true`
     # If you want to use mermaid on the custom page, you need to set `mermaid: true` in Front-matter
-    enable: false
+    enable: true
 
     # 开启后，只有在文章 Front-matter 里指定 `mermaid: true` 才会在文章页启动公式转换，以便在页面不包含公式时提高加载速度
     # If true, only set `mermaid: true` in Front-matter will enable mermaid, to load faster when the page does not contain mermaid
-    specific: false
+    specific: true
 
     # See: http://mermaid-js.github.io/mermaid/
     options: { theme: 'default' }
