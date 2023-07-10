@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>test</title>
+    <link href="/hexo/202307/test/"/>
+    <url>/hexo/202307/test/</url>
+    
+    <content type="html"><![CDATA[<h1 id="h1-title"><a href="#h1-title" class="headerlink" title="h1 title"></a>h1 title</h1><p>lorem</p><h2 id="h2-title"><a href="#h2-title" class="headerlink" title="h2 title"></a>h2 title</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">ls</span><br></code></pre></td></tr></table></figure><p>$$<br>\mathcal{F}<br>$$</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>test</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>若自杀不自由，则生存不勇敢</title>
     <link href="/hexo/202307/free-and-death/"/>
     <url>/hexo/202307/free-and-death/</url>
