@@ -172,8 +172,8 @@ color:
 
   # 主面板背景色
   # Color of main board
-  board_color: "#fff"
-  board_color_dark: "#252d38"
+  board_color: "#ffffff80"
+  board_color_dark: "#00000080"
 
   # 文章正文字体色
   # Color of post text
@@ -240,6 +240,7 @@ custom_js:
 custom_css:
   - /css/custom.css
   - /css/font.css
+  - /css/glass.css
   # - //at.alicdn.com/t/c/font_4158762_h20pjeooe3v.js
   #https://www.iconfont.cn/ using this to add more icons
   # TODO: add more icons
