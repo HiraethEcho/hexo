@@ -227,7 +227,7 @@ color:
 # Font
 font:
   font_size: 16px
-  font_family:
+  font_family: "LXGW Wenkai Screen"
   letter_spacing: 0.02em
   code_font_size: 85%
 
@@ -239,6 +239,7 @@ custom_js:
 # The usage is the same as custom_js
 custom_css:
   - /css/custom.css
+  - /css/font.css
   # - //at.alicdn.com/t/c/font_4158762_h20pjeooe3v.js
   #https://www.iconfont.cn/ using this to add more icons
   # TODO: add more icons
