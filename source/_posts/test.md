@@ -1,6 +1,6 @@
 ---
 title: Hello Fluid
-date:  2023-07-10 19:37 
+date:  2023-07-01 19:37 
 index_img: https://rmt.dogedoge.com/fetch/fluid/storage/hello-fluid/cover.png?w=480&fmt=webp
 tags:
   - test
