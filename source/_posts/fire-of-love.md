@@ -1,5 +1,5 @@
 ---
-title: fire_of_love
+title: 跃入永恒的爱情
 tags: love
 categories: 评论
 description: 火山，卡蒂娅，莫里斯，一个爱情故事，跃入永恒的爱情故事。
