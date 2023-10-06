@@ -31,6 +31,10 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+#auto_dir_categorize
+auto_dir_categorize:
+	enable: true  # options:true, false; default is true
+	force: false # options:true, false; default is false
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -112,10 +116,9 @@ search:
   limit: 1000
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-# theme: next
 theme: fluid
 # language: zh-CN
-#
+
 githubcalendar:
   enable: true  # true/false,是否开启插件
   enable_page: /about/ # 路由地址，如我的 /blog/是代表网站的root主页。/blog/about/代表的是关于页等等
