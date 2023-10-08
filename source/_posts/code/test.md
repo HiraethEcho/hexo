@@ -13,6 +13,10 @@ archive: true
 
 <!-- more -->
 
+{% post_link code/test 'code/test' %}
+{% post_link code/test 'try test' %}
+
+[[2am]]
 ## 文字
 
 文章大部分使用的是 github-markdown 样式，并加入了一些 Material 风格。
