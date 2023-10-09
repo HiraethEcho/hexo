@@ -3,7 +3,6 @@ title: 凌晨两点半
 date: 2023-06-27 12:40:49
 tags:
   - poem
-categories: 短博客 
 description: 凌晨喝酒有感
 ---
 # 凌晨两点半

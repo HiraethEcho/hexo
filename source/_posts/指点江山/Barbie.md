@@ -3,7 +3,6 @@ title: 作为商品的《芭比》：一部不能更好的电影
 tags:
   - movie
   - feminist
-categories: 评论
 description: 丰富但流于表面的内容，难以维持一致性和连贯性的情节，被商品化的批判
 date: 2023-08-03 03:05:39
 archive:

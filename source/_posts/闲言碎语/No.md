@@ -3,7 +3,6 @@ title: 'No!'
 date: 2023-06-27 12:38:22
 tags:
   - poem
-categories: 短博客 
 description: 读《西西弗神话》有感
 ---
 # 我拒绝
