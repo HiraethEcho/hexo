@@ -1,10 +1,10 @@
+/* 在线链接服务/* 在线链接服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
 @font-face {
-  font-family: "iconfont"; /* Project id 4158762 */
-  src: url('//at.alicdn.com/t/c/font_4158762_h20pjeooe3v.woff2?t=1688919918338') format('woff2'),
-       url('//at.alicdn.com/t/c/font_4158762_h20pjeooe3v.woff?t=1688919918338') format('woff'),
-       url('//at.alicdn.com/t/c/font_4158762_h20pjeooe3v.ttf?t=1688919918338') format('truetype');
+  font-family: 'iconfont';  /* Project id 4158762 */
+  src: url('//at.alicdn.com/t/c/font_4158762_e0932byvv.woff2?t=1696936340690') format('woff2'),
+       url('//at.alicdn.com/t/c/font_4158762_e0932byvv.woff?t=1696936340690') format('woff'),
+       url('//at.alicdn.com/t/c/font_4158762_e0932byvv.ttf?t=1696936340690') format('truetype');
 }
-
 .iconfont {
   font-family: "iconfont" !important;
   font-size: 16px;
@@ -13,18 +13,19 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-acfun:before {
-  content: "\e602";
-}
-
 .icon-link:before {
   content: "\e605";
 }
 
-.icon-twitter:before {
-  content: "\e606";
+
+.icon-home:before {
+  content: "\e6af";
 }
 
-.icon-icon-picture-fill:before {
-  content: "\e626";
+.icon-mp:before {
+  content: "\e6ca";
+}
+
+.icon-wiki:before {
+  content: "\e619";
 }

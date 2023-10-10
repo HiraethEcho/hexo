@@ -1,6 +1,6 @@
 ---
 title: Hello Fluid
-date:  2023-07-01 19:37 
+date: 2023-07-01 19:37
 index_img: https://rmt.dogedoge.com/fetch/fluid/storage/hello-fluid/cover.png?w=480&fmt=webp
 tags:
   - test
@@ -16,7 +16,8 @@ archive: true
 {% post_link code/test 'code/test' %}
 {% post_link code/test 'try test' %}
 
-[[2am]]
+[free-and-death](../长篇大论/free-and-death.md)
+[哲学是发问](长篇大论/哲学是发问.md)
 ## 文字
 
 文章大部分使用的是 github-markdown 样式，并加入了一些 Material 风格。
