@@ -239,8 +239,6 @@ custom_css:
   - /css/font.css
   - /css/glass.css
   # - //at.alicdn.com/t/c/font_4158762_h20pjeooe3v.js
-  #https://www.iconfont.cn/ using this to add more icons
-  # TODO: add more icons
   
 # 网页访问统计
 # Analysis of website visitors
@@ -810,9 +808,9 @@ valine:
   appId: 8wKDxNXv04ufcOJzC4x0mXvS-gzGzoHsz
   appKey: w7hDCl6LzbJNVqXCcEtAdwo7
   path: window.location.pathname
-  placeholder: 
+  placeholder: "欢迎评论！（昵称、邮箱均可留空）"
   avatar: 'retro'
-  meta: ['nick']
+  meta: ['nick','mail']
   requiredFields: []
   pageSize: 10
   lang: 'zh-CN'
