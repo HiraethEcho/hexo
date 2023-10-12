@@ -9,15 +9,40 @@ mermaid: true
 archive: true
 ---
 
->欢迎体验 [Fluid](https://github.com/fluid-dev/hexo-theme-fluid) ，这是一款 Material Design 风格的 Hexo 主题，以简约的设计帮助你专注于写作，本篇文章可预览主题的样式及功能。
+> 欢迎体验 [Fluid](https://github.com/fluid-dev/hexo-theme-fluid) ，这是一款 Material Design 风格的 Hexo 主题，以简约的设计帮助你专注于写作，本篇文章可预览主题的样式及功能。
 
 <!-- more -->
 
-{% post_link code/test 'code/test' %}
-{% post_link code/test 'try test' %}
+## some tests
 
-[free-and-death](../长篇大论/free-and-death.md)
-[哲学是发问](长篇大论/哲学是发问.md)
+{% post_link 简记/test 'code/test' %}
+{% post_link 简记/test 'try test' %}
+
+<ins>test ins</ins>
+
+<details> <summary>summary</summary>
+then we well have some shitty words here. test some thing.
+
+- list
+- unordered
+ 
+1. Ordered list
+2. test
+
+**black**
+
+_italic_
+
+> refering something
+> test
+
+```sh
+some shell
+```
+
+    why this always indent?
+</details>
+
 ## 文字
 
 文章大部分使用的是 github-markdown 样式，并加入了一些 Material 风格。
@@ -57,11 +82,11 @@ type Map struct {
 
 ## 表格
 
-| Header 1 | Header 2 | Header 3 |
-| --- | --- | --- |
-| Key 1 | Value 1 | Comment 1 |
-| Key 2 | Value 2 | Comment 2 |
-| Key 3 | Value 3 | Comment 3 |
+| Header 1 | Header 2 | Header 3  |
+| -------- | -------- | --------- |
+| Key 1    | Value 1  | Comment 1 |
+| Key 2    | Value 2  | Comment 2 |
+| Key 3    | Value 3  | Comment 3 |
 
 ## 列表
 
@@ -190,11 +215,11 @@ Class08 <--> C2: Cool label
 ### 组图
 
 {% gi 5 3-2 %}
-  ![](https://rmt.dogedoge.com/fetch/fluid/storage/hello-fluid/cover.png?w=480&fmt=webp)
-  ![](https://rmt.dogedoge.com/fetch/fluid/storage/hello-fluid/cover.png?w=480&fmt=webp)
-  ![](https://rmt.dogedoge.com/fetch/fluid/storage/hello-fluid/cover.png?w=480&fmt=webp)
-  ![](https://rmt.dogedoge.com/fetch/fluid/storage/hello-fluid/cover.png?w=480&fmt=webp)
-  ![](https://rmt.dogedoge.com/fetch/fluid/storage/hello-fluid/cover.png?w=480&fmt=webp)
+![](https://rmt.dogedoge.com/fetch/fluid/storage/hello-fluid/cover.png?w=480&fmt=webp)
+![](https://rmt.dogedoge.com/fetch/fluid/storage/hello-fluid/cover.png?w=480&fmt=webp)
+![](https://rmt.dogedoge.com/fetch/fluid/storage/hello-fluid/cover.png?w=480&fmt=webp)
+![](https://rmt.dogedoge.com/fetch/fluid/storage/hello-fluid/cover.png?w=480&fmt=webp)
+![](https://rmt.dogedoge.com/fetch/fluid/storage/hello-fluid/cover.png?w=480&fmt=webp)
 {% endgi %}
 
 ### 脚注
@@ -245,14 +270,14 @@ Class08 <--> C2: Cool label
         rotate = Math.floor(360 * Math.random());
     var foolsEgg = document.createElement("img");
     foolsEgg.src = "https://search-operate.cdn.bcebos.com/b028c278cbb84660f8bde79d819bc30b.png";
-    foolsEgg.style.position = "fixed"; 
+    foolsEgg.style.position = "fixed";
     foolsEgg.style.bottom = "".concat(bottom, "%");
-    foolsEgg.style.right = "".concat(right, "%"); 
-    foolsEgg.style.zIndex = "9999"; 
+    foolsEgg.style.right = "".concat(right, "%");
+    foolsEgg.style.zIndex = "9999";
     foolsEgg.style.pointerEvents = "none";
     foolsEgg.style.width = "40%";
     foolsEgg.style.maxWidth = "190px";
-    foolsEgg.style.transform = "".concat("rotate(", rotate, "deg)"); 
+    foolsEgg.style.transform = "".concat("rotate(", rotate, "deg)");
     document.body.append(foolsEgg);
 } ();
 </script>
