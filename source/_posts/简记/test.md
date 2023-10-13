@@ -15,8 +15,14 @@ archive: true
 
 ## some tests
 
+### links
+
 {% post_link 简记/test 'code/test' %}
 {% post_link 简记/test 'try test' %}
+
+[test party](/hexo/简记/party)
+[test other](/hexo/杂谈/Barbie)
+### html tags
 
 <ins>test ins</ins>
 
@@ -25,7 +31,7 @@ then we well have some shitty words here. test some thing.
 
 - list
 - unordered
- 
+
 1. Ordered list
 2. test
 
@@ -41,6 +47,7 @@ some shell
 ```
 
     why this always indent?
+
 </details>
 
 ## 文字
