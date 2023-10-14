@@ -119,6 +119,13 @@ search:
 theme: fluid
 # language: zh-CN
 
+# Security
+encrypt: # hexo-blog-encrypt
+  # tags:
+  # - {name: tagName, password: 密码A}
+  # - {name: tagName, password: 密码B}
+  theme: xray
+
 githubcalendar:
   enable: true  # true/false,是否开启插件
   enable_page: /about/ # 路由地址，如我的 /blog/是代表网站的root主页。/blog/about/代表的是关于页等等

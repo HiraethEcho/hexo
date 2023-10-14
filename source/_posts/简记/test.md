@@ -6,7 +6,10 @@ tags:
   - test
 math: true
 mermaid: true
-archive: true
+archive: false
+password: hello
+message: password is "hello"
+updated: 2023-10-14 18:45
 ---
 
 > 欢迎体验 [Fluid](https://github.com/fluid-dev/hexo-theme-fluid) ，这是一款 Material Design 风格的 Hexo 主题，以简约的设计帮助你专注于写作，本篇文章可预览主题的样式及功能。
@@ -24,7 +27,7 @@ archive: true
 
 &#8194;&#8194; 这是什么  `&#9194`
 
-  这什么情况。
+$amp;  这什么情况。
 
   hell
 ### links
@@ -35,33 +38,28 @@ archive: true
 [test party](/hexo/简记/party)
 [test other](/hexo/杂谈/Barbie)
 ### html tags
+<span>test span tag</span>
 
 <ins>test ins</ins>
 
 <details> <summary>summary</summary>
 then we well have some shitty words here. test some thing.
-
-- list
-- unordered
-
-1. Ordered list
-2. test
-
-**black**
-
-_italic_
-
-> refering something
-> test
-
-```sh
-some shell
-```
-
-    why this always indent?
-
 </details>
 
+<p class="note note-primary">
+note-primary
+</p>
+<p class="note note-info">
+note-info
+</p>
+<p class="note note-warning">
+note-warning
+</p>
+<p class="note note-danger">
+note-danger
+</p>
+
+用html语法<span class="label label-primary"> 实现行内 </span>，具体来说是'<span>' tag。
 ## 文字
 
 文章大部分使用的是 github-markdown 样式，并加入了一些 Material 风格。
@@ -90,14 +88,6 @@ def fib(n):
 fib(1000)
 ```
 
-```go
-type Map struct {
-    mu Mutex
-    read atomic.Value
-    dirty map[interface{}]*entry
-    misses int
-}
-```
 
 ## 表格
 
@@ -205,23 +195,8 @@ Class08 <--> C2: Cool label
 
 内置了一些 Tag 插件，用于实现 Markdown 不容易生成的样式，具体使用方式请见 [用户指南](https://hexo.fluid-dev.com/docs/guide/#tag-%E6%8F%92%E4%BB%B6)。
 
-### 便签
-
-{% note info %}
-这里可以写文字 或者 `markdown`
-{% endnote %}
-
-{% note warning %}
-这里可以写文字 或者 `markdown`
-{% endnote %}
-
-{% note primary %}
-这里可以写文字 或者 `markdown`
-{% endnote %}
-
 ### 行内标签
 
-{% label info @行内标签 %} {% label warning @行内标签 %} {% label primary @行内标签 %}
 
 ### 勾选框
 
