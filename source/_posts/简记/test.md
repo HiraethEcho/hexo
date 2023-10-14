@@ -14,7 +14,19 @@ archive: true
 <!-- more -->
 
 ## some tests
+### 首行空格。
 
+&emsp;&emsp;测试 `$emsp;`
+
+&nbsp;这是什么`&nbsp;`
+
+&ensp;测试 `$ensp;`
+
+&#8194;&#8194; 这是什么  `&#9194`
+
+  这什么情况。
+
+  hell
 ### links
 
 {% post_link 简记/test 'code/test' %}
