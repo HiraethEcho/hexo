@@ -27,6 +27,8 @@ layout: about
 
 《家庭、私有制和国家的起源》<progress max=198 value=120></progress>
 
+《卡夫卡精品集》<progress max=100 value=20></progress>
+
 <details><summary>一些读过并认为值得一记来帮助了解我的书：</summary>
 
 - 知识与爱情
@@ -261,6 +263,7 @@ layout: about
   - 网页（比如这个博客，虽然是用github的模板）
   - archlinux 的安装和删除（指 `sudo rm -rf /`）
   - (neo)vim 的简单配置使用
+
 - 运动
   - 足球
   - 长跑（跑过几次半马勉强可以说是业余爱好者吧）
