@@ -583,7 +583,7 @@ post:
     # 浏览量计数
     # Number of visits
     views:
-      enable: true
+      enable: false
       # 统计数据来源
       # Data Source
       # Options: busuanzi | leancloud
@@ -999,7 +999,7 @@ page404:
 # Links Page
 #---------------------------
 links:
-  enable: true
+  enable: false
   banner_img: /img/default.png
   banner_img_height: 40
   banner_mask_alpha: 0.3
@@ -1015,7 +1015,7 @@ links:
     - {
       title: "My Notes",
       intro: "我的笔记",
-      link: "https://hiraethecho.github.io/mkdocs",
+      link: "https://hiraethecho.github.io/wiki",
       avatar: "/img/favicon.png"
     }
     - {
