@@ -25,7 +25,7 @@ layout: about
 
 正在看的书：
 
-《家庭、私有制和国家的起源》<progress max=198 value=132></progress>
+《家庭、私有制和国家的起源》<progress max=198 value=175></progress>
 
 《卡夫卡精品集》<progress max=100 value=20></progress>
 
@@ -73,8 +73,7 @@ layout: about
 - 未来五十年
 </details>
 
-<details>
-<summary>一些读过并且喜欢的书，或者对我影响明显的书</summary>
+<details><summary>一些读过并且喜欢的书，或者对我影响明显的书</summary>
 
 - 霍乱时期的爱情
 - 情人
@@ -96,8 +95,7 @@ layout: about
 
 </details>
 
-<details>
-<summary>一些想读但还没读的书/作者</summary>
+<details><summary>一些想读但还没读的书/作者</summary>
 
 - 诗人的迟缓
 - 地下室手记
@@ -223,7 +221,8 @@ layout: about
 - 银翼杀手 银翼杀手：2049
 - 2001太空漫游
 - EVA TV版，旧剧场版，新剧场版
-- 春晓苦短，少女前进吧
+- 春宵苦短，少女前进吧
+- 平家物语：犬王
 - Marry and Max
 - 一粒沙
 - 蝙蝠侠大战超人
@@ -260,7 +259,6 @@ layout: about
 莫名其妙地习得了许多奇奇怪怪的知识、技能，我想这些是对“我是谁”的重要补充：人不只靠那些主要的特征定义，而是靠那些繁复的细节同其他人区分开来。
 
 - 计算机
-
   - 网页（比如这个博客，虽然是用github的模板）
   - archlinux 的安装和删除（指 `sudo rm -rf /`）
   - (neo)vim 的简单配置使用
