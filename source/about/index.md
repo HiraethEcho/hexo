@@ -25,8 +25,7 @@ layout: about
 
 正在看的书：
 
-《家庭、私有制和国家的起源》<progress max=198 value=175></progress>
-
+《时髦的空话》<progress max=300 value=100></progress>
 《卡夫卡精品集》<progress max=100 value=20></progress>
 
 <details><summary>一些读过并认为值得一记来帮助了解我的书：</summary>
@@ -50,6 +49,7 @@ layout: about
 - 单向度的人
 - 他者的消失
 - 论人类不平等的起源和基础
+- 家庭、私有制和国家的起源
 - 苏菲的世界
 - 当尼采哭泣
 - 存在主义咖啡馆
