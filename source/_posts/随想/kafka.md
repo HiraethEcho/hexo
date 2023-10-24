@@ -2,12 +2,13 @@
 title: kafka
 published: false
 date: 2023-10-18 23:03:07
-updated:
+updated: 
 tags:
-categories:
-index_img:
-archive:
-password:
+  - 书评
+categories: 
+index_img: 
+archive: 
+password: 
 description:
 ---
 # 卡夫卡，现代的困境
