@@ -8,7 +8,7 @@ tags:
 categories:
 archive:
 password:
-description: 简单谈一谈对时间这一观念的看法，不成体系的发散的片面的看法。
+description: 从熵增出发，简单谈一谈对时间这一观念的看法，不成体系的发散的片面的看法。
 published: true
 ---
 
