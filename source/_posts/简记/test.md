@@ -17,22 +17,29 @@ updated: 2023-10-14 18:45
 <!-- more -->
 
 ## some tests
+
 ### 首行空格。
 
 &emsp;&emsp;测试 `$emsp;`
 
 &nbsp;另一个空格`&nbsp;`
+
 ### links
 
 {% post_link 简记/test 'code/test' %}
 {% post_link 简记/test 'try test' %}
 
 blog连接
-<!-- [test party](/hexo/简记/party) -->
-<!-- [test other](/hexo/杂谈/Barbie) -->
+[test party](/hexo/简记/party)
+[test other](/hexo/杂谈/Barbie)
 pictures连接
+
 ![纳斯塔霞](/hexoimg/idiot03.png)
+
+
+
 ### html tags
+
 <span>test span tag</span>
 
 <ins>test ins</ins>
@@ -55,6 +62,7 @@ note-danger
 </p>
 
 用html语法<span class="label label-primary"> 实现行内 </span>，具体来说是'<span>' tag。
+
 ## 文字
 
 文章大部分使用的是 github-markdown 样式，并加入了一些 Material 风格。
@@ -82,7 +90,6 @@ def fib(n):
     print()
 fib(1000)
 ```
-
 
 ## 表格
 
@@ -192,7 +199,6 @@ Class08 <--> C2: Cool label
 
 ### 行内标签
 
-
 ### 勾选框
 
 {% cb 主要是解决一些 Renderer 不支持勾选, true %}
@@ -270,4 +276,23 @@ Class08 <--> C2: Cool label
     document.body.append(foolsEgg);
 } ();
 </script>
+```
+
+
+
+```
+
+```
+
+
+```
+
+```
+
+```
+
+```
+
+
+```
 ```

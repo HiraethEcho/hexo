@@ -1008,13 +1008,13 @@ links:
   items:
     - {
       title: "My Homepage",
-      intro: "我的主页",
+      intro: "我的学术主页",
       link: "https://hiraethecho.github.io/",
       avatar: "/img/favicon.png"
     }
     - {
-      title: "My Notes",
-      intro: "我的笔记",
+      title: "My Wiki",
+      intro: "我的知识库",
       link: "https://hiraethecho.github.io/wiki",
       avatar: "/img/favicon.png"
     }
