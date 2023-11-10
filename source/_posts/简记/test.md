@@ -21,18 +21,17 @@ updated: 2023-10-14 18:45
 
 &emsp;&emsp;测试 `$emsp;`
 
-&nbsp;这是什么`&nbsp;`
-
-&ensp;测试 `$ensp;`
-
-  hell
+&nbsp;另一个空格`&nbsp;`
 ### links
 
 {% post_link 简记/test 'code/test' %}
 {% post_link 简记/test 'try test' %}
 
-[test party](/hexo/简记/party)
-[test other](/hexo/杂谈/Barbie)
+blog连接
+<!-- [test party](/hexo/简记/party) -->
+<!-- [test other](/hexo/杂谈/Barbie) -->
+pictures连接
+![纳斯塔霞](/hexoimg/idiot03.png)
 ### html tags
 <span>test span tag</span>
 
