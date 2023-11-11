@@ -2,7 +2,7 @@
 title: {{ title }}
 date: {{ date }}
 updated:
-tags:
+tags: []
 categories:
 index_img: 
 archive:

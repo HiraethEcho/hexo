@@ -25,7 +25,8 @@ layout: about
 
 正在看的书：
 
-《卡夫卡精品集》<progress max=100 value=20></progress>
+《死屋手记》<progress max=100 value=0></progress>
+《女性主义》李银河<progress max=100 value=0></progress>
 
 <details><summary>一些读过并认为值得一记来帮助了解我的书：</summary>
 
@@ -40,6 +41,7 @@ layout: about
 - 三体
 - 献给阿尔吉侬的花束
 - 事实
+- 救猫咪 2023-11-10
 - 数学领域中的发明心理学
 - 现代艺术150年
 - 艺术的故事
@@ -55,6 +57,7 @@ layout: about
 - 存在主义咖啡馆
 - 西方哲学史 罗素
 - 月亮与六便士
+- 卡夫卡精品集（城堡，一条狗的研究，地洞 等） 2023-11-10
 - 寂寞的游戏
 - 现代西方哲学新编
 - 美丽新世界

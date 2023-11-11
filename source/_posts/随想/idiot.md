@@ -18,6 +18,8 @@ description: 陀思妥耶夫斯基是永生不死的！
 <p class="note note-primary">在B站重看了翻拍自陀思妥耶夫斯基小说《白痴》的同名电视剧，感到悲从中来，不可断绝。在心绪不宁的日子里，情绪略微有了一点（除喝酒外）的出口。遂尝试表达出一些零散的不得不表达的心情。</p>
 
 > 陀思妥耶夫斯基是永生不死的!
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="//player.bilibili.com/player.html?aid=79196647&bvid=BV1WJ411r7ep&cid=135532415&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div>
+
 
 ## 救赎
 
