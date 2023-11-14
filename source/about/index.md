@@ -281,3 +281,4 @@ layout: about
   - 足球
   - 长跑（跑过几次半马勉强可以说是业余爱好者吧）
   - 骑车（这个刚刚开始）
+- [调酒](https://hiraethecho.github.io/wiki/Life/cocktail/)
