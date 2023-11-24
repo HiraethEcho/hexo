@@ -23,7 +23,6 @@ layout: about
 - 随想
     - 卡夫卡
     - 陀思妥耶夫斯基
-    - 表演父母
     - 神，人，人造人
 - 杂谈
     - 河边的错误 落叶归根 影评
@@ -41,8 +40,8 @@ layout: about
 
 正在看的书：
 
-《死屋手记》<progress max=100 value=0></progress>
-《女性主义》李银河<progress max=306 value=68></progress>
+《死屋手记》<progress max=395 value=30></progress>
+《女性主义》李银河<progress max=306 value=99></progress>
 
 <details><summary>一些读过并认为值得一记来帮助了解我的书：</summary>
 
