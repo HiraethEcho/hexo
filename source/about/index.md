@@ -41,6 +41,7 @@ layout: about
 正在看的书：
 
 《死屋手记》<progress max=395 value=30></progress>
+
 《女性主义》李银河<progress max=306 value=99></progress>
 
 <details><summary>一些读过并认为值得一记来帮助了解我的书：</summary>
@@ -289,4 +290,4 @@ layout: about
   - 长跑（跑过几次半马勉强可以说是业余爱好者吧）
   - 骑车（这个刚刚开始）
 - [调酒](https://hiraethecho.github.io/wiki/Life/cocktail/)
-- 做饭([搬宿舍后](https://hiraethecho.github.io/hexo/简记/dormitory)刚刚开始学，只会炒几个)
+- 做饭([搬宿舍后](/hexo/简记/dormitory)刚刚开始学，只会炒几个)
