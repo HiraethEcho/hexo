@@ -31,6 +31,10 @@ footnote test[^note]
 [^note]: another note
   multi-line footnote
 ### note
+<div class="alert alert-success"> This is a success box, color = green </div>
+<div class="alert alert-info"> This is an info box, color = blue </div>
+<div class="alert alert-warning"> This is a warning box, color = orange </div>
+<div class="alert alert-danger"> This is a danger box, color = red </div>
 
 > [!NOTE]
 > Highlights information that users should take into account, even when skimming.
