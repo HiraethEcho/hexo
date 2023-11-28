@@ -17,6 +17,35 @@ updated: 2023-10-14 18:45
 <!-- more -->
 
 ## some tests
+### 脚注
+
+以下是脚注演示[^1]：
+
+如果你有 Fluid 主题或 Hexo 博客相关的文章，可以通过 Pull Request 方式投稿[^2]。
+
+footnote test[^note]
+
+[^1]: 脚注演示
+[^2]: 投稿具体详见[https://github.com/fluid-dev/hexo-fluid-blog](https://github.com/fluid-dev/hexo-fluid-blog)
+
+[^note]: another note
+  multi-line footnote
+### note
+
+> [!NOTE]
+> Highlights information that users should take into account, even when skimming.
+
+> [!TIP]
+> Optional information to help a user be more successful.
+
+> [!IMPORTANT]
+> Crucial information necessary for users to succeed.
+
+> [!WARNING]
+> Critical content demanding immediate user attention due to potential risks.
+
+> [!CAUTION]
+> Negative potential consequences of an action.
 
 ### 首行空格。
 
@@ -75,21 +104,7 @@ note-danger
 
 _斜体_
 
-## 代码
 
-行内代码：`$ hexo new post "My New Post"`
-
-代码高亮使用的是 highlight.js，支持 185 种语言和 91 种高亮样式：
-
-```python
-def fib(n):
-    a, b = 0, 1
-    while a < n:
-        print(a, end=' ')
-        a, b = b, a+b
-    print()
-fib(1000)
-```
 
 ## 表格
 
@@ -217,14 +232,7 @@ Class08 <--> C2: Cool label
 ![](https://rmt.dogedoge.com/fetch/fluid/storage/hello-fluid/cover.png?w=480&fmt=webp)
 {% endgi %}
 
-### 脚注
 
-以下是脚注演示[^1]：
-
-如果你有 Fluid 主题或 Hexo 博客相关的文章，可以通过 Pull Request 方式投稿[^2]。
-
-[^1]: 脚注演示
-[^2]: 投稿具体详见[https://github.com/fluid-dev/hexo-fluid-blog](https://github.com/fluid-dev/hexo-fluid-blog)
 
 ### 愚人节：你的屏幕上有根头发
 
@@ -278,21 +286,3 @@ Class08 <--> C2: Cool label
 </script>
 ```
 
-
-
-```
-
-```
-
-
-```
-
-```
-
-```
-
-```
-
-
-```
-```

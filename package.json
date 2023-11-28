@@ -24,10 +24,9 @@
     "hexo-generator-tag": "^2.0.0",
     "hexo-githubcalendar": "^1.2.3",
     "hexo-renderer-ejs": "^2.0.0",
-    "hexo-renderer-marked": "^4.1.0",
+    "hexo-renderer-marked": "^6.1.1",
     "hexo-renderer-stylus": "^3.0.0",
     "hexo-server": "^3.0.0",
-    "hexo-theme-fluid": "^1.9.4",
     "hexo-theme-landscape": "^1.0.0",
     "remark": "^14.0.3"
   }
