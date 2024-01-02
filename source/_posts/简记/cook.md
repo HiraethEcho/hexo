@@ -1,6 +1,6 @@
 ---
 title: cook
-tags: []
+tags: [food]
 published: false
 date: 2023-12-27 23:34:28
 updated:
