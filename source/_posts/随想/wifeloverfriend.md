@@ -10,7 +10,7 @@ archive:
 password:
 description:
 ---
-# 关于恋人概念的碎碎念
+# 关于爱情的碎碎念
 
 ## 妻子、情人、朋友
 
