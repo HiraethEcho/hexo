@@ -164,7 +164,8 @@ color:
 
   # 全局次级字体色（摘要、简介等位置）
   # Color of global secondary text (excerpt, introduction, etc.)
-  sec_text_color: "#718096"
+  # sec_text_color: "#718096"
+  sec_text_color: "#bb9af7"
   sec_text_color_dark: "#bb9af7"
 
   # 主面板背景色
