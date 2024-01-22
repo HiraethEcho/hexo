@@ -1,16 +1,17 @@
 ---
 title: idealist
 date: 2023-10-16 18:45:55
-updated: 
+updated:
 tags:
   - philosophy
   - life
   - existence
-categories: 
-index_img: 
-archive: 
-password: 
-description: 由他们怨恨去罢，我一个也不宽恕！
+categories:
+index_img:
+archive:
+password:
+description: 它决不能使我屈服！
 published: false
 ---
+
 # 一个理想主义者的辩白
