@@ -1,0 +1,25 @@
+From ee32358a453517fb16007b99e3f34186e5c91a57 Mon Sep 17 00:00:00 2001
+From: wyzwin <wyz2016zxc@outlook.com>
+Date: Mon, 10 Jul 2023 19:17:32 +0800
+Subject: [PATCH] add github chart
+
+---
+ themes/fluid/layout/archive.ejs | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+diff --git a/themes/fluid/layout/archive.ejs b/themes/fluid/layout/archive.ejs
+index 9240ab6..0f8bd22 100644
+--- a/themes/fluid/layout/archive.ejs
++++ b/themes/fluid/layout/archive.ejs
+@@ -6,5 +6,7 @@ page.banner_img = theme.archive.banner_img
+ page.banner_img_height = theme.archive.banner_img_height
+ page.banner_mask_alpha = theme.archive.banner_mask_alpha
+ %>
+-
++<div  style="padding: 2vh 0 5vh 0" >
++  <img src="https://ghchart.rshah.org/HiraethEcho" alt="My Github Chart" width=100% position='relative'>
++</div>
+ <%- partial('_partials/archive-list.ejs', { params: { key: page.layout, postTotal: site.posts.length } }) %>
+-- 
+2.43.0
+

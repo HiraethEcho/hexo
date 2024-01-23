@@ -1,0 +1,57 @@
+From b82e790e61cbb6d50333f762272f57791e3abdc9 Mon Sep 17 00:00:00 2001
+From: wyzwin <wyz2016zxc@outlook.com>
+Date: Mon, 10 Jul 2023 19:07:33 +0800
+Subject: [PATCH] change to "LXGW Wenkai Screen" font
+
+---
+ _config.fluid.yml                      | 3 ++-
+ themes/fluid/layout/_partials/head.ejs | 1 +
+ themes/fluid/source/css/font.css       | 3 +++
+ 3 files changed, 6 insertions(+), 1 deletion(-)
+ create mode 100644 themes/fluid/source/css/font.css
+
+diff --git a/_config.fluid.yml b/_config.fluid.yml
+index 026c838..21095ee 100644
+--- a/_config.fluid.yml
++++ b/_config.fluid.yml
+@@ -227,7 +227,7 @@ color:
+ # Font
+ font:
+   font_size: 16px
+-  font_family:
++  font_family: "LXGW Wenkai Screen"
+   letter_spacing: 0.02em
+   code_font_size: 85%
+ 
+@@ -239,6 +239,7 @@ custom_js:
+ # The usage is the same as custom_js
+ custom_css:
+   - /css/custom.css
++  - /css/font.css
+   # - //at.alicdn.com/t/c/font_4158762_h20pjeooe3v.js
+   #https://www.iconfont.cn/ using this to add more icons
+   # TODO: add more icons
+diff --git a/themes/fluid/layout/_partials/head.ejs b/themes/fluid/layout/_partials/head.ejs
+index fc758b6..705612d 100644
+--- a/themes/fluid/layout/_partials/head.ejs
++++ b/themes/fluid/layout/_partials/head.ejs
+@@ -15,6 +15,7 @@ var ogConfig = Object.assign({ image: ogImage && url_for(ogImage) }, theme.open_
+ 
+ <head>
+   <meta charset="UTF-8">
++  <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
+   <link rel="apple-touch-icon" sizes="76x76" href="<%= url_for(theme.apple_touch_icon) %>">
+   <link rel="icon" href="<%= url_for(theme.favicon) %>">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+diff --git a/themes/fluid/source/css/font.css b/themes/fluid/source/css/font.css
+new file mode 100644
+index 0000000..3c11c74
+--- /dev/null
++++ b/themes/fluid/source/css/font.css
+@@ -0,0 +1,3 @@
++html, body, .markdown-body, p {
++  font-family: 'LXGW WenKai Screen';
++}
+-- 
+2.43.0
+
