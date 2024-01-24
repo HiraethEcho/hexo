@@ -150,6 +150,9 @@ deploy:
   repo: git@github.com:HiraethEcho/hexo.git
   branch : gh-pages
 
+aplayer:
+  meting: true
+
 marked:
   gfm: true
   pedantic: false
