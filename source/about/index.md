@@ -13,13 +13,19 @@ layout: about
 <p class="note note-primary">
 Hiraeth: (n.) homesickness to a home to which you cannot return: the grief of the lost places of your past.
 </p>
+
 ### 分类 categories
+<!-- 
+- comment
+- contemplation
+- record
+- caprice 
+-->
 
 - [杂谈](/hexo/categories/杂谈)：这里主要是一些评论，包括影评、书评，以后可能还会有社评。除此之外还有一些稍长一点的综合观点。
 - [沉思](/hexo/categories/沉思)：_哲学是傍晚起飞的猫头鹰。_ 这里是反复思考后的想法，私人的、抽象的想法。
 - [简记](/hexo/categories/简记)：这里主要是记述性质的，记录一些生活的故事，掺杂一些想法。
 - [随想](/hexo/categories/随想)：这里是零碎的想法，大部分没有被深思熟虑。可能会扩充后添加到`杂谈`或`沉思`
--
 
 ### 计划中
 
