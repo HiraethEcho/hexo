@@ -30,6 +30,7 @@ footnote test[^note]
 
 [^note]: another note
   multi-line footnote
+
 ### note
 <div class="alert alert-success"> This is a success box, color = green </div>
 <div class="alert alert-info"> This is an info box, color = blue </div>
@@ -69,13 +70,11 @@ pictures连接
 
 ![纳斯塔霞](/hexoimg/idiot03.png)
 
-
-
 ### html tags
 
 <span>test span tag</span>
 
-<ins>test ins</ins>
+<ins>test ins tag</ins>
 
 <details> <summary>summary</summary>
 then we well have some shitty words here. test some thing.
@@ -117,33 +116,6 @@ _斜体_
 | Key 1    | Value 1  | Comment 1 |
 | Key 2    | Value 2  | Comment 2 |
 | Key 3    | Value 3  | Comment 3 |
-
-## 列表
-
-### 有序列表
-
-Fluid 相较于其他主题的优势：
-
-1. 设计遵循简洁至上，同时具有轻快的体验，和优雅的颜值；
-2. 提供大量定制化配置项，使每个用户使用该主题都能具有独特的样式；
-3. 响应式页面，适配手机、平板等设备；
-
-### 无序列表
-
-Fluid 功能特性：
-
-- 图片懒加载
-- 自定义代码高亮方案
-- 内置多语言
-- 支持多款评论插件
-- 支持使用数据文件存放配置
-- 自定义静态资源 CDN
-- 内置文章搜索
-- 页脚备案信息
-- 网页访问统计
-- 支持 LaTeX 数学公式
-- 支持 mermaid 流程图
-- 音乐播放器
 
 ## 图片
 
