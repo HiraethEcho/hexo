@@ -35,15 +35,17 @@ Hiraeth: (n.) homesickness to a home to which you cannot return: the grief of th
 - 随想
   - 卡夫卡 陀思妥耶夫斯基
   - 神，人，人造人
-  - 关于爱情的碎碎念
   - 杂谈
-  - 河边的错误 落叶归根 影评
+  - 落叶归根 影评
   - 表演式的伪善
   - mbti看法
+
 - 沉思
   - 坚持做理想主义者
-  - 多元思考，有矛盾的生活
+  - 多元思考，有矛盾的生活 后现代的生活
 
+- [cafe](/hexo/food)
+ 
 ## 关于我
 
 中科院基础数学在读研究生
@@ -282,7 +284,6 @@ Hiraeth: (n.) homesickness to a home to which you cannot return: the grief of th
 <details><summary>一些想看还没看的电影/剧</summary>
 
 - 红白蓝三部曲
-- 落叶归根
 - 平原上的夏洛克
 - 法外之徒
 
@@ -295,8 +296,7 @@ Hiraeth: (n.) homesickness to a home to which you cannot return: the grief of th
 莫名其妙地习得了许多奇奇怪怪的知识、技能，我想这些是对“我是谁”的重要补充：人不只靠那些主要的特征定义，而是靠那些繁复的细节同其他人区分开来。
 
 - 计算机
-
-  - 网页（比如这个博客，虽然是用github的模板）
+  - 网页（比如这个博客，虽然是用github的模板[Fluid](https://github.com/fluid-dev/hexo-theme-fluid)）
   - archlinux 的安装和删除（指 `sudo rm -rf /`）
   - (neo)vim 的简单配置使用
 
@@ -305,4 +305,4 @@ Hiraeth: (n.) homesickness to a home to which you cannot return: the grief of th
   - 长跑（跑过几次半马勉强可以说是业余爱好者吧）
   - 骑车（这个刚刚开始）
 - [调酒](https://hiraethecho.github.io/wiki/Life/cocktail/)
-- 做饭([搬宿舍后](/hexo/简记/dormitory)刚刚开始学，只会炒几个)
+- 做饭([搬宿舍后](/hexo/简记/dormitory)刚刚开始学，只会[炒几个](/hexo/简记/cook))

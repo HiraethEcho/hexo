@@ -1,5 +1,5 @@
 ---
-title: Hello Fluid
+title: Test and Readme
 date: 2023-07-01 19:37
 index_img: https://rmt.dogedoge.com/fetch/fluid/storage/hello-fluid/cover.png?w=480&fmt=webp
 tags:
@@ -9,27 +9,24 @@ mermaid: true
 archive: false
 password: hello
 message: password is "hello"
-updated: 2023-10-14 18:45
+updated: 2024-01-26 17:31
 ---
 
-> 欢迎体验 [Fluid](https://github.com/fluid-dev/hexo-theme-fluid) ，这是一款 Material Design 风格的 Hexo 主题，以简约的设计帮助你专注于写作，本篇文章可预览主题的样式及功能。
+> 欢迎体验 [Fluid](https://github.com/fluid-dev/hexo-theme-fluid) 
 
 <!-- more -->
 
-## some tests
 ### 脚注
 
 以下是脚注演示[^1]：
 
 如果你有 Fluid 主题或 Hexo 博客相关的文章，可以通过 Pull Request 方式投稿[^2]。
 
-footnote test[^note]
+footnote test[^note] this doesn't work
 
 [^1]: 脚注演示
 [^2]: 投稿具体详见[https://github.com/fluid-dev/hexo-fluid-blog](https://github.com/fluid-dev/hexo-fluid-blog)
-
 [^note]: another note
-  multi-line footnote
 
 ### note
 <div class="alert alert-success"> This is a success box, color = green </div>
@@ -37,6 +34,7 @@ footnote test[^note]
 <div class="alert alert-warning"> This is a warning box, color = orange </div>
 <div class="alert alert-danger"> This is a danger box, color = red </div>
 
+GFM note:
 > [!NOTE]
 > Highlights information that users should take into account, even when skimming.
 
@@ -52,23 +50,39 @@ footnote test[^note]
 > [!CAUTION]
 > Negative potential consequences of an action.
 
-### 首行空格。
+```md
+> [!NOTE]
+> Highlights information that users should take into account, even when skimming.
+
+> [!TIP]
+> Optional information to help a user be more successful.
+
+> [!IMPORTANT]
+> Crucial information necessary for users to succeed.
+
+> [!WARNING]
+> Critical content demanding immediate user attention due to potential risks.
+
+> [!CAUTION]
+> Negative potential consequences of an action.
+```
+
+## 首行空格
 
 &emsp;&emsp;测试 `$emsp;`
 
 &nbsp;另一个空格`&nbsp;`
 
-### links
+无空格
+## links
 
 {% post_link 简记/test 'code/test' %}
 {% post_link 简记/test 'try test' %}
 
-blog连接
+blog链接，obsidian兼容
 [test party](/hexo/简记/party)
-[test other](/hexo/杂谈/Barbie)
-pictures连接
 
-![纳斯塔霞](/hexoimg/idiot03.png)
+[test another](/hexo/杂谈/Barbie)
 
 ### html tags
 
@@ -93,21 +107,7 @@ note-warning
 note-danger
 </p>
 
-用html语法<span class="label label-primary"> 实现行内 </span>，具体来说是'<span>' tag。
-
-## 文字
-
-文章大部分使用的是 github-markdown 样式，并加入了一些 Material 风格。
-
-### H3 标题
-
-#### H4 标题
-
-**粗体**
-
-_斜体_
-
-
+用html语法<span class="label label-primary"> 实现行内 </span>，具体来说是 `<span>` tag。
 
 ## 表格
 
@@ -118,8 +118,9 @@ _斜体_
 | Key 3    | Value 3  | Comment 3 |
 
 ## 图片
-
-![](https://rmt.dogedoge.com/fetch/fluid/storage/post.png?w=1280&fmt=webp)
+pictures 链接
+![纳斯塔霞](/hexoimg/idiot03.png)
+![food1](https://HiraethEcho.github.io/picgo/picx/food1.2liehtkrd640.webp)
 
 ## LaTex
 
@@ -188,7 +189,6 @@ Class08 <--> C2: Cool label
 
 内置了一些 Tag 插件，用于实现 Markdown 不容易生成的样式，具体使用方式请见 [用户指南](https://hexo.fluid-dev.com/docs/guide/#tag-%E6%8F%92%E4%BB%B6)。
 
-### 行内标签
 
 ### 勾选框
 
@@ -207,7 +207,6 @@ Class08 <--> C2: Cool label
 ![](https://rmt.dogedoge.com/fetch/fluid/storage/hello-fluid/cover.png?w=480&fmt=webp)
 ![](https://rmt.dogedoge.com/fetch/fluid/storage/hello-fluid/cover.png?w=480&fmt=webp)
 {% endgi %}
-
 
 
 ### 愚人节：你的屏幕上有根头发
@@ -261,4 +260,3 @@ Class08 <--> C2: Cool label
 } ();
 </script>
 ```
-

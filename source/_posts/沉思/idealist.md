@@ -1,5 +1,5 @@
 ---
-title: idealist
+title: 一个理想主义者的辩白
 date: 2023-10-16 18:45:55
 updated:
 tags:
