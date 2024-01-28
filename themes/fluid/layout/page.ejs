@@ -9,11 +9,10 @@ page.banner_mask_alpha = page.banner_mask_alpha || theme.page.banner_mask_alpha
 
 <article class="page-content">
   <%- page.content %>
-    <!-- Comments -->
+  <%- inject_point('pageComments') %>
     <article id="comments">
       <%- partial('_partials/comments/valine') %>
     </article>
-  <%- inject_point('pageComments') %>
 </article>
 
 <% if (/<[^>]+? class="[^"]*?markdown-body[^"]*?"/gims.test(page.content)) { %>
