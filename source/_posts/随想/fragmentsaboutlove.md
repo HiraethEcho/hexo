@@ -9,7 +9,8 @@ updated: 2024-01-24 23:49
 categories:
 index_img:
 archive:
-password:
+password: 1110
+message: 4位生日
 description: 这一篇放一些对爱情或其他感情的零碎想法，加上粗糙的时间戳，用来留存自己的想法。
 sticky: 50
 ---
