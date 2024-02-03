@@ -734,7 +734,7 @@ post:
   # 评论插件
   # Comment plugin
   comments:
-    enable: false
+    enable: true
     # 指定的插件，需要同时设置对应插件的必要参数
     # The specified plugin needs to set the necessary parameters at the same time
     # Options: utterances | disqus | gitalk | valine | waline | changyan | livere | remark42 | twikoo | cusdis | giscus
@@ -802,18 +802,18 @@ valine:
   appId: 8wKDxNXv04ufcOJzC4x0mXvS-gzGzoHsz
   appKey: w7hDCl6LzbJNVqXCcEtAdwo7
   path: window.location.pathname
-  placeholder: "欢迎评论！（昵称、邮箱均可留空）"
+  placeholder: "欢迎评论！（昵称、邮箱均选填）"
   avatar: 'retro'
   meta: ['nick','mail']
   requiredFields: []
   pageSize: 10
   lang: 'zh-CN'
-  highlight: false
+  highlight: true
   recordIP: true
   serverURLs: ''
   emojiCDN:
   emojiMaps:
-  enableQQ: false
+  enableQQ: true
 
 # Waline
 # 从 Valine 衍生而来，额外增加了服务端和多种功能
