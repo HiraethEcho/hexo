@@ -1,8 +1,9 @@
 ---
-title: 记忆与个人同一性
+title: 后现代生活
 tags:
-  - existence
-  - philosophy
+  - life
+  - society
+  - postmodernism
 published: false
 date: 
 updated: 
