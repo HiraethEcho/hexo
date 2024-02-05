@@ -11,6 +11,7 @@ password:
 description: 浅谈一些关于西方艺术作品中的神、人、人造人的意象
 ---
 
+<!-- TODO: not finished -->
 # 神、人、人造人与弑父
 
 ## 神与人

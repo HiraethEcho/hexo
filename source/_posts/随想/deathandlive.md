@@ -1,5 +1,5 @@
 ---
-title: deathandlive
+title: 我的生与死
 tags:
   - life
   - philosophy
@@ -11,7 +11,8 @@ categories:
 index_img:
 archive:
 password:
-description:
+description: 关于我如何看待死，和如何生
+sticky: 40
 ---
 
 # 我的生与死：此时的生活的状态

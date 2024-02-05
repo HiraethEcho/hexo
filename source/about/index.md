@@ -15,37 +15,37 @@ Hiraeth: (n.) homesickness to a home to which you cannot return: the grief of th
 </p>
 
 ### 分类 categories
-<!-- 
+
+<!--
 - comment
 - contemplation
 - record
-- caprice 
+- caprice
 -->
 
-- [杂谈](/hexo/categories/杂谈)：这里主要是一些评论，包括影评、书评，以后可能还会有社评。除此之外还有一些稍长一点的综合观点。
-- [沉思](/hexo/categories/沉思)：_哲学是傍晚起飞的猫头鹰。_ 这里是反复思考后的想法，私人的、抽象的想法。
-- [简记](/hexo/categories/简记)：这里主要是记述性质的，记录一些生活的故事，掺杂一些想法。
-- [随想](/hexo/categories/随想)：这里是零碎的想法，大部分没有被深思熟虑。可能会扩充后添加到`杂谈`或`沉思`
+- [杂谈](/hexo/categories/杂谈)：这里是关于具体事或物的评论或想法，包括影评、书评、社评等，是围绕具体话题的看法。
+- [沉思](/hexo/categories/沉思)：_哲学是傍晚起飞的猫头鹰。_ 这里是一些抽象的思想，是关于精神世界的思考。
+- [简记](/hexo/categories/简记)：这里主要是记述性质的，简短记录一些生活中发生的事情，或者作为某种备忘，可能掺杂一些想法。
+- [随想](/hexo/categories/随想)：这里是零碎的想法。大部分没有被深思熟虑，并不完备自洽，比较随意。
 
 ### 计划中
 
 &emsp;&emsp;一些计划中要写的博客:
 
-- 简记
-- 随想
-  - 卡夫卡 陀思妥耶夫斯基
-  - 神，人，人造人
-  - 杂谈
+- 杂谈
   - 落叶归根 影评
-  - 表演式的伪善
-  - mbti看法
-
+  - 卡夫卡 陀思妥耶夫斯基
+  - 神，人，人造人和弑父
 - 沉思
   - 坚持做理想主义者
   - 多元思考，有矛盾的生活 后现代的生活
+- 简记
+  - 独居
+- 随想
+  - 表演式的伪善
+  - mbti看法
+- [cafe](/hexo/food) 把我的“小餐馆”的介绍完整一下
 
-- [cafe](/hexo/food)
- 
 ## 关于我
 
 中科院基础数学在读研究生
@@ -56,7 +56,6 @@ Hiraeth: (n.) homesickness to a home to which you cannot return: the grief of th
 
 正在看的书：
 
-《死屋手记》<progress max=395 value=217></progress>
 
 《女性主义》李银河<progress max=306 value=99></progress>
 
@@ -65,6 +64,7 @@ Hiraeth: (n.) homesickness to a home to which you cannot return: the grief of th
 - 知识与爱情
 - 悉达多
 - 荒原狼
+- 死屋手记
 - 一只特立独行的猪 （王小波短篇集）
 - 娱乐至死
 - 乌合之众
@@ -296,8 +296,9 @@ Hiraeth: (n.) homesickness to a home to which you cannot return: the grief of th
 莫名其妙地习得了许多奇奇怪怪的知识、技能，我想这些是对“我是谁”的重要补充：人不只靠那些主要的特征定义，而是靠那些繁复的细节同其他人区分开来。
 
 - 计算机
+
   - 网页（比如这个博客，虽然是用github的模板[Fluid](https://github.com/fluid-dev/hexo-theme-fluid)）
-  - archlinux 的安装和删除（指 `sudo rm -rf /`）
+  - archlinux 的安装（现在在用btrfs和dwm）和删除（指 `sudo rm -rf /`）
   - (neo)vim 的简单配置使用
 
 - 运动
@@ -305,4 +306,4 @@ Hiraeth: (n.) homesickness to a home to which you cannot return: the grief of th
   - 长跑（跑过几次半马勉强可以说是业余爱好者吧）
   - 骑车（这个刚刚开始）
 - [调酒](https://hiraethecho.github.io/wiki/Life/cocktail/)
-- 做饭([搬宿舍后](/hexo/简记/dormitory)刚刚开始学，只会[炒几个](/hexo/简记/cook))
+- 做饭([搬宿舍后](/hexo/简记/dormitory)刚刚开始学，只会[几个](/hexo/简记/cook))简单的。
