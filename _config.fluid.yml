@@ -357,7 +357,7 @@ navbar:
     - { key: "关于", link: "/about/", icon: "iconfont icon-user-fill" }
     # - { key: "café ", link: "/food/", icon: "iconfont icon-food" }
     - { key: "Wiki ", link: "https://HiraethEcho.github.io/wiki", icon: "iconfont icon-wiki" }
-    # - { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
+    - { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
 
 # 搜索功能，基于 hexo-generator-search 插件，若已安装其他搜索插件请关闭此功能，以避免生成多余的索引文件
 # Search feature, based on hexo-generator-search. If you have installed other search plugins, please disable this feature to avoid generating redundant index files
@@ -799,8 +799,8 @@ gitalk:
 # Based on LeanCloud
 # See: https://valine.js.org/
 valine:
-  appId: 8wKDxNXv04ufcOJzC4x0mXvS-gzGzoHsz
-  appKey: w7hDCl6LzbJNVqXCcEtAdwo7
+  appId: DcZdh7pzSPxJ3RE8lAUJEVTV-MdYXbMMI
+  appKey: qGy5ILPsy5Noef9vRyniIbqY
   path: window.location.pathname
   placeholder: "欢迎评论！（昵称、邮箱均选填）"
   avatar: 'retro'
@@ -808,12 +808,12 @@ valine:
   requiredFields: []
   pageSize: 10
   lang: 'zh-CN'
-  highlight: true
-  recordIP: true
-  serverURLs: ''
+  highlight: false
+  recordIP: false
+  serverURLs: 'https://dczdh7pz.api.lncldglobal.com'
   emojiCDN:
   emojiMaps:
-  enableQQ: true
+  enableQQ: false
 
 # Waline
 # 从 Valine 衍生而来，额外增加了服务端和多种功能
@@ -958,7 +958,7 @@ about:
   banner_mask_alpha: 0.3
   avatar: /img/avatar.jpeg
   name: "Hiraeth"
-  intro: "This is me"
+  intro: "Es muss sein"
   # 更多图标可从 https://hexo.fluid-dev.com/docs/icon/ 查找，`class` 代表图标的 css class，添加 `qrcode` 后，图标不再是链接而是悬浮二维码
   # More icons can be found from https://hexo.fluid-dev.com/docs/en/icon/  `class` is the css class of the icon. If adding `qrcode`, The icon is no longer a link, but a hovering QR code
   # tode
@@ -1003,7 +1003,7 @@ page404:
 # Links Page
 #---------------------------
 links:
-  enable: false
+  enable: true
   banner_img: /img/default.png
   banner_img_height: 40
   banner_mask_alpha: 0.3
@@ -1011,7 +1011,7 @@ links:
   # Member item of page
   items:
     - {
-      title: "My Homepage",
+      title: "My Academia page",
       intro: "我的学术主页",
       link: "https://hiraethecho.github.io/",
       avatar: "/img/favicon.png"
@@ -1024,13 +1024,13 @@ links:
     }
     - {
       title: "Fluid Blog",
-      intro: "主题博客",
+      intro: "本站主题",
       link: "https://hexo.fluid-dev.com/",
       avatar: "/img/favicon.png"
     }
     - {
       title: "Fluid Docs",
-      intro: "主题使用指南",
+      intro: "本站主题使用指南",
       link: "https://hexo.fluid-dev.com/docs/",
       avatar: "/img/favicon.png"
     }
