@@ -341,7 +341,7 @@ navbar:
   # 导航栏菜单，可自行增减，key 用来关联 languages/*.yml，如不存在关联则显示 key 本身的值；icon 是 css class，可以省略；增加 name 可以强制显示指定名称
   # Navigation bar menu. `key` is used to associate languages/*.yml. If there is no association, the value of `key` itself will be displayed; if `icon` is a css class, it can be omitted; adding `name` can force the display of the specified name
   menu:
-    - { key: "home", link: "/", icon: "iconfont icon-home-fill" }
+    - { key: "主页", link: "/", icon: "iconfont icon-home-fill" }
     # - {
     #     key: 'Blogs',
     #     icon: 'iconfont icon-books',
@@ -357,7 +357,7 @@ navbar:
     - { key: "关于", link: "/about/", icon: "iconfont icon-user-fill" }
     # - { key: "café ", link: "/food/", icon: "iconfont icon-food" }
     - { key: "Wiki ", link: "https://HiraethEcho.github.io/wiki", icon: "iconfont icon-wiki" }
-    - { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
+    # - { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
 
 # 搜索功能，基于 hexo-generator-search 插件，若已安装其他搜索插件请关闭此功能，以避免生成多余的索引文件
 # Search feature, based on hexo-generator-search. If you have installed other search plugins, please disable this feature to avoid generating redundant index files
@@ -963,7 +963,7 @@ about:
   # More icons can be found from https://hexo.fluid-dev.com/docs/en/icon/  `class` is the css class of the icon. If adding `qrcode`, The icon is no longer a link, but a hovering QR code
   # tode
   icons:
-    # - { class: "iconfont icon-home", link: "https://HiraethEcho.github.io", tip: "Homepage" }
+    - { class: "iconfont icon-home", link: "https://HiraethEcho.github.io", tip: "Homepage" }
     - { class: "iconfont icon-github-fill", link: "https://github.com/HiraethEcho", tip: "GitHub" }
     # - { class: "iconfont icon-wiki", link: "https://hiraethecho.github.io/wiki", tip: "Wiki" }
     - { class: "iconfont icon-rss", link: "https://hiraethecho.github.io/hexo/atom.xml", tip: "RSS" }
@@ -1003,7 +1003,7 @@ page404:
 # Links Page
 #---------------------------
 links:
-  enable: true
+  enable: false
   banner_img: /img/default.png
   banner_img_height: 40
   banner_mask_alpha: 0.3

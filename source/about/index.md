@@ -56,6 +56,7 @@ Hiraeth: (n.) homesickness to a home to which you cannot return: the grief of th
 
 正在看的书：
 
+《消费社会》（鲍德里亚）<progress max=100 value=9></progress>
 
 《女性主义》李银河<progress max=306 value=99></progress>
 
