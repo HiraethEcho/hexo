@@ -351,7 +351,7 @@ navbar:
     #        { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
     #       ]
     #   }
-    - { key: "时间线", link: "/archives/", icon: "iconfont icon-archive-fill" }
+    - { key: "归档", link: "/archives/", icon: "iconfont icon-archive-fill" }
     - { key: "分类", link: "/categories/", icon: "iconfont icon-category-fill" }
     - { key: "标签", link: "/tags/", icon: "iconfont icon-tags-fill" }
     - { key: "关于", link: "/about/", icon: "iconfont icon-user-fill" }

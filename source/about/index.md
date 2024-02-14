@@ -27,6 +27,7 @@ Hiraeth: (n.) homesickness to a home to which you cannot return: the grief of th
 - [沉思](/hexo/categories/沉思)：_哲学是傍晚起飞的猫头鹰。_ 这里是一些抽象的思想，是关于精神世界的思考。
 - [简记](/hexo/categories/简记)：这里主要是记述性质的，简短记录一些生活中发生的事情，或者作为某种备忘，可能掺杂一些想法。
 - [随想](/hexo/categories/随想)：这里是零碎的想法。大部分没有被深思熟虑，并不完备自洽，比较随意。
+- [时间线](/hexo/categories/时间线)：这里是一些持续更新的博客。
 
 ### 计划中
 
