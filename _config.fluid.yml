@@ -738,7 +738,7 @@ post:
     # 指定的插件，需要同时设置对应插件的必要参数
     # The specified plugin needs to set the necessary parameters at the same time
     # Options: utterances | disqus | gitalk | valine | waline | changyan | livere | remark42 | twikoo | cusdis | giscus
-    type: valine
+    type: twikoo
 
 
 #---------------------------
@@ -820,7 +820,7 @@ valine:
 # Derived from Valine, with self-hosted service and new features
 # See: https://waline.js.org/
 waline:
-  serverURL: ''
+  serverURL: 'https://hexo-3gzoao2t25f5fe98-1324287150.ap-shanghai.app.tcloudbase.com/waline'
   path: window.location.pathname
   meta: ['nick', 'mail', 'link']
   requiredMeta: ['nick']
@@ -861,7 +861,8 @@ remark42:
 # Based on Tencent CloudBase
 # See: https://twikoo.js.org
 twikoo:
-  envId:
+  # envId: https://vercel-lilac-xi.vercel.app/
+  envId: https://hexohiraeth.netlify.app/.netlify/functions/twikoo
   region: ap-shanghai
   path: window.location.pathname
 
