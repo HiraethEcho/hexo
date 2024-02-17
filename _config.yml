@@ -116,7 +116,7 @@ search:
   limit: 1000
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: fluid
+theme: redefine
 # language: zh-CN
 
 # Security
@@ -153,9 +153,9 @@ deploy:
 aplayer:
   meting: true
 
-plugins:
-  hexo-generator-feed
-#Feed Atom
+# plugins:
+#   hexo-generator-feed
+# #Feed Atom
 feed:
   type: atom
   path: atom.xml

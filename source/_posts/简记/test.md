@@ -1,262 +1,152 @@
----
-title: Test and Readme
-date: 2023-07-01 19:37
-index_img: https://rmt.dogedoge.com/fetch/fluid/storage/hello-fluid/cover.png?w=480&fmt=webp
-tags:
-  - test
-math: true
-mermaid: true
-archive: false
-password: hello
-message: password is "hello"
-updated: 2024-01-26 17:31
----
+<div align="right">
+  <a title="en" href="README.md"><img src="https://img.shields.io/badge/-English-545759?style=for-the-badge" alt="english"></a>
+  <img src="https://img.shields.io/badge/-%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-A31F34?style=for-the-badge" alt="简体中文">
+  <a title="zh-TW" href="README_zh-TW.md"><img src="https://img.shields.io/badge/-%E7%B9%81%E4%BD%93%E4%B8%AD%E6%96%87-545759?style=for-the-badge" alt="繁体中文"></a>
+</div>
 
-> 欢迎体验 [Fluid](https://github.com/fluid-dev/hexo-theme-fluid) 
+<a href="https://redefine.ohevan.com"><img align="center" src="https://user-images.githubusercontent.com/68590232/226141917-68124e8f-fde0-4edd-b86d-c62932ec369a.png"  alt="Redefine"></a>
 
-<!-- more -->
 
-### 脚注
+# hexo-theme-redefine
 
-以下是脚注演示[^1]：
+"Redefine" 是一款简洁、快速、纯粹的 Hexo 主题，其简约之美遥非平凡，让人领略到设计的力量。本主题不仅包含诸多实用丰富的功能，而且赋予了精致而出色的设计理念。
 
-如果你有 Fluid 主题或 Hexo 博客相关的文章，可以通过 Pull Request 方式投稿[^2]。
+本主题源自 [hexo-theme-keep](https://github.com/XPoet/hexo-theme-keep) 的早期版本，进一步进行了精心打磨和扩展。在保留了原主题的精炼基础上，我们优化了整体样式，引入了丰富的写作模块，并增添了多种插件支持。同时，大幅提高了自定义的灵活度，旨在让您能够更加便捷、顺畅地运用本主题，打造出独具匠心的个人博客。
 
-footnote test[^note] this doesn't work
-
-[^1]: 脚注演示
-[^2]: 投稿具体详见[https://github.com/fluid-dev/hexo-fluid-blog](https://github.com/fluid-dev/hexo-fluid-blog)
-[^note]: another note
-
-### note
-<div class="alert alert-success"> This is a success box, color = green </div>
-<div class="alert alert-info"> This is an info box, color = blue </div>
-<div class="alert alert-warning"> This is a warning box, color = orange </div>
-<div class="alert alert-danger"> This is a danger box, color = red </div>
-
-GFM note:
-> [!NOTE]
-> Highlights information that users should take into account, even when skimming.
-
-> [!TIP]
-> Optional information to help a user be more successful.
-
-> [!IMPORTANT]
-> Crucial information necessary for users to succeed.
-
-> [!WARNING]
-> Critical content demanding immediate user attention due to potential risks.
-
-> [!CAUTION]
-> Negative potential consequences of an action.
-
-```md
-> [!NOTE]
-> Highlights information that users should take into account, even when skimming.
-
-> [!TIP]
-> Optional information to help a user be more successful.
-
-> [!IMPORTANT]
-> Crucial information necessary for users to succeed.
-
-> [!WARNING]
-> Critical content demanding immediate user attention due to potential risks.
-
-> [!CAUTION]
-> Negative potential consequences of an action.
-```
-
-## 首行空格
-
-&emsp;&emsp;测试 `$emsp;`
-
-&nbsp;另一个空格`&nbsp;`
-
-无空格
-## links
-
-{% post_link 简记/test 'code/test' %}
-{% post_link 简记/test 'try test' %}
-
-blog链接，obsidian兼容
-[test party](/hexo/简记/party)
-
-[test another](/hexo/杂谈/Barbie)
-
-### html tags
-
-<span>test span tag</span>
-
-<ins>test ins tag</ins>
-
-<details> <summary>summary</summary>
-then we well have some shitty words here. test some thing.
-</details>
-
-<p class="note note-primary">
-note-primary
-</p>
-<p class="note note-info">
-note-info
-</p>
-<p class="note note-warning">
-note-warning
-</p>
-<p class="note note-danger">
-note-danger
+<p align="center">
+    <a href="https://www.npmjs.com/package/hexo-theme-redefine">
+        <img src="https://img.shields.io/npm/v/hexo-theme-redefine?color=F38181&amp;label=version&amp;logo=npm&amp;logoColor=F38181&amp;style=for-the-badge" referrerpolicy="no-referrer" alt="NPM version" />
+    </a>
+    <a href="https://www.npmjs.com/package/hexo-theme-redefine">
+        <img src="https://img.shields.io/npm/dm/hexo-theme-redefine?color=FCE38A&amp;logo=npm&amp;logoColor=FCE38A&amp;style=for-the-badge" referrerpolicy="no-referrer" alt="npm downloads" />
+    </a>
+    <a href="https://www.npmjs.com/package/hexo-theme-redefine">
+        <img src="https://img.shields.io/npm/dt/hexo-theme-redefine?color=95E1D3&amp;label=total&amp;logo=npm&amp;logoColor=95E1D3&amp;style=for-the-badge" referrerpolicy="no-referrer" alt="npm-total" />
+    </a>
+    <a href="https://hexo.io"><img src="https://img.shields.io/badge/hexo-%3E=5.0.0-8caaee?style=for-the-badge&amp;logo=hexo&amp;logoColor=8caaee" referrerpolicy="no-referrer" alt="Required Hexo version" /></a>
+    <img src="https://img.shields.io/badge/node-%3E=12.0-a6d189?style=for-the-badge&amp;logo=node.js&amp;logoColor=a6d189" referrerpolicy="no-referrer" alt="NodeJS Version" />
 </p>
 
-用html语法<span class="label label-primary"> 实现行内 </span>，具体来说是 `<span>` tag。
 
-## 表格
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/EvanNotFound/hexo-theme-redefine/assets/68590232/337c1801-7a59-45af-a02a-583508be69a5" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/EvanNotFound/hexo-theme-redefine/assets/68590232/d88a5544-c86e-46ab-8e52-0582b437f989" />
+  <img alt="Cover Image" src="https://github.com/EvanNotFound/hexo-theme-redefine/assets/68590232/d88a5544-c86e-46ab-8e52-0582b437f989" />
+</picture>
 
-| Header 1 | Header 2 | Header 3  |
-| -------- | -------- | --------- |
-| Key 1    | Value 1  | Comment 1 |
-| Key 2    | Value 2  | Comment 2 |
-| Key 3    | Value 3  | Comment 3 |
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/EvanNotFound/hexo-theme-redefine/assets/68590232/5d51b48d-7b08-4da0-a304-933424739203" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/EvanNotFound/hexo-theme-redefine/assets/68590232/c6df4b81-557d-4e0b-8038-b056075d0fa4" />
+  <img alt="Pages Image" src="https://github.com/EvanNotFound/hexo-theme-redefine/assets/68590232/c6df4b81-557d-4e0b-8038-b056075d0fa4" />
+</picture>
 
-## 图片
-pictures 链接
-![纳斯塔霞](/hexoimg/idiot03.png)
-![food1](https://HiraethEcho.github.io/picgo/picx/food1.2liehtkrd640.webp)
+## 🌐 官方演示站
 
-## LaTex
+- [EvanNotFound's Blog](https://ohevan.com)
+- [Theme Redefine 演示站点](https://redefine.ohevan.com)
+- [Redefine 用户墙](https://redefine.ohevan.com/showcase)
 
-基于 MathJax 引擎：
+如果你也在使用 Redefine，欢迎在前往 [Redefine 用户墙](https://redefine.ohevan.com/showcase) 添加你的博客链接。
 
-$$
-\Gamma _ { \epsilon } ( x ) = [ 1- e ^ { - 2\pi \epsilon } ] ^ { 1- x } \prod _ { n = 0} ^ { \infty } \frac { 1- \operatorname{exp} ( - 2\pi \epsilon ( n + 1) ) } { 1- \operatorname{exp} ( - 2\pi \epsilon ( x + n ) ) }
-$$
+## ⛰️ 部分功能
 
-$$
-\left( \begin{array} c t ^ { \prime } \\ x ^ { \prime } \\ y ^ { \prime } \\ z ^ { \prime } \end{array} \right) = \left( \begin{array} { c c c c } { \gamma } & { - \gamma \beta } & { 0 } & { 0 } \\ { - \gamma \beta } & { \gamma } & { 0 } & { 0 } \\ { 0 } & { 0 } & { 1 } & { 0 } \\ { 0 } & { 0 } & { 0 } & { 1 } \end{array} \right) \left( \begin{array} c t \\ x \\ y \\ z \end{array} \right)
-$$
+- [笔记模块](https://redefine-docs.ohevan.com/modules/notes)
+- [友链样式](https://redefine-docs.ohevan.com/page_templates/friends)
+- [数学公式](https://redefine-docs.ohevan.com/plugins/mathjax)
+- 代码块语言显示
+- Light/Dark 模式切换
+- [Font Awesome 6.2.1 Pro](https://redefine-docs.ohevan.com/basic/fontawesome)（包含 Duotone/Regular/Thin 等不同样式）
+- [下拉菜单](https://redefine-docs.ohevan.com/dhome/navbar#%E9%93%BE%E6%8E%A5%E5%88%97%E8%A1%A8)
+- [可自定义页脚](https://redefine-docs.ohevan.com/footer)
+- [网站运行时间显示](https://redefine-docs.ohevan.com/footer#%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4)
+- [文章头图](https://redefine-docs.ohevan.com/article_customize/banner)
+- [Mermaid JS 支持](https://redefine-docs.ohevan.com/plugins/mermaid)
+- SEO 友好
+- [Aplayer 音乐播放器支持](https://redefine-docs.ohevan.com/plugins/aplayer)
+- [说说模块](https://redefine-docs.ohevan.com/shuoshuo)
+- [自定义字体](https://redefine-docs.ohevan.com/basic/global#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%AD%97%E4%BD%93)
+- Tailwind CSS 支持
 
-$$
-6 \mathrm { CO } _ { 2 } + 6 \mathrm { H } _ { 2 } \mathrm { O } \rightarrow \mathrm { C } _ { 6 } \mathrm { H } _ { 12 } \mathrm { O } _ { 6 } + 6 \mathrm { O } _ { 2 }
-$$
+## ☁️ 安装
 
-## 流程图
+如果你的 Hexo 版本在 `5.0` 及以上，推荐通过 `npm` 安装
 
-基于 mermaid 语法：
-
-```mermaid
-sequenceDiagram
-participant Alice
-participant Bob
-Alice->>John: Hello John, how are you?
-loop Healthcheck
-    John->>John: Fight against hypochondria
-end
-Note right of John: Rational thoughts <br/>prevail...
-John-->>Alice: Great!
-John->>Bob: How about you?
-Bob-->>John: Jolly good!
+```sh
+$ cd your-hexo-site
+$ npm install hexo-theme-redefine@latest
 ```
 
-```mermaid
-gantt
-dateFormat  YYYY-MM-DD
-title Adding GANTT diagram to mermaid
+或者使用 git 克隆
 
-section A section
-Completed task            :done,    des1, 2014-01-06,2014-01-08
-Active task               :active,  des2, 2014-01-09, 3d
-Future task               :         des3, after des2, 5d
-Future task2               :         des4, after des3, 5d
+```sh
+$ cd your-hexo-site
+$ git clone https://github.com/EvanNotFound/hexo-theme-redefine.git themes/redefine
 ```
 
-```mermaid
-classDiagram
-Class01 <|-- AveryLongClass : Cool
-Class03 *-- Class04
-Class05 o-- Class06
-Class07 .. Class08
-Class09 --> C2 : Where am i?
-Class09 --* C3
-Class09 --|> Class07
-Class07 : equals()
-Class07 : Object[] elementData
-Class01 : size()
-Class01 : int chimp
-Class01 : int gorilla
-Class08 <--> C2: Cool label
+安装完成后，在 Hexo 配置文件 `_config.yml` 中将 `theme` 设置为 `Redefine`。
+
+```yaml
+theme: redefine
 ```
 
-## 内置 Tag 插件
-
-内置了一些 Tag 插件，用于实现 Markdown 不容易生成的样式，具体使用方式请见 [用户指南](https://hexo.fluid-dev.com/docs/guide/#tag-%E6%8F%92%E4%BB%B6)。
 
 
-### 勾选框
+## ⏫ 更新
 
-{% cb 主要是解决一些 Renderer 不支持勾选, true %}
+Theme Redefine 经常发布新版本，你可以通过如下命令更新 Theme Redefine。
 
-### 按钮
+通过 `npm` 安装最新版本：
 
-{% btn javascript:;, 支持链接 %}
-
-### 组图
-
-{% gi 5 3-2 %}
-![](https://rmt.dogedoge.com/fetch/fluid/storage/hello-fluid/cover.png?w=480&fmt=webp)
-![](https://rmt.dogedoge.com/fetch/fluid/storage/hello-fluid/cover.png?w=480&fmt=webp)
-![](https://rmt.dogedoge.com/fetch/fluid/storage/hello-fluid/cover.png?w=480&fmt=webp)
-![](https://rmt.dogedoge.com/fetch/fluid/storage/hello-fluid/cover.png?w=480&fmt=webp)
-![](https://rmt.dogedoge.com/fetch/fluid/storage/hello-fluid/cover.png?w=480&fmt=webp)
-{% endgi %}
-
-
-### 愚人节：你的屏幕上有根头发
-
-<script>
-/***
- * 愚人节彩蛋 - 你屏幕上有根毛
- * 出处：https://www.baidu.com/s?ie=UTF-8&wd=%E6%84%9A%E4%BA%BA%E8%8A%82
- * 整理：mengkun https://mkblog.cn/
- */
-!function() {
-    var bottom = Math.floor(60 * Math.random()),
-        right = Math.floor(50 * Math.random()),
-        rotate = Math.floor(360 * Math.random());
-    var foolsEgg = document.createElement("img");
-    foolsEgg.src = "https://search-operate.cdn.bcebos.com/b028c278cbb84660f8bde79d819bc30b.png";
-    foolsEgg.style.position = "fixed"; 
-    foolsEgg.style.bottom = "".concat(bottom, "%");
-    foolsEgg.style.right = "".concat(right, "%"); 
-    foolsEgg.style.zIndex = "9999"; 
-    foolsEgg.style.pointerEvents = "none";
-    foolsEgg.style.width = "40%";
-    foolsEgg.style.maxWidth = "190px";
-    foolsEgg.style.transform = "".concat("rotate(", rotate, "deg)"); 
-    document.body.append(foolsEgg);
-} ();
-</script>
-
-```js
-<script>
-/***
- * 愚人节彩蛋 - 你屏幕上有根毛
- * 出处：https://www.baidu.com/s?ie=UTF-8&wd=%E6%84%9A%E4%BA%BA%E8%8A%82
- * 整理：mengkun https://mkblog.cn/
- */
-!function() {
-    var bottom = Math.floor(60 * Math.random()),
-        right = Math.floor(50 * Math.random()),
-        rotate = Math.floor(360 * Math.random());
-    var foolsEgg = document.createElement("img");
-    foolsEgg.src = "https://search-operate.cdn.bcebos.com/b028c278cbb84660f8bde79d819bc30b.png";
-    foolsEgg.style.position = "fixed";
-    foolsEgg.style.bottom = "".concat(bottom, "%");
-    foolsEgg.style.right = "".concat(right, "%");
-    foolsEgg.style.zIndex = "9999";
-    foolsEgg.style.pointerEvents = "none";
-    foolsEgg.style.width = "40%";
-    foolsEgg.style.maxWidth = "190px";
-    foolsEgg.style.transform = "".concat("rotate(", rotate, "deg)");
-    document.body.append(foolsEgg);
-} ();
-</script>
+```sh
+$ npm install hexo-theme-redefine@latest
 ```
+
+通过 `git` 更新到最新的 `main` 分支：
+
+```sh
+$ git clone https://github.com/EvanNotFound/hexo-theme-redefine.git themes/redefine
+```
+
+
+
+## 📄 文档
+
+请阅读 [Redefine 主题官方文档](https://redefine-docs.ohevan.com/) 进行主题配置与安装，非常简单易懂。
+
+## ☕ 支持
+
+欢迎 **pull request** 或者 提交 **issues**.
+
+如有问题，请发邮件到 [contact@ohevan.com](mailto:contact@ohevan.com). 我会及时回复
+
+如果你觉得主题还不错的话，欢迎给我 Github 点个 Star，谢谢。建议点个 Watch，以便及时获取主题更新。
+
+如果你在使用 [Typora](https://typora.io/) 编辑器写文章，欢迎查看我写的 [Typora Redefine 主题](https://github.com/EvanNotFound/typora-theme-redefine)，按照本 Hexo 主题样式编写，让你可以直接预览文章效果，更好排版。
+
+## 💗 赞助
+
+非常感谢所有赞助者的支持，你们的支持是我维护这个项目的动力。
+
+如果你觉得这个项目还不错，欢迎给我[买杯咖啡](https://github.com/EvanNotFound/hexo-theme-redefine/blob/dev/DONATION.md)，让我更有动力维护这个项目。
+
+所有赞助者名单：[赞助者名单](https://github.com/EvanNotFound/hexo-theme-redefine/blob/dev/DONATION.md)
+
+想要使用OpenAI GPT-4，但不想每月支付 20 美元吗？来看看 [GPT Plus Tokens](https://gpt.oknice.ca)！可以使用多达 100 个 ChatGPT Plus 账户！
+
+![CleanShot 2023-12-08 at 12 47 20@2x](https://github.com/EvanNotFound/hexo-theme-redefine/assets/68590232/b25196a1-3ba4-43bb-9d0f-e23d3527e6ff)
+
+## 🌟 Star 记录
+
+<a href="https://star-history.com/#EvanNotFound/hexo-theme-redefine&Date">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=EvanNotFound/hexo-theme-redefine&type=Date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=EvanNotFound/hexo-theme-redefine&type=Date" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=EvanNotFound/hexo-theme-redefine&type=Date" />
+  </picture>
+</a>
+
+## 💻 主题开发
+
+如果你想参与主题开发，请 `clone` 本项目的 `dev` 分支，然后在 `dev` 分支上进行开发。
+
+同时，请查看 [Redefine 主题开发文档](https://redefine-docs.ohevan.com/developer)。
