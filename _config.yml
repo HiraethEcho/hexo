@@ -116,7 +116,7 @@ search:
   limit: 1000
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: redefine
+theme: fluid
 # language: zh-CN
 
 # Security
