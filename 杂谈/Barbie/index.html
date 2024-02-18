@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    
+    <meta name="author" content="The Redefine Team">
+    <!-- preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="http://HiraethEcho.github.io/hexo/杂谈/barbie/"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    
+        <meta name="description" content="丰富但流于表面的内容，难以维持一致性和连贯性的情节，被商品化的批判">
+<meta property="og:type" content="article">
+<meta property="og:title" content="作为商品的《芭比》：一部不能更好的电影">
+<meta property="og:url" content="http://hiraethecho.github.io/hexo/%E6%9D%82%E8%B0%88/Barbie/index.html">
+<meta property="og:site_name" content="Hiraeth">
+<meta property="og:description" content="丰富但流于表面的内容，难以维持一致性和连贯性的情节，被商品化的批判">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-08-02T19:05:39.000Z">
+<meta property="article:modified_time" content="2023-10-24T15:59:00.000Z">
+<meta property="article:author" content="Hiraeth">
+<meta property="article:tag" content="影评">
+<meta property="article:tag" content="feminist">
+<meta name="twitter:card" content="summary">
+    
+    
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="/hexo/images/redefine-favicon.svg" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/hexo/images/redefine-favicon.svg">
+    <meta name="theme-color" content="#A31F34">
+    <link rel="shortcut icon" href="/hexo/images/redefine-favicon.svg">
+    <!--- Page Info-->
+    
+    <title>
+        
+            作为商品的《芭比》：一部不能更好的电影 -
+        
+        Theme Redefine
+    </title>
+
+    
+<link rel="stylesheet" href="/hexo/fonts/Chillax/chillax.css">
+
+
+    <!--- Inject Part-->
+    
+
+    
+        <style>
+    :root {
+        --preloader-background-color: #fff;
+        --preloader-text-color: #000;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --preloader-background-color: #202124;
+            --preloader-text-color: #fff;
+        }
+    }
+
+    @media (prefers-color-scheme: light) {
+        :root {
+            --preloader-background-color: #fff;
+            --preloader-text-color: #000;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .ml13 {
+            font-size: 2.6rem !important; /* Adjust this value as needed */
+        }
+    }
+
+    .preloader {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem; /* Tailwind 'gap-4' is 1rem */
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        padding: 12px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh; /* 'h-screen' is 100% of the viewport height */
+        background-color: var(--preloader-background-color);
+        z-index: 1100; /* 'z-[1100]' sets the z-index */
+        transition: opacity 0.2s ease-in-out;
+    }
+
+    .ml13 {
+        font-size: 3.2rem;
+        /* text-transform: uppercase; */
+        color: var(--preloader-text-color);
+        letter-spacing: -1px;
+        font-weight: 500;
+        font-family: 'Chillax-Variable', sans-serif;
+        text-align: center;
+    }
+
+    .ml13 .word {
+        display: inline-flex;
+        flex-wrap: wrap;
+        white-space: nowrap;
+    }
+
+    .ml13 .letter {
+        display: inline-block;
+        line-height: 1em;
+    }
+</style>
+
+<div class="preloader">
+    
+<script src="/hexo/js/libs/anime.min.js"></script>
+
+    <h1 class="ml13">
+        Theme Redefine
+    </h1>
+    <script>
+        var textWrapper = document.querySelector('.ml13');
+        // Split text into words
+        var words = textWrapper.textContent.trim().split(' ');
+
+        // Clear the existing content
+        textWrapper.innerHTML = '';
+
+        // Wrap each word and its letters in spans
+        words.forEach(function(word) {
+            var wordSpan = document.createElement('span');
+            wordSpan.classList.add('word');
+            wordSpan.innerHTML = word.replace(/\S/g, "<span class='letter'>$&</span>");
+            textWrapper.appendChild(wordSpan);
+            textWrapper.appendChild(document.createTextNode(' ')); // Add space between words
+        });
+
+
+        anime.timeline({loop: true})
+            .add({
+                targets: '.ml13 .letter',
+                translateY: [100,0],
+                translateZ: 0,
+                opacity: [0,1],
+                easing: "easeOutExpo",
+                duration: 1400,
+                delay: (el, i) => 300 + 30 * i
+            }).add({
+            targets: '.ml13 .letter',
+            translateY: [0,-100],
+            opacity: [1,0],
+            easing: "easeInExpo",
+            duration: 1200,
+            delay: (el, i) => 100 + 30 * i
+        });
+
+        let themeStatus = JSON.parse(localStorage.getItem('REDEFINE-THEME-STATUS'))?.isDark;
+
+        // If the theme status is not found in local storage, check the preferred color scheme
+        if (themeStatus === undefined || themeStatus === null) {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                themeStatus = 'dark';
+            } else {
+                themeStatus = 'light';
+            }
+        }
+
+        // Now you can use the themeStatus variable in your code
+        if (themeStatus) {
+            document.documentElement.style.setProperty('--preloader-background-color', '#202124');
+            document.documentElement.style.setProperty('--preloader-text-color', '#fff');
+        } else {
+            document.documentElement.style.setProperty('--preloader-background-color', '#fff');
+            document.documentElement.style.setProperty('--preloader-text-color', '#000');
+        }
+
+        window.addEventListener('load', function () {
+            hidePreloaderAfterTimeout(1000); // Hide after 1000 milliseconds once the window has loaded
+        });
+
+        // Backup failsafe: Hide preloader after a maximum of 5000 milliseconds, regardless of the window load event
+        hidePreloaderAfterTimeout(5000);
+
+        function hidePreloaderAfterTimeout(delay) {
+            setTimeout(function () {
+                var preloader = document.querySelector('.preloader');
+                preloader.style.opacity = '0';
+                setTimeout(function () {
+                    preloader.style.display = 'none';
+                }, 200);
+            }, delay);
+        }
+    </script>
+</div>
+    
+
+    
+<link rel="stylesheet" href="/hexo/css/style.css">
+
+
+    
+        
+<link rel="stylesheet" href="/hexo/assets/build/styles.css">
+
+    
+
+    
+<link rel="stylesheet" href="/hexo/fonts/fonts.css">
+
+    
+<link rel="stylesheet" href="/hexo/fonts/Satoshi/satoshi.css">
+
+    <!--- Font Part-->
+    
+    
+    
+    
+
+
+    <script id="hexo-configurations">
+    window.config = {"hostname":"hiraethecho.github.io","root":"/hexo/","language":"en","path":"search.json"};
+    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"title_alignment":"left","headings_top_spacing":{"h1":"5rem","h2":"4rem","h3":"2.8rem","h4":"2.5rem","h5":"2.2rem","h6":"2rem"}},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":false,"list":[]},"code_block":{"copy":true,"style":"mac","font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":{"enable":true,"default":"cc_by_nc_sa"},"lazyload":true,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null,"default_mode":"light"},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"website_counter":{"url":"https://cn.vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":true,"open_graph":true,"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"Theme Redefine","subtitle":{"text":[],"hitokoto":{"enable":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":false,"style":"default","links":{"github":null,"instagram":null,"zhihu":null,"twitter":null,"email":null},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":null,"artist":null,"url":null,"cover":null,"lrc":null}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.6.1","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"width":{"home":"1200px","pages":"1000px"},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"}},"search":{"enable":false,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":null,"show_on_mobile":true,"links":null},"article_date_format":"auto","categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2022/8/17 11:45:14"};
+    window.lang_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+    window.data = {"masonry":true};
+  </script>
+    
+    <!--- Fontawesome Part-->
+    
+<link rel="stylesheet" href="/hexo/fontawesome/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/hexo/fontawesome/brands.min.css">
+
+    
+<link rel="stylesheet" href="/hexo/fontawesome/solid.min.css">
+
+    
+<link rel="stylesheet" href="/hexo/fontawesome/regular.min.css">
+
+    
+    
+    
+    
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/hexo/atom.xml" title="Hiraeth" type="application/atom+xml">
+</head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+<!--        <span class="swup-progress-icon">-->
+<!--            <i class="fa-solid fa-circle-notch fa-spin"></i>-->
+<!--        </span>-->
+    
+</div>
+
+
+<main class="page-container" id="swup">
+
+    
+
+    <div class="main-content-container">
+
+
+        <div class="main-content-header">
+            <header class="navbar-container px-6 md:px-12">
+
+    <div class="navbar-content ">
+        <div class="left">
+            
+            <a class="logo-title" href="/hexo/">
+                
+                Theme Redefine
+                
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="desktop">
+                <ul class="navbar-list">
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/hexo/"
+                                        >
+                                    <i class="fa-regular fa-house fa-fw"></i>
+                                    HOME
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                <div class="icon-item navbar-bar">
+                    <div class="navbar-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile sheet -->
+    <div class="navbar-drawer h-screen w-full absolute top-0 left-0 bg-background-color flex flex-col justify-between">
+        <ul class="drawer-navbar-list flex flex-col px-4 justify-center items-start">
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/hexo/"
+                        >
+                            <span>
+                                HOME
+                            </span>
+                            
+                                <i class="fa-regular fa-house fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+
+            
+            
+        </ul>
+
+        <div class="statistics flex justify-around my-2.5">
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/hexo/tags">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">21</div>
+        <div class="label text-third-text-color text-sm">Tags</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/hexo/categories">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">5</div>
+        <div class="label text-third-text-color text-sm">Categories</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/hexo/archives">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">28</div>
+        <div class="label text-third-text-color text-sm">Posts</div>
+    </a>
+</div>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="main-content-body">
+
+            
+
+            <div class="main-content">
+
+                
+                    <div class="post-page-container flex relative justify-between box-border w-full h-full">
+    <div class="article-content-container">
+
+        <div class="article-title relative w-full">
+            
+                <div class="w-full flex items-center pt-6 justify-start">
+                    <h1 class="article-title-regular text-second-text-color text-4xl md:text-6xl font-bold px-2 sm:px-6 md:px-8 py-3">作为商品的《芭比》：一部不能更好的电影</h1>
+                </div>
+            
+            </div>
+
+        
+            <div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
+                <div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
+                    <img src="/hexo/images/redefine-avatar.svg">
+                </div>
+                <div class="info flex flex-col justify-between">
+                    <div class="author flex items-center">
+                        <span class="name text-default-text-color text-lg font-semibold">The Redefine Team</span>
+                        
+                            <span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1">Lv3</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2023-08-03 03:05:39</span>
+        <span class="mobile">2023-08-03 03:05:39</span>
+        <span class="hover-info">Created</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2023-10-24 23:59</span>
+            <span class="mobile">2023-10-24 23:59</span>
+            <span class="hover-info">Updated</span>
+        </span>
+    
+
+    
+        <span class="article-categories article-meta-item">
+            <i class="fa-regular fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/hexo/categories/%E6%9D%82%E8%B0%88/">杂谈</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/hexo/tags/%E5%BD%B1%E8%AF%84/">影评</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/hexo/tags/feminist/">feminist</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        
+
+
+        <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
+            <h1 id="作为商品的《芭比》：一部不能更好的电影"><a href="#作为商品的《芭比》：一部不能更好的电影" class="headerlink" title="作为商品的《芭比》：一部不能更好的电影"></a>作为商品的《芭比》：一部不能更好的电影</h1><p>&emsp;&emsp;这是一个商品；这是一部不能更好的电影。</br></p>
+<p>&emsp;&emsp;假如把观众观感分为激进派和温和派，激进派认为电影强烈地表达女性的困境、表达先进的女权运动、平权思想和存在主义，那么我属于温和派：我认为这样的表达太温和了。</p>
+<p class="note note-info">（剧透警告，虽然剧透也不影响观感）</p>
+
+<h2 id="对电影本身的影评"><a href="#对电影本身的影评" class="headerlink" title="对电影本身的影评"></a>对电影本身的影评</h2><p>&emsp;&emsp;作为一部电影本身，从叙事角度，很一般甚至于糟糕；从视听效果，很具风格化和喜剧效果，所以观感不错，整体好评。</p>
+<h3 id="整体影评"><a href="#整体影评" class="headerlink" title="整体影评"></a>整体影评</h3><p>&emsp;&emsp;故事的剧情相当简单，从幻想世界Barbie land的芭比和肯来到现实世界，芭比陷入存在主义危机但也结识了一对母子，而肯接触了父权制；回到芭比乐园的肯洗脑芭比进而推行父权制，又被回来的芭比反洗脑并夺回乐园。最后双方都有所成长，芭比成为真实的人，而肯成为他自己而不是芭比的附属。<br>&emsp;&emsp;如果了解<code>英雄之旅</code>的十二阶段，可以发现《芭比》的故事相当标准。既然是个相当经典的故事模板，那么为什么还说它的叙事一般甚至糟糕呢？我的理由是，剧情推进生硬，和角色形象的不同一不连贯。这部电影并不是塑造角色形象的剧情片，不是靠情节来塑造人物，进而表达核心思想的。相反，这部电影的直接目的就是输出观点，是靠剧情来推动人物的。每一个角色的形象都相当直接，如同npc一样发挥着作用，把剧情推向下一步，像做任务一样说台词和做事情。因为角色的塑造“浅薄”，剧情的推进动机其实并不强烈。注意，这里说的是<strong>塑造</strong>浅薄，而不是说角色本身浅薄扁平。角色有复杂的内涵，用于在剧情推进中实现不同功能，但是电影的塑造并不能使人信服。甚至，角色过于丰富的功能反而导致了不连贯、不同一和突兀。</br><br>&emsp;&emsp;另一方面，虽然在剧情上有这样严重的问题，这部电影的观感并不差。这依赖于两方面：其一是视听风格，包括Barbie Land 的色彩质感、浮夸滑稽和动画化的动作、宝莱坞式歌舞片、对经典影片meme式的玩梗和一些确实挺好笑的笑话（这个可能有些主观）；其二是，非常聪明地使用了影片外观影者的共情（和无法共情），于是一些人会感动落泪，另一些会“破防”而被嘲笑。</p>
+<h3 id="对具体情节的讨论"><a href="#对具体情节的讨论" class="headerlink" title="对具体情节的讨论"></a>对具体情节的讨论</h3><p>&emsp;&emsp;接下类结合具体的剧情来展开讲讲上面的评价。首先来说说角色塑造的问题。<br>&emsp;&emsp;首先感受最强烈的是角色<strong>肯</strong>的不连贯性，这是个巨大的问题。一方面，肯在芭比乐园是“二等公民”，是作为芭比的附属的存在。这样的定位显然是尝试把芭比乐园和现实世界作为“镜像对称”，来讽刺和强调现实世界女性处于的被压迫处境。然而，肯在现实世界接触父权制后又在芭比乐园实现了洗脑与统治，这时候他似乎又确实象征了现实中的男性和父权制统治。紧接着，芭比返回“肯道场”，以及反被芭比夺回乐园后，肯又声称“知道父权制和马没什么关系之后没有兴趣”，以及他做这些本质上还是为了获得芭比芳心，并且认为自己只是Barbie and ken 中的 <strong>and ken</strong>.最后在芭比的“教导”下明白了“Ken is me”这样的<u>存在先于本质</u>的存在主义中心思想开始做Kenough的自己。那么试问，这样的角色形象，究竟象征了哪个群体、反映了什么问题、表达了什么观点？答案是他就是个工具人，在剧情的不同阶段做不同的事，象征不同的群体、反映不同的问题。除了高司令油而不腻的表演外，这个角色可以说是大失败。<br>类似的不一致不连贯的角色还有很多。例如女儿的角色，在出场时显然是版本比较新的女性主义代表，对着芭比一顿输出。在较前面的剧情里，她和母亲似乎是有一些矛盾，然而后续莫名其妙的和解了，还和母亲“共同战线”一般“杀”回芭比乐园，相当突兀。（不过这里观感并不糟糕，因为观众大多可以共情到母女矛盾这样的设定，即使电影本身并没有阐述，而是几乎完全的留白。）<br>&emsp;&emsp;再例如以总统芭比为代表的其他芭比。正如女儿对主角芭比的批评一样，过去完美形象的芭比虽然初衷是告诉女性“你们可以成为任何人”，然而渐渐成为男性凝视的体现，成为对女性的完美要求，成为“新时代法西斯”。更重要的是，这些芭比仅仅在芭比乐园是这样的芭比，她们并没有体现相应的配得上的成就。电影中提到，芭比宇航员比现实中的宇航员更早上月球，这在我看来简直是一种讽刺：这种幻想的成就在现实生活中并没有被实现，甚至还差得很远，这像是女性的某种阿Q式精神胜利法，又像是父权制下男性（父权）对女性施舍一般的“绥靖”。总统芭比、诺贝尔奖芭比等等，实在名不副实。这样的塑造其实并没有太大问题，如果电影就想表达、讽刺这样的跟不上时代的女性主义浪潮。在被肯统治下，总统芭比（或者另一个）指出，这种“堕落”的什么都不用想的体验非常好，仿佛全天的脑部spa（记不清太次了差不多这么个意思），这显然是想表达波伏娃关于女性“向下的自由”的看法：</p>
+<blockquote>
+<p>“男人的幸运——在成年时和小时候——就在于别人迫使他踏上最艰苦但也最可靠的道路。女人的不幸就在于她受到几乎不可抗拒的诱惑包围，一切都促使她走上容易走的斜坡：人们非但不鼓励她奋斗，反而对她说，她只要听之任之滑下去，就会到达极乐的天堂：当她发觉受到海市蜃楼的欺骗时，为时已晚：她的力量在这种冒险中已经消耗殆尽。”</p>
+</blockquote>
+<p>然而，最终这些芭比们却是正面形象。更滑稽的是，她们正面形象的高光时刻，夺回乐园，居然是使用美色和利用（作为刻板印象的）男性争风吃醋、自大说教。至于前面关于“向下滑去”的困境却丝毫不提：如何说服我们，芭比（和女性）不应该选择这样的“滑下去”的“天堂”呢？我真搞不清电影想讽刺还是赞美这样的女性了。<br>除此之外，还有很多角色十分混乱。例如美泰的老板，作为父权制的象征，在芭比乐园莫名其妙说“作为领导者非常疲惫并不想如此”（类似的话肯也说过），这是为父权制的狡辩吗？他还声称这是一次“存在主义危机”，这实在是太莫名其妙了。</p>
+<p>&emsp;&emsp;<strong>接下来是剧情生硬推进的部分。</strong>首先最严重的问题，就是反洗脑的部分，这一段对于电影本身来说是伤害巨大的情节。反洗脑的方式是，现实世界的母亲，对着芭比一通输出，表明女性<strong>在现实世界</strong>的困境。这段陈述（控诉）的中心思想是，女性被要求成为完美的女性。这个情节巨大的问题就是，芭比们本来就是完美的女性，她们根本没有经历现实女性的困境，她们沦为肯的附属是因为她们可以享受“堕落”的幸福。通过这样的反洗脑来使芭比觉醒，毫无说服力，甚至可以说是非常愚蠢，以至于我觉得这其实是一个讽刺。不可否认的是，这一段也是相当出圈和受好评的部分，这是因为它确实反映了现实的问题，可以实在地引起观众的共鸣。这也正是这部电影狡猾的部分。<br>紧接着就是芭比夺回乐园的过程，集中体现了对女性和男性的刻板印象。这似乎同样是一个讽刺，甚至在幻想世界里，女性都不能其自身的优秀品质来获得成功，而是通过挑拨离间男性。难道在现实世界的女权运动也要中这种方式夺权吗？这一段在我看来如同《黑豹》中高科技瓦坎达谨慎用高科技长矛肉搏一样，是一个表面赞美实则嘲笑的种族歧视一般的糟糕设计。唯一的解释就是，导演也不知道怎么实现平权，只能搞笑一下，混过去而已。<br>下一个我认为严重的问题，就是两处重要的煽情片段。其一是芭比在现实世界尝试感知和她相关的女孩，并在结束后对一位老人说：“You’re beautiful”，另一处是结尾时芭比思考是否要成为真实人类的各种片段剪辑蒙太奇。这两处似乎是许多影评声称“感动到落泪”的片段，但我觉得效果并不好。这样的手法我是熟悉的，在尝试煽情的片段的一开始我就猜到了想要达到的效果，但我认为效果一般。主要原因在于，它想要表达的主题、它实际表达的主题和电影当时剧情的主题，并不一致。另外，这种温柔的、严肃的抒情，和整部电影的气质节奏是割裂的，也导致一种出戏的感觉。在此我想给出的正面例子是《攻壳机动队》95剧场版素子潜水后的一系列空镜，和《无罪》中巴特和陀古萨到北方后的那段镜头。这一段能够出圈和获得好评，在我看来主要还是靠部分观众出色的联系自身丰富情感的共情能力，而不是电影本身的优秀。</p>
+<h2 id="电影之外：作为商品的《芭比》"><a href="#电影之外：作为商品的《芭比》" class="headerlink" title="电影之外：作为商品的《芭比》"></a>电影之外：作为商品的《芭比》</h2><p>&emsp;&emsp;虽然作为电影本身我的评价以负面为主，但是这部电影的主要意义在于电影之外，或者说在于它处于现实世界中的位置和影响。它仿佛某种互动式的装置艺术，需要观众、主演甚至制片方、宣发和美泰公司（和《奥本海默》）的互动才成为完整的整体，才是实际上应该被评价的主体。<br>可惜的是（因为可能会被反对所以这么说也是危险的），从电影之外来看，我的评价也是负面大于正面的。我给出负面评价的原因是，《芭比》是一个“商品”。这并不是简单的说它是一部商业电影，而是说它是资本主义和现代工艺化下，一个目的是被消费的“商品”。</p>
+<p>&emsp;&emsp;这部电影的中心是丰富的观点，包括母亲所体现的较早版本的女性主义、女儿体现的较新版本的女性主义、美泰为代表的父权制、芭比初来现实世界遇到的男性凝视、结尾的存在主义等。然而电影并没有认真探讨这些问题，而是简单都罗列、生硬地拼凑，把这些观点作为卖点出售。电影根本不打算深入思考这些问题，思考它们的成因或者解决办法，也没有严肃地塑造角色形象来表现；相反，可以说电影的主要目的就是为了用话题来挑起讨论。对于一些肤浅的女性，看一部这样的电影感动一下再控诉一下，就仿佛觉醒了一般；对于一些男性，陪女朋友去看电影简直成了“电子赎罪券”，但凡流露出些许反对就被一些极端观众打为“破防男”。众多影评up主倾巢出动，然而略微翻看就发现鲜有对电影自身的叙事和视听的分析，而着重于女性叙事、存在主义乃至阶级斗争的话题。于是，电影的目的成了“被消费”，而不是表达自我，不是“成为它自己”。</br></p>
+<p>&emsp;&emsp;回到标题，这是一部不能更好的电影。这是因为，当下的处境，正是父权制、消费主义和资本主义大行其道的时代。导演的作品除此之外我只看过《婚姻故事》，但足以说明导演有充分的能力来表达和探讨一个深刻的主题，而不是这样流于表面陈列。那么只有一个原因：导演选择如此，她选择用这样娱乐化的浅显的方式来表达。这让我想起《黑客帝国4》，前三部正在讽刺虚幻的消费主义幻觉，而第四部直接在电影中调侃自己：“不管你想不想，我们的母公司华纳都要开发第四部”。一部顶级烂片，不断地重复自己、强行致敬，把自己开创的经典的子弹时间像烂大街的破烂一样扔在自己身上，把对艺术的追求抛之脑后，然后贩卖情怀。在这样的语境下，“不能更好”并不是赞美，也不是批评，只是诉说一种无奈：《芭比》已经努力表达了许多观点，但是做不到更多了。更严肃、深刻、尖锐、有效的批判，无法被售卖。反抗和革新似乎不是电影的责任。</p>
+<p>&emsp;&emsp;当真如此吗，反抗不是艺术的责任？这样的问题当然不是这样一个影评应该或能够回答的。但至少我可以在此提问，如何反抗、谁来反抗？</p>
+<blockquote>
+<p>过去资本家出售绞死他们的绳子，现在他们出售这样表演的门票。 ———— 我自己说的</p>
+</blockquote>
+<p>在技术化与资本主义狼狈为奸的时代，借由劳动和人的异化，借由人的单向度化，人们对父权制和资本的反抗，反而成为巩固其统治的手段。换句话数，吊诡的是，所有被看到的反抗和批判，尤其是在影视作品中的反抗，恰好是“被容许的批判”。这种实质上无关痛痒的批判，正满足了一部分人的幻想，获得阿Q式的精神胜利。沉迷于这样的胜利当中，沉迷于进步的幻觉当中，我们反而正一步步陷入被控制的泥沼当中。</p>
+<p><em>（这一段我使用了大量我不理解的词汇，用了我也不知道在比喻什么的比喻。这大概是一种无知的自卑导致的伪装。等我努力看完《单向度的人》我一定好好写写这一段。）</em></p>
+<p class="note note-info">《单向度的人》看完了也写了，但是没写清楚</p>
+
+<p><a href="/hexo/%E6%9D%82%E8%B0%88/one-dimensional-man">这里</a> 是《单向度的人》的博客。</p>
+
+        </div>
+
+        
+            <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
+                <div class="article-copyright-info-container">
+    <ul>
+        <li><strong>Title:</strong> 作为商品的《芭比》：一部不能更好的电影</li>
+        <li><strong>Author:</strong> The Redefine Team</li>
+        <li><strong>Created at
+                :</strong> 2023-08-03 03:05:39</li>
+        
+            <li>
+                <strong>Updated at
+                    :</strong> 2023-10-24 23:59:00
+            </li>
+        
+        <li>
+            <strong>Link:</strong> https://redefine.ohevan.com/杂谈/Barbie/
+        </li>
+        <li>
+            <strong>
+                License:
+            </strong>
+            
+
+            
+                This work is licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a>.
+            
+        </li>
+    </ul>
+</div>
+
+            </div>
+        
+
+        
+            <ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
+                
+                    <li class="tag-item mx-0.5">
+                        <a href="/hexo/tags/%E5%BD%B1%E8%AF%84/">#影评</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item mx-0.5">
+                        <a href="/hexo/tags/feminist/">#feminist</a>&nbsp;
+                    </li>
+                
+            </ul>
+        
+
+        
+
+        
+            <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
+                
+                    <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="prev"
+                        rel="prev"
+                        href="/hexo/%E6%9D%82%E8%B0%88/fire-of-love/"
+                        >
+                            <span class="left arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">跃入永恒的爱情</span>
+                                <span class="post-nav-item">Prev posts</span>
+                            </span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="next"
+                        rel="next"
+                        href="/hexo/%E6%B2%89%E6%80%9D/free-and-death/"
+                        >
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">若自杀不自由，则生存不勇敢</span>
+                                <span class="post-nav-item">Next posts</span>
+                            </span>
+                            <span class="right arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+
+        
+            <div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
+                <div class="comments-container mt-10 w-full ">
+    <div id="comment-anchor" class="w-full h-2.5"></div>
+    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
+        Comments
+    </div>
+    
+
+        
+            
+    <div id="waline"></div>
+    <script type="module" data-swup-reload-script>
+      import { init } from '/hexo/js/libs/waline.mjs';
+
+      function loadWaline() {
+        init({
+          el: '#waline',
+          serverURL: 'https://example.example.com',
+          lang: 'zh-CN',
+          dark: 'body[class~="dark-mode"]',
+          requiredMeta: ['nick', 'mail'],
+          emoji: [],
+          recaptchaV3Key: "wasd",
+          
+        });
+      }
+
+      if (typeof swup !== 'undefined') {
+        loadWaline();
+      } else {
+        window.addEventListener('DOMContentLoaded', loadWaline);
+      }
+    </script>
+
+
+
+        
+    
+</div>
+
+            </div>
+        
+    </div>
+
+    
+        <div class="toc-content-container">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">On this page</div>
+        <div class="page-title">作为商品的《芭比》：一部不能更好的电影</div>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BD%9C%E4%B8%BA%E5%95%86%E5%93%81%E7%9A%84%E3%80%8A%E8%8A%AD%E6%AF%94%E3%80%8B%EF%BC%9A%E4%B8%80%E9%83%A8%E4%B8%8D%E8%83%BD%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%B5%E5%BD%B1"><span class="nav-text">作为商品的《芭比》：一部不能更好的电影</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AF%B9%E7%94%B5%E5%BD%B1%E6%9C%AC%E8%BA%AB%E7%9A%84%E5%BD%B1%E8%AF%84"><span class="nav-text">对电影本身的影评</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B4%E4%BD%93%E5%BD%B1%E8%AF%84"><span class="nav-text">整体影评</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%B9%E5%85%B7%E4%BD%93%E6%83%85%E8%8A%82%E7%9A%84%E8%AE%A8%E8%AE%BA"><span class="nav-text">对具体情节的讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%B5%E5%BD%B1%E4%B9%8B%E5%A4%96%EF%BC%9A%E4%BD%9C%E4%B8%BA%E5%95%86%E5%93%81%E7%9A%84%E3%80%8A%E8%8A%AD%E6%AF%94%E3%80%8B"><span class="nav-text">电影之外：作为商品的《芭比》</span></a></li></ol></li></ol>
+
+    </div>
+</div>
+        </div>
+    
+</div>
+
+
+
+                
+
+            </div>
+
+            
+
+        </div>
+
+        <div class="main-content-footer">
+            <footer class="footer mt-5 py-5 h-auto text-base text-third-text-color relative border-t-2 border-t-border-color">
+    <div class="info-container py-3 text-center">
+        
+        <div class="text-center">
+            &copy;
+            
+              <span>2022</span>
+              -
+            
+            2024&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/hexo/">The Redefine Team</a>
+            
+                
+                <p class="post-count space-x-0.5">
+                    <span>
+                        28 posts in total
+                    </span>
+                    
+                </p>
+            
+        </div>
+        
+            <script data-swup-reload-script src="https://cn.vercount.one/js"></script>
+            <div class="relative text-center lg:absolute lg:right-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-right">
+                
+                    <span id="busuanzi_container_site_uv" class="lg:!block">
+                        <span class="text-sm">VISITOR COUNT</span>
+                        <span id="busuanzi_value_site_uv"></span>
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv" class="lg:!block">
+                        <span class="text-sm">TOTAL PAGE VIEWS</span>
+                        <span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="relative text-center lg:absolute lg:left-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-left">
+            <span class="lg:block text-sm">POWERED BY <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="relative top-[2px] inline-block align-baseline" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" class="text-base" href="https://hexo.io">Hexo</a></span>
+            <span class="text-sm lg:block">THEME&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.6.1</a></span>
+        </div>
+        
+        
+            <div>
+                Blog up for <span class="odometer" id="runtime_days" ></span> days <span class="odometer" id="runtime_hours"></span> hrs <span class="odometer" id="runtime_minutes"></span> Min <span class="odometer" id="runtime_seconds"></span> Sec
+            </div>
+        
+        
+            <script data-swup-reload-script>
+                try {
+                    function odometer_init() {
+                    const elements = document.querySelectorAll('.odometer');
+                    elements.forEach(el => {
+                        new Odometer({
+                            el,
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    });
+                    }
+                    odometer_init();
+                } catch (error) {}
+            </script>
+        
+        
+        
+    </div>  
+</footer>
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="article-tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+            <li class="go-comment">
+                <i class="fa-regular fa-comments"></i>
+            </li>
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-side-tools-container">
+        <div class="side-tools-container">
+    <ul class="hidden-tools-list">
+        <li class="right-bottom-tools tool-font-adjust-plus flex justify-center items-center">
+            <i class="fa-regular fa-magnifying-glass-plus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-font-adjust-minus flex justify-center items-center">
+            <i class="fa-regular fa-magnifying-glass-minus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-dark-light-toggle flex justify-center items-center">
+            <i class="fa-regular fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+
+        <li class="right-bottom-tools tool-scroll-to-bottom flex justify-center items-center">
+            <i class="fa-regular fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="visible-tools-list">
+        <li class="right-bottom-tools toggle-tools-list flex justify-center items-center">
+            <i class="fa-regular fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="right-bottom-tools tool-scroll-to-top flex justify-center items-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+
+</main>
+
+
+    
+<script src="/hexo/js/libs/Swup.min.js"></script>
+
+<script src="/hexo/js/libs/SwupSlideTheme.min.js"></script>
+
+<script src="/hexo/js/libs/SwupScriptsPlugin.min.js"></script>
+
+<script src="/hexo/js/libs/SwupProgressPlugin.min.js"></script>
+
+<script src="/hexo/js/libs/SwupScrollPlugin.min.js"></script>
+
+<script src="/hexo/js/libs/SwupPreloadPlugin.min.js"></script>
+
+<script>
+    const swup = new Swup({
+        plugins: [
+            new SwupScriptsPlugin({
+                optin: true,
+            }),
+            new SwupProgressPlugin(),
+            new SwupScrollPlugin({
+                offset: 80,
+            }),
+            new SwupSlideTheme({
+                mainElement: ".main-content-body",
+            }),
+            new SwupPreloadPlugin(),
+        ],
+        containers: ["#swup"],
+    });
+</script>
+
+
+
+
+
+
+
+<script src="/hexo/js/tools/imageViewer.js" type="module"></script>
+
+<script src="/hexo/js/utils.js" type="module"></script>
+
+<script src="/hexo/js/main.js" type="module"></script>
+
+<script src="/hexo/js/layouts/navbarShrink.js" type="module"></script>
+
+<script src="/hexo/js/tools/scrollTopBottom.js" type="module"></script>
+
+<script src="/hexo/js/tools/lightDarkSwitch.js" type="module"></script>
+
+<script src="/hexo/js/layouts/categoryList.js" type="module"></script>
+
+
+
+
+
+    
+<script src="/hexo/js/tools/codeBlock.js" type="module"></script>
+
+
+
+
+    
+<script src="/hexo/js/layouts/lazyload.js" type="module"></script>
+
+
+
+
+    
+<script src="/hexo/js/tools/runtime.js"></script>
+
+    
+<script src="/hexo/js/libs/odometer.min.js"></script>
+
+    
+<link rel="stylesheet" href="/hexo/assets/odometer-theme-minimal.css">
+
+
+
+
+  
+<script src="/hexo/js/libs/Typed.min.js"></script>
+
+  
+<script src="/hexo/js/plugins/typed.js" type="module"></script>
+
+
+
+
+
+
+    
+<script src="/hexo/js/libs/minimasonry.min.js"></script>
+
+    
+<script src="/hexo/js/plugins/masonry.js" type="module"></script>
+
+
+
+
+
+<div class="post-scripts" data-swup-reload-script>
+    
+        
+<script src="/hexo/js/tools/tocToggle.js" type="module"></script>
+
+<script src="/hexo/js/layouts/toc.js" type="module"></script>
+
+<script src="/hexo/js/plugins/tabs.js" type="module"></script>
+
+    
+</div>
+
+
+<!-- hexo injector body_end start -->
+  <script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/hexo-github-calendar@1.21/hexo_githubcalendar.js"></script>
+  <script data-pjax>
+        function GithubCalendarConfig(){
+            var git_githubapiurl ="https://python-github-calendar-api.vercel.app/api?HiraethEcho";
+            var git_color =['#ebedf0', '#fdcdec', '#fc9bd9', '#fa6ac5', '#f838b2', '#f5089f', '#c4067e', '#92055e', '#540336', '#48022f', '#30021f'];
+            var git_user ="HiraethEcho";
+            var parent_div_git = document.getElementById('recent-posts');
+            var git_div_html = '<div class="recent-post-item" style="width:100%;height:auto;padding:10px;"><div id="github_loading" style="width:10%;height:100%;margin:0 auto;display: block"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 50 50" style="enable-background:new 0 0 50 50" xml:space="preserve"><path fill="#d0d0d0" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(275.098 25 25)"><animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animateTransform></path></svg></div><div id="github_container"></div></div>';
+            if(parent_div_git && location.pathname =='/about/'){
+                console.log('已挂载github calendar')
+                // parent_div_git.innerHTML=git_div_html+parent_div_git.innerHTML // 无报错，但不影响使用(支持pjax跳转)
+                parent_div_git.insertAdjacentHTML("afterbegin",git_div_html) // 有报错，但不影响使用(支持pjax跳转)
+            };
+            GithubCalendar(git_githubapiurl,git_color,git_user)
+        }
+        if(document.getElementById('recent-posts')){
+            GithubCalendarConfig()
+        }
+    </script>
+    <style>#github_container{min-height:280px}@media screen and (max-width:650px) {#github_container{background-image:;min-height:0px}}</style>
+    <style></style><!-- hexo injector body_end end --></body>
+</html>

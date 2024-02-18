@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    
+    <meta name="author" content="The Redefine Team">
+    <!-- preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="http://HiraethEcho.github.io/hexo/about/"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    
+        <meta name="description" content="关于本站这是我的个人博客，是我的学术主页和知识wiki（这两个都没认真搭建）外的，或者说我的“主业”之外的我自己。 关于小站名字（同时也是我大部分网络id）的解释：  Hiraeth: (n.) homesickness to a home to which you cannot return: the grief of the lost places of your past.   分类 cat">
+<meta property="og:type" content="website">
+<meta property="og:title" content="about">
+<meta property="og:url" content="http://hiraethecho.github.io/hexo/about/index.html">
+<meta property="og:site_name" content="Hiraeth">
+<meta property="og:description" content="关于本站这是我的个人博客，是我的学术主页和知识wiki（这两个都没认真搭建）外的，或者说我的“主业”之外的我自己。 关于小站名字（同时也是我大部分网络id）的解释：  Hiraeth: (n.) homesickness to a home to which you cannot return: the grief of the lost places of your past.   分类 cat">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-06-21T07:08:24.000Z">
+<meta property="article:modified_time" content="2024-02-14T09:26:55.607Z">
+<meta property="article:author" content="Hiraeth">
+<meta name="twitter:card" content="summary">
+    
+    
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="/hexo/images/redefine-favicon.svg" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/hexo/images/redefine-favicon.svg">
+    <meta name="theme-color" content="#A31F34">
+    <link rel="shortcut icon" href="/hexo/images/redefine-favicon.svg">
+    <!--- Page Info-->
+    
+    <title>
+        
+            About -
+        
+        Theme Redefine
+    </title>
+
+    
+<link rel="stylesheet" href="/hexo/fonts/Chillax/chillax.css">
+
+
+    <!--- Inject Part-->
+    
+
+    
+        <style>
+    :root {
+        --preloader-background-color: #fff;
+        --preloader-text-color: #000;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --preloader-background-color: #202124;
+            --preloader-text-color: #fff;
+        }
+    }
+
+    @media (prefers-color-scheme: light) {
+        :root {
+            --preloader-background-color: #fff;
+            --preloader-text-color: #000;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .ml13 {
+            font-size: 2.6rem !important; /* Adjust this value as needed */
+        }
+    }
+
+    .preloader {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem; /* Tailwind 'gap-4' is 1rem */
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        padding: 12px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh; /* 'h-screen' is 100% of the viewport height */
+        background-color: var(--preloader-background-color);
+        z-index: 1100; /* 'z-[1100]' sets the z-index */
+        transition: opacity 0.2s ease-in-out;
+    }
+
+    .ml13 {
+        font-size: 3.2rem;
+        /* text-transform: uppercase; */
+        color: var(--preloader-text-color);
+        letter-spacing: -1px;
+        font-weight: 500;
+        font-family: 'Chillax-Variable', sans-serif;
+        text-align: center;
+    }
+
+    .ml13 .word {
+        display: inline-flex;
+        flex-wrap: wrap;
+        white-space: nowrap;
+    }
+
+    .ml13 .letter {
+        display: inline-block;
+        line-height: 1em;
+    }
+</style>
+
+<div class="preloader">
+    
+<script src="/hexo/js/libs/anime.min.js"></script>
+
+    <h1 class="ml13">
+        Theme Redefine
+    </h1>
+    <script>
+        var textWrapper = document.querySelector('.ml13');
+        // Split text into words
+        var words = textWrapper.textContent.trim().split(' ');
+
+        // Clear the existing content
+        textWrapper.innerHTML = '';
+
+        // Wrap each word and its letters in spans
+        words.forEach(function(word) {
+            var wordSpan = document.createElement('span');
+            wordSpan.classList.add('word');
+            wordSpan.innerHTML = word.replace(/\S/g, "<span class='letter'>$&</span>");
+            textWrapper.appendChild(wordSpan);
+            textWrapper.appendChild(document.createTextNode(' ')); // Add space between words
+        });
+
+
+        anime.timeline({loop: true})
+            .add({
+                targets: '.ml13 .letter',
+                translateY: [100,0],
+                translateZ: 0,
+                opacity: [0,1],
+                easing: "easeOutExpo",
+                duration: 1400,
+                delay: (el, i) => 300 + 30 * i
+            }).add({
+            targets: '.ml13 .letter',
+            translateY: [0,-100],
+            opacity: [1,0],
+            easing: "easeInExpo",
+            duration: 1200,
+            delay: (el, i) => 100 + 30 * i
+        });
+
+        let themeStatus = JSON.parse(localStorage.getItem('REDEFINE-THEME-STATUS'))?.isDark;
+
+        // If the theme status is not found in local storage, check the preferred color scheme
+        if (themeStatus === undefined || themeStatus === null) {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                themeStatus = 'dark';
+            } else {
+                themeStatus = 'light';
+            }
+        }
+
+        // Now you can use the themeStatus variable in your code
+        if (themeStatus) {
+            document.documentElement.style.setProperty('--preloader-background-color', '#202124');
+            document.documentElement.style.setProperty('--preloader-text-color', '#fff');
+        } else {
+            document.documentElement.style.setProperty('--preloader-background-color', '#fff');
+            document.documentElement.style.setProperty('--preloader-text-color', '#000');
+        }
+
+        window.addEventListener('load', function () {
+            hidePreloaderAfterTimeout(1000); // Hide after 1000 milliseconds once the window has loaded
+        });
+
+        // Backup failsafe: Hide preloader after a maximum of 5000 milliseconds, regardless of the window load event
+        hidePreloaderAfterTimeout(5000);
+
+        function hidePreloaderAfterTimeout(delay) {
+            setTimeout(function () {
+                var preloader = document.querySelector('.preloader');
+                preloader.style.opacity = '0';
+                setTimeout(function () {
+                    preloader.style.display = 'none';
+                }, 200);
+            }, delay);
+        }
+    </script>
+</div>
+    
+
+    
+<link rel="stylesheet" href="/hexo/css/style.css">
+
+
+    
+        
+<link rel="stylesheet" href="/hexo/assets/build/styles.css">
+
+    
+
+    
+<link rel="stylesheet" href="/hexo/fonts/fonts.css">
+
+    
+<link rel="stylesheet" href="/hexo/fonts/Satoshi/satoshi.css">
+
+    <!--- Font Part-->
+    
+    
+    
+    
+
+
+    <script id="hexo-configurations">
+    window.config = {"hostname":"hiraethecho.github.io","root":"/hexo/","language":"en","path":"search.json"};
+    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"title_alignment":"left","headings_top_spacing":{"h1":"5rem","h2":"4rem","h3":"2.8rem","h4":"2.5rem","h5":"2.2rem","h6":"2rem"}},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":false,"list":[]},"code_block":{"copy":true,"style":"mac","font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":{"enable":true,"default":"cc_by_nc_sa"},"lazyload":true,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null,"default_mode":"light"},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"website_counter":{"url":"https://cn.vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":true,"open_graph":true,"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"Theme Redefine","subtitle":{"text":[],"hitokoto":{"enable":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":false,"style":"default","links":{"github":null,"instagram":null,"zhihu":null,"twitter":null,"email":null},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":null,"artist":null,"url":null,"cover":null,"lrc":null}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.6.1","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"width":{"home":"1200px","pages":"1000px"},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"}},"search":{"enable":false,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":null,"show_on_mobile":true,"links":null},"article_date_format":"auto","categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2022/8/17 11:45:14"};
+    window.lang_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+    window.data = {"masonry":true};
+  </script>
+    
+    <!--- Fontawesome Part-->
+    
+<link rel="stylesheet" href="/hexo/fontawesome/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/hexo/fontawesome/brands.min.css">
+
+    
+<link rel="stylesheet" href="/hexo/fontawesome/solid.min.css">
+
+    
+<link rel="stylesheet" href="/hexo/fontawesome/regular.min.css">
+
+    
+    
+    
+    
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/hexo/atom.xml" title="Hiraeth" type="application/atom+xml">
+</head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+<!--        <span class="swup-progress-icon">-->
+<!--            <i class="fa-solid fa-circle-notch fa-spin"></i>-->
+<!--        </span>-->
+    
+</div>
+
+
+<main class="page-container" id="swup">
+
+    
+
+    <div class="main-content-container">
+
+
+        <div class="main-content-header">
+            <header class="navbar-container px-6 md:px-12">
+
+    <div class="navbar-content ">
+        <div class="left">
+            
+            <a class="logo-title" href="/hexo/">
+                
+                Theme Redefine
+                
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="desktop">
+                <ul class="navbar-list">
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/hexo/"
+                                        >
+                                    <i class="fa-regular fa-house fa-fw"></i>
+                                    HOME
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                <div class="icon-item navbar-bar">
+                    <div class="navbar-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile sheet -->
+    <div class="navbar-drawer h-screen w-full absolute top-0 left-0 bg-background-color flex flex-col justify-between">
+        <ul class="drawer-navbar-list flex flex-col px-4 justify-center items-start">
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/hexo/"
+                        >
+                            <span>
+                                HOME
+                            </span>
+                            
+                                <i class="fa-regular fa-house fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+
+            
+            
+        </ul>
+
+        <div class="statistics flex justify-around my-2.5">
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/hexo/tags">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">21</div>
+        <div class="label text-third-text-color text-sm">Tags</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/hexo/categories">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">5</div>
+        <div class="label text-third-text-color text-sm">Categories</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/hexo/archives">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">28</div>
+        <div class="label text-third-text-color text-sm">Posts</div>
+    </a>
+</div>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="main-content-body">
+
+            
+
+            <div class="main-content">
+
+                
+                    <div class="page-template-container">
+    
+    
+    
+    <div class="page-template-content markdown-body">
+        
+            <h2 id="关于本站"><a href="#关于本站" class="headerlink" title="关于本站"></a>关于本站</h2><p>这是我的个人博客，是我的学术主页和知识wiki（这两个都没认真搭建）外的，或者说我的“主业”之外的我自己。</p>
+<p>关于小站名字（同时也是我大部分网络id）的解释：</p>
+<p class="note note-primary">
+Hiraeth: (n.) homesickness to a home to which you cannot return: the grief of the lost places of your past.
+</p>
+
+<h3 id="分类-categories"><a href="#分类-categories" class="headerlink" title="分类 categories"></a>分类 categories</h3><!--
+- comment
+- contemplation
+- record
+- caprice
+-->
+
+<ul>
+<li><a href="/hexo/categories/%E6%9D%82%E8%B0%88">杂谈</a>：这里是关于具体事或物的评论或想法，包括影评、书评、社评等，是围绕具体话题的看法。</li>
+<li><a href="/hexo/categories/%E6%B2%89%E6%80%9D">沉思</a>：<em>哲学是傍晚起飞的猫头鹰。</em> 这里是一些抽象的思想，是关于精神世界的思考。</li>
+<li><a href="/hexo/categories/%E7%AE%80%E8%AE%B0">简记</a>：这里主要是记述性质的，简短记录一些生活中发生的事情，或者作为某种备忘，可能掺杂一些想法。</li>
+<li><a href="/hexo/categories/%E9%9A%8F%E6%83%B3">随想</a>：这里是零碎的想法。大部分没有被深思熟虑，并不完备自洽，比较随意。</li>
+<li><a href="/hexo/categories/%E6%97%B6%E9%97%B4%E7%BA%BF">时间线</a>：这里是一些持续更新的博客。</li>
+</ul>
+<h3 id="计划中"><a href="#计划中" class="headerlink" title="计划中"></a>计划中</h3><p>&emsp;&emsp;一些计划中要写的博客:</p>
+<ul>
+<li>杂谈<ul>
+<li>落叶归根 影评</li>
+<li>卡夫卡 陀思妥耶夫斯基</li>
+<li>神，人，人造人和弑父</li>
+</ul>
+</li>
+<li>沉思<ul>
+<li>坚持做理想主义者</li>
+<li>多元思考，有矛盾的生活 后现代的生活</li>
+</ul>
+</li>
+<li>简记<ul>
+<li>独居</li>
+</ul>
+</li>
+<li>随想<ul>
+<li>表演式的伪善</li>
+<li>mbti看法</li>
+</ul>
+</li>
+<li><a href="/hexo/food">cafe</a> 把我的“小餐馆”的介绍完整一下</li>
+</ul>
+<h2 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h2><p>中科院基础数学在读研究生</p>
+<p>不知道如何介绍我自己，姑且先放一点列表在这里。</p>
+<h3 id="书单"><a href="#书单" class="headerlink" title="书单"></a>书单</h3><p>正在看的书：</p>
+<p>《消费社会》（鲍德里亚）<progress max=100 value=9></progress></p>
+<p>《女性主义》李银河<progress max=306 value=99></progress></p>
+<details><summary>一些读过并认为值得一记来帮助了解我的书：</summary>
+
+<ul>
+<li>知识与爱情</li>
+<li>悉达多</li>
+<li>荒原狼</li>
+<li>死屋手记</li>
+<li>一只特立独行的猪 （王小波短篇集）</li>
+<li>娱乐至死</li>
+<li>乌合之众</li>
+<li>我们赖以生存的隐喻</li>
+<li>时髦的空话 2023-10-27</li>
+<li>三体</li>
+<li>献给阿尔吉侬的花束</li>
+<li>事实</li>
+<li>救猫咪 2023-11-10</li>
+<li>数学领域中的发明心理学</li>
+<li>现代艺术150年</li>
+<li>艺术的故事</li>
+<li>现代西方哲学史十五讲 张汝伦</li>
+<li>我们生活在巨大的差距里</li>
+<li>抑郁症的历史</li>
+<li>单向度的人</li>
+<li>他者的消失</li>
+<li>论人类不平等的起源和基础</li>
+<li>家庭、私有制和国家的起源</li>
+<li>苏菲的世界</li>
+<li>当尼采哭泣</li>
+<li>存在主义咖啡馆</li>
+<li>西方哲学史 罗素</li>
+<li>月亮与六便士</li>
+<li>卡夫卡精品集（城堡，一条狗的研究，地洞 等） 2023-11-10</li>
+<li>寂寞的游戏</li>
+<li>现代西方哲学新编</li>
+<li>美丽新世界</li>
+<li>1984</li>
+<li>我们</li>
+<li>动物庄园</li>
+<li>人类群星闪耀时</li>
+<li>父权制与资本主义</li>
+<li>韩寒的大部分小说和杂文集</li>
+<li>复杂</li>
+<li>时间简史</li>
+<li>大宇之形</li>
+<li>宇宙的琴弦</li>
+<li>生命是什么</li>
+<li>物理学的困惑</li>
+<li>未来五十年</details></li>
+</ul>
+<details><summary>一些读过并且喜欢的书，或者对我影响明显的书</summary>
+
+<ul>
+<li>霍乱时期的爱情</li>
+<li>情人</li>
+<li>被侮辱与损害的人</li>
+<li>卡拉马佐夫兄弟</li>
+<li>白痴</li>
+<li>罪与罚</li>
+<li>群魔</li>
+<li>西西弗神话</li>
+<li>鼠疫</li>
+<li>局外人</li>
+<li>不能承受的生命之轻</li>
+<li>卡夫卡短篇《在流放地》《饥饿艺术家》</li>
+<li>伊凡·伊里奇之死</li>
+<li>海明威短篇集《乞力马扎罗的雪》</li>
+<li>西方哲学史十五讲 张志伟</li>
+<li>存在主义是一种人道主义</li>
+<li>小王子</li>
+</ul>
+</details>
+
+<details><summary>一些想读但还没读的书/作者</summary>
+
+<ul>
+<li>诗人的迟缓</li>
+<li>地下室手记</li>
+<li>死屋手记</li>
+<li>机械复制时代的艺术品</li>
+<li>对空演说</li>
+<li>全球通史</li>
+<li>在路上</li>
+<li>疯癫文明史</li>
+<li>规劝与惩罚</li>
+<li>科学革命的结构</li>
+<li>博尔赫斯</li>
+<li>鲁迅</li>
+<li>鲍德里亚</li>
+<li>卡夫卡</details></li>
+</ul>
+<h3 id="影单"><a href="#影单" class="headerlink" title="影单"></a>影单</h3><details><summary>一些看过并认为值得一记来帮助了解我的电影/剧</summary>
+
+<ul>
+<li>云图</li>
+<li>新蝙蝠侠</li>
+<li>好时光</li>
+<li>瑞士军刀男</li>
+<li>甲方乙方</li>
+<li>瞬息全宇宙</li>
+<li>罗小黑战记</li>
+<li>JOJO 动画1-6 漫画飙马野郎</li>
+<li>动物狂想曲</li>
+<li>血战钢锯岭</li>
+<li>现代启示录</li>
+<li>阿甘正传</li>
+<li>肖申克的救赎</li>
+<li>当幸福来敲门</li>
+<li>幸福终点站</li>
+<li>白日梦想家</li>
+<li>遗愿清单</li>
+<li>八恶人</li>
+<li>被解放的姜戈</li>
+<li>降临</li>
+<li>沙丘</li>
+<li>Mad Max</li>
+<li>遇见你之前</li>
+<li>德奥 莫扎特</li>
+<li>茶馆</li>
+<li>罗密欧与朱丽叶 （小李子的电影）</li>
+<li>新奥特曼</li>
+<li>美国精神病人</li>
+<li>十二宫</li>
+<li>奥本海默</li>
+<li>敦刻尔克</li>
+<li>1917</li>
+<li>美丽人生</li>
+<li>一个名叫欧维的男人决定去死</li>
+<li>钢琴家</li>
+<li>布达佩斯大饭店</li>
+<li>冒牌上尉</li>
+<li>鸟人</li>
+<li>了不起的盖茨比</li>
+<li>伯德小姐</li>
+<li>小妇人</li>
+<li>芭比</li>
+<li>人工智能</li>
+<li>返老还童</li>
+<li>普罗米修斯 异形：契约</li>
+<li>正义联盟导剪版</li>
+<li>V字仇杀队</li>
+<li>守望者</li>
+<li>李米的猜想</li>
+<li>人生大事</li>
+<li>十二公民</li>
+<li>钢的琴</li>
+<li>追凶者也</li>
+<li>后会无期</li>
+<li>飞驰人生</li>
+<li>宇宙探索俱乐部</li>
+<li>一出好戏</li>
+<li>呆头鹅</li>
+<li>开罗紫玫瑰</li>
+<li>业余小偷</li>
+<li>非强力春药</li>
+<li>咖啡公社</li>
+<li>独家新闻</li>
+<li>午夜巴塞罗那</li>
+<li>赛末点</li>
+<li>兰戈</li>
+<li>朱诺</li>
+<li>楚门的世界</li>
+<li>美丽心灵</li>
+<li>心灵捕手</li>
+<li>天才不能承受之重</li>
+<li>无罪的罪人</li>
+<li>美国丽人</li>
+<li>斗牛</li>
+<li>摩登时代</li>
+<li>沉默的羔羊</li>
+<li>烈日灼心</li>
+<li>白日焰火</li>
+<li>老无所依</li>
+<li>无名之辈</details></li>
+</ul>
+<details><summary>一些看过并且喜欢的电影</summary>
+
+<ul>
+<li>攻壳机动队 95，无罪，SAC，SSS （2045太垃圾了）</li>
+<li>模仿游戏</li>
+<li>知无涯者</li>
+<li>阿飞正传</li>
+<li>大鱼</li>
+<li>两小无猜</li>
+<li>麦兜故事</li>
+<li>Once</li>
+<li>爱在黎明破晓前</li>
+<li>爱在日落黄昏时</li>
+<li>廊桥遗梦</li>
+<li>两小无猜</li>
+<li>机器人瓦力</li>
+<li>酒精计划</li>
+<li>困在时间里的父亲</li>
+<li>落叶归根</li>
+<li>婚姻故事</li>
+<li>红辣椒 千年女优 东京教父 未麻的部屋</li>
+<li>海边的曼彻斯特</li>
+<li>搏击俱乐部</li>
+<li>银翼杀手 银翼杀手：2049</li>
+<li>2001太空漫游</li>
+<li>EVA TV版，旧剧场版，新剧场版</li>
+<li>春宵苦短，少女前进吧</li>
+<li>平家物语：犬王</li>
+<li>Marry and Max</li>
+<li>一粒沙</li>
+<li>蝙蝠侠大战超人</li>
+<li>守望者</li>
+<li>蜘蛛侠：纵横宇宙</li>
+<li>全明星超人 红头罩之下 （DC动画）</li>
+<li>安妮霍尔</li>
+<li>午夜巴黎</li>
+<li>子弹横飞百老汇</li>
+<li>两杆大烟枪</li>
+<li>偷拐抢骗</li>
+<li>落水狗</li>
+<li>低俗小说</li>
+<li>爆裂鼓手</li>
+<li>爱乐之城</li>
+<li>超脱</li>
+<li>梅尔罗斯</li>
+<li>犬之力</details></li>
+</ul>
+<details><summary>一些想看还没看的电影/剧</summary>
+
+<ul>
+<li>红白蓝三部曲</li>
+<li>平原上的夏洛克</li>
+<li>法外之徒</li>
+</ul>
+</details>
+
+<h3 id="歌单"><a href="#歌单" class="headerlink" title="歌单"></a>歌单</h3><h2 id="我的小技能和爱好"><a href="#我的小技能和爱好" class="headerlink" title="我的小技能和爱好"></a>我的小技能和爱好</h2><p>莫名其妙地习得了许多奇奇怪怪的知识、技能，我想这些是对“我是谁”的重要补充：人不只靠那些主要的特征定义，而是靠那些繁复的细节同其他人区分开来。</p>
+<ul>
+<li><p>计算机</p>
+<ul>
+<li>网页（比如这个博客，虽然是用github的模板<a class="link"   target="_blank" rel="noopener" href="https://github.com/fluid-dev/hexo-theme-fluid" >Fluid <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>）</li>
+<li>archlinux 的安装（现在在用btrfs和dwm）和删除（指 <code>sudo rm -rf /</code>）</li>
+<li>(neo)vim 的简单配置使用</li>
+</ul>
+</li>
+<li><p>运动</p>
+<ul>
+<li>足球</li>
+<li>长跑（跑过几次半马勉强可以说是业余爱好者吧）</li>
+<li>骑车（这个刚刚开始）</li>
+</ul>
+</li>
+<li><p><a href="https://hiraethecho.github.io/wiki/Life/cocktail/">调酒</a></p>
+</li>
+<li><p>做饭(<a href="/hexo/%E7%AE%80%E8%AE%B0/dormitory">搬宿舍后</a>刚刚开始学，只会<a href="/hexo/%E7%AE%80%E8%AE%B0/cook">几个</a>)简单的。</p>
+</li>
+</ul>
+
+        
+    </div>
+    <div class="page-template-comments">
+        
+    </div>
+</div>
+
+
+                
+
+            </div>
+
+            
+
+        </div>
+
+        <div class="main-content-footer">
+            <footer class="footer mt-5 py-5 h-auto text-base text-third-text-color relative border-t-2 border-t-border-color">
+    <div class="info-container py-3 text-center">
+        
+        <div class="text-center">
+            &copy;
+            
+              <span>2022</span>
+              -
+            
+            2024&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/hexo/">The Redefine Team</a>
+            
+                
+                <p class="post-count space-x-0.5">
+                    <span>
+                        28 posts in total
+                    </span>
+                    
+                </p>
+            
+        </div>
+        
+            <script data-swup-reload-script src="https://cn.vercount.one/js"></script>
+            <div class="relative text-center lg:absolute lg:right-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-right">
+                
+                    <span id="busuanzi_container_site_uv" class="lg:!block">
+                        <span class="text-sm">VISITOR COUNT</span>
+                        <span id="busuanzi_value_site_uv"></span>
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv" class="lg:!block">
+                        <span class="text-sm">TOTAL PAGE VIEWS</span>
+                        <span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="relative text-center lg:absolute lg:left-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-left">
+            <span class="lg:block text-sm">POWERED BY <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="relative top-[2px] inline-block align-baseline" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" class="text-base" href="https://hexo.io">Hexo</a></span>
+            <span class="text-sm lg:block">THEME&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.6.1</a></span>
+        </div>
+        
+        
+            <div>
+                Blog up for <span class="odometer" id="runtime_days" ></span> days <span class="odometer" id="runtime_hours"></span> hrs <span class="odometer" id="runtime_minutes"></span> Min <span class="odometer" id="runtime_seconds"></span> Sec
+            </div>
+        
+        
+            <script data-swup-reload-script>
+                try {
+                    function odometer_init() {
+                    const elements = document.querySelectorAll('.odometer');
+                    elements.forEach(el => {
+                        new Odometer({
+                            el,
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    });
+                    }
+                    odometer_init();
+                } catch (error) {}
+            </script>
+        
+        
+        
+    </div>  
+</footer>
+        </div>
+    </div>
+
+    
+
+    <div class="right-side-tools-container">
+        <div class="side-tools-container">
+    <ul class="hidden-tools-list">
+        <li class="right-bottom-tools tool-font-adjust-plus flex justify-center items-center">
+            <i class="fa-regular fa-magnifying-glass-plus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-font-adjust-minus flex justify-center items-center">
+            <i class="fa-regular fa-magnifying-glass-minus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-dark-light-toggle flex justify-center items-center">
+            <i class="fa-regular fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+
+        <li class="right-bottom-tools tool-scroll-to-bottom flex justify-center items-center">
+            <i class="fa-regular fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="visible-tools-list">
+        <li class="right-bottom-tools toggle-tools-list flex justify-center items-center">
+            <i class="fa-regular fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="right-bottom-tools tool-scroll-to-top flex justify-center items-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+
+</main>
+
+
+    
+<script src="/hexo/js/libs/Swup.min.js"></script>
+
+<script src="/hexo/js/libs/SwupSlideTheme.min.js"></script>
+
+<script src="/hexo/js/libs/SwupScriptsPlugin.min.js"></script>
+
+<script src="/hexo/js/libs/SwupProgressPlugin.min.js"></script>
+
+<script src="/hexo/js/libs/SwupScrollPlugin.min.js"></script>
+
+<script src="/hexo/js/libs/SwupPreloadPlugin.min.js"></script>
+
+<script>
+    const swup = new Swup({
+        plugins: [
+            new SwupScriptsPlugin({
+                optin: true,
+            }),
+            new SwupProgressPlugin(),
+            new SwupScrollPlugin({
+                offset: 80,
+            }),
+            new SwupSlideTheme({
+                mainElement: ".main-content-body",
+            }),
+            new SwupPreloadPlugin(),
+        ],
+        containers: ["#swup"],
+    });
+</script>
+
+
+
+
+
+
+
+<script src="/hexo/js/tools/imageViewer.js" type="module"></script>
+
+<script src="/hexo/js/utils.js" type="module"></script>
+
+<script src="/hexo/js/main.js" type="module"></script>
+
+<script src="/hexo/js/layouts/navbarShrink.js" type="module"></script>
+
+<script src="/hexo/js/tools/scrollTopBottom.js" type="module"></script>
+
+<script src="/hexo/js/tools/lightDarkSwitch.js" type="module"></script>
+
+<script src="/hexo/js/layouts/categoryList.js" type="module"></script>
+
+
+
+
+
+    
+<script src="/hexo/js/tools/codeBlock.js" type="module"></script>
+
+
+
+
+    
+<script src="/hexo/js/layouts/lazyload.js" type="module"></script>
+
+
+
+
+    
+<script src="/hexo/js/tools/runtime.js"></script>
+
+    
+<script src="/hexo/js/libs/odometer.min.js"></script>
+
+    
+<link rel="stylesheet" href="/hexo/assets/odometer-theme-minimal.css">
+
+
+
+
+  
+<script src="/hexo/js/libs/Typed.min.js"></script>
+
+  
+<script src="/hexo/js/plugins/typed.js" type="module"></script>
+
+
+
+
+
+
+    
+<script src="/hexo/js/libs/minimasonry.min.js"></script>
+
+    
+<script src="/hexo/js/plugins/masonry.js" type="module"></script>
+
+
+
+
+
+<div class="post-scripts" data-swup-reload-script>
+    
+        
+<script src="/hexo/js/tools/tocToggle.js" type="module"></script>
+
+<script src="/hexo/js/layouts/toc.js" type="module"></script>
+
+<script src="/hexo/js/plugins/tabs.js" type="module"></script>
+
+    
+</div>
+
+
+<!-- hexo injector body_end start -->
+  <script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/hexo-github-calendar@1.21/hexo_githubcalendar.js"></script>
+  <script data-pjax>
+        function GithubCalendarConfig(){
+            var git_githubapiurl ="https://python-github-calendar-api.vercel.app/api?HiraethEcho";
+            var git_color =['#ebedf0', '#fdcdec', '#fc9bd9', '#fa6ac5', '#f838b2', '#f5089f', '#c4067e', '#92055e', '#540336', '#48022f', '#30021f'];
+            var git_user ="HiraethEcho";
+            var parent_div_git = document.getElementById('recent-posts');
+            var git_div_html = '<div class="recent-post-item" style="width:100%;height:auto;padding:10px;"><div id="github_loading" style="width:10%;height:100%;margin:0 auto;display: block"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 50 50" style="enable-background:new 0 0 50 50" xml:space="preserve"><path fill="#d0d0d0" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(275.098 25 25)"><animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animateTransform></path></svg></div><div id="github_container"></div></div>';
+            if(parent_div_git && location.pathname =='/about/'){
+                console.log('已挂载github calendar')
+                // parent_div_git.innerHTML=git_div_html+parent_div_git.innerHTML // 无报错，但不影响使用(支持pjax跳转)
+                parent_div_git.insertAdjacentHTML("afterbegin",git_div_html) // 有报错，但不影响使用(支持pjax跳转)
+            };
+            GithubCalendar(git_githubapiurl,git_color,git_user)
+        }
+        if(document.getElementById('recent-posts')){
+            GithubCalendarConfig()
+        }
+    </script>
+    <style>#github_container{min-height:280px}@media screen and (max-width:650px) {#github_container{background-image:;min-height:0px}}</style>
+    <style></style><!-- hexo injector body_end end --></body>
+</html>

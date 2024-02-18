@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    
+    <meta name="author" content="The Redefine Team">
+    <!-- preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="http://HiraethEcho.github.io/hexo/杂谈/johnnykeepwalking/"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    
+        <meta name="description" content="直击痛点但浮于表面的讽刺，愉悦的喜剧，严肃沉重的现实。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《年会不能停》的简单影评">
+<meta property="og:url" content="http://hiraethecho.github.io/hexo/%E6%9D%82%E8%B0%88/JohnnyKeepWalking/index.html">
+<meta property="og:site_name" content="Hiraeth">
+<meta property="og:description" content="直击痛点但浮于表面的讽刺，愉悦的喜剧，严肃沉重的现实。">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-01-11T14:12:44.000Z">
+<meta property="article:modified_time" content="2024-01-11T17:39:34.806Z">
+<meta property="article:author" content="Hiraeth">
+<meta property="article:tag" content="影评">
+<meta property="article:tag" content="ideology">
+<meta name="twitter:card" content="summary">
+    
+    
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="/hexo/images/redefine-favicon.svg" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/hexo/images/redefine-favicon.svg">
+    <meta name="theme-color" content="#A31F34">
+    <link rel="shortcut icon" href="/hexo/images/redefine-favicon.svg">
+    <!--- Page Info-->
+    
+    <title>
+        
+            《年会不能停》的简单影评 -
+        
+        Theme Redefine
+    </title>
+
+    
+<link rel="stylesheet" href="/hexo/fonts/Chillax/chillax.css">
+
+
+    <!--- Inject Part-->
+    
+
+    
+        <style>
+    :root {
+        --preloader-background-color: #fff;
+        --preloader-text-color: #000;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --preloader-background-color: #202124;
+            --preloader-text-color: #fff;
+        }
+    }
+
+    @media (prefers-color-scheme: light) {
+        :root {
+            --preloader-background-color: #fff;
+            --preloader-text-color: #000;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .ml13 {
+            font-size: 2.6rem !important; /* Adjust this value as needed */
+        }
+    }
+
+    .preloader {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem; /* Tailwind 'gap-4' is 1rem */
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        padding: 12px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh; /* 'h-screen' is 100% of the viewport height */
+        background-color: var(--preloader-background-color);
+        z-index: 1100; /* 'z-[1100]' sets the z-index */
+        transition: opacity 0.2s ease-in-out;
+    }
+
+    .ml13 {
+        font-size: 3.2rem;
+        /* text-transform: uppercase; */
+        color: var(--preloader-text-color);
+        letter-spacing: -1px;
+        font-weight: 500;
+        font-family: 'Chillax-Variable', sans-serif;
+        text-align: center;
+    }
+
+    .ml13 .word {
+        display: inline-flex;
+        flex-wrap: wrap;
+        white-space: nowrap;
+    }
+
+    .ml13 .letter {
+        display: inline-block;
+        line-height: 1em;
+    }
+</style>
+
+<div class="preloader">
+    
+<script src="/hexo/js/libs/anime.min.js"></script>
+
+    <h1 class="ml13">
+        Theme Redefine
+    </h1>
+    <script>
+        var textWrapper = document.querySelector('.ml13');
+        // Split text into words
+        var words = textWrapper.textContent.trim().split(' ');
+
+        // Clear the existing content
+        textWrapper.innerHTML = '';
+
+        // Wrap each word and its letters in spans
+        words.forEach(function(word) {
+            var wordSpan = document.createElement('span');
+            wordSpan.classList.add('word');
+            wordSpan.innerHTML = word.replace(/\S/g, "<span class='letter'>$&</span>");
+            textWrapper.appendChild(wordSpan);
+            textWrapper.appendChild(document.createTextNode(' ')); // Add space between words
+        });
+
+
+        anime.timeline({loop: true})
+            .add({
+                targets: '.ml13 .letter',
+                translateY: [100,0],
+                translateZ: 0,
+                opacity: [0,1],
+                easing: "easeOutExpo",
+                duration: 1400,
+                delay: (el, i) => 300 + 30 * i
+            }).add({
+            targets: '.ml13 .letter',
+            translateY: [0,-100],
+            opacity: [1,0],
+            easing: "easeInExpo",
+            duration: 1200,
+            delay: (el, i) => 100 + 30 * i
+        });
+
+        let themeStatus = JSON.parse(localStorage.getItem('REDEFINE-THEME-STATUS'))?.isDark;
+
+        // If the theme status is not found in local storage, check the preferred color scheme
+        if (themeStatus === undefined || themeStatus === null) {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                themeStatus = 'dark';
+            } else {
+                themeStatus = 'light';
+            }
+        }
+
+        // Now you can use the themeStatus variable in your code
+        if (themeStatus) {
+            document.documentElement.style.setProperty('--preloader-background-color', '#202124');
+            document.documentElement.style.setProperty('--preloader-text-color', '#fff');
+        } else {
+            document.documentElement.style.setProperty('--preloader-background-color', '#fff');
+            document.documentElement.style.setProperty('--preloader-text-color', '#000');
+        }
+
+        window.addEventListener('load', function () {
+            hidePreloaderAfterTimeout(1000); // Hide after 1000 milliseconds once the window has loaded
+        });
+
+        // Backup failsafe: Hide preloader after a maximum of 5000 milliseconds, regardless of the window load event
+        hidePreloaderAfterTimeout(5000);
+
+        function hidePreloaderAfterTimeout(delay) {
+            setTimeout(function () {
+                var preloader = document.querySelector('.preloader');
+                preloader.style.opacity = '0';
+                setTimeout(function () {
+                    preloader.style.display = 'none';
+                }, 200);
+            }, delay);
+        }
+    </script>
+</div>
+    
+
+    
+<link rel="stylesheet" href="/hexo/css/style.css">
+
+
+    
+        
+<link rel="stylesheet" href="/hexo/assets/build/styles.css">
+
+    
+
+    
+<link rel="stylesheet" href="/hexo/fonts/fonts.css">
+
+    
+<link rel="stylesheet" href="/hexo/fonts/Satoshi/satoshi.css">
+
+    <!--- Font Part-->
+    
+    
+    
+    
+
+
+    <script id="hexo-configurations">
+    window.config = {"hostname":"hiraethecho.github.io","root":"/hexo/","language":"en","path":"search.json"};
+    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"title_alignment":"left","headings_top_spacing":{"h1":"5rem","h2":"4rem","h3":"2.8rem","h4":"2.5rem","h5":"2.2rem","h6":"2rem"}},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":false,"list":[]},"code_block":{"copy":true,"style":"mac","font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":{"enable":true,"default":"cc_by_nc_sa"},"lazyload":true,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null,"default_mode":"light"},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"website_counter":{"url":"https://cn.vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":true,"open_graph":true,"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"Theme Redefine","subtitle":{"text":[],"hitokoto":{"enable":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":false,"style":"default","links":{"github":null,"instagram":null,"zhihu":null,"twitter":null,"email":null},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":null,"artist":null,"url":null,"cover":null,"lrc":null}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.6.1","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"width":{"home":"1200px","pages":"1000px"},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"}},"search":{"enable":false,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":null,"show_on_mobile":true,"links":null},"article_date_format":"auto","categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2022/8/17 11:45:14"};
+    window.lang_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+    window.data = {"masonry":true};
+  </script>
+    
+    <!--- Fontawesome Part-->
+    
+<link rel="stylesheet" href="/hexo/fontawesome/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/hexo/fontawesome/brands.min.css">
+
+    
+<link rel="stylesheet" href="/hexo/fontawesome/solid.min.css">
+
+    
+<link rel="stylesheet" href="/hexo/fontawesome/regular.min.css">
+
+    
+    
+    
+    
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/hexo/atom.xml" title="Hiraeth" type="application/atom+xml">
+</head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+<!--        <span class="swup-progress-icon">-->
+<!--            <i class="fa-solid fa-circle-notch fa-spin"></i>-->
+<!--        </span>-->
+    
+</div>
+
+
+<main class="page-container" id="swup">
+
+    
+
+    <div class="main-content-container">
+
+
+        <div class="main-content-header">
+            <header class="navbar-container px-6 md:px-12">
+
+    <div class="navbar-content ">
+        <div class="left">
+            
+            <a class="logo-title" href="/hexo/">
+                
+                Theme Redefine
+                
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="desktop">
+                <ul class="navbar-list">
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/hexo/"
+                                        >
+                                    <i class="fa-regular fa-house fa-fw"></i>
+                                    HOME
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                <div class="icon-item navbar-bar">
+                    <div class="navbar-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile sheet -->
+    <div class="navbar-drawer h-screen w-full absolute top-0 left-0 bg-background-color flex flex-col justify-between">
+        <ul class="drawer-navbar-list flex flex-col px-4 justify-center items-start">
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/hexo/"
+                        >
+                            <span>
+                                HOME
+                            </span>
+                            
+                                <i class="fa-regular fa-house fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+
+            
+            
+        </ul>
+
+        <div class="statistics flex justify-around my-2.5">
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/hexo/tags">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">21</div>
+        <div class="label text-third-text-color text-sm">Tags</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/hexo/categories">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">5</div>
+        <div class="label text-third-text-color text-sm">Categories</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/hexo/archives">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">28</div>
+        <div class="label text-third-text-color text-sm">Posts</div>
+    </a>
+</div>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="main-content-body">
+
+            
+
+            <div class="main-content">
+
+                
+                    <div class="post-page-container flex relative justify-between box-border w-full h-full">
+    <div class="article-content-container">
+
+        <div class="article-title relative w-full">
+            
+                <div class="w-full flex items-center pt-6 justify-start">
+                    <h1 class="article-title-regular text-second-text-color text-4xl md:text-6xl font-bold px-2 sm:px-6 md:px-8 py-3">《年会不能停》的简单影评</h1>
+                </div>
+            
+            </div>
+
+        
+            <div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
+                <div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
+                    <img src="/hexo/images/redefine-avatar.svg">
+                </div>
+                <div class="info flex flex-col justify-between">
+                    <div class="author flex items-center">
+                        <span class="name text-default-text-color text-lg font-semibold">The Redefine Team</span>
+                        
+                            <span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1">Lv3</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2024-01-11 22:12:44</span>
+        <span class="mobile">2024-01-11 22:12:44</span>
+        <span class="hover-info">Created</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2024-01-12 01:39:34</span>
+            <span class="mobile">2024-01-12 01:39:34</span>
+            <span class="hover-info">Updated</span>
+        </span>
+    
+
+    
+        <span class="article-categories article-meta-item">
+            <i class="fa-regular fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/hexo/categories/%E6%9D%82%E8%B0%88/">杂谈</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/hexo/tags/%E5%BD%B1%E8%AF%84/">影评</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/hexo/tags/ideology/">ideology</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        
+
+
+        <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
+            <h1 id="无效讽刺"><a href="#无效讽刺" class="headerlink" title="无效讽刺"></a>无效讽刺</h1><p>&emsp;&emsp;前两天去看了电影《年会不能停》，感觉是个不错的电影，值得推荐一下，也值得评论两句。这一篇是面向看过电影的人的影评，所以涉及剧透，但没有剧情复述。</p>
+<h2 id="讽刺"><a href="#讽刺" class="headerlink" title="讽刺"></a>讽刺</h2><p>&emsp;&emsp;这部电影比较明显和让人喜欢的主要特点，应该是对当下职场的一些讽刺。包括但不限于领导不背锅不干人事，底层员工干事背锅，层级复杂信息传播迟钝，00后整顿职场无效，（害怕）关系户搞事折磨人，公司转型裁人等。最有效果的应该是白客角色的特征，不断自我洗脑，甚至“加班是一种工作态度”，夸张。不过可惜的是，我还是一个在校学生，而且是自闭的主要关心学术的学生，所以这种讽刺我只能猜测而不能真正的感同身受。</p>
+<p>&emsp;&emsp;除此之外还有一些讽刺，比如职场黑暗面。故事的开始就是花钱买职位，然后阴差阳错导致的奇遇。这里面有两个对象，花钱者和收钱者：花钱者，是给投机取巧者;收钱者（甚至过了两个人，中间克扣了10万）是自私者，这都是不诚实劳动者。当然，还有个倒霉蛋magic（他只想保住工作，他有什么错）。</br><br>&emsp;&emsp;然后是关于公司转型、（被迫）裁员，又那么一点点《钢的琴》和《杀死那个石家庄人》的意思。不过这部分只占了很少篇幅，在开头广进计划和结尾徐总“义正言辞”。</p>
+<h2 id="无效讽刺-1"><a href="#无效讽刺-1" class="headerlink" title="无效讽刺"></a>无效讽刺</h2><p>&emsp;&emsp;然而这部剧成功和失败的地方就在于，这样的讽刺是无效的。类似的无效，与春晚郝建的小品类似。这种讽刺流于表面，通过一些现象和（特定）观众达成一致，然后让大家直呼过瘾。有趣的是，在结尾通常都有一个happy ending，一个正义得到伸张的结尾：徐总被“举报”当场打脸，董事长来伸张正义;小品里领导来“微服私访”看到郝建的腐败行为，所以可是处理他。更有趣的是，两者都寄希望于一个更加“正义”的上层。不好笑的是，这可能只是一个愿望，就像托马斯的上层可能还是个徐总罢了，不过是某种美好的愿望。值得回味的是，为什么正义只能寄希望于更上层的权力者、寄希望于他们是善良正直的呢？诸如贿赂这样的事，明明是任何人都不应该接受的，却需要更高位者来制裁呢？为什么人民民主专政的国家，人民无法制裁贪官污吏而必须一个正直的更高位者来做这件事呢？更可怕的是，无论电影还是现实，很多情况下都寄希望于“媒体”，而不是正常的司法或程序。当然电影需要戏剧冲突和场面，所以需要一个“年会”来揭露真相;现实也需要媒体来曝光诸多不正义。可是，明明是违法的行为，明明我们的程序正义应该是导向结果正义的，为什么这些都失效了呢？</p>
+<p>&emsp;&emsp;另一个有趣的角色是徐总，这个尝试绕过董事长、看似不求私欲不惜用小人手段只为企业的人。用一些堂而皇之的理由牺牲一些人，换取某种抽象概念的前途。他当然是加害者，但他是经济转型的受害者吗，是迂腐掌权者的受害者吗，是时代潮流中一粒略大一点的灰尘以至于是别人头上的一座山吗？</p>
+<p>&emsp;&emsp;最后显著无效地一个点是，仿佛皆大欢喜的结局。主要角色有了一些交代，十分理想化，无异于在《烈日灼心》或《消失的她》结尾那种黑底白字罪犯已被绳之以法的敷衍。</p>
+<h2 id="喜剧"><a href="#喜剧" class="headerlink" title="喜剧"></a>喜剧</h2><p>&emsp;&emsp;总的来说，这还是一部喜剧。它只谈论表面，所以可以是喜剧;它是喜剧，所以只能谈论表面。多少应该谈谈喜剧手法之类的，然而又没有相关理论基础，于是只能泛泛而谈，且十分主观。</p>
+<p>&emsp;&emsp;作为喜剧，虽然很笑点容易预测，但整体是十分好笑的。有可能和脱口秀演员有关系：这里并不是说因果关系，而是相关关系，即从编剧角度上来说接近脱口秀的风格。当然大鹏和白客两个网络喜剧短片成功者的经验一定也有效果。仅仅作为喜剧，我认为也是十分值得一看的。</p>
+<p>&emsp;&emsp;然后再提一嘴喜剧和那句经典的“喜剧的内核是悲剧”。我并不完全赞同这句话，不过我想指出另一个看法，涉及两个例子：周星驰的《喜剧之王》和金凯瑞的《楚门的世界》。这两部电影显然都是有喜剧色彩的，但他们是单纯的喜剧片，还是正剧（剧情片）呢？周星驰似乎在采访中说过，他想拍正剧，不知道为什么别人认为是喜剧;金凯瑞似乎也一直期望奥斯卡，但因为被当作喜剧而被这么个“学院奖”排斥。喜剧也许只是一种手法，后者一种商业技巧，它的内容更重要，这部《年会不能停》可能也是如此。</p>
+<h2 id="演员"><a href="#演员" class="headerlink" title="演员"></a>演员</h2><p>&emsp;&emsp;第一个感觉是，好多脱口秀演员啊。篇幅非常少的rock，似乎也没什么特色，可能是打包的？非常喜欢的童漠男，和孙艺洲的搭档，很贴童脱口秀里英语老师和孙在《喜欢你》里助理的角色，都挺畏畏缩缩的。肉食动物一唱一和，效果挺好。</p>
+<p>&emsp;&emsp;白客确实是惊喜。最早应该是《万万没想到》认识他的，后来发现这个B还是日和的配音，接着还演了《后会无期》。整体上都有点冷面笑匠的意思，从喜剧开始，逐渐走向喜剧里带严肃内核的角色，多少有点周星驰和金凯瑞的效果。演技真的不错，实际上是夸张离谱的表演内容，但又不出戏。事实上，对于白客来说并不是关于他认知的惊喜，而是对于这部电影来说“有这样出色演员”的惊喜。另一个惊喜是大鹏，同样是网络喜剧短片《屌丝男士》出名，后来他又有《缝纫机乐队》这样的作品（没看过但是听说过），接着又有《吉祥》（文武香贵，一二四五）。很显然，对于大鹏来说，早期喜剧只是手段不是目的，他是有理想的。王迅是另一个喜剧角色，常年丑角，我最早的印象应该是《疯狂的石头》，万金油一样的可能物美价廉的演员。这样一个角色变成喜剧角色，同样是把严肃问题娱乐化的表现。</p>
+<p>&emsp;&emsp;接着是孙艺洲，从《爱情公寓》出名，不像陆展博那样又菜又装逼，也不像王传君那样放下碗骂娘又确实拍了点好东西。有点意思，但是不多。</p>
+<p>&emsp;&emsp;还有一个女主，和前面两个比，显然是演技有点生涩，不过似乎刚好符合“00后整顿职场”的角色。无可指摘。</p>
+<p>&emsp;&emsp;最后是一些老头，一个徐总，一个董事长。对我来说没什么值得说的特点，一个工具人，一个需要被打败的明面上的反派;另一个是标准善良淳朴被蒙骗最后伸张正义的工具人。彳亍。</p>
+<h2 id="芭比"><a href="#芭比" class="headerlink" title="芭比"></a>芭比</h2><p>&emsp;&emsp;和《芭比》一样，很明显的“英雄之旅”的结构，整个叙事是完整的。但是让我把这两部放一起的主要原因是，两者都是流于表面的讽刺，然后一个似是而非的解决。这个断言放出来，其实并不怎么需要解释了。</p>
+<p>&emsp;&emsp;另一个方面是，作为喜剧，两者都一样容易预测，又很有效果。不过《芭比》显然多一点无厘头，多一点花里胡哨。</p>
+<p>&emsp;&emsp;最重要的是，两者都是一种“无效讽刺”。都是话题度很高的电影，抓住特定群体的痛点一顿讽刺，然后给一个看似完美的结局。辞职唱歌的penny和平凡芭比一样，看似理想的实现实则在现实中举步维艰。这是一个暗含的悲剧。</p>
+<h2 id="一些碎碎念"><a href="#一些碎碎念" class="headerlink" title="一些碎碎念"></a>一些碎碎念</h2><p>&emsp;&emsp;哈哈哈这个导演是之前《老炮儿》的导演，举报纪检委和打小报告给董事长，这是什么过审小技巧吗？</p>
+<p>&emsp;&emsp;关于喜剧和正剧，我想提另一部电影《喜剧之王2》。似乎口碑一般，但如果不把它看作喜剧，再结合一点《喜剧之王》和那个莫名其妙的结局，我想这部电影还有一些不那么喜剧的、严肃的主旨。王宝强看着像个憨憨，但是他也是有《天下无贼》甚至《树先生》这样的电影的。我不觉得《喜剧之王2》是完全的烂片，甚至某些角度上说是部很好的电影，值得多想一想。</p>
+
+        </div>
+
+        
+            <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
+                <div class="article-copyright-info-container">
+    <ul>
+        <li><strong>Title:</strong> 《年会不能停》的简单影评</li>
+        <li><strong>Author:</strong> The Redefine Team</li>
+        <li><strong>Created at
+                :</strong> 2024-01-11 22:12:44</li>
+        
+            <li>
+                <strong>Updated at
+                    :</strong> 2024-01-12 01:39:34
+            </li>
+        
+        <li>
+            <strong>Link:</strong> https://redefine.ohevan.com/杂谈/JohnnyKeepWalking/
+        </li>
+        <li>
+            <strong>
+                License:
+            </strong>
+            
+
+            
+                This work is licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a>.
+            
+        </li>
+    </ul>
+</div>
+
+            </div>
+        
+
+        
+            <ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
+                
+                    <li class="tag-item mx-0.5">
+                        <a href="/hexo/tags/%E5%BD%B1%E8%AF%84/">#影评</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item mx-0.5">
+                        <a href="/hexo/tags/ideology/">#ideology</a>&nbsp;
+                    </li>
+                
+            </ul>
+        
+
+        
+
+        
+            <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
+                
+                    <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="prev"
+                        rel="prev"
+                        href="/hexo/%E6%B2%89%E6%80%9D/loveillusion/"
+                        >
+                            <span class="left arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">千万种爱情，和我的爱情</span>
+                                <span class="post-nav-item">Prev posts</span>
+                            </span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="next"
+                        rel="next"
+                        href="/hexo/%E7%AE%80%E8%AE%B0/dormitory/"
+                        >
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">记又一次搬宿舍</span>
+                                <span class="post-nav-item">Next posts</span>
+                            </span>
+                            <span class="right arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+
+        
+            <div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
+                <div class="comments-container mt-10 w-full ">
+    <div id="comment-anchor" class="w-full h-2.5"></div>
+    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
+        Comments
+    </div>
+    
+
+        
+            
+    <div id="waline"></div>
+    <script type="module" data-swup-reload-script>
+      import { init } from '/hexo/js/libs/waline.mjs';
+
+      function loadWaline() {
+        init({
+          el: '#waline',
+          serverURL: 'https://example.example.com',
+          lang: 'zh-CN',
+          dark: 'body[class~="dark-mode"]',
+          requiredMeta: ['nick', 'mail'],
+          emoji: [],
+          recaptchaV3Key: "wasd",
+          
+        });
+      }
+
+      if (typeof swup !== 'undefined') {
+        loadWaline();
+      } else {
+        window.addEventListener('DOMContentLoaded', loadWaline);
+      }
+    </script>
+
+
+
+        
+    
+</div>
+
+            </div>
+        
+    </div>
+
+    
+        <div class="toc-content-container">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">On this page</div>
+        <div class="page-title">《年会不能停》的简单影评</div>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%97%A0%E6%95%88%E8%AE%BD%E5%88%BA"><span class="nav-text">无效讽刺</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%BD%E5%88%BA"><span class="nav-text">讽刺</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%97%A0%E6%95%88%E8%AE%BD%E5%88%BA-1"><span class="nav-text">无效讽刺</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%96%9C%E5%89%A7"><span class="nav-text">喜剧</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%BC%94%E5%91%98"><span class="nav-text">演员</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%8A%AD%E6%AF%94"><span class="nav-text">芭比</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E4%BA%9B%E7%A2%8E%E7%A2%8E%E5%BF%B5"><span class="nav-text">一些碎碎念</span></a></li></ol></li></ol>
+
+    </div>
+</div>
+        </div>
+    
+</div>
+
+
+
+                
+
+            </div>
+
+            
+
+        </div>
+
+        <div class="main-content-footer">
+            <footer class="footer mt-5 py-5 h-auto text-base text-third-text-color relative border-t-2 border-t-border-color">
+    <div class="info-container py-3 text-center">
+        
+        <div class="text-center">
+            &copy;
+            
+              <span>2022</span>
+              -
+            
+            2024&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/hexo/">The Redefine Team</a>
+            
+                
+                <p class="post-count space-x-0.5">
+                    <span>
+                        28 posts in total
+                    </span>
+                    
+                </p>
+            
+        </div>
+        
+            <script data-swup-reload-script src="https://cn.vercount.one/js"></script>
+            <div class="relative text-center lg:absolute lg:right-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-right">
+                
+                    <span id="busuanzi_container_site_uv" class="lg:!block">
+                        <span class="text-sm">VISITOR COUNT</span>
+                        <span id="busuanzi_value_site_uv"></span>
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv" class="lg:!block">
+                        <span class="text-sm">TOTAL PAGE VIEWS</span>
+                        <span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="relative text-center lg:absolute lg:left-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-left">
+            <span class="lg:block text-sm">POWERED BY <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="relative top-[2px] inline-block align-baseline" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" class="text-base" href="https://hexo.io">Hexo</a></span>
+            <span class="text-sm lg:block">THEME&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.6.1</a></span>
+        </div>
+        
+        
+            <div>
+                Blog up for <span class="odometer" id="runtime_days" ></span> days <span class="odometer" id="runtime_hours"></span> hrs <span class="odometer" id="runtime_minutes"></span> Min <span class="odometer" id="runtime_seconds"></span> Sec
+            </div>
+        
+        
+            <script data-swup-reload-script>
+                try {
+                    function odometer_init() {
+                    const elements = document.querySelectorAll('.odometer');
+                    elements.forEach(el => {
+                        new Odometer({
+                            el,
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    });
+                    }
+                    odometer_init();
+                } catch (error) {}
+            </script>
+        
+        
+        
+    </div>  
+</footer>
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="article-tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+            <li class="go-comment">
+                <i class="fa-regular fa-comments"></i>
+            </li>
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-side-tools-container">
+        <div class="side-tools-container">
+    <ul class="hidden-tools-list">
+        <li class="right-bottom-tools tool-font-adjust-plus flex justify-center items-center">
+            <i class="fa-regular fa-magnifying-glass-plus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-font-adjust-minus flex justify-center items-center">
+            <i class="fa-regular fa-magnifying-glass-minus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-dark-light-toggle flex justify-center items-center">
+            <i class="fa-regular fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+
+        <li class="right-bottom-tools tool-scroll-to-bottom flex justify-center items-center">
+            <i class="fa-regular fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="visible-tools-list">
+        <li class="right-bottom-tools toggle-tools-list flex justify-center items-center">
+            <i class="fa-regular fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="right-bottom-tools tool-scroll-to-top flex justify-center items-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+
+</main>
+
+
+    
+<script src="/hexo/js/libs/Swup.min.js"></script>
+
+<script src="/hexo/js/libs/SwupSlideTheme.min.js"></script>
+
+<script src="/hexo/js/libs/SwupScriptsPlugin.min.js"></script>
+
+<script src="/hexo/js/libs/SwupProgressPlugin.min.js"></script>
+
+<script src="/hexo/js/libs/SwupScrollPlugin.min.js"></script>
+
+<script src="/hexo/js/libs/SwupPreloadPlugin.min.js"></script>
+
+<script>
+    const swup = new Swup({
+        plugins: [
+            new SwupScriptsPlugin({
+                optin: true,
+            }),
+            new SwupProgressPlugin(),
+            new SwupScrollPlugin({
+                offset: 80,
+            }),
+            new SwupSlideTheme({
+                mainElement: ".main-content-body",
+            }),
+            new SwupPreloadPlugin(),
+        ],
+        containers: ["#swup"],
+    });
+</script>
+
+
+
+
+
+
+
+<script src="/hexo/js/tools/imageViewer.js" type="module"></script>
+
+<script src="/hexo/js/utils.js" type="module"></script>
+
+<script src="/hexo/js/main.js" type="module"></script>
+
+<script src="/hexo/js/layouts/navbarShrink.js" type="module"></script>
+
+<script src="/hexo/js/tools/scrollTopBottom.js" type="module"></script>
+
+<script src="/hexo/js/tools/lightDarkSwitch.js" type="module"></script>
+
+<script src="/hexo/js/layouts/categoryList.js" type="module"></script>
+
+
+
+
+
+    
+<script src="/hexo/js/tools/codeBlock.js" type="module"></script>
+
+
+
+
+    
+<script src="/hexo/js/layouts/lazyload.js" type="module"></script>
+
+
+
+
+    
+<script src="/hexo/js/tools/runtime.js"></script>
+
+    
+<script src="/hexo/js/libs/odometer.min.js"></script>
+
+    
+<link rel="stylesheet" href="/hexo/assets/odometer-theme-minimal.css">
+
+
+
+
+  
+<script src="/hexo/js/libs/Typed.min.js"></script>
+
+  
+<script src="/hexo/js/plugins/typed.js" type="module"></script>
+
+
+
+
+
+
+    
+<script src="/hexo/js/libs/minimasonry.min.js"></script>
+
+    
+<script src="/hexo/js/plugins/masonry.js" type="module"></script>
+
+
+
+
+
+<div class="post-scripts" data-swup-reload-script>
+    
+        
+<script src="/hexo/js/tools/tocToggle.js" type="module"></script>
+
+<script src="/hexo/js/layouts/toc.js" type="module"></script>
+
+<script src="/hexo/js/plugins/tabs.js" type="module"></script>
+
+    
+</div>
+
+
+<!-- hexo injector body_end start -->
+  <script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/hexo-github-calendar@1.21/hexo_githubcalendar.js"></script>
+  <script data-pjax>
+        function GithubCalendarConfig(){
+            var git_githubapiurl ="https://python-github-calendar-api.vercel.app/api?HiraethEcho";
+            var git_color =['#ebedf0', '#fdcdec', '#fc9bd9', '#fa6ac5', '#f838b2', '#f5089f', '#c4067e', '#92055e', '#540336', '#48022f', '#30021f'];
+            var git_user ="HiraethEcho";
+            var parent_div_git = document.getElementById('recent-posts');
+            var git_div_html = '<div class="recent-post-item" style="width:100%;height:auto;padding:10px;"><div id="github_loading" style="width:10%;height:100%;margin:0 auto;display: block"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 50 50" style="enable-background:new 0 0 50 50" xml:space="preserve"><path fill="#d0d0d0" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(275.098 25 25)"><animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animateTransform></path></svg></div><div id="github_container"></div></div>';
+            if(parent_div_git && location.pathname =='/about/'){
+                console.log('已挂载github calendar')
+                // parent_div_git.innerHTML=git_div_html+parent_div_git.innerHTML // 无报错，但不影响使用(支持pjax跳转)
+                parent_div_git.insertAdjacentHTML("afterbegin",git_div_html) // 有报错，但不影响使用(支持pjax跳转)
+            };
+            GithubCalendar(git_githubapiurl,git_color,git_user)
+        }
+        if(document.getElementById('recent-posts')){
+            GithubCalendarConfig()
+        }
+    </script>
+    <style>#github_container{min-height:280px}@media screen and (max-width:650px) {#github_container{background-image:;min-height:0px}}</style>
+    <style></style><!-- hexo injector body_end end --></body>
+</html>

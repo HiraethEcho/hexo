@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    
+    <meta name="author" content="The Redefine Team">
+    <!-- preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="http://HiraethEcho.github.io/hexo/杂谈/one-dimensional-man/"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    
+        <meta name="description" content="什么是单向度？它是如何形成的？保护自己的思想，不成为单向度的人？">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《单向度的人：发达工业社会意识形态研究》读后感">
+<meta property="og:url" content="http://hiraethecho.github.io/hexo/%E6%9D%82%E8%B0%88/one-dimensional-man/index.html">
+<meta property="og:site_name" content="Hiraeth">
+<meta property="og:description" content="什么是单向度？它是如何形成的？保护自己的思想，不成为单向度的人？">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-09-30T17:45:30.000Z">
+<meta property="article:modified_time" content="2023-10-12T09:43:31.793Z">
+<meta property="article:author" content="Hiraeth">
+<meta property="article:tag" content="philosophy">
+<meta property="article:tag" content="ideology">
+<meta property="article:tag" content="书评">
+<meta name="twitter:card" content="summary">
+    
+    
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="/hexo/images/redefine-favicon.svg" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/hexo/images/redefine-favicon.svg">
+    <meta name="theme-color" content="#A31F34">
+    <link rel="shortcut icon" href="/hexo/images/redefine-favicon.svg">
+    <!--- Page Info-->
+    
+    <title>
+        
+            《单向度的人：发达工业社会意识形态研究》读后感 -
+        
+        Theme Redefine
+    </title>
+
+    
+<link rel="stylesheet" href="/hexo/fonts/Chillax/chillax.css">
+
+
+    <!--- Inject Part-->
+    
+
+    
+        <style>
+    :root {
+        --preloader-background-color: #fff;
+        --preloader-text-color: #000;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --preloader-background-color: #202124;
+            --preloader-text-color: #fff;
+        }
+    }
+
+    @media (prefers-color-scheme: light) {
+        :root {
+            --preloader-background-color: #fff;
+            --preloader-text-color: #000;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .ml13 {
+            font-size: 2.6rem !important; /* Adjust this value as needed */
+        }
+    }
+
+    .preloader {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem; /* Tailwind 'gap-4' is 1rem */
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        padding: 12px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh; /* 'h-screen' is 100% of the viewport height */
+        background-color: var(--preloader-background-color);
+        z-index: 1100; /* 'z-[1100]' sets the z-index */
+        transition: opacity 0.2s ease-in-out;
+    }
+
+    .ml13 {
+        font-size: 3.2rem;
+        /* text-transform: uppercase; */
+        color: var(--preloader-text-color);
+        letter-spacing: -1px;
+        font-weight: 500;
+        font-family: 'Chillax-Variable', sans-serif;
+        text-align: center;
+    }
+
+    .ml13 .word {
+        display: inline-flex;
+        flex-wrap: wrap;
+        white-space: nowrap;
+    }
+
+    .ml13 .letter {
+        display: inline-block;
+        line-height: 1em;
+    }
+</style>
+
+<div class="preloader">
+    
+<script src="/hexo/js/libs/anime.min.js"></script>
+
+    <h1 class="ml13">
+        Theme Redefine
+    </h1>
+    <script>
+        var textWrapper = document.querySelector('.ml13');
+        // Split text into words
+        var words = textWrapper.textContent.trim().split(' ');
+
+        // Clear the existing content
+        textWrapper.innerHTML = '';
+
+        // Wrap each word and its letters in spans
+        words.forEach(function(word) {
+            var wordSpan = document.createElement('span');
+            wordSpan.classList.add('word');
+            wordSpan.innerHTML = word.replace(/\S/g, "<span class='letter'>$&</span>");
+            textWrapper.appendChild(wordSpan);
+            textWrapper.appendChild(document.createTextNode(' ')); // Add space between words
+        });
+
+
+        anime.timeline({loop: true})
+            .add({
+                targets: '.ml13 .letter',
+                translateY: [100,0],
+                translateZ: 0,
+                opacity: [0,1],
+                easing: "easeOutExpo",
+                duration: 1400,
+                delay: (el, i) => 300 + 30 * i
+            }).add({
+            targets: '.ml13 .letter',
+            translateY: [0,-100],
+            opacity: [1,0],
+            easing: "easeInExpo",
+            duration: 1200,
+            delay: (el, i) => 100 + 30 * i
+        });
+
+        let themeStatus = JSON.parse(localStorage.getItem('REDEFINE-THEME-STATUS'))?.isDark;
+
+        // If the theme status is not found in local storage, check the preferred color scheme
+        if (themeStatus === undefined || themeStatus === null) {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                themeStatus = 'dark';
+            } else {
+                themeStatus = 'light';
+            }
+        }
+
+        // Now you can use the themeStatus variable in your code
+        if (themeStatus) {
+            document.documentElement.style.setProperty('--preloader-background-color', '#202124');
+            document.documentElement.style.setProperty('--preloader-text-color', '#fff');
+        } else {
+            document.documentElement.style.setProperty('--preloader-background-color', '#fff');
+            document.documentElement.style.setProperty('--preloader-text-color', '#000');
+        }
+
+        window.addEventListener('load', function () {
+            hidePreloaderAfterTimeout(1000); // Hide after 1000 milliseconds once the window has loaded
+        });
+
+        // Backup failsafe: Hide preloader after a maximum of 5000 milliseconds, regardless of the window load event
+        hidePreloaderAfterTimeout(5000);
+
+        function hidePreloaderAfterTimeout(delay) {
+            setTimeout(function () {
+                var preloader = document.querySelector('.preloader');
+                preloader.style.opacity = '0';
+                setTimeout(function () {
+                    preloader.style.display = 'none';
+                }, 200);
+            }, delay);
+        }
+    </script>
+</div>
+    
+
+    
+<link rel="stylesheet" href="/hexo/css/style.css">
+
+
+    
+        
+<link rel="stylesheet" href="/hexo/assets/build/styles.css">
+
+    
+
+    
+<link rel="stylesheet" href="/hexo/fonts/fonts.css">
+
+    
+<link rel="stylesheet" href="/hexo/fonts/Satoshi/satoshi.css">
+
+    <!--- Font Part-->
+    
+    
+    
+    
+
+
+    <script id="hexo-configurations">
+    window.config = {"hostname":"hiraethecho.github.io","root":"/hexo/","language":"en","path":"search.json"};
+    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"title_alignment":"left","headings_top_spacing":{"h1":"5rem","h2":"4rem","h3":"2.8rem","h4":"2.5rem","h5":"2.2rem","h6":"2rem"}},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":false,"list":[]},"code_block":{"copy":true,"style":"mac","font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":{"enable":true,"default":"cc_by_nc_sa"},"lazyload":true,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null,"default_mode":"light"},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"website_counter":{"url":"https://cn.vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":true,"open_graph":true,"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"Theme Redefine","subtitle":{"text":[],"hitokoto":{"enable":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":false,"style":"default","links":{"github":null,"instagram":null,"zhihu":null,"twitter":null,"email":null},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":null,"artist":null,"url":null,"cover":null,"lrc":null}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.6.1","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"width":{"home":"1200px","pages":"1000px"},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"}},"search":{"enable":false,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":null,"show_on_mobile":true,"links":null},"article_date_format":"auto","categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2022/8/17 11:45:14"};
+    window.lang_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+    window.data = {"masonry":true};
+  </script>
+    
+    <!--- Fontawesome Part-->
+    
+<link rel="stylesheet" href="/hexo/fontawesome/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/hexo/fontawesome/brands.min.css">
+
+    
+<link rel="stylesheet" href="/hexo/fontawesome/solid.min.css">
+
+    
+<link rel="stylesheet" href="/hexo/fontawesome/regular.min.css">
+
+    
+    
+    
+    
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/hexo/atom.xml" title="Hiraeth" type="application/atom+xml">
+</head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+<!--        <span class="swup-progress-icon">-->
+<!--            <i class="fa-solid fa-circle-notch fa-spin"></i>-->
+<!--        </span>-->
+    
+</div>
+
+
+<main class="page-container" id="swup">
+
+    
+
+    <div class="main-content-container">
+
+
+        <div class="main-content-header">
+            <header class="navbar-container px-6 md:px-12">
+
+    <div class="navbar-content ">
+        <div class="left">
+            
+            <a class="logo-title" href="/hexo/">
+                
+                Theme Redefine
+                
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="desktop">
+                <ul class="navbar-list">
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/hexo/"
+                                        >
+                                    <i class="fa-regular fa-house fa-fw"></i>
+                                    HOME
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                <div class="icon-item navbar-bar">
+                    <div class="navbar-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile sheet -->
+    <div class="navbar-drawer h-screen w-full absolute top-0 left-0 bg-background-color flex flex-col justify-between">
+        <ul class="drawer-navbar-list flex flex-col px-4 justify-center items-start">
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/hexo/"
+                        >
+                            <span>
+                                HOME
+                            </span>
+                            
+                                <i class="fa-regular fa-house fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+
+            
+            
+        </ul>
+
+        <div class="statistics flex justify-around my-2.5">
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/hexo/tags">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">21</div>
+        <div class="label text-third-text-color text-sm">Tags</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/hexo/categories">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">5</div>
+        <div class="label text-third-text-color text-sm">Categories</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/hexo/archives">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">28</div>
+        <div class="label text-third-text-color text-sm">Posts</div>
+    </a>
+</div>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="main-content-body">
+
+            
+
+            <div class="main-content">
+
+                
+                    <div class="post-page-container flex relative justify-between box-border w-full h-full">
+    <div class="article-content-container">
+
+        <div class="article-title relative w-full">
+            
+                <div class="w-full flex items-center pt-6 justify-start">
+                    <h1 class="article-title-regular text-second-text-color text-4xl md:text-6xl font-bold px-2 sm:px-6 md:px-8 py-3">《单向度的人：发达工业社会意识形态研究》读后感</h1>
+                </div>
+            
+            </div>
+
+        
+            <div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
+                <div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
+                    <img src="/hexo/images/redefine-avatar.svg">
+                </div>
+                <div class="info flex flex-col justify-between">
+                    <div class="author flex items-center">
+                        <span class="name text-default-text-color text-lg font-semibold">The Redefine Team</span>
+                        
+                            <span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1">Lv3</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2023-10-01 01:45:30</span>
+        <span class="mobile">2023-10-01 01:45:30</span>
+        <span class="hover-info">Created</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2023-10-12 17:43:31</span>
+            <span class="mobile">2023-10-12 17:43:31</span>
+            <span class="hover-info">Updated</span>
+        </span>
+    
+
+    
+        <span class="article-categories article-meta-item">
+            <i class="fa-regular fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/hexo/categories/%E6%9D%82%E8%B0%88/">杂谈</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/hexo/tags/philosophy/">philosophy</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/hexo/tags/ideology/">ideology</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/hexo/tags/%E4%B9%A6%E8%AF%84/">书评</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        
+
+
+        <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
+            <h1 id="保护自己的思想"><a href="#保护自己的思想" class="headerlink" title="保护自己的思想"></a>保护自己的思想</h1><p>这是近期看的最艰难的一本书了。过去看《词与物》半途而废，这次断断续续勉强算是看完了这本《单向度的人》，然而看完依然脑袋空空难以厘出输得内容。</p>
+<p>尝试做一下书评&#x2F;读后感&#x2F;笔记，来让这本书被遗忘地慢一点，顺便放进外部记忆存储装置里。</p>
+<h2 id="单向度"><a href="#单向度" class="headerlink" title="单向度"></a>单向度</h2><p>首先要分析的当然是书题：“单向度”指什么？与之相对的是多向度，是指对问题、现象的多角度描述、解释、思考，并给出多种处理方式。而单向度不仅仅指只有唯一的描述、解释、思考的角度，还指在这个角度上只有一个方向，即顺从的方向，而没有反对的方向。发达工业社会，是一种新型极权社会。它阻止了反对它的声音，这是一个没有反对者，或者说无法反对的社会。</p>
+<blockquote>
+<p>当一个社会按照它的阻止方式，似乎越来越能满足个人需要时，独立思考、意志自由和政治反对权的基本的批判功能就逐渐被剥夺。</p>
+</blockquote>
+<p>这种极权，并不在于 <em>禁止</em> 现行制度的反面，而是彻底消除反面。在各类问题上，社会的各个领域里，每一个向度都只有肯定而没有否定。一个没有反面的社会是无法反对的社会。每个人都不舒服，但又没有难受到想要反抗。即使想要反抗，也不知道怎样反抗，不知道反抗的对象，甚至某些反抗方式会成为极权的一部分。</p>
+<p>例如现在常被提起的“内卷”问题，当人追求美好生活时，通常选择努力工作。但竞争愈发激烈，以至于所有人都付出更多，但得到的并没有更多。于是更加努力，更加竞争。在这种情况下，该如何反抗，难道不工作吗？该向谁反抗，工作的老板吗？其他与自己竞争的人吗？</br><br>例如文化和艺术，诸如漫威的电影越拍越烂，而好的制作精良的有深度、内涵的电影却难以生存。此时人们除了在网上口诛笔伐外，会想到这是一种应当被反抗的文化现象吗？但又如何反抗、向谁反抗呢？</br><br>例如奢侈品消费的趋势。<em>苹果手机一年一年改过不啦？他库克都在做产品经理，他有那个创新能力吗？他没有那个能力晓得吧。我劝苹果先把这个科技和人文的理念搞清楚。耳机口取消了，mini款取消了，为了环保充电头也取消了，接下来要取消数据线了。脸都不要了。</em> 许许多多的消费品在创造本不该有的需求，或者悄摸摸搞“计划报废”。消费主义迫使人购买各种商品，营造种种焦虑。这种情况如何反抗、向谁反抗？</p>
+<p>在这种极权社会里，反抗的困难并不在于表面出现的阻碍。没有地主或奴隶主显而易见的剥削（当然资本家在剥削无差别劳动的剩余价值，但这一过程被隐藏在复杂的经济结构里，难以找到直接的剥削者），没有哪个组织明确地阻止艺术的多样发展及传播，没有粮票式的购买限制，苹果也不是垄断手机行业的资本寡头。</br><br>反对这种极权的困难在于，我们没有反抗的叙事或图式，我们不知道一个不如此极权的社会是什么样子。</p>
+<h2 id="发达工业社会：技术主义、操作主义和消费主义的社会"><a href="#发达工业社会：技术主义、操作主义和消费主义的社会" class="headerlink" title="发达工业社会：技术主义、操作主义和消费主义的社会"></a>发达工业社会：技术主义、操作主义和消费主义的社会</h2><p>除了“单向度”这个概念，副标题“发达工业社会意识形态研究”也值得一提。马尔库塞确实是西方马克思主义的重要人物之一，但这并不意味着马尔库塞是针对资本主义的批判。换句话说，本书批判的不是一二战之前的以垄断资本主义、帝国主义为最终阶段的资本主义这种中学教材上的意识形态。意识形态是批判的角度方法而不是主题，批判的主体是“<strong>发达工业社会</strong>”.</p>
+<p>以我朴素的学识，资产阶级是掌握生产资料的阶级，通过剥削无产阶级的无差别劳动中产生的剩余价值积累财富，以此循环往复。当生产力极大发展，使得所有人自由平等发展是每个人自由平等发展的前提和结果，当人的价值在于劳动、可以做自己想做的事而没有压迫和剥削时，才是实现共产主义世界了。在这个看法下，发达工业社会的发展，理应相应的发展生产力，进而促进人类的解放，也就是说“共产主义是资本主义的最终阶段”，但为什么反而促进形成了这种不自由的“单向度社会”呢？这样的问题不可能由知识浅薄的我说明，也不可能在一片博客的篇幅说明， 但依然值得尝试片面、浅薄地分析。</p>
+<p>我想借用康德的术语来解释这种情况：在这种极权社会中，人不再是目的而是手段。这里不仅指无产阶级成为资产阶级积累财富的手段，而是指更广泛的所有人都成为技术社会的手段。社会与人的关系从“社会和经济结构是人类群体行为涌现出的结构”转变为了“个人是从属于工业社会的一部分”。商品并不再是由人的需求而被创造出来，而是人的需求被商品激发。不止商品和消费行为，包括艺术审美和创作、劳动等人类行为，都发生了这样主客体交换一般的转变。人成了发达工业社会的手段，成了它维持和发展自身的手段。</p>
+<blockquote>
+<p>这个世界势必成为甚至把管理者也包括在内的全面管理的材料。</p>
+</blockquote>
+<h2 id="向度是如何消失的？"><a href="#向度是如何消失的？" class="headerlink" title="向度是如何消失的？"></a>向度是如何消失的？</h2><p>那么其他的向度是如被抹除的呢？译者刘继在译后记中总结，认为马尔库塞从四个方面描述具体操作：</p>
+<ul>
+<li>政治上实现了对立面的一体化</li>
+<li>生活上使不同阶级的生活同化（事实上之后让他们的愿望一致，将阶级矛盾转化为个人实现其梦想的矛盾）</li>
+<li>文化上将高层文化和现实同一起来</li>
+<li>思想上流行实证主义、分析哲学这样的肯定性哲学</li>
+</ul>
+<p>但我并没有读懂这本书，也没有系统性读过其他相关理论，更没有社会政治或经济的实践，这使得我对译者的总结无法赞同也并不反对。在当前情况下我的思考和看法必然是片面和不成熟的，但我认为依然有必要记录下来。<br>政治上实现对立面的统一，是我毫无相关经验能做后天综合分析的。书中曾举例诸如工会的组织，原本应当是联合无产阶级反抗剥削的，但在资本主义的发展过程中，它与统治阶级逐渐形成了合作关系。工会看似维护了公认的利益，却实际上是“维稳”的手段，为了“可持续剥削”工人。反抗不彻底等于彻底不反抗，借由表面上让渡出一部分权利，政府（统治者）反而缓慢地将工会改造成了统治的工具。在《娱乐至死》中曾指出一种（不是政治的但是类似的）荒诞的情景，即一些思想家反对诸如电视节目这样的传播媒介将一切娱乐化，他们却被邀请到电视节目与彼此辩论来表达思想：他们就这样被娱乐化了。我想到另一个非政治的例子是，例如《黑豹》和《小美人鱼》这样的电影，看似为某些群体争取权利，另一方面其实是另一种结构性的隐蔽的歧视。</p>
+<p>在生活、艺术和思想的向度上，在我看来关键在于对人的精神自由的剥夺，即令人无法想象与当前情景不同的的叙事。例如人应当可以选择各种生活方式，但“成功”的便准愈发单一，使人几乎只能有一种追求。用不准确但通俗的说法就是赚钱，然后昂贵的生活（所以说要多读《小王子》啊！）。</p>
+<p>而艺术本身就应当具有反叛精神：</p>
+<blockquote>
+<p>“艺术”是大拒绝，即对现存事物的抗议。</br><br>艺术只有作为否定力量才能拥有这种魔力。只有当形象是拒绝和驳斥已确立的秩序的活生生力量时，它才能经书自己的语言。</p>
+</blockquote>
+<p>艺术的力量在于使人幻想，幻想与现实不同的世界。即使是现代主义作者，也应当使读者反思现实，而不是服从现实。杀死艺术的方式除了使之庸俗，还有使之失去观众。当代艺术常常被人认为“看不懂”，被人认为完全是少数艺术家的自嗨，与自己的生活并无关系。艺术的反叛绝不是靠零星的创作者就能实现的，它需要观众的欣赏和思考。（然而波普艺术本意想要反思消费潮流，反而成为了消费主义的玩具。）</p>
+<p>同样的，人的思想领域也有这样的现象。要么将超越的思考完全排除在现实之外，要么抹杀非肯定的思考。人常常认为哲学是少数哲学家的人物而与自己无关，把形而上学当作远离生活的“吃饱了撑的”。当人不再反思本体论、认识论和知识论的问题，当不再思考生存、时间、虚无和自由的伦理价值，当不质疑生活乃至宇宙意义时，人还能思考什么呢？人只能思考今天吃什么和房贷怎么还。另一方面，借由操作主义和语言改造，使人无法想象“正确”生活之外的事。语言是思想的载体，当语言受限时，人的思想就随之受限。《1984》中的“新话”就是如此协助控制思想的。当操作主义将 <em>事物</em> 与 <em>操作事物</em>等同起来，当反对性的语言被禁止或遗忘时，当抽象和超越的思想能力被抛弃时，反对的向度也随之消失了。</p>
+<h2 id="反抗单向度"><a href="#反抗单向度" class="headerlink" title="反抗单向度"></a>反抗单向度</h2><p>身处这样的极权主义发达工业社会中时，批判只是第一步，更重要的是如何使自己反抗这种全面管理、不做 _单向度的人_？在政治与生活方面，对我来说是彻底的盲区，所以只能反思生活、艺术和思想的方面。即是如此，我也是手足无措的，仿佛螳臂当车。</p>
+<p>我想必然要做的是，保护自己关于艺术的审美，保护自己的反叛和愤怒；保护自己的思想能力，努力逃离信息茧房或各种形式的“思想封锁”。广泛地阅读、游历、体验，绝不轻信、永远质疑。</p>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>当写读后感时才知道为什么这群B都写得又臭又长：不然确实写不清楚啊！还有好多想法想写但不知道怎么写，真是惆怅。总之这里补充点杂七杂八的想说没说的东西。</p>
+<p>首先是一些零碎的不知道放到那里的想法：</p>
+<ul>
+<li>1984年苹果的麦金塔电脑广告，是一个很好的广告。麦金塔电脑，是使1984不会成为《1984》的原因。借由<code>个人电脑</code>的概念，让人不被暴力极权限制思想。然而讽刺的是，似乎电脑（和智能手机）正成为我们步入《美丽新世界》世界的原因。（这个描述具体可以看《娱乐至死》）。</li>
+<li>保护思想的部分，可以看看电影《超脱》中课上讲双重思想的部分，虽然我觉得它对 <em>双重思想</em>的解释是跑偏的，但保护自己思想的部分是同意的。</li>
+</ul>
+<p>然后是一些其他值得搭配的资料：</p>
+<ul>
+<li>书籍<ul>
+<li>《娱乐至死》</li>
+<li>《美丽新世界》</li>
+<li>《1984》</li>
+<li>《他者的消失》（一定意义上是《单向度的人》的 <strong>续</strong>）</li>
+</ul>
+</li>
+<li>电影<ul>
+<li>《搏击俱乐部》</li>
+<li>《极度空间》（这电影真是又好又烂hhhh）</li>
+<li>《超脱》</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        
+            <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
+                <div class="article-copyright-info-container">
+    <ul>
+        <li><strong>Title:</strong> 《单向度的人：发达工业社会意识形态研究》读后感</li>
+        <li><strong>Author:</strong> The Redefine Team</li>
+        <li><strong>Created at
+                :</strong> 2023-10-01 01:45:30</li>
+        
+            <li>
+                <strong>Updated at
+                    :</strong> 2023-10-12 17:43:31
+            </li>
+        
+        <li>
+            <strong>Link:</strong> https://redefine.ohevan.com/杂谈/one-dimensional-man/
+        </li>
+        <li>
+            <strong>
+                License:
+            </strong>
+            
+
+            
+                This work is licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a>.
+            
+        </li>
+    </ul>
+</div>
+
+            </div>
+        
+
+        
+            <ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
+                
+                    <li class="tag-item mx-0.5">
+                        <a href="/hexo/tags/philosophy/">#philosophy</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item mx-0.5">
+                        <a href="/hexo/tags/ideology/">#ideology</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item mx-0.5">
+                        <a href="/hexo/tags/%E4%B9%A6%E8%AF%84/">#书评</a>&nbsp;
+                    </li>
+                
+            </ul>
+        
+
+        
+
+        
+            <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
+                
+                    <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="prev"
+                        rel="prev"
+                        href="/hexo/%E6%9D%82%E8%B0%88/science/"
+                        >
+                            <span class="left arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">自然科学何以可能</span>
+                                <span class="post-nav-item">Prev posts</span>
+                            </span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="next"
+                        rel="next"
+                        href="/hexo/%E6%9D%82%E8%B0%88/fire-of-love/"
+                        >
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">跃入永恒的爱情</span>
+                                <span class="post-nav-item">Next posts</span>
+                            </span>
+                            <span class="right arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+
+        
+            <div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
+                <div class="comments-container mt-10 w-full ">
+    <div id="comment-anchor" class="w-full h-2.5"></div>
+    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
+        Comments
+    </div>
+    
+
+        
+            
+    <div id="waline"></div>
+    <script type="module" data-swup-reload-script>
+      import { init } from '/hexo/js/libs/waline.mjs';
+
+      function loadWaline() {
+        init({
+          el: '#waline',
+          serverURL: 'https://example.example.com',
+          lang: 'zh-CN',
+          dark: 'body[class~="dark-mode"]',
+          requiredMeta: ['nick', 'mail'],
+          emoji: [],
+          recaptchaV3Key: "wasd",
+          
+        });
+      }
+
+      if (typeof swup !== 'undefined') {
+        loadWaline();
+      } else {
+        window.addEventListener('DOMContentLoaded', loadWaline);
+      }
+    </script>
+
+
+
+        
+    
+</div>
+
+            </div>
+        
+    </div>
+
+    
+        <div class="toc-content-container">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">On this page</div>
+        <div class="page-title">《单向度的人：发达工业社会意识形态研究》读后感</div>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BF%9D%E6%8A%A4%E8%87%AA%E5%B7%B1%E7%9A%84%E6%80%9D%E6%83%B3"><span class="nav-text">保护自己的思想</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E5%90%91%E5%BA%A6"><span class="nav-text">单向度</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%91%E8%BE%BE%E5%B7%A5%E4%B8%9A%E7%A4%BE%E4%BC%9A%EF%BC%9A%E6%8A%80%E6%9C%AF%E4%B8%BB%E4%B9%89%E3%80%81%E6%93%8D%E4%BD%9C%E4%B8%BB%E4%B9%89%E5%92%8C%E6%B6%88%E8%B4%B9%E4%B8%BB%E4%B9%89%E7%9A%84%E7%A4%BE%E4%BC%9A"><span class="nav-text">发达工业社会：技术主义、操作主义和消费主义的社会</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%91%E5%BA%A6%E6%98%AF%E5%A6%82%E4%BD%95%E6%B6%88%E5%A4%B1%E7%9A%84%EF%BC%9F"><span class="nav-text">向度是如何消失的？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%8D%E6%8A%97%E5%8D%95%E5%90%91%E5%BA%A6"><span class="nav-text">反抗单向度</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E4%BB%96"><span class="nav-text">其他</span></a></li></ol></li></ol>
+
+    </div>
+</div>
+        </div>
+    
+</div>
+
+
+
+                
+
+            </div>
+
+            
+
+        </div>
+
+        <div class="main-content-footer">
+            <footer class="footer mt-5 py-5 h-auto text-base text-third-text-color relative border-t-2 border-t-border-color">
+    <div class="info-container py-3 text-center">
+        
+        <div class="text-center">
+            &copy;
+            
+              <span>2022</span>
+              -
+            
+            2024&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/hexo/">The Redefine Team</a>
+            
+                
+                <p class="post-count space-x-0.5">
+                    <span>
+                        28 posts in total
+                    </span>
+                    
+                </p>
+            
+        </div>
+        
+            <script data-swup-reload-script src="https://cn.vercount.one/js"></script>
+            <div class="relative text-center lg:absolute lg:right-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-right">
+                
+                    <span id="busuanzi_container_site_uv" class="lg:!block">
+                        <span class="text-sm">VISITOR COUNT</span>
+                        <span id="busuanzi_value_site_uv"></span>
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv" class="lg:!block">
+                        <span class="text-sm">TOTAL PAGE VIEWS</span>
+                        <span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="relative text-center lg:absolute lg:left-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-left">
+            <span class="lg:block text-sm">POWERED BY <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="relative top-[2px] inline-block align-baseline" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" class="text-base" href="https://hexo.io">Hexo</a></span>
+            <span class="text-sm lg:block">THEME&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.6.1</a></span>
+        </div>
+        
+        
+            <div>
+                Blog up for <span class="odometer" id="runtime_days" ></span> days <span class="odometer" id="runtime_hours"></span> hrs <span class="odometer" id="runtime_minutes"></span> Min <span class="odometer" id="runtime_seconds"></span> Sec
+            </div>
+        
+        
+            <script data-swup-reload-script>
+                try {
+                    function odometer_init() {
+                    const elements = document.querySelectorAll('.odometer');
+                    elements.forEach(el => {
+                        new Odometer({
+                            el,
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    });
+                    }
+                    odometer_init();
+                } catch (error) {}
+            </script>
+        
+        
+        
+    </div>  
+</footer>
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="article-tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+            <li class="go-comment">
+                <i class="fa-regular fa-comments"></i>
+            </li>
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-side-tools-container">
+        <div class="side-tools-container">
+    <ul class="hidden-tools-list">
+        <li class="right-bottom-tools tool-font-adjust-plus flex justify-center items-center">
+            <i class="fa-regular fa-magnifying-glass-plus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-font-adjust-minus flex justify-center items-center">
+            <i class="fa-regular fa-magnifying-glass-minus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-dark-light-toggle flex justify-center items-center">
+            <i class="fa-regular fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+
+        <li class="right-bottom-tools tool-scroll-to-bottom flex justify-center items-center">
+            <i class="fa-regular fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="visible-tools-list">
+        <li class="right-bottom-tools toggle-tools-list flex justify-center items-center">
+            <i class="fa-regular fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="right-bottom-tools tool-scroll-to-top flex justify-center items-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+
+</main>
+
+
+    
+<script src="/hexo/js/libs/Swup.min.js"></script>
+
+<script src="/hexo/js/libs/SwupSlideTheme.min.js"></script>
+
+<script src="/hexo/js/libs/SwupScriptsPlugin.min.js"></script>
+
+<script src="/hexo/js/libs/SwupProgressPlugin.min.js"></script>
+
+<script src="/hexo/js/libs/SwupScrollPlugin.min.js"></script>
+
+<script src="/hexo/js/libs/SwupPreloadPlugin.min.js"></script>
+
+<script>
+    const swup = new Swup({
+        plugins: [
+            new SwupScriptsPlugin({
+                optin: true,
+            }),
+            new SwupProgressPlugin(),
+            new SwupScrollPlugin({
+                offset: 80,
+            }),
+            new SwupSlideTheme({
+                mainElement: ".main-content-body",
+            }),
+            new SwupPreloadPlugin(),
+        ],
+        containers: ["#swup"],
+    });
+</script>
+
+
+
+
+
+
+
+<script src="/hexo/js/tools/imageViewer.js" type="module"></script>
+
+<script src="/hexo/js/utils.js" type="module"></script>
+
+<script src="/hexo/js/main.js" type="module"></script>
+
+<script src="/hexo/js/layouts/navbarShrink.js" type="module"></script>
+
+<script src="/hexo/js/tools/scrollTopBottom.js" type="module"></script>
+
+<script src="/hexo/js/tools/lightDarkSwitch.js" type="module"></script>
+
+<script src="/hexo/js/layouts/categoryList.js" type="module"></script>
+
+
+
+
+
+    
+<script src="/hexo/js/tools/codeBlock.js" type="module"></script>
+
+
+
+
+    
+<script src="/hexo/js/layouts/lazyload.js" type="module"></script>
+
+
+
+
+    
+<script src="/hexo/js/tools/runtime.js"></script>
+
+    
+<script src="/hexo/js/libs/odometer.min.js"></script>
+
+    
+<link rel="stylesheet" href="/hexo/assets/odometer-theme-minimal.css">
+
+
+
+
+  
+<script src="/hexo/js/libs/Typed.min.js"></script>
+
+  
+<script src="/hexo/js/plugins/typed.js" type="module"></script>
+
+
+
+
+
+
+    
+<script src="/hexo/js/libs/minimasonry.min.js"></script>
+
+    
+<script src="/hexo/js/plugins/masonry.js" type="module"></script>
+
+
+
+
+
+<div class="post-scripts" data-swup-reload-script>
+    
+        
+<script src="/hexo/js/tools/tocToggle.js" type="module"></script>
+
+<script src="/hexo/js/layouts/toc.js" type="module"></script>
+
+<script src="/hexo/js/plugins/tabs.js" type="module"></script>
+
+    
+</div>
+
+
+<!-- hexo injector body_end start -->
+  <script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/hexo-github-calendar@1.21/hexo_githubcalendar.js"></script>
+  <script data-pjax>
+        function GithubCalendarConfig(){
+            var git_githubapiurl ="https://python-github-calendar-api.vercel.app/api?HiraethEcho";
+            var git_color =['#ebedf0', '#fdcdec', '#fc9bd9', '#fa6ac5', '#f838b2', '#f5089f', '#c4067e', '#92055e', '#540336', '#48022f', '#30021f'];
+            var git_user ="HiraethEcho";
+            var parent_div_git = document.getElementById('recent-posts');
+            var git_div_html = '<div class="recent-post-item" style="width:100%;height:auto;padding:10px;"><div id="github_loading" style="width:10%;height:100%;margin:0 auto;display: block"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 50 50" style="enable-background:new 0 0 50 50" xml:space="preserve"><path fill="#d0d0d0" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(275.098 25 25)"><animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animateTransform></path></svg></div><div id="github_container"></div></div>';
+            if(parent_div_git && location.pathname =='/about/'){
+                console.log('已挂载github calendar')
+                // parent_div_git.innerHTML=git_div_html+parent_div_git.innerHTML // 无报错，但不影响使用(支持pjax跳转)
+                parent_div_git.insertAdjacentHTML("afterbegin",git_div_html) // 有报错，但不影响使用(支持pjax跳转)
+            };
+            GithubCalendar(git_githubapiurl,git_color,git_user)
+        }
+        if(document.getElementById('recent-posts')){
+            GithubCalendarConfig()
+        }
+    </script>
+    <style>#github_container{min-height:280px}@media screen and (max-width:650px) {#github_container{background-image:;min-height:0px}}</style>
+    <style></style><!-- hexo injector body_end end --></body>
+</html>
