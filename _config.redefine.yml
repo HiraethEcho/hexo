@@ -50,12 +50,12 @@ global:
   fonts:
     # Chinese fonts
     chinese: 
-      enable: true # Whether to enable custom chinese fonts
+      enable: false # Whether to enable custom chinese fonts
       family:  LXGW WenKai Screen # Font family
       url: https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css # Font URL to CSS file
     # English fonts
     english: 
-      enable: true # Whether to enable custom english fonts
+      enable: false # Whether to enable custom english fonts
       family: Maple Mono NF # Font family
       url:  # Font URL to CSS file
   # Content max width
