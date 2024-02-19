@@ -27,7 +27,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://hiraethecho.github.io/hexo/hexoimg/idiot03.png">
 <meta property="article:published_time" content="2023-10-23T08:39:14.000Z">
-<meta property="article:modified_time" content="2023-11-11T02:22:41.717Z">
+<meta property="article:modified_time" content="2024-02-19T06:23:59.350Z">
 <meta property="article:author" content="Hiraeth">
 <meta property="article:tag" content="书评">
 <meta property="article:tag" content="剧评">
@@ -653,262 +653,263 @@
             <div class="main-content">
 
                 
-                    <div class="post-page-container flex relative justify-between box-border w-full h-full">
-    <div class="article-content-container">
+                    @import '../common/variables'
 
-        <div class="article-title relative w-full">
-            
-                <div class="w-full flex items-center pt-6 justify-center">
-                    <h1 class="article-title-regular text-second-text-color text-4xl md:text-6xl font-bold px-2 sm:px-6 md:px-8 py-3">《白痴》！</h1>
-                </div>
-            
-            </div>
+$arrow-icon-width = 16px
+$post-nav-max-width = 220px
+$article-title-font-size = 3.2rem
+$temp-toc-width = hexo-config('global.sidebar_width')
+$toc-container-width = $temp-toc-width ? convert($temp-toc-width) : 210px
+$without-toc-container-width = calc(100% - $temp-toc-width)
+$gap = 30px
 
-        
-            <div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
-                <div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
-                    <img src="/hexo/img/avatar.jpeg">
-                </div>
-                <div class="info flex flex-col justify-between">
-                    <div class="author flex items-center">
-                        <span class="name text-default-text-color text-lg font-semibold">HiraethEcho</span>
-                        
-                    </div>
-                    <div class="meta-info">
-                        <div class="article-meta-info">
-    <span class="article-date article-meta-item">
-        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2023-10-23 16:39:14</span>
-        <span class="mobile">2023-10-23 16:39:14</span>
-        <span class="hover-info">Created</span>
-    </span>
-    
-        <span class="article-date article-meta-item">
-            <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2023-11-11 10:22:41</span>
-            <span class="mobile">2023-11-11 10:22:41</span>
-            <span class="hover-info">Updated</span>
-        </span>
-    
+.post-page-container
+  gap 0px
 
-    
-        <span class="article-categories article-meta-item">
-            <i class="fa-regular fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/hexo/categories/%E9%9A%8F%E6%83%B3/">随想</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-    
-    
-        <span class="article-tags article-meta-item">
-            <i class="fa-regular fa-tags"></i>&nbsp;
-            <ul>
-                
-                    <li>
-                        <a href="/hexo/tags/%E4%B9%A6%E8%AF%84/">书评</a>&nbsp;
-                    </li>
-                
-                    <li>
-                        | <a href="/hexo/tags/%E5%89%A7%E8%AF%84/">剧评</a>&nbsp;
-                    </li>
-                
-            </ul>
-        </span>
-    
-
-    
-    
-    
-    
-</div>
-
-                    </div>
-                </div>
-            </div>
-        
-
-        
+  +redefine-mobile()
+    overflow-x hidden
 
 
-        <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-            <h1 id="重看《白痴》电视剧"><a href="#重看《白痴》电视剧" class="headerlink" title="重看《白痴》电视剧"></a>重看《白痴》电视剧</h1><p class="note note-primary">在B站重看了翻拍自陀思妥耶夫斯基小说《白痴》的同名电视剧，感到悲从中来，不可断绝。在心绪不宁的日子里，情绪略微有了一点（除喝酒外）的出口。遂尝试表达出一些零散的不得不表达的心情。</p>
+  &.show-toc
+    gap 30px
 
-<blockquote>
-<p>陀思妥耶夫斯基是永生不死的!</p>
-</blockquote>
-<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="//player.bilibili.com/player.html?aid=79196647&bvid=BV1WJ411r7ep&cid=135532415&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div>
+    .toc-content-container
+      display block
+      opacity 1
+      transition opacity 0.2s ease-in 0.2s
+      width $toc-container-width
 
+      &:hover::-webkit-scrollbar-thumb
+        border 3px solid rgba(183, 183, 183, 0.3)
 
-<h2 id="救赎"><a href="#救赎" class="headerlink" title="救赎"></a>救赎</h2><p>&emsp;&emsp;梅诗金公爵，人世间基督的化身，想要救赎世人！爱一切人，原谅一切人！可是您自己呢？您在尘世的幸福呢？即使愿意背负起一切罪行，也无法拯救所有人。</br><br>可难道人们就无法被救赎了吗？但是人们毕竟是能感受到幸福的！看看那些树，看那瑞士的雪山！</p>
-<p>&emsp;&emsp;苦难的纳斯塔霞！为什么苦难的人无法得到救赎呢？难道穷人就只能到接上去，去做洗衣工吗？悲惨且高傲的纳斯塔霞，跪倒在公爵面前的纳斯塔霞，最终逃婚的纳斯塔霞，始终不肯使自己获得救赎的娜斯塔霞！<br><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/hexo/hexoimg/idiot03.png"
-                      alt="纳斯塔霞"
-                ><br>&emsp;&emsp;爱基督的阿格拉雅，却不能容忍基督爱其他一切诗人。洁白的、幸福的阿格拉雅，也许那时还未知道世间是有悲剧的吧！</p>
-<h2 id="祝福"><a href="#祝福" class="headerlink" title="祝福"></a>祝福</h2><p>&emsp;&emsp;伊波利特，请从我们身边走过，并原谅我们的幸福！</p>
-<h2 id="无语凝噎"><a href="#无语凝噎" class="headerlink" title="无语凝噎"></a>无语凝噎</h2><p>&emsp;&emsp;我怎么就不是诗人，我要是诗人，我怎么会简直泪流满面却只能写出这么稀碎的感想来！甚至<strong>感想</strong>这个词都想不到恰当的词汇！</p>
-<p>&emsp;&emsp;在公爵面前，任何人都会看到自己的丑恶的一面并恳求宽恕吧。愿善良的人，愿一切人最终得到救赎。</p>
-<p class="note note-info">愿美终究拯救一切！</p>
+      &::-webkit-scrollbar
+        width 6px
+        height 6px
+        transition all 0.2s ease
+        display block
 
-        </div>
+      &::-webkit-scrollbar-track
+        background transparent
+        border none
 
-        
-            <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
-                <div class="article-copyright-info-container">
-    <ul>
-        <li><strong>Title:</strong> 《白痴》！</li>
-        <li><strong>Author:</strong> HiraethEcho</li>
-        <li><strong>Created at
-                :</strong> 2023-10-23 16:39:14</li>
-        
-            <li>
-                <strong>Updated at
-                    :</strong> 2023-11-11 10:22:41
-            </li>
-        
-        <li>
-            <strong>Link:</strong> https://hiraethecho.github.io/hexo/随想/idiot/
-        </li>
-        <li>
-            <strong>
-                License:
-            </strong>
-            
+      &::-webkit-scrollbar-thumb
+        border-radius 20px
+        border 3px solid rgba(183, 183, 183, 0)
+        transition all 0.2s ease
 
-            
-                This work is licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a>.
-            
-        </li>
-    </ul>
-</div>
+    .article-content-container
+      width calc(100% - 210px) !important
 
-            </div>
-        
+  +redefine-tablet()
+    .toc-content-container
+      display none !important
 
-        
-            <ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
-                
-                    <li class="tag-item mx-0.5">
-                        <a href="/hexo/tags/%E4%B9%A6%E8%AF%84/">#书评</a>&nbsp;
-                    </li>
-                
-                    <li class="tag-item mx-0.5">
-                        <a href="/hexo/tags/%E5%89%A7%E8%AF%84/">#剧评</a>&nbsp;
-                    </li>
-                
-            </ul>
-        
+    .article-content-container
+      width 100% !important
 
-        
+    &.show-toc
+      .toc-content-container
+        display none
 
-        
-            <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
-                
-                    <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-                        <a class="prev"
-                        rel="prev"
-                        href="/hexo/%E9%9A%8F%E6%83%B3/arrowoftime/"
-                        >
-                            <span class="left arrow-icon flex justify-center items-center">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </span>
-                            <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">时间是一种幻觉</span>
-                                <span class="post-nav-item">Prev posts</span>
-                            </span>
-                        </a>
-                    </div>
-                
-                
-                    <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-                        <a class="next"
-                        rel="next"
-                        href="/hexo/%E6%9D%82%E8%B0%88/democracyold/"
-                        >
-                            <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">关于民主共和制度粗糙浅显的小结</span>
-                                <span class="post-nav-item">Next posts</span>
-                            </span>
-                            <span class="right arrow-icon flex justify-center items-center">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </span>
-                        </a>
-                    </div>
-                
-            </div>
-        
+      .article-content-container
+        width 100% !important
 
+  .article-content-container
+    width 100%
+    transition width 0.2s ease
+    redefine-container(
+      false,
+      0,
+      0,
+      0,
+      30px
+    )
 
-        
-            <div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
-                <div class="comments-container mt-10 w-full ">
-    <div id="comment-anchor" class="w-full h-2.5"></div>
-    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
-        Comments
-    </div>
-    
+    +redefine-mobile()
+      padding 1.2rem 0.2rem
+      box-shadow none !important
+      max-width 100vw
 
-        
-            
-    <div class="twikoo-container">
-        <script data-swup-reload-script
-                src='https://cdn.staticfile.org/twikoo/1.6.10/twikoo.all.min.js'
-        ></script>
-        <div id="twikoo-comment"></div>
-        <script data-swup-reload-script>
-            function loadTwikoo() {
-                twikoo.init({
-                    el: '#twikoo-comment',
-                    envId: 'https://hexohiraeth.netlify.app/.netlify/functions/twikoo',
-                });
-            }
+    .article-header .avatar img
+          border-radius: $redefine-border-radius-medium * 0.87
+          width 100%
+          height 100%
+          // background var(--avatar-background-color)
 
-            if ('true') {
-                const loadTwikooTimeout = setTimeout(() => {
-                    loadTwikoo();
-                    clearTimeout(loadTwikooTimeout);
-                }, 1000);
-            } else {
-                window.addEventListener('DOMContentLoaded', loadTwikoo);
-            }
-        </script>
-    </div>
+    .article-header, .article-header-meta-info
+      margin-top 16px
 
+      +redefine-tablet()
+        transform scale(0.9)
+        transform-origin left top
 
-        
-        
-    
-</div>
+    .article-content
+      margin-top $spacing-unit
+      padding-bottom 10px
+      word-wrap break-word
+      border-bottom 1px solid var(--border-color)
+      color var(--default-text-color)
 
-            </div>
-        
-    </div>
+      &>:first-child
+        margin-top 0 !important
 
-    
-        <div class="toc-content-container">
-            <div class="post-toc-wrap">
-    <div class="post-toc">
-        <div class="toc-title">On this page</div>
-        <div class="page-title">《白痴》！</div>
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%87%8D%E7%9C%8B%E3%80%8A%E7%99%BD%E7%97%B4%E3%80%8B%E7%94%B5%E8%A7%86%E5%89%A7"><span class="nav-number">1.</span> <span class="nav-text">重看《白痴》电视剧</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%91%E8%B5%8E"><span class="nav-number">1.1.</span> <span class="nav-text">救赎</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A5%9D%E7%A6%8F"><span class="nav-number">1.2.</span> <span class="nav-text">祝福</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%97%A0%E8%AF%AD%E5%87%9D%E5%99%8E"><span class="nav-number">1.3.</span> <span class="nav-text">无语凝噎</span></a></li></ol></li></ol>
+    .article-prev, .article-next
 
-    </div>
-</div>
-        </div>
-    
-</div>
+        a
+          position relative
+          display block
+          width 100%
+          height 100%
+          box-sizing border-box
 
+          &.prev
+            padding-left $arrow-icon-width
 
+          &.next
+            padding-right $arrow-icon-width
+
+          .arrow-icon
+            position absolute
+            top 0
+            height 100%
+            width $arrow-icon-width
+
+            &.left
+              left 0
+
+            &.right
+              right 0
+
+          .title
+            width 100%
+            height 100%
+
+      .post-nav-item
+        display none
+
+        +redefine-tablet()
+          display inline-block
+
+      .post-nav-title-item
+        overflow hidden
+        text-overflow ellipsis
+        white-space nowrap
+
+        +redefine-tablet()
+          display none
+
+    .recommended-article
+      overflow visible !important
+
+      .recommended-mobile
+        display none
+        +redefine-tablet()
+          display block
+
+      .recommended-desktop
+        display block
+        +redefine-tablet()
+          display none
+
+      .recommended-article-group
+        padding 10px 0
+        display flex
+        justify-content space-between
+        flex-wrap wrap
+        overflow visible !important
+
+        @media screen and (max-width $device-tablet)
+          height 190px
+          overflow scroll
+
+          &::-webkit-scrollbar
+            width 0 !important
+
+          -ms-overflow-style none
+
+        .recommended-article-item
+          redefine-container(
+            false,
+            0,
+            0,
+            10px,
+            0
+          )
+          box-shadow var(--redefine-box-shadow-flat)
+          padding 12px !important
+          display flex
+          flex-wrap wrap
+          align-content center
+          justify-content center
+          align-items center
+          overflow hidden
+          width 32%
+          max-height 200px
+          margin-top: $gap * 0.5
+          margin-right 0
+
+          +redefine-tablet()
+            width 49%
+
+          img
+            display flex
+            width calc(100% + 24px)
+            height 150px
+            object-fit cover
+            border-radius $redefine-border-radius-medium-top
+            margin -12px -12px 0 -12px !important
+
+          span
+            margin-top 0.5rem
+            display block
+            display -webkit-box
+            -webkit-box-orient vertical
+            -webkit-line-clamp 1
+            overflow hidden
+
+  .toc-content-container
+    white-space nowrap
+    opacity 0
+    position sticky
+    top: $navbar-height + $spacing-unit
+    // border-radius $redefine-border-radius-large
+    border-radius $redefine-border-radius-none
+    // display none
+    // visibility hidden
+    // width $toc-container-width
+    width 0
+    height auto
+    max-height calc(100vh - 210px)
+    //margin-left 30px
+    // z-index $z-index-6
+    overflow-y auto
+    overflow-x hidden
+    float right
+    padding 10px
+    box-sizing border-box
+    box-shadow none !important
+    transition opacity 0.3s ease-out 0.3s
+    hover-style(
+      false,
+      0,
+      0
+    )
+    transition-t('display', '0', '0.3', 'ease-out')
+
+    +redefine-tablet()
+      left 0 !important
+      display none !important
+
+  figure.image-caption
+    img
+      margin-bottom 0
+
+    figcaption
+      margin-top 5px
+      margin-bottom 10px
+      text-align center
+      font-size 0.9rem
+      color var(--third-text-color)
 
                 
 

@@ -26,7 +26,7 @@
 <meta property="og:description" content="写在Ti12之后，dota真好玩，游戏真好。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-11-09T03:20:00.000Z">
-<meta property="article:modified_time" content="2023-11-27T05:46:26.931Z">
+<meta property="article:modified_time" content="2024-02-19T06:23:59.350Z">
 <meta property="article:author" content="Hiraeth">
 <meta property="article:tag" content="dota">
 <meta property="article:tag" content="game">
@@ -651,266 +651,263 @@
             <div class="main-content">
 
                 
-                    <div class="post-page-container flex relative justify-between box-border w-full h-full">
-    <div class="article-content-container">
+                    @import '../common/variables'
 
-        <div class="article-title relative w-full">
-            
-                <div class="w-full flex items-center pt-6 justify-center">
-                    <h1 class="article-title-regular text-second-text-color text-4xl md:text-6xl font-bold px-2 sm:px-6 md:px-8 py-3">Enjoy Dota, enjoy</h1>
-                </div>
-            
-            </div>
+$arrow-icon-width = 16px
+$post-nav-max-width = 220px
+$article-title-font-size = 3.2rem
+$temp-toc-width = hexo-config('global.sidebar_width')
+$toc-container-width = $temp-toc-width ? convert($temp-toc-width) : 210px
+$without-toc-container-width = calc(100% - $temp-toc-width)
+$gap = 30px
 
-        
-            <div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
-                <div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
-                    <img src="/hexo/img/avatar.jpeg">
-                </div>
-                <div class="info flex flex-col justify-between">
-                    <div class="author flex items-center">
-                        <span class="name text-default-text-color text-lg font-semibold">HiraethEcho</span>
-                        
-                    </div>
-                    <div class="meta-info">
-                        <div class="article-meta-info">
-    <span class="article-date article-meta-item">
-        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2023-11-09 11:20</span>
-        <span class="mobile">2023-11-09 11:20</span>
-        <span class="hover-info">Created</span>
-    </span>
-    
-        <span class="article-date article-meta-item">
-            <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2023-11-27 13:46:26</span>
-            <span class="mobile">2023-11-27 13:46:26</span>
-            <span class="hover-info">Updated</span>
-        </span>
-    
+.post-page-container
+  gap 0px
 
-    
-        <span class="article-categories article-meta-item">
-            <i class="fa-regular fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/hexo/categories/%E7%AE%80%E8%AE%B0/">简记</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-    
-    
-        <span class="article-tags article-meta-item">
-            <i class="fa-regular fa-tags"></i>&nbsp;
-            <ul>
-                
-                    <li>
-                        <a href="/hexo/tags/dota/">dota</a>&nbsp;
-                    </li>
-                
-                    <li>
-                        | <a href="/hexo/tags/game/">game</a>&nbsp;
-                    </li>
-                
-            </ul>
-        </span>
-    
-
-    
-    
-    
-    
-</div>
-
-                    </div>
-                </div>
-            </div>
-        
-
-        
+  +redefine-mobile()
+    overflow-x hidden
 
 
-        <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-            <h1 id="写在Ti12之后"><a href="#写在Ti12之后" class="headerlink" title="写在Ti12之后"></a>写在Ti12之后</h1><p>&emsp;&emsp;从Ti10决赛LGD前两把被spirit颠勺之后，后三把直接没看，并且一直持续到了今年的Ti12。我似乎确实是电子阳痿了吧。然而在今年听说三蛆兄弟居然组了个队，甚至杀出预选进入Ti正赛，于是又捡起了这个游戏。虽然一如既往只打bot，但是再次感受到“这游戏真好玩”，以及又熬夜或定闹钟早期看比赛。</p>
-<p>&emsp;&emsp;总之，有感而发写篇博客记录一下。为了避免蹭热度的嫌疑，晚一些再发出来（其实是拖延症写得慢）。</p>
-<h2 id="简直无敌的Yatoro和Spirit，无比丰富的Dota2"><a href="#简直无敌的Yatoro和Spirit，无比丰富的Dota2" class="headerlink" title="简直无敌的Yatoro和Spirit，无比丰富的Dota2"></a>简直无敌的Yatoro和Spirit，无比丰富的Dota2</h2><p>&emsp;&emsp;大约在看到LGD和AR双双晋级胜者组第一轮，并且提前锁定至少一个前三席位时，我想每个（云）玩家都多多少少滋生了一点邪念。但是令人绝望的胜者组决赛，怎么压到压不死的TB，和完全无法抗衡的中后期，让人终究认识到邪念只是邪念。</p>
-<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="//player.bilibili.com/player.html?aid=875425345&bvid=BV1yN4y167Zp&cid=1320315939&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div>
+  &.show-toc
+    gap 30px
 
-<p>&emsp;&emsp;但是这正是这款游戏的乐趣吧！复杂多变，摸不清的上限，总是有更强大的存在。有一个又一个细节在游戏之中又在玩家意料之外，比如Ana卖装备买活，比如大树打断TP给过门的队友微光，比如标记飞鞋TB强拆兵营，比如TA反补陷阱折射虚无NEC；还有一个又一个新的套路，比如狼人小小，猛犸颠勺，精灵飞机，大锤海民。这个游戏实在是太丰富了，远远没有被开发完，简直达到了开放世界游戏的效果。</p>
-<h2 id="又双叒叕功亏一篑的LGD"><a href="#又双叒叕功亏一篑的LGD" class="headerlink" title="又双叒叕功亏一篑的LGD"></a>又双叒叕功亏一篑的LGD</h2><p>&emsp;&emsp;LGD又一次倒在决赛日，真是哭笑不得。从旁观角度，似乎有几分像之前的secret战队，甚至要更强一点。年年有声音，年年没夺冠。也许只有在中国赛区，Ti冠军才如此显著地和国家荣誉相关。承载着“全村人的希望”的LGD，究竟在中国玩家心中处于什么位置呢？以及，LGD究竟是什么呢？一个俱乐部，或xiao8（357）和太后ruru，或“那五个”队员（但到底哪五个呢）？</p>
-<p>&emsp;&emsp;有时我想我们在这个名字下投射了太多我们自己的想法。例如我们的国家荣誉情怀，我们回忆里的cn dota, best dota。在这种情景下甚至水友会说出“不如让AR上去打打试试”的话。也许他们只是五个选手，他们没有也不应该把<strong>中国队</strong>的成绩放在第一位。事实上dota作为社区游戏本身就带有一点安那其味道，国家荣誉本来就是脱离原旨的。</p>
-<h2 id="Enjoy-dota-AR"><a href="#Enjoy-dota-AR" class="headerlink" title="Enjoy dota, AR"></a>Enjoy dota, AR</h2><p>&emsp;&emsp;毫无疑问，AR是最受关注、最被喜欢、最意难平、最happy ending的战队。这支战队，由三个退役选手主播，带一个新人carry，和一个老新人辅助，因为手痒而临时组起来到。这是一支平民战队，或者更恰当的说，一支社区来的战队。甚至，三蛆兄弟之一chalice最早也是max社区战队培养的。</p>
-<p>&emsp;&emsp;一支社区战队，似乎只在这样的社区游戏里能够存在，并被人喜爱。Dota和CS，都是从游戏的玩家自制起源，并最终成为steam的两大扛把子。事实上，整个V社也是一个社区起源的“小作坊”，G胖本人就是个臭打游戏的。然而，正是这样的环境，可能才是真正的游戏环境，是让玩家真正享受游戏的环境。</p>
-<p>&emsp;&emsp;回到AR战队，最后一天先锤掉BB，问号骑脸，然后两把速推光速回家，嘻嘻哈哈中（我猜且希望的）敲出gg。Maybe的采访让人感慨，这次参赛没那么多喷子，打得很开心。纯粹的打游戏的快乐，这就是AR和支持他们的玩家们的快乐。</p>
-<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="//player.bilibili.com/player.html?aid=365459259&bvid=BV1b94y1G7YS&cid=1318142931&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div>
+    .toc-content-container
+      display block
+      opacity 1
+      transition opacity 0.2s ease-in 0.2s
+      width $toc-container-width
 
-<h2 id="游戏"><a href="#游戏" class="headerlink" title="游戏"></a>游戏</h2><p>&emsp;&emsp;什么是游戏，是逃避现实的工具，玩物丧志的万恶之源，又或者是为国争光，是第九艺术？但此刻我想掏出一个维特根斯坦来。</p>
-<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="//player.bilibili.com/player.html?aid=286591629&bvid=BV1Ff4y1972n&cid=219917970&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div>
+      &:hover::-webkit-scrollbar-thumb
+        border 3px solid rgba(183, 183, 183, 0.3)
 
-<p>&emsp;&emsp;某种意义上，游戏是人类理解世界或者说构建世界的方法。创造一个游戏，设定它的规则，如同创造一个世界（所以冰蛙真的厉害，dota创世神一般的人物）。玩家在游戏中即被规则限制，又利用规则。在游戏中，探索、思考、创造。如果说世界是一个游戏，那么游戏也是一种世界，玩游戏的人也在这个世界里生活，并且是自由的生活。</p>
-<p>&emsp;&emsp;当人类真的实现共产主义时，或者说实现生产力极大发展之后，如果消费主义没有引向新型极权社会，那么那时候我们应该做什么呢？如果确实我们不再需要工作，每个人可以做自己想做的事，在劳动中实现自我价值时，那样的劳动是什么呢？我想答案之一就是游戏，无论狭义还是广义的游戏，无论是设计、创造游戏还是玩游戏，都是处于审美旨趣的自我实现。例如程序员，一些早已财富自由的大佬依然乐此不疲地开发软件、开源代码，这实际上也是创造广义的游戏，这对他们来说显然是一种自我实现。</p>
-<p>&emsp;&emsp;广义的游戏是人类的终极追求之一，是实现自我价值的方式。但我想指出，狭义的游戏，就像dota（尤其曾经的dota1）这样的社区游戏，由玩家创造和分享的，一样可以视为一种终极追求，一种单纯出于审美旨趣的劳动。所谓“臭打游戏的”并不是逃避现实的下水道老鼠人，或者至少不应该这么片面的评价他们。甚至可以说，他们是过于提前的理想主义者，被现实璀璨而已。</p>
-<h2 id="Enjoy-dota"><a href="#Enjoy-dota" class="headerlink" title="Enjoy dota"></a>Enjoy dota</h2><p>&emsp;&emsp;总之，dota真好玩，大家来玩呀。</p>
-<blockquote>
-<p>Enjoy dota, enjoy.</p>
-</blockquote>
+      &::-webkit-scrollbar
+        width 6px
+        height 6px
+        transition all 0.2s ease
+        display block
 
-        </div>
+      &::-webkit-scrollbar-track
+        background transparent
+        border none
 
-        
-            <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
-                <div class="article-copyright-info-container">
-    <ul>
-        <li><strong>Title:</strong> Enjoy Dota, enjoy</li>
-        <li><strong>Author:</strong> HiraethEcho</li>
-        <li><strong>Created at
-                :</strong> 2023-11-09 11:20:00</li>
-        
-            <li>
-                <strong>Updated at
-                    :</strong> 2023-11-27 13:46:26
-            </li>
-        
-        <li>
-            <strong>Link:</strong> https://hiraethecho.github.io/hexo/简记/ti12/
-        </li>
-        <li>
-            <strong>
-                License:
-            </strong>
-            
+      &::-webkit-scrollbar-thumb
+        border-radius 20px
+        border 3px solid rgba(183, 183, 183, 0)
+        transition all 0.2s ease
 
-            
-                This work is licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a>.
-            
-        </li>
-    </ul>
-</div>
+    .article-content-container
+      width calc(100% - 210px) !important
 
-            </div>
-        
+  +redefine-tablet()
+    .toc-content-container
+      display none !important
 
-        
-            <ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
-                
-                    <li class="tag-item mx-0.5">
-                        <a href="/hexo/tags/dota/">#dota</a>&nbsp;
-                    </li>
-                
-                    <li class="tag-item mx-0.5">
-                        <a href="/hexo/tags/game/">#game</a>&nbsp;
-                    </li>
-                
-            </ul>
-        
+    .article-content-container
+      width 100% !important
 
-        
+    &.show-toc
+      .toc-content-container
+        display none
 
-        
-            <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
-                
-                    <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-                        <a class="prev"
-                        rel="prev"
-                        href="/hexo/%E9%9A%8F%E6%83%B3/actingparents/"
-                        >
-                            <span class="left arrow-icon flex justify-center items-center">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </span>
-                            <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">对父母形象的表演</span>
-                                <span class="post-nav-item">Prev posts</span>
-                            </span>
-                        </a>
-                    </div>
-                
-                
-                    <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-                        <a class="next"
-                        rel="next"
-                        href="/hexo/%E9%9A%8F%E6%83%B3/arrowoftime/"
-                        >
-                            <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">时间是一种幻觉</span>
-                                <span class="post-nav-item">Next posts</span>
-                            </span>
-                            <span class="right arrow-icon flex justify-center items-center">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </span>
-                        </a>
-                    </div>
-                
-            </div>
-        
+      .article-content-container
+        width 100% !important
 
+  .article-content-container
+    width 100%
+    transition width 0.2s ease
+    redefine-container(
+      false,
+      0,
+      0,
+      0,
+      30px
+    )
 
-        
-            <div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
-                <div class="comments-container mt-10 w-full ">
-    <div id="comment-anchor" class="w-full h-2.5"></div>
-    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
-        Comments
-    </div>
-    
+    +redefine-mobile()
+      padding 1.2rem 0.2rem
+      box-shadow none !important
+      max-width 100vw
 
-        
-            
-    <div class="twikoo-container">
-        <script data-swup-reload-script
-                src='https://cdn.staticfile.org/twikoo/1.6.10/twikoo.all.min.js'
-        ></script>
-        <div id="twikoo-comment"></div>
-        <script data-swup-reload-script>
-            function loadTwikoo() {
-                twikoo.init({
-                    el: '#twikoo-comment',
-                    envId: 'https://hexohiraeth.netlify.app/.netlify/functions/twikoo',
-                });
-            }
+    .article-header .avatar img
+          border-radius: $redefine-border-radius-medium * 0.87
+          width 100%
+          height 100%
+          // background var(--avatar-background-color)
 
-            if ('true') {
-                const loadTwikooTimeout = setTimeout(() => {
-                    loadTwikoo();
-                    clearTimeout(loadTwikooTimeout);
-                }, 1000);
-            } else {
-                window.addEventListener('DOMContentLoaded', loadTwikoo);
-            }
-        </script>
-    </div>
+    .article-header, .article-header-meta-info
+      margin-top 16px
 
+      +redefine-tablet()
+        transform scale(0.9)
+        transform-origin left top
 
-        
-        
-    
-</div>
+    .article-content
+      margin-top $spacing-unit
+      padding-bottom 10px
+      word-wrap break-word
+      border-bottom 1px solid var(--border-color)
+      color var(--default-text-color)
 
-            </div>
-        
-    </div>
+      &>:first-child
+        margin-top 0 !important
 
-    
-        <div class="toc-content-container">
-            <div class="post-toc-wrap">
-    <div class="post-toc">
-        <div class="toc-title">On this page</div>
-        <div class="page-title">Enjoy Dota, enjoy</div>
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%86%99%E5%9C%A8Ti12%E4%B9%8B%E5%90%8E"><span class="nav-number">1.</span> <span class="nav-text">写在Ti12之后</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%80%E7%9B%B4%E6%97%A0%E6%95%8C%E7%9A%84Yatoro%E5%92%8CSpirit%EF%BC%8C%E6%97%A0%E6%AF%94%E4%B8%B0%E5%AF%8C%E7%9A%84Dota2"><span class="nav-number">1.1.</span> <span class="nav-text">简直无敌的Yatoro和Spirit，无比丰富的Dota2</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%88%E5%8F%8C%E5%8F%92%E5%8F%95%E5%8A%9F%E4%BA%8F%E4%B8%80%E7%AF%91%E7%9A%84LGD"><span class="nav-number">1.2.</span> <span class="nav-text">又双叒叕功亏一篑的LGD</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Enjoy-dota-AR"><span class="nav-number">1.3.</span> <span class="nav-text">Enjoy dota, AR</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B8%B8%E6%88%8F"><span class="nav-number">1.4.</span> <span class="nav-text">游戏</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Enjoy-dota"><span class="nav-number">1.5.</span> <span class="nav-text">Enjoy dota</span></a></li></ol></li></ol>
+    .article-prev, .article-next
 
-    </div>
-</div>
-        </div>
-    
-</div>
+        a
+          position relative
+          display block
+          width 100%
+          height 100%
+          box-sizing border-box
 
+          &.prev
+            padding-left $arrow-icon-width
 
+          &.next
+            padding-right $arrow-icon-width
+
+          .arrow-icon
+            position absolute
+            top 0
+            height 100%
+            width $arrow-icon-width
+
+            &.left
+              left 0
+
+            &.right
+              right 0
+
+          .title
+            width 100%
+            height 100%
+
+      .post-nav-item
+        display none
+
+        +redefine-tablet()
+          display inline-block
+
+      .post-nav-title-item
+        overflow hidden
+        text-overflow ellipsis
+        white-space nowrap
+
+        +redefine-tablet()
+          display none
+
+    .recommended-article
+      overflow visible !important
+
+      .recommended-mobile
+        display none
+        +redefine-tablet()
+          display block
+
+      .recommended-desktop
+        display block
+        +redefine-tablet()
+          display none
+
+      .recommended-article-group
+        padding 10px 0
+        display flex
+        justify-content space-between
+        flex-wrap wrap
+        overflow visible !important
+
+        @media screen and (max-width $device-tablet)
+          height 190px
+          overflow scroll
+
+          &::-webkit-scrollbar
+            width 0 !important
+
+          -ms-overflow-style none
+
+        .recommended-article-item
+          redefine-container(
+            false,
+            0,
+            0,
+            10px,
+            0
+          )
+          box-shadow var(--redefine-box-shadow-flat)
+          padding 12px !important
+          display flex
+          flex-wrap wrap
+          align-content center
+          justify-content center
+          align-items center
+          overflow hidden
+          width 32%
+          max-height 200px
+          margin-top: $gap * 0.5
+          margin-right 0
+
+          +redefine-tablet()
+            width 49%
+
+          img
+            display flex
+            width calc(100% + 24px)
+            height 150px
+            object-fit cover
+            border-radius $redefine-border-radius-medium-top
+            margin -12px -12px 0 -12px !important
+
+          span
+            margin-top 0.5rem
+            display block
+            display -webkit-box
+            -webkit-box-orient vertical
+            -webkit-line-clamp 1
+            overflow hidden
+
+  .toc-content-container
+    white-space nowrap
+    opacity 0
+    position sticky
+    top: $navbar-height + $spacing-unit
+    // border-radius $redefine-border-radius-large
+    border-radius $redefine-border-radius-none
+    // display none
+    // visibility hidden
+    // width $toc-container-width
+    width 0
+    height auto
+    max-height calc(100vh - 210px)
+    //margin-left 30px
+    // z-index $z-index-6
+    overflow-y auto
+    overflow-x hidden
+    float right
+    padding 10px
+    box-sizing border-box
+    box-shadow none !important
+    transition opacity 0.3s ease-out 0.3s
+    hover-style(
+      false,
+      0,
+      0
+    )
+    transition-t('display', '0', '0.3', 'ease-out')
+
+    +redefine-tablet()
+      left 0 !important
+      display none !important
+
+  figure.image-caption
+    img
+      margin-bottom 0
+
+    figcaption
+      margin-top 5px
+      margin-bottom 10px
+      text-align center
+      font-size 0.9rem
+      color var(--third-text-color)
 
                 
 

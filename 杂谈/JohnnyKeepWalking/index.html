@@ -26,7 +26,7 @@
 <meta property="og:description" content="直击痛点但浮于表面的讽刺，愉悦的喜剧，严肃沉重的现实。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-01-11T14:12:44.000Z">
-<meta property="article:modified_time" content="2024-01-11T17:39:34.806Z">
+<meta property="article:modified_time" content="2024-02-19T06:23:59.346Z">
 <meta property="article:author" content="Hiraeth">
 <meta property="article:tag" content="影评">
 <meta property="article:tag" content="ideology">
@@ -651,262 +651,263 @@
             <div class="main-content">
 
                 
-                    <div class="post-page-container flex relative justify-between box-border w-full h-full">
-    <div class="article-content-container">
+                    @import '../common/variables'
 
-        <div class="article-title relative w-full">
-            
-                <div class="w-full flex items-center pt-6 justify-center">
-                    <h1 class="article-title-regular text-second-text-color text-4xl md:text-6xl font-bold px-2 sm:px-6 md:px-8 py-3">《年会不能停》的简单影评</h1>
-                </div>
-            
-            </div>
+$arrow-icon-width = 16px
+$post-nav-max-width = 220px
+$article-title-font-size = 3.2rem
+$temp-toc-width = hexo-config('global.sidebar_width')
+$toc-container-width = $temp-toc-width ? convert($temp-toc-width) : 210px
+$without-toc-container-width = calc(100% - $temp-toc-width)
+$gap = 30px
 
-        
-            <div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
-                <div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
-                    <img src="/hexo/img/avatar.jpeg">
-                </div>
-                <div class="info flex flex-col justify-between">
-                    <div class="author flex items-center">
-                        <span class="name text-default-text-color text-lg font-semibold">HiraethEcho</span>
-                        
-                    </div>
-                    <div class="meta-info">
-                        <div class="article-meta-info">
-    <span class="article-date article-meta-item">
-        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2024-01-11 22:12:44</span>
-        <span class="mobile">2024-01-11 22:12:44</span>
-        <span class="hover-info">Created</span>
-    </span>
-    
-        <span class="article-date article-meta-item">
-            <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-01-12 01:39:34</span>
-            <span class="mobile">2024-01-12 01:39:34</span>
-            <span class="hover-info">Updated</span>
-        </span>
-    
+.post-page-container
+  gap 0px
 
-    
-        <span class="article-categories article-meta-item">
-            <i class="fa-regular fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/hexo/categories/%E6%9D%82%E8%B0%88/">杂谈</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-    
-    
-        <span class="article-tags article-meta-item">
-            <i class="fa-regular fa-tags"></i>&nbsp;
-            <ul>
-                
-                    <li>
-                        <a href="/hexo/tags/%E5%BD%B1%E8%AF%84/">影评</a>&nbsp;
-                    </li>
-                
-                    <li>
-                        | <a href="/hexo/tags/ideology/">ideology</a>&nbsp;
-                    </li>
-                
-            </ul>
-        </span>
-    
-
-    
-    
-    
-    
-</div>
-
-                    </div>
-                </div>
-            </div>
-        
-
-        
+  +redefine-mobile()
+    overflow-x hidden
 
 
-        <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-            <h1 id="无效讽刺"><a href="#无效讽刺" class="headerlink" title="无效讽刺"></a>无效讽刺</h1><p>&emsp;&emsp;前两天去看了电影《年会不能停》，感觉是个不错的电影，值得推荐一下，也值得评论两句。这一篇是面向看过电影的人的影评，所以涉及剧透，但没有剧情复述。</p>
-<h2 id="讽刺"><a href="#讽刺" class="headerlink" title="讽刺"></a>讽刺</h2><p>&emsp;&emsp;这部电影比较明显和让人喜欢的主要特点，应该是对当下职场的一些讽刺。包括但不限于领导不背锅不干人事，底层员工干事背锅，层级复杂信息传播迟钝，00后整顿职场无效，（害怕）关系户搞事折磨人，公司转型裁人等。最有效果的应该是白客角色的特征，不断自我洗脑，甚至“加班是一种工作态度”，夸张。不过可惜的是，我还是一个在校学生，而且是自闭的主要关心学术的学生，所以这种讽刺我只能猜测而不能真正的感同身受。</p>
-<p>&emsp;&emsp;除此之外还有一些讽刺，比如职场黑暗面。故事的开始就是花钱买职位，然后阴差阳错导致的奇遇。这里面有两个对象，花钱者和收钱者：花钱者，是给投机取巧者;收钱者（甚至过了两个人，中间克扣了10万）是自私者，这都是不诚实劳动者。当然，还有个倒霉蛋magic（他只想保住工作，他有什么错）。</br><br>&emsp;&emsp;然后是关于公司转型、（被迫）裁员，又那么一点点《钢的琴》和《杀死那个石家庄人》的意思。不过这部分只占了很少篇幅，在开头广进计划和结尾徐总“义正言辞”。</p>
-<h2 id="无效讽刺-1"><a href="#无效讽刺-1" class="headerlink" title="无效讽刺"></a>无效讽刺</h2><p>&emsp;&emsp;然而这部剧成功和失败的地方就在于，这样的讽刺是无效的。类似的无效，与春晚郝建的小品类似。这种讽刺流于表面，通过一些现象和（特定）观众达成一致，然后让大家直呼过瘾。有趣的是，在结尾通常都有一个happy ending，一个正义得到伸张的结尾：徐总被“举报”当场打脸，董事长来伸张正义;小品里领导来“微服私访”看到郝建的腐败行为，所以可是处理他。更有趣的是，两者都寄希望于一个更加“正义”的上层。不好笑的是，这可能只是一个愿望，就像托马斯的上层可能还是个徐总罢了，不过是某种美好的愿望。值得回味的是，为什么正义只能寄希望于更上层的权力者、寄希望于他们是善良正直的呢？诸如贿赂这样的事，明明是任何人都不应该接受的，却需要更高位者来制裁呢？为什么人民民主专政的国家，人民无法制裁贪官污吏而必须一个正直的更高位者来做这件事呢？更可怕的是，无论电影还是现实，很多情况下都寄希望于“媒体”，而不是正常的司法或程序。当然电影需要戏剧冲突和场面，所以需要一个“年会”来揭露真相;现实也需要媒体来曝光诸多不正义。可是，明明是违法的行为，明明我们的程序正义应该是导向结果正义的，为什么这些都失效了呢？</p>
-<p>&emsp;&emsp;另一个有趣的角色是徐总，这个尝试绕过董事长、看似不求私欲不惜用小人手段只为企业的人。用一些堂而皇之的理由牺牲一些人，换取某种抽象概念的前途。他当然是加害者，但他是经济转型的受害者吗，是迂腐掌权者的受害者吗，是时代潮流中一粒略大一点的灰尘以至于是别人头上的一座山吗？</p>
-<p>&emsp;&emsp;最后显著无效地一个点是，仿佛皆大欢喜的结局。主要角色有了一些交代，十分理想化，无异于在《烈日灼心》或《消失的她》结尾那种黑底白字罪犯已被绳之以法的敷衍。</p>
-<h2 id="喜剧"><a href="#喜剧" class="headerlink" title="喜剧"></a>喜剧</h2><p>&emsp;&emsp;总的来说，这还是一部喜剧。它只谈论表面，所以可以是喜剧;它是喜剧，所以只能谈论表面。多少应该谈谈喜剧手法之类的，然而又没有相关理论基础，于是只能泛泛而谈，且十分主观。</p>
-<p>&emsp;&emsp;作为喜剧，虽然很笑点容易预测，但整体是十分好笑的。有可能和脱口秀演员有关系：这里并不是说因果关系，而是相关关系，即从编剧角度上来说接近脱口秀的风格。当然大鹏和白客两个网络喜剧短片成功者的经验一定也有效果。仅仅作为喜剧，我认为也是十分值得一看的。</p>
-<p>&emsp;&emsp;然后再提一嘴喜剧和那句经典的“喜剧的内核是悲剧”。我并不完全赞同这句话，不过我想指出另一个看法，涉及两个例子：周星驰的《喜剧之王》和金凯瑞的《楚门的世界》。这两部电影显然都是有喜剧色彩的，但他们是单纯的喜剧片，还是正剧（剧情片）呢？周星驰似乎在采访中说过，他想拍正剧，不知道为什么别人认为是喜剧;金凯瑞似乎也一直期望奥斯卡，但因为被当作喜剧而被这么个“学院奖”排斥。喜剧也许只是一种手法，后者一种商业技巧，它的内容更重要，这部《年会不能停》可能也是如此。</p>
-<h2 id="演员"><a href="#演员" class="headerlink" title="演员"></a>演员</h2><p>&emsp;&emsp;第一个感觉是，好多脱口秀演员啊。篇幅非常少的rock，似乎也没什么特色，可能是打包的？非常喜欢的童漠男，和孙艺洲的搭档，很贴童脱口秀里英语老师和孙在《喜欢你》里助理的角色，都挺畏畏缩缩的。肉食动物一唱一和，效果挺好。</p>
-<p>&emsp;&emsp;白客确实是惊喜。最早应该是《万万没想到》认识他的，后来发现这个B还是日和的配音，接着还演了《后会无期》。整体上都有点冷面笑匠的意思，从喜剧开始，逐渐走向喜剧里带严肃内核的角色，多少有点周星驰和金凯瑞的效果。演技真的不错，实际上是夸张离谱的表演内容，但又不出戏。事实上，对于白客来说并不是关于他认知的惊喜，而是对于这部电影来说“有这样出色演员”的惊喜。另一个惊喜是大鹏，同样是网络喜剧短片《屌丝男士》出名，后来他又有《缝纫机乐队》这样的作品（没看过但是听说过），接着又有《吉祥》（文武香贵，一二四五）。很显然，对于大鹏来说，早期喜剧只是手段不是目的，他是有理想的。王迅是另一个喜剧角色，常年丑角，我最早的印象应该是《疯狂的石头》，万金油一样的可能物美价廉的演员。这样一个角色变成喜剧角色，同样是把严肃问题娱乐化的表现。</p>
-<p>&emsp;&emsp;接着是孙艺洲，从《爱情公寓》出名，不像陆展博那样又菜又装逼，也不像王传君那样放下碗骂娘又确实拍了点好东西。有点意思，但是不多。</p>
-<p>&emsp;&emsp;还有一个女主，和前面两个比，显然是演技有点生涩，不过似乎刚好符合“00后整顿职场”的角色。无可指摘。</p>
-<p>&emsp;&emsp;最后是一些老头，一个徐总，一个董事长。对我来说没什么值得说的特点，一个工具人，一个需要被打败的明面上的反派;另一个是标准善良淳朴被蒙骗最后伸张正义的工具人。彳亍。</p>
-<h2 id="芭比"><a href="#芭比" class="headerlink" title="芭比"></a>芭比</h2><p>&emsp;&emsp;和《芭比》一样，很明显的“英雄之旅”的结构，整个叙事是完整的。但是让我把这两部放一起的主要原因是，两者都是流于表面的讽刺，然后一个似是而非的解决。这个断言放出来，其实并不怎么需要解释了。</p>
-<p>&emsp;&emsp;另一个方面是，作为喜剧，两者都一样容易预测，又很有效果。不过《芭比》显然多一点无厘头，多一点花里胡哨。</p>
-<p>&emsp;&emsp;最重要的是，两者都是一种“无效讽刺”。都是话题度很高的电影，抓住特定群体的痛点一顿讽刺，然后给一个看似完美的结局。辞职唱歌的penny和平凡芭比一样，看似理想的实现实则在现实中举步维艰。这是一个暗含的悲剧。</p>
-<h2 id="一些碎碎念"><a href="#一些碎碎念" class="headerlink" title="一些碎碎念"></a>一些碎碎念</h2><p>&emsp;&emsp;哈哈哈这个导演是之前《老炮儿》的导演，举报纪检委和打小报告给董事长，这是什么过审小技巧吗？</p>
-<p>&emsp;&emsp;关于喜剧和正剧，我想提另一部电影《喜剧之王2》。似乎口碑一般，但如果不把它看作喜剧，再结合一点《喜剧之王》和那个莫名其妙的结局，我想这部电影还有一些不那么喜剧的、严肃的主旨。王宝强看着像个憨憨，但是他也是有《天下无贼》甚至《树先生》这样的电影的。我不觉得《喜剧之王2》是完全的烂片，甚至某些角度上说是部很好的电影，值得多想一想。</p>
+  &.show-toc
+    gap 30px
 
-        </div>
+    .toc-content-container
+      display block
+      opacity 1
+      transition opacity 0.2s ease-in 0.2s
+      width $toc-container-width
 
-        
-            <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
-                <div class="article-copyright-info-container">
-    <ul>
-        <li><strong>Title:</strong> 《年会不能停》的简单影评</li>
-        <li><strong>Author:</strong> HiraethEcho</li>
-        <li><strong>Created at
-                :</strong> 2024-01-11 22:12:44</li>
-        
-            <li>
-                <strong>Updated at
-                    :</strong> 2024-01-12 01:39:34
-            </li>
-        
-        <li>
-            <strong>Link:</strong> https://hiraethecho.github.io/hexo/杂谈/JohnnyKeepWalking/
-        </li>
-        <li>
-            <strong>
-                License:
-            </strong>
-            
+      &:hover::-webkit-scrollbar-thumb
+        border 3px solid rgba(183, 183, 183, 0.3)
 
-            
-                This work is licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a>.
-            
-        </li>
-    </ul>
-</div>
+      &::-webkit-scrollbar
+        width 6px
+        height 6px
+        transition all 0.2s ease
+        display block
 
-            </div>
-        
+      &::-webkit-scrollbar-track
+        background transparent
+        border none
 
-        
-            <ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
-                
-                    <li class="tag-item mx-0.5">
-                        <a href="/hexo/tags/%E5%BD%B1%E8%AF%84/">#影评</a>&nbsp;
-                    </li>
-                
-                    <li class="tag-item mx-0.5">
-                        <a href="/hexo/tags/ideology/">#ideology</a>&nbsp;
-                    </li>
-                
-            </ul>
-        
+      &::-webkit-scrollbar-thumb
+        border-radius 20px
+        border 3px solid rgba(183, 183, 183, 0)
+        transition all 0.2s ease
 
-        
+    .article-content-container
+      width calc(100% - 210px) !important
 
-        
-            <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
-                
-                    <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-                        <a class="prev"
-                        rel="prev"
-                        href="/hexo/%E6%B2%89%E6%80%9D/loveillusion/"
-                        >
-                            <span class="left arrow-icon flex justify-center items-center">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </span>
-                            <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">千万种爱情，和我的爱情</span>
-                                <span class="post-nav-item">Prev posts</span>
-                            </span>
-                        </a>
-                    </div>
-                
-                
-                    <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-                        <a class="next"
-                        rel="next"
-                        href="/hexo/%E7%AE%80%E8%AE%B0/dormitory/"
-                        >
-                            <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">记又一次搬宿舍</span>
-                                <span class="post-nav-item">Next posts</span>
-                            </span>
-                            <span class="right arrow-icon flex justify-center items-center">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </span>
-                        </a>
-                    </div>
-                
-            </div>
-        
+  +redefine-tablet()
+    .toc-content-container
+      display none !important
 
+    .article-content-container
+      width 100% !important
 
-        
-            <div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
-                <div class="comments-container mt-10 w-full ">
-    <div id="comment-anchor" class="w-full h-2.5"></div>
-    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
-        Comments
-    </div>
-    
+    &.show-toc
+      .toc-content-container
+        display none
 
-        
-            
-    <div class="twikoo-container">
-        <script data-swup-reload-script
-                src='https://cdn.staticfile.org/twikoo/1.6.10/twikoo.all.min.js'
-        ></script>
-        <div id="twikoo-comment"></div>
-        <script data-swup-reload-script>
-            function loadTwikoo() {
-                twikoo.init({
-                    el: '#twikoo-comment',
-                    envId: 'https://hexohiraeth.netlify.app/.netlify/functions/twikoo',
-                });
-            }
+      .article-content-container
+        width 100% !important
 
-            if ('true') {
-                const loadTwikooTimeout = setTimeout(() => {
-                    loadTwikoo();
-                    clearTimeout(loadTwikooTimeout);
-                }, 1000);
-            } else {
-                window.addEventListener('DOMContentLoaded', loadTwikoo);
-            }
-        </script>
-    </div>
+  .article-content-container
+    width 100%
+    transition width 0.2s ease
+    redefine-container(
+      false,
+      0,
+      0,
+      0,
+      30px
+    )
 
+    +redefine-mobile()
+      padding 1.2rem 0.2rem
+      box-shadow none !important
+      max-width 100vw
 
-        
-        
-    
-</div>
+    .article-header .avatar img
+          border-radius: $redefine-border-radius-medium * 0.87
+          width 100%
+          height 100%
+          // background var(--avatar-background-color)
 
-            </div>
-        
-    </div>
+    .article-header, .article-header-meta-info
+      margin-top 16px
 
-    
-        <div class="toc-content-container">
-            <div class="post-toc-wrap">
-    <div class="post-toc">
-        <div class="toc-title">On this page</div>
-        <div class="page-title">《年会不能停》的简单影评</div>
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%97%A0%E6%95%88%E8%AE%BD%E5%88%BA"><span class="nav-number">1.</span> <span class="nav-text">无效讽刺</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%BD%E5%88%BA"><span class="nav-number">1.1.</span> <span class="nav-text">讽刺</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%97%A0%E6%95%88%E8%AE%BD%E5%88%BA-1"><span class="nav-number">1.2.</span> <span class="nav-text">无效讽刺</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%96%9C%E5%89%A7"><span class="nav-number">1.3.</span> <span class="nav-text">喜剧</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%BC%94%E5%91%98"><span class="nav-number">1.4.</span> <span class="nav-text">演员</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%8A%AD%E6%AF%94"><span class="nav-number">1.5.</span> <span class="nav-text">芭比</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E4%BA%9B%E7%A2%8E%E7%A2%8E%E5%BF%B5"><span class="nav-number">1.6.</span> <span class="nav-text">一些碎碎念</span></a></li></ol></li></ol>
+      +redefine-tablet()
+        transform scale(0.9)
+        transform-origin left top
 
-    </div>
-</div>
-        </div>
-    
-</div>
+    .article-content
+      margin-top $spacing-unit
+      padding-bottom 10px
+      word-wrap break-word
+      border-bottom 1px solid var(--border-color)
+      color var(--default-text-color)
 
+      &>:first-child
+        margin-top 0 !important
 
+    .article-prev, .article-next
+
+        a
+          position relative
+          display block
+          width 100%
+          height 100%
+          box-sizing border-box
+
+          &.prev
+            padding-left $arrow-icon-width
+
+          &.next
+            padding-right $arrow-icon-width
+
+          .arrow-icon
+            position absolute
+            top 0
+            height 100%
+            width $arrow-icon-width
+
+            &.left
+              left 0
+
+            &.right
+              right 0
+
+          .title
+            width 100%
+            height 100%
+
+      .post-nav-item
+        display none
+
+        +redefine-tablet()
+          display inline-block
+
+      .post-nav-title-item
+        overflow hidden
+        text-overflow ellipsis
+        white-space nowrap
+
+        +redefine-tablet()
+          display none
+
+    .recommended-article
+      overflow visible !important
+
+      .recommended-mobile
+        display none
+        +redefine-tablet()
+          display block
+
+      .recommended-desktop
+        display block
+        +redefine-tablet()
+          display none
+
+      .recommended-article-group
+        padding 10px 0
+        display flex
+        justify-content space-between
+        flex-wrap wrap
+        overflow visible !important
+
+        @media screen and (max-width $device-tablet)
+          height 190px
+          overflow scroll
+
+          &::-webkit-scrollbar
+            width 0 !important
+
+          -ms-overflow-style none
+
+        .recommended-article-item
+          redefine-container(
+            false,
+            0,
+            0,
+            10px,
+            0
+          )
+          box-shadow var(--redefine-box-shadow-flat)
+          padding 12px !important
+          display flex
+          flex-wrap wrap
+          align-content center
+          justify-content center
+          align-items center
+          overflow hidden
+          width 32%
+          max-height 200px
+          margin-top: $gap * 0.5
+          margin-right 0
+
+          +redefine-tablet()
+            width 49%
+
+          img
+            display flex
+            width calc(100% + 24px)
+            height 150px
+            object-fit cover
+            border-radius $redefine-border-radius-medium-top
+            margin -12px -12px 0 -12px !important
+
+          span
+            margin-top 0.5rem
+            display block
+            display -webkit-box
+            -webkit-box-orient vertical
+            -webkit-line-clamp 1
+            overflow hidden
+
+  .toc-content-container
+    white-space nowrap
+    opacity 0
+    position sticky
+    top: $navbar-height + $spacing-unit
+    // border-radius $redefine-border-radius-large
+    border-radius $redefine-border-radius-none
+    // display none
+    // visibility hidden
+    // width $toc-container-width
+    width 0
+    height auto
+    max-height calc(100vh - 210px)
+    //margin-left 30px
+    // z-index $z-index-6
+    overflow-y auto
+    overflow-x hidden
+    float right
+    padding 10px
+    box-sizing border-box
+    box-shadow none !important
+    transition opacity 0.3s ease-out 0.3s
+    hover-style(
+      false,
+      0,
+      0
+    )
+    transition-t('display', '0', '0.3', 'ease-out')
+
+    +redefine-tablet()
+      left 0 !important
+      display none !important
+
+  figure.image-caption
+    img
+      margin-bottom 0
+
+    figcaption
+      margin-top 5px
+      margin-bottom 10px
+      text-align center
+      font-size 0.9rem
+      color var(--third-text-color)
 
                 
 

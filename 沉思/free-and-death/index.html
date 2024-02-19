@@ -26,7 +26,7 @@
 <meta property="og:description" content="人没有出生的自由，却有死亡的义务。因此，人没有活着的责任，并应该有死亡的的权利。正因为人随时可以自杀，才使得坚持活着是需要勇气的事。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-07-07T09:38:29.000Z">
-<meta property="article:modified_time" content="2023-10-12T09:43:31.810Z">
+<meta property="article:modified_time" content="2024-02-19T06:23:59.350Z">
 <meta property="article:author" content="Hiraeth">
 <meta property="article:tag" content="philosophy">
 <meta name="twitter:card" content="summary">
@@ -650,258 +650,263 @@
             <div class="main-content">
 
                 
-                    <div class="post-page-container flex relative justify-between box-border w-full h-full">
-    <div class="article-content-container">
+                    @import '../common/variables'
 
-        <div class="article-title relative w-full">
-            
-                <div class="w-full flex items-center pt-6 justify-center">
-                    <h1 class="article-title-regular text-second-text-color text-4xl md:text-6xl font-bold px-2 sm:px-6 md:px-8 py-3">若自杀不自由，则生存不勇敢</h1>
-                </div>
-            
-            </div>
+$arrow-icon-width = 16px
+$post-nav-max-width = 220px
+$article-title-font-size = 3.2rem
+$temp-toc-width = hexo-config('global.sidebar_width')
+$toc-container-width = $temp-toc-width ? convert($temp-toc-width) : 210px
+$without-toc-container-width = calc(100% - $temp-toc-width)
+$gap = 30px
 
-        
-            <div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
-                <div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
-                    <img src="/hexo/img/avatar.jpeg">
-                </div>
-                <div class="info flex flex-col justify-between">
-                    <div class="author flex items-center">
-                        <span class="name text-default-text-color text-lg font-semibold">HiraethEcho</span>
-                        
-                    </div>
-                    <div class="meta-info">
-                        <div class="article-meta-info">
-    <span class="article-date article-meta-item">
-        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2023-07-07 17:38:29</span>
-        <span class="mobile">2023-07-07 17:38:29</span>
-        <span class="hover-info">Created</span>
-    </span>
-    
-        <span class="article-date article-meta-item">
-            <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2023-10-12 17:43:31</span>
-            <span class="mobile">2023-10-12 17:43:31</span>
-            <span class="hover-info">Updated</span>
-        </span>
-    
+.post-page-container
+  gap 0px
 
-    
-        <span class="article-categories article-meta-item">
-            <i class="fa-regular fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/hexo/categories/%E6%B2%89%E6%80%9D/">沉思</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-    
-    
-        <span class="article-tags article-meta-item">
-            <i class="fa-regular fa-tags"></i>&nbsp;
-            <ul>
-                
-                    <li>
-                        <a href="/hexo/tags/philosophy/">philosophy</a>&nbsp;
-                    </li>
-                
-            </ul>
-        </span>
-    
-
-    
-    
-    
-    
-</div>
-
-                    </div>
-                </div>
-            </div>
-        
-
-        
+  +redefine-mobile()
+    overflow-x hidden
 
 
-        <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-            <h1 id="若自杀不自由，则生存不勇敢"><a href="#若自杀不自由，则生存不勇敢" class="headerlink" title="若自杀不自由，则生存不勇敢"></a>若自杀不自由，则生存不勇敢</h1><p>人没有出生的自由，却有死亡的义务。因此，人没有活着的责任，并应该有死亡的的权利。正因为人随时可以自杀，才使得坚持活着是需要勇气的事。</p>
-<blockquote>
-<p>人类的赞歌就是勇气的赞歌，人类的伟大就是勇气的伟大。 </p>
-</blockquote>
-<span id="more"></span>
-<h2 id="被自由绑架"><a href="#被自由绑架" class="headerlink" title="被自由绑架"></a>被自由绑架</h2><p>萨特在《存在主义是一种人道主义》中描述了他的观点：人被抛入世界当中，被自由绑架；人是完全自由的，不断自由地做出选择，并承担其后果。我很喜欢“抛入”这个措辞，就像蒋捷的词：</p>
-<blockquote>
-<p>流光容易把人抛，红了樱桃，绿了芭蕉</p>
-</blockquote>
-<p>描述了一种存在与时间的无情，一种无可奈何，一种无法拒绝的处境，即：我存在。</br><br>这应当是人唯一的不自由了。假如用一点点人存原理的思路，人不能选择自己存在于世，也不能选择地有终结。除此之外，“上帝已死”，任何事情都“无不可”了。</p>
-<p>我们将被自由绑架着度过一生。</p>
-<h2 id="落难"><a href="#落难" class="headerlink" title="落难"></a>落难</h2><p>“抛入”的另一层含义，也许是抛弃，如同暴雨中水洼里的一片落叶，经历种种命运。也许是幸运的，做想做的事，成为想做的人（并且没有接触哲学）；也许是不行的，只能疲于生计，郁郁不得志（甚至接触了哲学）。或者如伍迪艾伦所说：生活只有miserable和horrible两种。</p>
-<p>每个人都过着miserable的日子，又看到许多horrible的日子。倘若有人幸福美满，那么很可能认为自己无法承受那种悲惨人生。但事实上每个人都有忍受的能力，至少周国平的短篇《罗哦男的王子》就迷倒蜀国这样的形象：衣食无忧的王子在听说人间疾苦时总感叹：“太可怕了，要是落在我头上，我一定受不了”；但当厄运真的到他的头上，战争使他家破人亡行乞度日时，他的看法改变了：“凡是人间的灾难，无论落到谁头上，谁都得守着，而且受得了————只要他不死。至于死，那更是一件容易的事了。”</br><br>并非每个人都是王子，但是每个人都“落难”于世。无论怎样的生活，人都要受着。如同截肢手术，难以想象不做麻醉如何忍受；但是如果被五花大绑之后直接锯腿，那么也没有什么“无法忍受”的说法。（也许分娩是更真实的例子，但介于它是大约一半的人特有且被另一半人逃脱，所以并不恰当）</p>
-<h2 id="逃难"><a href="#逃难" class="headerlink" title="逃难"></a>逃难</h2><p>落难的人的灾难，无论如何都有一种结束方式，即死亡。被按在病床强行截肢的人，有大出血休克死亡的风险；颠沛流离居无定所的人，也有饥寒交迫暴死街头的可能。</br><br>战火下的人民，可以选择逃难，可以尝试到战火之外的地方；“生存的灾难”下的众生，也有一种逃难，即自杀：</p>
-<blockquote>
-<p>严肃的哲学问题只有一个，那就是自杀。</p>
-</blockquote>
-<p>认识到人被抛入世界的颠沛，认识到miserable 或 horrible 的人生，认识到“我存在着”的换挡，如此这般的“灾难”，是的自杀这种一劳永逸的逃难方式成为显而易见的答案。<em>人没有出生的自由，却有死亡的义务。</em></p>
-<h2 id="生存的勇气"><a href="#生存的勇气" class="headerlink" title="生存的勇气"></a>生存的勇气</h2><p>  假如人没有自杀的自由，所有活着的人因为只能活着而活着，那么他们只不过是生活的奴隶。他们的坚持和努力，不过是一种不得已而为之。甚至，这种生活甚至称得上“不需要努力”，只是活着罢了，并没有其他可做的事。他们是<code>被迫</code>活着的，是<code>被迫</code>实现自我价值的，如若寿终正寝或英年早逝，也是<code>被迫</code>去死的。这样的生活并不勇敢。<br>然而，当人有自杀的权利时，努力的生活便是一种选择，一种源于人的自由的选择。这才是需要勇气的事：<code>选择</code>接受生活的挑战，<code>选择</code>对抗苦难，<code>选择</code>努力实现自我、成为自我，<code>选择</code>去生活，甚热爱生活。</p>
-<blockquote>
-<p>真正的英雄主义只有一种，那就是认清生活的真相，并依然热爱它。</p>
-</blockquote>
-<p>正因为人有选择自杀的自由，活着才需要巨大的勇气，才是一件伟大的事情。这使得活着成为一种对无可避免的死亡的反抗，使得人是自己的主宰而非奴隶。</p>
+  &.show-toc
+    gap 30px
 
-        </div>
+    .toc-content-container
+      display block
+      opacity 1
+      transition opacity 0.2s ease-in 0.2s
+      width $toc-container-width
 
-        
-            <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
-                <div class="article-copyright-info-container">
-    <ul>
-        <li><strong>Title:</strong> 若自杀不自由，则生存不勇敢</li>
-        <li><strong>Author:</strong> HiraethEcho</li>
-        <li><strong>Created at
-                :</strong> 2023-07-07 17:38:29</li>
-        
-            <li>
-                <strong>Updated at
-                    :</strong> 2023-10-12 17:43:31
-            </li>
-        
-        <li>
-            <strong>Link:</strong> https://hiraethecho.github.io/hexo/沉思/free-and-death/
-        </li>
-        <li>
-            <strong>
-                License:
-            </strong>
-            
+      &:hover::-webkit-scrollbar-thumb
+        border 3px solid rgba(183, 183, 183, 0.3)
 
-            
-                This work is licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a>.
-            
-        </li>
-    </ul>
-</div>
+      &::-webkit-scrollbar
+        width 6px
+        height 6px
+        transition all 0.2s ease
+        display block
 
-            </div>
-        
+      &::-webkit-scrollbar-track
+        background transparent
+        border none
 
-        
-            <ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
-                
-                    <li class="tag-item mx-0.5">
-                        <a href="/hexo/tags/philosophy/">#philosophy</a>&nbsp;
-                    </li>
-                
-            </ul>
-        
+      &::-webkit-scrollbar-thumb
+        border-radius 20px
+        border 3px solid rgba(183, 183, 183, 0)
+        transition all 0.2s ease
 
-        
+    .article-content-container
+      width calc(100% - 210px) !important
 
-        
-            <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
-                
-                    <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-                        <a class="prev"
-                        rel="prev"
-                        href="/hexo/%E6%9D%82%E8%B0%88/Barbie/"
-                        >
-                            <span class="left arrow-icon flex justify-center items-center">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </span>
-                            <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">作为商品的《芭比》：一部不能更好的电影</span>
-                                <span class="post-nav-item">Prev posts</span>
-                            </span>
-                        </a>
-                    </div>
-                
-                
-                    <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-                        <a class="next"
-                        rel="next"
-                        href="/hexo/%E7%AE%80%E8%AE%B0/party/"
-                        >
-                            <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">party</span>
-                                <span class="post-nav-item">Next posts</span>
-                            </span>
-                            <span class="right arrow-icon flex justify-center items-center">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </span>
-                        </a>
-                    </div>
-                
-            </div>
-        
+  +redefine-tablet()
+    .toc-content-container
+      display none !important
 
+    .article-content-container
+      width 100% !important
 
-        
-            <div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
-                <div class="comments-container mt-10 w-full ">
-    <div id="comment-anchor" class="w-full h-2.5"></div>
-    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
-        Comments
-    </div>
-    
+    &.show-toc
+      .toc-content-container
+        display none
 
-        
-            
-    <div class="twikoo-container">
-        <script data-swup-reload-script
-                src='https://cdn.staticfile.org/twikoo/1.6.10/twikoo.all.min.js'
-        ></script>
-        <div id="twikoo-comment"></div>
-        <script data-swup-reload-script>
-            function loadTwikoo() {
-                twikoo.init({
-                    el: '#twikoo-comment',
-                    envId: 'https://hexohiraeth.netlify.app/.netlify/functions/twikoo',
-                });
-            }
+      .article-content-container
+        width 100% !important
 
-            if ('true') {
-                const loadTwikooTimeout = setTimeout(() => {
-                    loadTwikoo();
-                    clearTimeout(loadTwikooTimeout);
-                }, 1000);
-            } else {
-                window.addEventListener('DOMContentLoaded', loadTwikoo);
-            }
-        </script>
-    </div>
+  .article-content-container
+    width 100%
+    transition width 0.2s ease
+    redefine-container(
+      false,
+      0,
+      0,
+      0,
+      30px
+    )
 
+    +redefine-mobile()
+      padding 1.2rem 0.2rem
+      box-shadow none !important
+      max-width 100vw
 
-        
-        
-    
-</div>
+    .article-header .avatar img
+          border-radius: $redefine-border-radius-medium * 0.87
+          width 100%
+          height 100%
+          // background var(--avatar-background-color)
 
-            </div>
-        
-    </div>
+    .article-header, .article-header-meta-info
+      margin-top 16px
 
-    
-        <div class="toc-content-container">
-            <div class="post-toc-wrap">
-    <div class="post-toc">
-        <div class="toc-title">On this page</div>
-        <div class="page-title">若自杀不自由，则生存不勇敢</div>
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%8B%A5%E8%87%AA%E6%9D%80%E4%B8%8D%E8%87%AA%E7%94%B1%EF%BC%8C%E5%88%99%E7%94%9F%E5%AD%98%E4%B8%8D%E5%8B%87%E6%95%A2"><span class="nav-number">1.</span> <span class="nav-text">若自杀不自由，则生存不勇敢</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A2%AB%E8%87%AA%E7%94%B1%E7%BB%91%E6%9E%B6"><span class="nav-number">1.1.</span> <span class="nav-text">被自由绑架</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%90%BD%E9%9A%BE"><span class="nav-number">1.2.</span> <span class="nav-text">落难</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%83%E9%9A%BE"><span class="nav-number">1.3.</span> <span class="nav-text">逃难</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%9F%E5%AD%98%E7%9A%84%E5%8B%87%E6%B0%94"><span class="nav-number">1.4.</span> <span class="nav-text">生存的勇气</span></a></li></ol></li></ol>
+      +redefine-tablet()
+        transform scale(0.9)
+        transform-origin left top
 
-    </div>
-</div>
-        </div>
-    
-</div>
+    .article-content
+      margin-top $spacing-unit
+      padding-bottom 10px
+      word-wrap break-word
+      border-bottom 1px solid var(--border-color)
+      color var(--default-text-color)
 
+      &>:first-child
+        margin-top 0 !important
 
+    .article-prev, .article-next
+
+        a
+          position relative
+          display block
+          width 100%
+          height 100%
+          box-sizing border-box
+
+          &.prev
+            padding-left $arrow-icon-width
+
+          &.next
+            padding-right $arrow-icon-width
+
+          .arrow-icon
+            position absolute
+            top 0
+            height 100%
+            width $arrow-icon-width
+
+            &.left
+              left 0
+
+            &.right
+              right 0
+
+          .title
+            width 100%
+            height 100%
+
+      .post-nav-item
+        display none
+
+        +redefine-tablet()
+          display inline-block
+
+      .post-nav-title-item
+        overflow hidden
+        text-overflow ellipsis
+        white-space nowrap
+
+        +redefine-tablet()
+          display none
+
+    .recommended-article
+      overflow visible !important
+
+      .recommended-mobile
+        display none
+        +redefine-tablet()
+          display block
+
+      .recommended-desktop
+        display block
+        +redefine-tablet()
+          display none
+
+      .recommended-article-group
+        padding 10px 0
+        display flex
+        justify-content space-between
+        flex-wrap wrap
+        overflow visible !important
+
+        @media screen and (max-width $device-tablet)
+          height 190px
+          overflow scroll
+
+          &::-webkit-scrollbar
+            width 0 !important
+
+          -ms-overflow-style none
+
+        .recommended-article-item
+          redefine-container(
+            false,
+            0,
+            0,
+            10px,
+            0
+          )
+          box-shadow var(--redefine-box-shadow-flat)
+          padding 12px !important
+          display flex
+          flex-wrap wrap
+          align-content center
+          justify-content center
+          align-items center
+          overflow hidden
+          width 32%
+          max-height 200px
+          margin-top: $gap * 0.5
+          margin-right 0
+
+          +redefine-tablet()
+            width 49%
+
+          img
+            display flex
+            width calc(100% + 24px)
+            height 150px
+            object-fit cover
+            border-radius $redefine-border-radius-medium-top
+            margin -12px -12px 0 -12px !important
+
+          span
+            margin-top 0.5rem
+            display block
+            display -webkit-box
+            -webkit-box-orient vertical
+            -webkit-line-clamp 1
+            overflow hidden
+
+  .toc-content-container
+    white-space nowrap
+    opacity 0
+    position sticky
+    top: $navbar-height + $spacing-unit
+    // border-radius $redefine-border-radius-large
+    border-radius $redefine-border-radius-none
+    // display none
+    // visibility hidden
+    // width $toc-container-width
+    width 0
+    height auto
+    max-height calc(100vh - 210px)
+    //margin-left 30px
+    // z-index $z-index-6
+    overflow-y auto
+    overflow-x hidden
+    float right
+    padding 10px
+    box-sizing border-box
+    box-shadow none !important
+    transition opacity 0.3s ease-out 0.3s
+    hover-style(
+      false,
+      0,
+      0
+    )
+    transition-t('display', '0', '0.3', 'ease-out')
+
+    +redefine-tablet()
+      left 0 !important
+      display none !important
+
+  figure.image-caption
+    img
+      margin-bottom 0
+
+    figcaption
+      margin-top 5px
+      margin-bottom 10px
+      text-align center
+      font-size 0.9rem
+      color var(--third-text-color)
 
                 
 

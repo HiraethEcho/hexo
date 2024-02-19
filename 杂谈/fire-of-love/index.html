@@ -29,8 +29,8 @@
 <meta property="article:modified_time" content="2023-10-16T03:15:00.000Z">
 <meta property="article:author" content="Hiraeth">
 <meta property="article:tag" content="love">
-<meta property="article:tag" content="friends">
 <meta property="article:tag" content="影评">
+<meta property="article:tag" content="friends">
 <meta name="twitter:card" content="summary">
     
     
@@ -652,271 +652,263 @@
             <div class="main-content">
 
                 
-                    <div class="post-page-container flex relative justify-between box-border w-full h-full">
-    <div class="article-content-container">
+                    @import '../common/variables'
 
-        <div class="article-title relative w-full">
-            
-                <div class="w-full flex items-center pt-6 justify-center">
-                    <h1 class="article-title-regular text-second-text-color text-4xl md:text-6xl font-bold px-2 sm:px-6 md:px-8 py-3">跃入永恒的爱情</h1>
-                </div>
-            
-            </div>
+$arrow-icon-width = 16px
+$post-nav-max-width = 220px
+$article-title-font-size = 3.2rem
+$temp-toc-width = hexo-config('global.sidebar_width')
+$toc-container-width = $temp-toc-width ? convert($temp-toc-width) : 210px
+$without-toc-container-width = calc(100% - $temp-toc-width)
+$gap = 30px
 
-        
-            <div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
-                <div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
-                    <img src="/hexo/img/avatar.jpeg">
-                </div>
-                <div class="info flex flex-col justify-between">
-                    <div class="author flex items-center">
-                        <span class="name text-default-text-color text-lg font-semibold">HiraethEcho</span>
-                        
-                    </div>
-                    <div class="meta-info">
-                        <div class="article-meta-info">
-    <span class="article-date article-meta-item">
-        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2023-09-23 22:18:39</span>
-        <span class="mobile">2023-09-23 22:18:39</span>
-        <span class="hover-info">Created</span>
-    </span>
-    
-        <span class="article-date article-meta-item">
-            <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2023-10-16 11:15</span>
-            <span class="mobile">2023-10-16 11:15</span>
-            <span class="hover-info">Updated</span>
-        </span>
-    
+.post-page-container
+  gap 0px
 
-    
-        <span class="article-categories article-meta-item">
-            <i class="fa-regular fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/hexo/categories/%E6%9D%82%E8%B0%88/">杂谈</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-    
-    
-        <span class="article-tags article-meta-item">
-            <i class="fa-regular fa-tags"></i>&nbsp;
-            <ul>
-                
-                    <li>
-                        <a href="/hexo/tags/love/">love</a>&nbsp;
-                    </li>
-                
-                    <li>
-                        | <a href="/hexo/tags/friends/">friends</a>&nbsp;
-                    </li>
-                
-                    <li>
-                        | <a href="/hexo/tags/%E5%BD%B1%E8%AF%84/">影评</a>&nbsp;
-                    </li>
-                
-            </ul>
-        </span>
-    
-
-    
-    
-    
-    
-</div>
-
-                    </div>
-                </div>
-            </div>
-        
-
-        
+  +redefine-mobile()
+    overflow-x hidden
 
 
-        <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-            <h1 id="跃入永恒的爱情"><a href="#跃入永恒的爱情" class="headerlink" title="跃入永恒的爱情"></a>跃入永恒的爱情</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在某一个因为emo而一时兴起去酒吧的晚上，认识了聊得很投机的新朋友，几天后一起看了电影《火山挚恋》，印象深刻。想要写下影评或观后感，但是迟迟写不出来。对这样一部浪漫的电影却写不出浪漫的文字，实在是悲伤以至于愤怒于自己的无能。</p>
-<p>或许可以尝试用简单朴素的方式，残缺不全地表达出来。在某些情形下，被误读好过沉默。</p>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><h3 id="一种爱情"><a href="#一种爱情" class="headerlink" title="一种爱情"></a>一种爱情</h3><p>火山，卡蒂娅，莫里斯，这是一个爱情故事。</p>
-<p>作为人，厌倦人类社会，厌倦战争和其他争斗;作为自然的造物，爱上自然的宏伟力量，爱上毁灭与创造的火山。</p>
-<p>他们在一次blind date中一见钟情，正如他们之前各自对火山一见钟情一般。这样对热烈炙热的对象的爱，也许也会热烈炙热。这让我想起《午夜巴塞罗那》中艺术家夫妻的情感过于激烈而无法为继，甚至需要第三者克里斯蒂娜来调和。也许对于卡蒂娅和莫里斯，火山也是他们爱情中的第三者。</p>
-<p>人是孤独的，而热烈的人可能是难以忍受这种孤独的。所谓爱情，也许是一种逃避孤独的方式，与了解自身孤独的人分享这种孤独。但爱上另一个自己，也许太无趣了一点。所以要爱上与自己相同又“对抗”的人。对抗又合作着地，都热爱火山又有不尽相同的记录和研究方式。把巨大的热情倾注于彼此，倾注于共同的追求。两人与火山，分享这种孤独和爱情。</p>
-<h3 id="住在火山口"><a href="#住在火山口" class="headerlink" title="住在火山口"></a>住在火山口</h3><p>远离世界，住在火山口，“离群索居者，不是神明，便是野兽”。这即可以说是一种极致的理想主义，为追寻“美”而奉献终身。但或许也可以称之为一种逃避，逃避琐碎的平凡生活，逃避纷纷扰扰的人类社会，更重要的是逃避对“美”本质含义的质疑。如同克尔恺郭尔一样，在面临存在主义危机时，选择“跃入永恒”。将自身置于这样一种宏大叙事中，就可以让自己有信念地做许多是。例如冒险踏入火山口，拍摄影片，例如为了筹集资金去参加节目宣传，讲述泛舟于岩浆之上的梦想。当自我幻化为神明，便可以以一种殉道者的姿态度过自己的一生。</p>
-<p>也许人就是自欺的，也许理想主义者就是这样投入永恒的，就是这样无迷茫不困惑地度过人参。如果没有这样的永恒追求，而是受困于生活的琐碎，受困于“每天两小时有轨电车”，受困于死刑犯松开的鞋带，那是比迷茫更无聊的生存方式。</p>
-<h3 id="远离人类，爱上人类"><a href="#远离人类，爱上人类" class="headerlink" title="远离人类，爱上人类"></a>远离人类，爱上人类</h3><p>目睹火山爆发后的受灾人民，他们爱上人来。《卡拉马佐夫兄弟》中佐西马长老提到哦啊，越是靠近人类，对身边的人越了解，越是讨厌他们;越是远离人类，越爱人类这样的群体。过去两人一起参加过示威游行，后来选择不再在意人类社会的喧嚣。但在离开人类之后，在以“身外人”的视角目睹灾民后，我想他们又爱上了人类这样的群体，这样的抽象概念。</p>
-<p>当人把其他难民当作客体，且共情而感到悲悯时，是否也会把自己当作客体，当作众生中的一员，并共情而悲悯呢？也许在这个意义上，火山，卡蒂娅和莫里斯，与全人类一起共享了这种孤独。</p>
-<h3 id="死于新生"><a href="#死于新生" class="headerlink" title="死于新生"></a>死于新生</h3><p>火山，用其岩浆毁灭、破坏周遭的环境与生物，同时又创造新的地形，为新生的植物带来营养。卡蒂娅与莫里斯，因为火山而绽放绚烂的生命，又被火山夺走生命。</p>
-<p>他们来过，活过，爱过。</p>
-<blockquote>
-<p>你来人间一趟，</br><br>你要看看太阳，</br><br>和你的心上人，</br><br>一起走在街上。</br></p>
-</blockquote>
-<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>在这里记下一些零零碎碎的评论&#x2F;感想</p>
-<ul>
-<li>这是一部人物传记电影，而不是关于火山的科教纪录片，所以对于火山除了影像资料外并没有其他过多的解释。这些关于火山的景观，我想是为了尝试让观众体会到卡蒂娅和莫里斯面对火山时的体会。</li>
-<li>也许是因为由于留存的影像有限，又或者单纯的想要增加风格，影片使用了许多动画、剪纸等画面。个人觉得效果很好。</li>
-</ul>
+  &.show-toc
+    gap 30px
 
-        </div>
+    .toc-content-container
+      display block
+      opacity 1
+      transition opacity 0.2s ease-in 0.2s
+      width $toc-container-width
 
-        
-            <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
-                <div class="article-copyright-info-container">
-    <ul>
-        <li><strong>Title:</strong> 跃入永恒的爱情</li>
-        <li><strong>Author:</strong> HiraethEcho</li>
-        <li><strong>Created at
-                :</strong> 2023-09-23 22:18:39</li>
-        
-            <li>
-                <strong>Updated at
-                    :</strong> 2023-10-16 11:15:00
-            </li>
-        
-        <li>
-            <strong>Link:</strong> https://hiraethecho.github.io/hexo/杂谈/fire-of-love/
-        </li>
-        <li>
-            <strong>
-                License:
-            </strong>
-            
+      &:hover::-webkit-scrollbar-thumb
+        border 3px solid rgba(183, 183, 183, 0.3)
 
-            
-                This work is licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a>.
-            
-        </li>
-    </ul>
-</div>
+      &::-webkit-scrollbar
+        width 6px
+        height 6px
+        transition all 0.2s ease
+        display block
 
-            </div>
-        
+      &::-webkit-scrollbar-track
+        background transparent
+        border none
 
-        
-            <ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
-                
-                    <li class="tag-item mx-0.5">
-                        <a href="/hexo/tags/love/">#love</a>&nbsp;
-                    </li>
-                
-                    <li class="tag-item mx-0.5">
-                        <a href="/hexo/tags/friends/">#friends</a>&nbsp;
-                    </li>
-                
-                    <li class="tag-item mx-0.5">
-                        <a href="/hexo/tags/%E5%BD%B1%E8%AF%84/">#影评</a>&nbsp;
-                    </li>
-                
-            </ul>
-        
+      &::-webkit-scrollbar-thumb
+        border-radius 20px
+        border 3px solid rgba(183, 183, 183, 0)
+        transition all 0.2s ease
 
-        
+    .article-content-container
+      width calc(100% - 210px) !important
 
-        
-            <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
-                
-                    <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-                        <a class="prev"
-                        rel="prev"
-                        href="/hexo/%E6%9D%82%E8%B0%88/one-dimensional-man/"
-                        >
-                            <span class="left arrow-icon flex justify-center items-center">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </span>
-                            <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">《单向度的人：发达工业社会意识形态研究》读后感</span>
-                                <span class="post-nav-item">Prev posts</span>
-                            </span>
-                        </a>
-                    </div>
-                
-                
-                    <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-                        <a class="next"
-                        rel="next"
-                        href="/hexo/%E6%9D%82%E8%B0%88/Barbie/"
-                        >
-                            <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">作为商品的《芭比》：一部不能更好的电影</span>
-                                <span class="post-nav-item">Next posts</span>
-                            </span>
-                            <span class="right arrow-icon flex justify-center items-center">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </span>
-                        </a>
-                    </div>
-                
-            </div>
-        
+  +redefine-tablet()
+    .toc-content-container
+      display none !important
 
+    .article-content-container
+      width 100% !important
 
-        
-            <div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
-                <div class="comments-container mt-10 w-full ">
-    <div id="comment-anchor" class="w-full h-2.5"></div>
-    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
-        Comments
-    </div>
-    
+    &.show-toc
+      .toc-content-container
+        display none
 
-        
-            
-    <div class="twikoo-container">
-        <script data-swup-reload-script
-                src='https://cdn.staticfile.org/twikoo/1.6.10/twikoo.all.min.js'
-        ></script>
-        <div id="twikoo-comment"></div>
-        <script data-swup-reload-script>
-            function loadTwikoo() {
-                twikoo.init({
-                    el: '#twikoo-comment',
-                    envId: 'https://hexohiraeth.netlify.app/.netlify/functions/twikoo',
-                });
-            }
+      .article-content-container
+        width 100% !important
 
-            if ('true') {
-                const loadTwikooTimeout = setTimeout(() => {
-                    loadTwikoo();
-                    clearTimeout(loadTwikooTimeout);
-                }, 1000);
-            } else {
-                window.addEventListener('DOMContentLoaded', loadTwikoo);
-            }
-        </script>
-    </div>
+  .article-content-container
+    width 100%
+    transition width 0.2s ease
+    redefine-container(
+      false,
+      0,
+      0,
+      0,
+      30px
+    )
 
+    +redefine-mobile()
+      padding 1.2rem 0.2rem
+      box-shadow none !important
+      max-width 100vw
 
-        
-        
-    
-</div>
+    .article-header .avatar img
+          border-radius: $redefine-border-radius-medium * 0.87
+          width 100%
+          height 100%
+          // background var(--avatar-background-color)
 
-            </div>
-        
-    </div>
+    .article-header, .article-header-meta-info
+      margin-top 16px
 
-    
-        <div class="toc-content-container">
-            <div class="post-toc-wrap">
-    <div class="post-toc">
-        <div class="toc-title">On this page</div>
-        <div class="page-title">跃入永恒的爱情</div>
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%B7%83%E5%85%A5%E6%B0%B8%E6%81%92%E7%9A%84%E7%88%B1%E6%83%85"><span class="nav-number">1.</span> <span class="nav-text">跃入永恒的爱情</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AD%A3%E6%96%87"><span class="nav-number">1.2.</span> <span class="nav-text">正文</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E7%A7%8D%E7%88%B1%E6%83%85"><span class="nav-number">1.2.1.</span> <span class="nav-text">一种爱情</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%8F%E5%9C%A8%E7%81%AB%E5%B1%B1%E5%8F%A3"><span class="nav-number">1.2.2.</span> <span class="nav-text">住在火山口</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%9C%E7%A6%BB%E4%BA%BA%E7%B1%BB%EF%BC%8C%E7%88%B1%E4%B8%8A%E4%BA%BA%E7%B1%BB"><span class="nav-number">1.2.3.</span> <span class="nav-text">远离人类，爱上人类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%BB%E4%BA%8E%E6%96%B0%E7%94%9F"><span class="nav-number">1.2.4.</span> <span class="nav-text">死于新生</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%8E%E8%AE%B0"><span class="nav-number">1.3.</span> <span class="nav-text">后记</span></a></li></ol></li></ol>
+      +redefine-tablet()
+        transform scale(0.9)
+        transform-origin left top
 
-    </div>
-</div>
-        </div>
-    
-</div>
+    .article-content
+      margin-top $spacing-unit
+      padding-bottom 10px
+      word-wrap break-word
+      border-bottom 1px solid var(--border-color)
+      color var(--default-text-color)
 
+      &>:first-child
+        margin-top 0 !important
 
+    .article-prev, .article-next
+
+        a
+          position relative
+          display block
+          width 100%
+          height 100%
+          box-sizing border-box
+
+          &.prev
+            padding-left $arrow-icon-width
+
+          &.next
+            padding-right $arrow-icon-width
+
+          .arrow-icon
+            position absolute
+            top 0
+            height 100%
+            width $arrow-icon-width
+
+            &.left
+              left 0
+
+            &.right
+              right 0
+
+          .title
+            width 100%
+            height 100%
+
+      .post-nav-item
+        display none
+
+        +redefine-tablet()
+          display inline-block
+
+      .post-nav-title-item
+        overflow hidden
+        text-overflow ellipsis
+        white-space nowrap
+
+        +redefine-tablet()
+          display none
+
+    .recommended-article
+      overflow visible !important
+
+      .recommended-mobile
+        display none
+        +redefine-tablet()
+          display block
+
+      .recommended-desktop
+        display block
+        +redefine-tablet()
+          display none
+
+      .recommended-article-group
+        padding 10px 0
+        display flex
+        justify-content space-between
+        flex-wrap wrap
+        overflow visible !important
+
+        @media screen and (max-width $device-tablet)
+          height 190px
+          overflow scroll
+
+          &::-webkit-scrollbar
+            width 0 !important
+
+          -ms-overflow-style none
+
+        .recommended-article-item
+          redefine-container(
+            false,
+            0,
+            0,
+            10px,
+            0
+          )
+          box-shadow var(--redefine-box-shadow-flat)
+          padding 12px !important
+          display flex
+          flex-wrap wrap
+          align-content center
+          justify-content center
+          align-items center
+          overflow hidden
+          width 32%
+          max-height 200px
+          margin-top: $gap * 0.5
+          margin-right 0
+
+          +redefine-tablet()
+            width 49%
+
+          img
+            display flex
+            width calc(100% + 24px)
+            height 150px
+            object-fit cover
+            border-radius $redefine-border-radius-medium-top
+            margin -12px -12px 0 -12px !important
+
+          span
+            margin-top 0.5rem
+            display block
+            display -webkit-box
+            -webkit-box-orient vertical
+            -webkit-line-clamp 1
+            overflow hidden
+
+  .toc-content-container
+    white-space nowrap
+    opacity 0
+    position sticky
+    top: $navbar-height + $spacing-unit
+    // border-radius $redefine-border-radius-large
+    border-radius $redefine-border-radius-none
+    // display none
+    // visibility hidden
+    // width $toc-container-width
+    width 0
+    height auto
+    max-height calc(100vh - 210px)
+    //margin-left 30px
+    // z-index $z-index-6
+    overflow-y auto
+    overflow-x hidden
+    float right
+    padding 10px
+    box-sizing border-box
+    box-shadow none !important
+    transition opacity 0.3s ease-out 0.3s
+    hover-style(
+      false,
+      0,
+      0
+    )
+    transition-t('display', '0', '0.3', 'ease-out')
+
+    +redefine-tablet()
+      left 0 !important
+      display none !important
+
+  figure.image-caption
+    img
+      margin-bottom 0
+
+    figcaption
+      margin-top 5px
+      margin-bottom 10px
+      text-align center
+      font-size 0.9rem
+      color var(--third-text-color)
 
                 
 

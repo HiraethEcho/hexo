@@ -26,7 +26,7 @@
 <meta property="og:description" content="谈谈和父母的关系，谈谈矛盾。对“父母”形象的表演，是自私的，是以自我满足为目的。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-11-24T16:18:00.000Z">
-<meta property="article:modified_time" content="2023-11-24T16:44:20.833Z">
+<meta property="article:modified_time" content="2024-02-19T06:23:59.350Z">
 <meta property="article:author" content="Hiraeth">
 <meta property="article:tag" content="parents">
 <meta name="twitter:card" content="summary">
@@ -650,255 +650,263 @@
             <div class="main-content">
 
                 
-                    <div class="post-page-container flex relative justify-between box-border w-full h-full">
-    <div class="article-content-container">
+                    @import '../common/variables'
 
-        <div class="article-title relative w-full">
-            
-                <div class="w-full flex items-center pt-6 justify-center">
-                    <h1 class="article-title-regular text-second-text-color text-4xl md:text-6xl font-bold px-2 sm:px-6 md:px-8 py-3">对父母形象的表演</h1>
-                </div>
-            
-            </div>
+$arrow-icon-width = 16px
+$post-nav-max-width = 220px
+$article-title-font-size = 3.2rem
+$temp-toc-width = hexo-config('global.sidebar_width')
+$toc-container-width = $temp-toc-width ? convert($temp-toc-width) : 210px
+$without-toc-container-width = calc(100% - $temp-toc-width)
+$gap = 30px
 
-        
-            <div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
-                <div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
-                    <img src="/hexo/img/avatar.jpeg">
-                </div>
-                <div class="info flex flex-col justify-between">
-                    <div class="author flex items-center">
-                        <span class="name text-default-text-color text-lg font-semibold">HiraethEcho</span>
-                        
-                    </div>
-                    <div class="meta-info">
-                        <div class="article-meta-info">
-    <span class="article-date article-meta-item">
-        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2023-11-25 00:18</span>
-        <span class="mobile">2023-11-25 00:18</span>
-        <span class="hover-info">Created</span>
-    </span>
-    
-        <span class="article-date article-meta-item">
-            <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2023-11-25 00:44:20</span>
-            <span class="mobile">2023-11-25 00:44:20</span>
-            <span class="hover-info">Updated</span>
-        </span>
-    
+.post-page-container
+  gap 0px
 
-    
-        <span class="article-categories article-meta-item">
-            <i class="fa-regular fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/hexo/categories/%E9%9A%8F%E6%83%B3/">随想</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-    
-    
-        <span class="article-tags article-meta-item">
-            <i class="fa-regular fa-tags"></i>&nbsp;
-            <ul>
-                
-                    <li>
-                        <a href="/hexo/tags/parents/">parents</a>&nbsp;
-                    </li>
-                
-            </ul>
-        </span>
-    
-
-    
-    
-    
-    
-</div>
-
-                    </div>
-                </div>
-            </div>
-        
-
-        
+  +redefine-mobile()
+    overflow-x hidden
 
 
-        <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-            <h1 id="对父母形象的表演"><a href="#对父母形象的表演" class="headerlink" title="对父母形象的表演"></a>对父母形象的表演</h1><p>&emsp;&emsp;前几天和一位在美国工作的同学聊天，谈到其长辈去美国看望，结果和长辈间产生了类似于室友矛盾的不适感。进一步的感到仿佛终于进入了叛逆期（我是这么总结概括她的逆反心理的），从乖乖女状态转化成认为长辈行为举止不合理，开始不想顺从。</p>
-<h2 id="和父母做室友"><a href="#和父母做室友" class="headerlink" title="和父母做室友"></a>和父母做室友</h2><p>&emsp;&emsp;先谈一下这个和父母做室友的感受。就我个人而言，自大学以来每次放假回家都有这种感受。我并没有把那个父母的房子当作一个家，而是一个暂居之处。当然，在学校的宿舍也是一个暂居之处。</p>
-<blockquote>
-<p>Home is the place where when you have to go there, they have to take you in.<br></p>
-</blockquote>
-<p><em>（顺便一提这一句我是从动画电影里跟达米安学的，大米和渡鸦真好磕）</em></p>
-<p>事实上，也许正如<code>人生如逆旅，我亦是行人</code>，我们根本都是无家可归。这也是我使用<code>Hiraeth</code>的缘由：</p>
-<p class="note note-primary">
-Hiraeth: (n.) homesickness to a home to which you cannot return: the grief of the lost places of your past.
-</p>
+  &.show-toc
+    gap 30px
 
-<p>&emsp;&emsp;扯远了，说回室友。室友相处的难受之处（并不是说和室友相处总是难受的，而是说其中难受的部分），我想可以说是双方都没有错、但是互相不习惯、却又不得不迁就，这样一种无从反抗的糟糕体验。这里有两个重点：第一是双方都没有错，比如早睡早起和晚睡晚起（可能后者有一丝不符合积极向上好好学习的大学生形象），或者对冷热的不同感受（导致开关空调等问题）；第二是不得不一起居住，然后互相难受。这两点都是在学校宿舍和回家与父母同住时的难受之处。在家的时候，例如作息时间，例如吃饭时间，甚至例如洗衣服等安排，都互相冲突，但又没有什么对错之分。同时又不能提前返校或者不在家住，所以算是被迫一起。</p>
-<p>&emsp;&emsp;然而“家”的宿舍与学校宿舍有一处不同，即他人与自己地位不同。和同学是平行的，是互相商讨的讲理的，或者可以打一架的（不是不可以我开玩笑的）。但是在家，这种矛盾总带有压迫或逆反的属性，更加复杂。</p>
-<h2 id="作为所有物的子女"><a href="#作为所有物的子女" class="headerlink" title="作为所有物的子女"></a>作为所有物的子女</h2><p>&emsp;&emsp;子女对长辈的叛逆来源是什么呢？或者说，父母对子女的控制心理的来源是什么呢？这似乎是一个大问题，很难三言两语说清楚。但是既然写在这个分类里，所以就打算简单谈谈。我想指出的是一种父母把子女当作自己所有物的心理，这是我认为我个人与父母矛盾的主要来源。</p>
-<p>&emsp;&emsp;父母常见的一种养育的“策略”，是尝试帮子女少走弯路。然而这个前提是，他们知道子女要走什么路，或者说他们为子女计划好了应该总什么路。更进一步的，不仅如此，他们总希望子女替他们完成未竟的遗憾。这种态度，类似于把子女当作自己新练的小号一样。父母把子女当作自己生命的延续，看似是一种对后代的爱，然而在这种说法下，后代的生命还属于他们自己吗？</p>
-<p>&emsp;&emsp;在这样的前提下，父母自然认为子女应该听自己的，应该有符合自己的思想。因为他们毕竟只是自己的所有物，他们的一切都不过是自己创造的、培养的。例如程序员写的代码，当然应该执行其想要的结果，否则就是代码出了bug，自然是要修理一番的。于是子女的思想乃至人格自然是不被尊重甚至是不被承认的，是父母所不屑于考虑的，而选择保持无知，用过去“养育”不成熟的子女的手法来对待子女，认为他们长大了却不懂事、不感恩、叛逆。可以用一个反问简单总结这种现象：当父母抱怨子女开始不再和父母分享时，他们是从什么时候开始不再听子女说话的呢？</p>
-<h2 id="表演父母"><a href="#表演父母" class="headerlink" title="表演父母"></a>表演父母</h2><p>&emsp;&emsp;最后谈谈“对父母形象的表演”这个看法。先举一个例子：我小时候被爷爷奶奶养过一些时间而没有被外公外婆带过，所以我对外婆没什么印象。我的外婆老年痴呆已经不认识我了，在父母接她到城里一起住的时间，她甚至要提防我偷她东西。我和外婆属于互相都不熟的状态，除了血缘外没有感情（好可笑的“除了”，血缘本来就不是感情）。有次外婆摔倒住院，我的母亲要去医院照顾，并要求我一起过去看看。这乍一看是个恰当的合理的传统的要求，但仔细思考（默尔索式思考）就会发现，这是一种荒诞的要求。想象一下，在病床前母亲指着我对着外婆说：“看看这是谁，能不能认出来？”在迷茫的外婆和尴尬的我无话可说之后再继续说：“这是你外孙呀，来看你来了。”这简直是一种折磨。一个老人被逗小孩子一样提问，也许她知道这是个亲人却人不出来，那么这无异于提醒这个老人她已经痴呆了、糊涂了；或者老人什么都不知道，只有困惑，而这与戏弄傻子又有何异？还有一个少年，被迫面对一个陌生的老人，站在那里被指着。还有一个中年人，对上对下都只能获得明明早就知道的失望，却依然徒劳地尝试。</p>
-<p>&emsp;&emsp;我不明白为什么要这么折磨这么多人。老人明明已经痴呆了，为什么不让他们就自己好好呆着呢，一定要问他们“这是谁，还认识吗？那是谁，还认识吗？”她认不认识，日子都是一样的过。也许发问的人偶尔能得到肯定的回答，沾沾自喜一番“还认得我，她记我记得最清”；可是这对老人有何益处呢？让我想起鲁迅写的《父亲的病》，在父亲临终时大声喊他名字，让他没能安安静静地走。这明明是一样的残忍。我也不明白为什么要折磨我，明明疫情期间处处不便，舟车劳顿把我拉过去，就为了不被认出来。</p>
-<p>&emsp;&emsp;我能想到的是，这是一种表演，表演她所认为的正确的、好的人，表演我的父母，表演她父母的子女。去表演一个没有道理的、传统习俗一般的形象，然后获得一种满足感：我做了我该做的，我是个好人。当父母做的种种事情，声称是为了子女好，这种时刻，他们当真是为了子女能更好的生活吗？例如返校时行李箱里塞的杂物，那些真的有必要塞进去吗？那些真的让子女更舒服吗？他们当然可以说这是他们爱子女的体现，然而这些行为实际上是负面影响，即使知道如此却依然要做，这是为什么？因为这样他们就能表演出他们所认知的“好的”父母，然后沾沾自喜一番。从根本上，这不过是一种自私罢了。为了塑造自身形象并获利而行善，是一种伪善，仿佛买鱼放生。更何况还把陆龟放生进水里。</p>
-<h2 id="自私的表演"><a href="#自私的表演" class="headerlink" title="自私的表演"></a>自私的表演</h2><p>&emsp;&emsp;我想这种自私的表演不止出现在父母角色上，在很多关系里可能都有类似的情况。例如舔狗送了一箱苹果自我感动，而人家不喜欢苹果早就拒绝过了；例如吃饭时给人夹菜而对方不喜欢这样；例如为了流浪狗义愤填膺等等（我并不是说这些行为都是自私的表演，而是说其中一些可能是这样的心理）。扮演一个“好”的角色，然后获得满足感，这是一种自私的表演，一种伪善。这种心理的来源，在我看来是一种自负和不尊重：只有自己是人，不把其他人当人而是NPC或观众，一切表演为了自己成为想成为的形象。太丑陋了。</p>
+    .toc-content-container
+      display block
+      opacity 1
+      transition opacity 0.2s ease-in 0.2s
+      width $toc-container-width
 
-        </div>
+      &:hover::-webkit-scrollbar-thumb
+        border 3px solid rgba(183, 183, 183, 0.3)
 
-        
-            <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
-                <div class="article-copyright-info-container">
-    <ul>
-        <li><strong>Title:</strong> 对父母形象的表演</li>
-        <li><strong>Author:</strong> HiraethEcho</li>
-        <li><strong>Created at
-                :</strong> 2023-11-25 00:18:00</li>
-        
-            <li>
-                <strong>Updated at
-                    :</strong> 2023-11-25 00:44:20
-            </li>
-        
-        <li>
-            <strong>Link:</strong> https://hiraethecho.github.io/hexo/随想/actingparents/
-        </li>
-        <li>
-            <strong>
-                License:
-            </strong>
-            
+      &::-webkit-scrollbar
+        width 6px
+        height 6px
+        transition all 0.2s ease
+        display block
 
-            
-                This work is licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a>.
-            
-        </li>
-    </ul>
-</div>
+      &::-webkit-scrollbar-track
+        background transparent
+        border none
 
-            </div>
-        
+      &::-webkit-scrollbar-thumb
+        border-radius 20px
+        border 3px solid rgba(183, 183, 183, 0)
+        transition all 0.2s ease
 
-        
-            <ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
-                
-                    <li class="tag-item mx-0.5">
-                        <a href="/hexo/tags/parents/">#parents</a>&nbsp;
-                    </li>
-                
-            </ul>
-        
+    .article-content-container
+      width calc(100% - 210px) !important
 
-        
+  +redefine-tablet()
+    .toc-content-container
+      display none !important
 
-        
-            <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
-                
-                    <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-                        <a class="prev"
-                        rel="prev"
-                        href="/hexo/%E7%AE%80%E8%AE%B0/dormitory/"
-                        >
-                            <span class="left arrow-icon flex justify-center items-center">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </span>
-                            <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">记又一次搬宿舍</span>
-                                <span class="post-nav-item">Prev posts</span>
-                            </span>
-                        </a>
-                    </div>
-                
-                
-                    <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-                        <a class="next"
-                        rel="next"
-                        href="/hexo/%E7%AE%80%E8%AE%B0/ti12/"
-                        >
-                            <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">Enjoy Dota, enjoy</span>
-                                <span class="post-nav-item">Next posts</span>
-                            </span>
-                            <span class="right arrow-icon flex justify-center items-center">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </span>
-                        </a>
-                    </div>
-                
-            </div>
-        
+    .article-content-container
+      width 100% !important
 
+    &.show-toc
+      .toc-content-container
+        display none
 
-        
-            <div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
-                <div class="comments-container mt-10 w-full ">
-    <div id="comment-anchor" class="w-full h-2.5"></div>
-    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
-        Comments
-    </div>
-    
+      .article-content-container
+        width 100% !important
 
-        
-            
-    <div class="twikoo-container">
-        <script data-swup-reload-script
-                src='https://cdn.staticfile.org/twikoo/1.6.10/twikoo.all.min.js'
-        ></script>
-        <div id="twikoo-comment"></div>
-        <script data-swup-reload-script>
-            function loadTwikoo() {
-                twikoo.init({
-                    el: '#twikoo-comment',
-                    envId: 'https://hexohiraeth.netlify.app/.netlify/functions/twikoo',
-                });
-            }
+  .article-content-container
+    width 100%
+    transition width 0.2s ease
+    redefine-container(
+      false,
+      0,
+      0,
+      0,
+      30px
+    )
 
-            if ('true') {
-                const loadTwikooTimeout = setTimeout(() => {
-                    loadTwikoo();
-                    clearTimeout(loadTwikooTimeout);
-                }, 1000);
-            } else {
-                window.addEventListener('DOMContentLoaded', loadTwikoo);
-            }
-        </script>
-    </div>
+    +redefine-mobile()
+      padding 1.2rem 0.2rem
+      box-shadow none !important
+      max-width 100vw
 
+    .article-header .avatar img
+          border-radius: $redefine-border-radius-medium * 0.87
+          width 100%
+          height 100%
+          // background var(--avatar-background-color)
 
-        
-        
-    
-</div>
+    .article-header, .article-header-meta-info
+      margin-top 16px
 
-            </div>
-        
-    </div>
+      +redefine-tablet()
+        transform scale(0.9)
+        transform-origin left top
 
-    
-        <div class="toc-content-container">
-            <div class="post-toc-wrap">
-    <div class="post-toc">
-        <div class="toc-title">On this page</div>
-        <div class="page-title">对父母形象的表演</div>
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AF%B9%E7%88%B6%E6%AF%8D%E5%BD%A2%E8%B1%A1%E7%9A%84%E8%A1%A8%E6%BC%94"><span class="nav-number">1.</span> <span class="nav-text">对父母形象的表演</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%92%8C%E7%88%B6%E6%AF%8D%E5%81%9A%E5%AE%A4%E5%8F%8B"><span class="nav-number">1.1.</span> <span class="nav-text">和父母做室友</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%9C%E4%B8%BA%E6%89%80%E6%9C%89%E7%89%A9%E7%9A%84%E5%AD%90%E5%A5%B3"><span class="nav-number">1.2.</span> <span class="nav-text">作为所有物的子女</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A1%A8%E6%BC%94%E7%88%B6%E6%AF%8D"><span class="nav-number">1.3.</span> <span class="nav-text">表演父母</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%87%AA%E7%A7%81%E7%9A%84%E8%A1%A8%E6%BC%94"><span class="nav-number">1.4.</span> <span class="nav-text">自私的表演</span></a></li></ol></li></ol>
+    .article-content
+      margin-top $spacing-unit
+      padding-bottom 10px
+      word-wrap break-word
+      border-bottom 1px solid var(--border-color)
+      color var(--default-text-color)
 
-    </div>
-</div>
-        </div>
-    
-</div>
+      &>:first-child
+        margin-top 0 !important
 
+    .article-prev, .article-next
 
+        a
+          position relative
+          display block
+          width 100%
+          height 100%
+          box-sizing border-box
+
+          &.prev
+            padding-left $arrow-icon-width
+
+          &.next
+            padding-right $arrow-icon-width
+
+          .arrow-icon
+            position absolute
+            top 0
+            height 100%
+            width $arrow-icon-width
+
+            &.left
+              left 0
+
+            &.right
+              right 0
+
+          .title
+            width 100%
+            height 100%
+
+      .post-nav-item
+        display none
+
+        +redefine-tablet()
+          display inline-block
+
+      .post-nav-title-item
+        overflow hidden
+        text-overflow ellipsis
+        white-space nowrap
+
+        +redefine-tablet()
+          display none
+
+    .recommended-article
+      overflow visible !important
+
+      .recommended-mobile
+        display none
+        +redefine-tablet()
+          display block
+
+      .recommended-desktop
+        display block
+        +redefine-tablet()
+          display none
+
+      .recommended-article-group
+        padding 10px 0
+        display flex
+        justify-content space-between
+        flex-wrap wrap
+        overflow visible !important
+
+        @media screen and (max-width $device-tablet)
+          height 190px
+          overflow scroll
+
+          &::-webkit-scrollbar
+            width 0 !important
+
+          -ms-overflow-style none
+
+        .recommended-article-item
+          redefine-container(
+            false,
+            0,
+            0,
+            10px,
+            0
+          )
+          box-shadow var(--redefine-box-shadow-flat)
+          padding 12px !important
+          display flex
+          flex-wrap wrap
+          align-content center
+          justify-content center
+          align-items center
+          overflow hidden
+          width 32%
+          max-height 200px
+          margin-top: $gap * 0.5
+          margin-right 0
+
+          +redefine-tablet()
+            width 49%
+
+          img
+            display flex
+            width calc(100% + 24px)
+            height 150px
+            object-fit cover
+            border-radius $redefine-border-radius-medium-top
+            margin -12px -12px 0 -12px !important
+
+          span
+            margin-top 0.5rem
+            display block
+            display -webkit-box
+            -webkit-box-orient vertical
+            -webkit-line-clamp 1
+            overflow hidden
+
+  .toc-content-container
+    white-space nowrap
+    opacity 0
+    position sticky
+    top: $navbar-height + $spacing-unit
+    // border-radius $redefine-border-radius-large
+    border-radius $redefine-border-radius-none
+    // display none
+    // visibility hidden
+    // width $toc-container-width
+    width 0
+    height auto
+    max-height calc(100vh - 210px)
+    //margin-left 30px
+    // z-index $z-index-6
+    overflow-y auto
+    overflow-x hidden
+    float right
+    padding 10px
+    box-sizing border-box
+    box-shadow none !important
+    transition opacity 0.3s ease-out 0.3s
+    hover-style(
+      false,
+      0,
+      0
+    )
+    transition-t('display', '0', '0.3', 'ease-out')
+
+    +redefine-tablet()
+      left 0 !important
+      display none !important
+
+  figure.image-caption
+    img
+      margin-bottom 0
+
+    figcaption
+      margin-top 5px
+      margin-bottom 10px
+      text-align center
+      font-size 0.9rem
+      color var(--third-text-color)
 
                 
 

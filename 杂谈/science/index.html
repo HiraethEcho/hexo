@@ -26,7 +26,7 @@
 <meta property="og:description" content="过去自然哲学史课程的大作业，被我用来记下一点关于认识论的读书笔记">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-10-14T15:54:32.000Z">
-<meta property="article:modified_time" content="2023-10-14T16:55:17.651Z">
+<meta property="article:modified_time" content="2024-02-19T06:23:59.346Z">
 <meta property="article:author" content="Hiraeth">
 <meta property="article:tag" content="philosophy">
 <meta property="article:tag" content="science">
@@ -651,288 +651,263 @@
             <div class="main-content">
 
                 
-                    <div class="post-page-container flex relative justify-between box-border w-full h-full">
-    <div class="article-content-container">
+                    @import '../common/variables'
 
-        <div class="article-title relative w-full">
-            
-                <div class="w-full flex items-center pt-6 justify-center">
-                    <h1 class="article-title-regular text-second-text-color text-4xl md:text-6xl font-bold px-2 sm:px-6 md:px-8 py-3">自然科学何以可能</h1>
-                </div>
-            
-            </div>
+$arrow-icon-width = 16px
+$post-nav-max-width = 220px
+$article-title-font-size = 3.2rem
+$temp-toc-width = hexo-config('global.sidebar_width')
+$toc-container-width = $temp-toc-width ? convert($temp-toc-width) : 210px
+$without-toc-container-width = calc(100% - $temp-toc-width)
+$gap = 30px
 
-        
-            <div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
-                <div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
-                    <img src="/hexo/img/avatar.jpeg">
-                </div>
-                <div class="info flex flex-col justify-between">
-                    <div class="author flex items-center">
-                        <span class="name text-default-text-color text-lg font-semibold">HiraethEcho</span>
-                        
-                    </div>
-                    <div class="meta-info">
-                        <div class="article-meta-info">
-    <span class="article-date article-meta-item">
-        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2023-10-14 23:54:32</span>
-        <span class="mobile">2023-10-14 23:54:32</span>
-        <span class="hover-info">Created</span>
-    </span>
-    
-        <span class="article-date article-meta-item">
-            <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2023-10-15 00:55:17</span>
-            <span class="mobile">2023-10-15 00:55:17</span>
-            <span class="hover-info">Updated</span>
-        </span>
-    
+.post-page-container
+  gap 0px
 
-    
-        <span class="article-categories article-meta-item">
-            <i class="fa-regular fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/hexo/categories/%E6%9D%82%E8%B0%88/">杂谈</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-    
-    
-        <span class="article-tags article-meta-item">
-            <i class="fa-regular fa-tags"></i>&nbsp;
-            <ul>
-                
-                    <li>
-                        <a href="/hexo/tags/philosophy/">philosophy</a>&nbsp;
-                    </li>
-                
-                    <li>
-                        | <a href="/hexo/tags/science/">science</a>&nbsp;
-                    </li>
-                
-            </ul>
-        </span>
-    
-
-    
-    
-    
-    
-</div>
-
-                    </div>
-                </div>
-            </div>
-        
-
-        
+  +redefine-mobile()
+    overflow-x hidden
 
 
-        <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-            <h1 id="自然科学何以可能？"><a href="#自然科学何以可能？" class="headerlink" title="自然科学何以可能？"></a>自然科学何以可能？</h1><p>&emsp;&emsp; 自人类出现以来，便始终追求着各种各样的知识。然而，知识是什么，是否真实存在？以及人们能否获得知识、如何获得知识？这些问题却并不是一开始就产生的，甚至到现在也没有完满回答的。<br>&emsp;&emsp; 本文主要关注自然科学这一类知识，首先简要地介绍历史上部分哲学家的观点，接着是科学家、尤其是物理学家对此问题的观点。最后是个人的一些思考，以及面对这样问题的研究态度。</p>
-<h2 id="问题的解释"><a href="#问题的解释" class="headerlink" title="问题的解释"></a>问题的解释</h2><p>&emsp;&emsp;首先需要介绍题目的含义，这个问题本身是指什么意思呢？第一个问题是，什么是自然科学？第二个问题是，什么是何以可能？</p>
-<h3 id="什么是自然科学"><a href="#什么是自然科学" class="headerlink" title="什么是自然科学"></a>什么是自然科学</h3><p>&emsp;&emsp;什么是自然科学？在百度百科上的解释是”自然科学是研究自然界的物质形态、结构、性质和运动规律的科学。它包括物理学、化学、生物学、天文学、地球科学等基础科学和医学、农学、气象学、材料学等应用科学，它是人类改造自然的实践经验即生产斗争经验的总结。”或者更简单的，可以总结为： 自然科学指的是关于描述、解释、预测、改造自然世界的知识。</p>
-<p>&emsp;&emsp;从这样的定义本身可以看出，这是一个唯物主义立场的描述，即人心之外的物质世界是真实存在的。同时认为，物质世界的运动是由规律的，自然科学所获得的知识，就是关于这规律的知识。</p>
-<blockquote>
-<p>世界是物质的世界，世界真正的统一性在于他的物质性。<br>规律是事物运动过程中固有的本质的、必然的、稳定地联系”。<br>–《思想政治：生活与哲学》28页-33页。</p>
-</blockquote>
-<p>&emsp;&emsp;在这样的前提下，需要提醒的是，数学，尤其是纯粹数学，并不属于自然科学的范畴。因为数学本身并不以解释世界为目标，而是在设定的逻辑体系、公理、定义下的数学世界中探索命题。虽然</p>
-<blockquote>
-<p>数学语言在物理定律形成过程中所展现出的魔力是我们无法理解也不应得到的礼物”<br>– 尤金·韦格纳，《数学在自然科学中不可思议的有效性》</p>
-</blockquote>
-<p>但是这个数学世界本质上与现实世界并无关系。</p>
-<h3 id="何以可能指什么？"><a href="#何以可能指什么？" class="headerlink" title="何以可能指什么？"></a>何以可能指什么？</h3><p>&emsp;&emsp;如前所述，自然科学的目的是为了获得知识。那么这里“何以可能”就指如何获得真正的知识。这里的知识，或称之为“真理”，是指普遍有效的知识，即无论何时何地都有效，并且确实是物质世界本身的规律，而非它的片面体现或表象。</p>
-<p>&emsp;&emsp;众所周知，在自然科学的发展中，我们曾获得过许多错误的知识，例如亚里士多德的诸多物理学认识，甚至获得了卓越成效的牛顿力学也被后来相对论和量子力学等驳倒。如此看来，人类确实并不总能获得普遍有效的真实的知识。甚至，人类是否真的能获得真理，也是不确定的了。那么如何获得真理，如何确定我们获得的是真理，即“自然科学何以可能”，确实是一个问题了。</p>
-<h2 id="问题的历史"><a href="#问题的历史" class="headerlink" title="问题的历史"></a>问题的历史</h2><p>&emsp;&emsp;在这一节，将尝试简单总结从古希腊到康德期间一些哲学家的观点。</p>
-<h3 id="问题起源"><a href="#问题起源" class="headerlink" title="问题起源"></a>问题起源</h3><p>&emsp;&emsp;一般认为第一位哲学家是古希腊的泰勒斯，他最为人知的观点是“水是世界的本源”，在他之后的阿那克西曼德、阿那克西曼德、赫拉克利特等人都有关于“世界本源”的不同观点。然而他们大多是阐述观点或“知识”，并没有关于知识本身的思考，这里的“本源”也多指时间在先而非逻辑在先。</p>
-<p>&emsp;&emsp;直到巴门尼德，希腊哲学发生了本体论的转向。他认为，我们的认识面对着两条道路，一条是“真理之路”，一条是“意见之路”。“真理之路” 以“存在” 为对象，“意见之路” 则以“非存在” 为对象。“非存在” 不是不存在，而是既存在又不存在的自然事物。我们可以理解为，“非存在”只是事物的表象，而“存在”则是事物的本质，我们追求的作为真理的知识，只能是关于本质的知识。因此，知识只有一条路，那就是存在之路。在希腊人那里，知识与意见有着严格的区别：知识具有普遍必然性，意见则因人而异的。巴门尼德把以往的自然哲学都看做是“意见之路”，他所做的工作就是使哲学走上“真理之路”。巴门尼德为西方哲学奠定了基本的思维方式，那就是通过理性认识的方式认识万物的本质。（张志伟《 西方哲学十五讲 》37页-38页. 北京大学出版社.） 从巴门尼德开始，关于获得知识的问题，西方哲学可以粗略地分为两大流派，在不同时代有不同的体现。</p>
-<h3 id="两大立场"><a href="#两大立场" class="headerlink" title="两大立场"></a>两大立场</h3><p>&emsp;&emsp;首先是古希腊时期，最为人知的哲学家无疑是苏格拉底、柏拉图、亚里士多德三人。这里我们主要讨论后两者的部分思想。</p>
-<p>&emsp;&emsp;柏拉图提出了理念论、灵魂不灭和回忆说的看法。理念论是关于本体论的，声称有一个理念的世界，这个世界里存在的是纯粹的理念。例如“圆”的理念（Idea, eidos）就处于理念世界，而现实世界的圆形的事物，都只是分有或描摹了理念世界的“圆”的理念。更多的所谓“美自身”、“善自身”就指理念世界的存在物。关于理念世界的知识，就是人们追求的真理。人的灵魂不灭，并且原本处于“理念世界”，具有完全的真正的知识，但是降生后“遗忘了”。人们获得知识的途径就是灵魂的回忆，柏拉图借苏格拉底之口阐述了这一观点，可以通过不断提问的方式使人回忆起原有的知识。这就是柏拉图关于知识的认识论。</p>
-<p>&emsp;&emsp;而亚里士多德则否认理念论，认为物体的性质不能脱离实体存在，也即没有理念世界的存在（因此才有名言“吾爱吾师，吾更爱真理”）。他认为事物具有四因：质料因、形式因、动力因、目的因，或更简单的二因：质料因与形式因。质料指“是所从出的东西”，形式指“是其所是”。例如一张桌子，木头就质料，而质料成为能作为桌子，就是其形式。事物的运动就是质料到形式的发展，这发展的动力在于事物的“潜能”。亚里士多德的范畴论则是关于存在物存在的方式的理论，包括“实体”、“数量”、“性质”、“时间”等是个范畴，它们编织成了存在之网，构成世界的逻辑结构，一切事物都在其中。那么自然人要获得知识，就要通过范畴去认识。</p>
-<p>&emsp;&emsp;古希腊之后的中世纪，由于基督教的兴起，这一时期的哲学主要是关于如何与宗教结合的，例如说明“真哲学就是真宗教，真宗教就是真哲学”（查士丁），或者用理性方式说明上帝存在（安瑟尔谟关于上帝的本体论证明）。在这段时期，关于自然世界的本体论看法，大致分为唯名论与唯理论。 一些哲学家主张普遍的共相是真正的实在，殊相或个别的东西不过是现象（理念与其描摹），即“唯实论”；另一些哲学家则认为个别的东西才是真实的存在，共相不过是概念、语词而已，并没有实际存在的意义，即“唯名论”。它们可以看作是近代哲学理性主义和经验主义的先声。</p>
-<p>&emsp;&emsp;启蒙运动和文艺复兴及之后的阶段，由于宗教改革、人的发现以及古希腊文化从东罗马帝国重新进入欧洲、自然科学发展等因素，哲学有了新发展。其主要流派是大陆理性主义和英国经验主义。</p>
-<p>&emsp;&emsp;理性主义的代表人物有笛卡尔、斯宾诺莎和莱布尼茨。笛卡尔被成为近代哲学的始祖。他另起炉灶，创造了一个完整的哲学体系。这是自亚里士多德以后从未有过的，是科学带来新的自信的标志。笛卡尔从普遍怀疑出发，首先通过“我思故我在”论证了自我的存在，接着论证上帝存在和自然世界存在。他的“心物二分”观点深远地影响了后来的哲学，即存在心灵世界和物质世界，有物质实体对应的心灵实体，知识是人们通过理性在心灵世界中获得的。但心物二分给理性主义留下了二元论难题，即心灵世界与物质世界的一致性，我们获得的知识是否符合现实世界的物质实体？在笛卡尔，他通过“上帝”保证两者的协调；在斯宾诺莎，则采取一元论的泛神论立场，主张心灵、理性和物质存在是同一本质的不同属性；在莱布尼茨，则是用“单子说”来解释。可以看到，就像亚里士多德提出的“无穷后退不可能”一样，他们都提出了一个形而上的存在来尝试解决这一问题，然而这就导致了独断论色彩，并且当时自然科学发展的影响，机械决定论也威胁到了人类的自由意志。</p>
-<p>&emsp;&emsp;与之相反的，经验主义认为人们的观念和知识只能来自于外部，代表任务有洛克、贝克莱和休谟等人。经验主义的原则，可以追溯到培根开始的经验归纳法。洛克认为，人的心灵是一块白板，除了逻辑学和数学之外的全部科学都是通过经验获得的。洛克《人类理解论》的第一卷就论述了没有天生的观念的原则。洛克认为，人类的所有观念来自于感觉作用和对自身心灵活动的知觉。我们不会先于经验获得任何知识，因为不仅我们的思考要借助观念， 而且我们也是通过经验获得所有观念的。。贝克莱则更进一步，直接否认物质世界的存在性，或至少认为不能确定物质世界的存在性；而“存在就是被感知”“事物即观念的集合”。虽然他认为一切都发生在人的心灵之中，但不认为观念和知识是先天的，而仍然是经验的，经验的来源就是上帝。把洛克和贝克莱的经验主义哲学发展到 逻辑终点的大卫· 休谟是一个在哲学家里最重要的人物。休谟最引人注目的成就，是把经验主义哲学研究到了前后一致的程度。这意味着，因为他的努力，经验主义哲学已经成了一种令人难以置信的科学。这意味着，从某种意义上看，他到达了逻辑的终局。。严格从经验论的基本原则出发，休谟到达了温和的怀疑主义。休谟指出，人们通过从自然世界获得的经验，并不能获得普遍有效的知识，甚至无法证明世界有因果关系，“根据经验来的一切推论都是习惯的结果而不是理性的结果”。自然世界是不可知的，甚至于心灵实体也是不可知的，这就走向了不可知论与怀疑论。但休谟是温和的，他指出人们可以悬置这些困难，而通过实践去生活。</p>
-<p>&emsp;&emsp;理性主义无法说明我们获得的是关于是自然世界的真理，经验主义则直接声明真理是不可知的，这样的回答对于研究自然科学的人来说是无法满意的。</p>
-<h3 id="古典哲学的结尾"><a href="#古典哲学的结尾" class="headerlink" title="古典哲学的结尾"></a>古典哲学的结尾</h3><p>&emsp;&emsp;德国古典哲学可以看作近代哲学的最后阶段，乃至古典哲学的完成。康德面临的问题正是理性主义和经验主义的矛盾，他需要重新证明科学可以获得普遍有效的知识。在《纯粹理性批判》中提出并分析了问题：普遍有效的数学、自然科学、形而上学如何可能？</p>
-<p>&emsp;&emsp;康德的哲学被称为“蓄水池”，以往的哲学流进来，再由他流向后来的哲学。他的观点总结整理了前人的思想，又形成了自己的体系。从本体论上，他认为事物有可以被经验的部分，即事物的表象；但同时又有不可知的部分，即“物自体”，也就是说康德部分地继承了休谟的不可知的观点。关于认识论，他进行了“哥白尼式”的革命，人通过先天直观来先天的经验事物，通过人类理智获得知识；接着，康德称，并不是人类的认知符合事物，而是事物符合人的认知。当然，这里的事物只是事物的表象，而不是不可知的物自体，但物自体毕竟不可知。于是，凭借先天的认识方式，康德称我们能获得关于事物表象的普遍有效的知识。</p>
-<p>&emsp;&emsp;需要注意的是，自亚里士多德以来，古典哲学的主要任务是建立形而上学，本体论和认识论都是其中间过程。这里介绍的只是康德哲学的很小一部分，关于自然科学何以可能的问题，由于二元论立场和不可知论观点，在我看来和前人相比他并没有给出更能以接受的回答。他之后的谢林黑格尔等走向唯心主义，同样难以接受。</p>
-<h2 id="问题的部分现代回答"><a href="#问题的部分现代回答" class="headerlink" title="问题的部分现代回答"></a>问题的部分现代回答</h2><p>&emsp;&emsp;那么如果古典哲学无法给出令人满意的回答，现代的追求科学与真理的人们，该怎么面对处理这样本质的问题呢？</p>
-<p>&emsp;&emsp;有点令人失望的是，</p>
-<blockquote>
-<p>我们不再像以往的哲学和科学那样将知识尤其是科学知识看作是绝对的普遍必然了。<br>–张志伟《西方哲学史十五讲》38页</p>
-</blockquote>
-<p>站定唯物主义立场之后，实际需要关注的问题是方法论的问题，即具体如何进行科学研究，科学如何批判地发展自身。</p>
-<h3 id="科学推理"><a href="#科学推理" class="headerlink" title="科学推理"></a>科学推理</h3><p>&emsp;&emsp;自然科学推理的方法，主要仍是归纳推理，虽然早在休谟就已经声明这无法获得完全的真理，但科学的归纳可以尽可能的接近真理。例如假说演绎推理和最优解释推理。例如孟德尔的豌豆杂交实验，就是经典的假说演绎推理。为了充分说明实验结果令人信服地说明了理论，人们引入了概率论的工具。休谟声称无法从经验（实验也是一种经验）获得真理，我们也承认这一点；但通过概率论的手段，我们可以声称我们的理论有极低的概率出错。例如希格斯粒子的发现，和最近新的$\mu$介子的疑似发现。而日心说替代地心说则是经典的最优解释推理的体现，以牛顿的相对运动的观点，二者都可称之为正确，但前者更加方便简洁。</p>
-<h3 id="自我批判"><a href="#自我批判" class="headerlink" title="自我批判"></a>自我批判</h3><p>&emsp;&emsp;科学的发展同时也是自我批判的过程。首先，一个科学理论必须具有可证伪性。如果理论仅仅自洽而无法证伪，那么就与宗教甚至“飞天意面神教”一样不再是科学的了。一旦实验给出否定的结果，那么理论就要修正甚至推翻。其次，要遵循“如无必要，勿增实体”的奥卡姆的剃刀的原则。虽然对此原则人们的认知略有分歧，马赫认为这只是人的思维经济原则，而爱因斯坦等人则认为简单是自然的本性，但无论如何人们还是承认这个原则的。</p>
-<h2 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h2><p>&emsp;&emsp;人类对于知识似乎有先天的追求。经院哲学期间的库萨认为，虽然我们不能够精确地认识真理，但我们可以通过不断的猜测无限地逼近真理。人是可以在无限的过程中认识真理的。正如希尔伯特所言：</p>
-<p class="note note-info">Wir müssen wissen,wir werden wissen</p>
-坚信“只要我们怀着火热的耐心，到黎明时分，我们定能进入那壮丽的城池！”
+  &.show-toc
+    gap 30px
 
-<p>&emsp;&emsp;然而又如哥德尔不完备性定理否定了希尔伯特一样，休谟以及不可知论的乌云也时刻笼罩在探究真理的人们头顶，甚至，如果自然世界运行规律本身蕴含着“人类无法发现最基础的规律”呢？人们实在处于迷雾当中，不知自己是否在追求真理的正确道路上，不知这真理是否能到达，甚至真理是否存在也是无法确定的。这不禁让人想到不断推巨石上山的西西弗，只不过他处于已知的虚无与荒诞之中，而我们则处于完全的无知。如此境地下，依然坚持人的理性与自由的尊严，继续前进，无疑需要巨大的勇气。</p>
-<p>然而，人类确实是具有无比的勇气的，“人类的赞歌就是勇气的赞歌，人类的伟大就是勇气的伟大！”更何况，我们应当相信</p>
-<blockquote>
-<p>西西弗是幸福的</br><br>Il faut imaginer Sisyphe heureux</p>
-</blockquote>
+    .toc-content-container
+      display block
+      opacity 1
+      transition opacity 0.2s ease-in 0.2s
+      width $toc-container-width
 
-        </div>
+      &:hover::-webkit-scrollbar-thumb
+        border 3px solid rgba(183, 183, 183, 0.3)
 
-        
-            <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
-                <div class="article-copyright-info-container">
-    <ul>
-        <li><strong>Title:</strong> 自然科学何以可能</li>
-        <li><strong>Author:</strong> HiraethEcho</li>
-        <li><strong>Created at
-                :</strong> 2023-10-14 23:54:32</li>
-        
-            <li>
-                <strong>Updated at
-                    :</strong> 2023-10-15 00:55:17
-            </li>
-        
-        <li>
-            <strong>Link:</strong> https://hiraethecho.github.io/hexo/杂谈/science/
-        </li>
-        <li>
-            <strong>
-                License:
-            </strong>
-            
+      &::-webkit-scrollbar
+        width 6px
+        height 6px
+        transition all 0.2s ease
+        display block
 
-            
-                This work is licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a>.
-            
-        </li>
-    </ul>
-</div>
+      &::-webkit-scrollbar-track
+        background transparent
+        border none
 
-            </div>
-        
+      &::-webkit-scrollbar-thumb
+        border-radius 20px
+        border 3px solid rgba(183, 183, 183, 0)
+        transition all 0.2s ease
 
-        
-            <ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
-                
-                    <li class="tag-item mx-0.5">
-                        <a href="/hexo/tags/philosophy/">#philosophy</a>&nbsp;
-                    </li>
-                
-                    <li class="tag-item mx-0.5">
-                        <a href="/hexo/tags/science/">#science</a>&nbsp;
-                    </li>
-                
-            </ul>
-        
+    .article-content-container
+      width calc(100% - 210px) !important
 
-        
+  +redefine-tablet()
+    .toc-content-container
+      display none !important
 
-        
-            <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
-                
-                    <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-                        <a class="prev"
-                        rel="prev"
-                        href="/hexo/%E6%9D%82%E8%B0%88/democracyold/"
-                        >
-                            <span class="left arrow-icon flex justify-center items-center">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </span>
-                            <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">关于民主共和制度粗糙浅显的小结</span>
-                                <span class="post-nav-item">Prev posts</span>
-                            </span>
-                        </a>
-                    </div>
-                
-                
-                    <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-                        <a class="next"
-                        rel="next"
-                        href="/hexo/%E6%9D%82%E8%B0%88/one-dimensional-man/"
-                        >
-                            <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">《单向度的人：发达工业社会意识形态研究》读后感</span>
-                                <span class="post-nav-item">Next posts</span>
-                            </span>
-                            <span class="right arrow-icon flex justify-center items-center">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </span>
-                        </a>
-                    </div>
-                
-            </div>
-        
+    .article-content-container
+      width 100% !important
 
+    &.show-toc
+      .toc-content-container
+        display none
 
-        
-            <div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
-                <div class="comments-container mt-10 w-full ">
-    <div id="comment-anchor" class="w-full h-2.5"></div>
-    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
-        Comments
-    </div>
-    
+      .article-content-container
+        width 100% !important
 
-        
-            
-    <div class="twikoo-container">
-        <script data-swup-reload-script
-                src='https://cdn.staticfile.org/twikoo/1.6.10/twikoo.all.min.js'
-        ></script>
-        <div id="twikoo-comment"></div>
-        <script data-swup-reload-script>
-            function loadTwikoo() {
-                twikoo.init({
-                    el: '#twikoo-comment',
-                    envId: 'https://hexohiraeth.netlify.app/.netlify/functions/twikoo',
-                });
-            }
+  .article-content-container
+    width 100%
+    transition width 0.2s ease
+    redefine-container(
+      false,
+      0,
+      0,
+      0,
+      30px
+    )
 
-            if ('true') {
-                const loadTwikooTimeout = setTimeout(() => {
-                    loadTwikoo();
-                    clearTimeout(loadTwikooTimeout);
-                }, 1000);
-            } else {
-                window.addEventListener('DOMContentLoaded', loadTwikoo);
-            }
-        </script>
-    </div>
+    +redefine-mobile()
+      padding 1.2rem 0.2rem
+      box-shadow none !important
+      max-width 100vw
 
+    .article-header .avatar img
+          border-radius: $redefine-border-radius-medium * 0.87
+          width 100%
+          height 100%
+          // background var(--avatar-background-color)
 
-        
-        
-    
-</div>
+    .article-header, .article-header-meta-info
+      margin-top 16px
 
-            </div>
-        
-    </div>
+      +redefine-tablet()
+        transform scale(0.9)
+        transform-origin left top
 
-    
-        <div class="toc-content-container">
-            <div class="post-toc-wrap">
-    <div class="post-toc">
-        <div class="toc-title">On this page</div>
-        <div class="page-title">自然科学何以可能</div>
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%A6%E4%BD%95%E4%BB%A5%E5%8F%AF%E8%83%BD%EF%BC%9F"><span class="nav-number">1.</span> <span class="nav-text">自然科学何以可能？</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E9%87%8A"><span class="nav-number">1.1.</span> <span class="nav-text">问题的解释</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%A6"><span class="nav-number">1.1.1.</span> <span class="nav-text">什么是自然科学</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%95%E4%BB%A5%E5%8F%AF%E8%83%BD%E6%8C%87%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="nav-number">1.1.2.</span> <span class="nav-text">何以可能指什么？</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%97%AE%E9%A2%98%E7%9A%84%E5%8E%86%E5%8F%B2"><span class="nav-number">1.2.</span> <span class="nav-text">问题的历史</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%97%AE%E9%A2%98%E8%B5%B7%E6%BA%90"><span class="nav-number">1.2.1.</span> <span class="nav-text">问题起源</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%A4%E5%A4%A7%E7%AB%8B%E5%9C%BA"><span class="nav-number">1.2.2.</span> <span class="nav-text">两大立场</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%A4%E5%85%B8%E5%93%B2%E5%AD%A6%E7%9A%84%E7%BB%93%E5%B0%BE"><span class="nav-number">1.2.3.</span> <span class="nav-text">古典哲学的结尾</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%97%AE%E9%A2%98%E7%9A%84%E9%83%A8%E5%88%86%E7%8E%B0%E4%BB%A3%E5%9B%9E%E7%AD%94"><span class="nav-number">1.3.</span> <span class="nav-text">问题的部分现代回答</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A7%91%E5%AD%A6%E6%8E%A8%E7%90%86"><span class="nav-number">1.3.1.</span> <span class="nav-text">科学推理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%87%AA%E6%88%91%E6%89%B9%E5%88%A4"><span class="nav-number">1.3.2.</span> <span class="nav-text">自我批判</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B0%BE%E5%A3%B0"><span class="nav-number">1.4.</span> <span class="nav-text">尾声</span></a></li></ol></li></ol>
+    .article-content
+      margin-top $spacing-unit
+      padding-bottom 10px
+      word-wrap break-word
+      border-bottom 1px solid var(--border-color)
+      color var(--default-text-color)
 
-    </div>
-</div>
-        </div>
-    
-</div>
+      &>:first-child
+        margin-top 0 !important
 
+    .article-prev, .article-next
 
+        a
+          position relative
+          display block
+          width 100%
+          height 100%
+          box-sizing border-box
+
+          &.prev
+            padding-left $arrow-icon-width
+
+          &.next
+            padding-right $arrow-icon-width
+
+          .arrow-icon
+            position absolute
+            top 0
+            height 100%
+            width $arrow-icon-width
+
+            &.left
+              left 0
+
+            &.right
+              right 0
+
+          .title
+            width 100%
+            height 100%
+
+      .post-nav-item
+        display none
+
+        +redefine-tablet()
+          display inline-block
+
+      .post-nav-title-item
+        overflow hidden
+        text-overflow ellipsis
+        white-space nowrap
+
+        +redefine-tablet()
+          display none
+
+    .recommended-article
+      overflow visible !important
+
+      .recommended-mobile
+        display none
+        +redefine-tablet()
+          display block
+
+      .recommended-desktop
+        display block
+        +redefine-tablet()
+          display none
+
+      .recommended-article-group
+        padding 10px 0
+        display flex
+        justify-content space-between
+        flex-wrap wrap
+        overflow visible !important
+
+        @media screen and (max-width $device-tablet)
+          height 190px
+          overflow scroll
+
+          &::-webkit-scrollbar
+            width 0 !important
+
+          -ms-overflow-style none
+
+        .recommended-article-item
+          redefine-container(
+            false,
+            0,
+            0,
+            10px,
+            0
+          )
+          box-shadow var(--redefine-box-shadow-flat)
+          padding 12px !important
+          display flex
+          flex-wrap wrap
+          align-content center
+          justify-content center
+          align-items center
+          overflow hidden
+          width 32%
+          max-height 200px
+          margin-top: $gap * 0.5
+          margin-right 0
+
+          +redefine-tablet()
+            width 49%
+
+          img
+            display flex
+            width calc(100% + 24px)
+            height 150px
+            object-fit cover
+            border-radius $redefine-border-radius-medium-top
+            margin -12px -12px 0 -12px !important
+
+          span
+            margin-top 0.5rem
+            display block
+            display -webkit-box
+            -webkit-box-orient vertical
+            -webkit-line-clamp 1
+            overflow hidden
+
+  .toc-content-container
+    white-space nowrap
+    opacity 0
+    position sticky
+    top: $navbar-height + $spacing-unit
+    // border-radius $redefine-border-radius-large
+    border-radius $redefine-border-radius-none
+    // display none
+    // visibility hidden
+    // width $toc-container-width
+    width 0
+    height auto
+    max-height calc(100vh - 210px)
+    //margin-left 30px
+    // z-index $z-index-6
+    overflow-y auto
+    overflow-x hidden
+    float right
+    padding 10px
+    box-sizing border-box
+    box-shadow none !important
+    transition opacity 0.3s ease-out 0.3s
+    hover-style(
+      false,
+      0,
+      0
+    )
+    transition-t('display', '0', '0.3', 'ease-out')
+
+    +redefine-tablet()
+      left 0 !important
+      display none !important
+
+  figure.image-caption
+    img
+      margin-bottom 0
+
+    figcaption
+      margin-top 5px
+      margin-bottom 10px
+      text-align center
+      font-size 0.9rem
+      color var(--third-text-color)
 
                 
 

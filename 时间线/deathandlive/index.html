@@ -26,7 +26,7 @@
 <meta property="og:description" content="关于我如何看待死，和如何生">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-02-04T14:34:00.000Z">
-<meta property="article:modified_time" content="2024-02-17T16:08:33.467Z">
+<meta property="article:modified_time" content="2024-02-19T06:23:59.346Z">
 <meta property="article:author" content="Hiraeth">
 <meta property="article:tag" content="life">
 <meta property="article:tag" content="philosophy">
@@ -652,260 +652,263 @@
             <div class="main-content">
 
                 
-                    <div class="post-page-container flex relative justify-between box-border w-full h-full">
-    <div class="article-content-container">
+                    @import '../common/variables'
 
-        <div class="article-title relative w-full">
-            
-                <div class="w-full flex items-center pt-6 justify-center">
-                    <h1 class="article-title-regular text-second-text-color text-4xl md:text-6xl font-bold px-2 sm:px-6 md:px-8 py-3">我的生与死</h1>
-                </div>
-            
-            </div>
+$arrow-icon-width = 16px
+$post-nav-max-width = 220px
+$article-title-font-size = 3.2rem
+$temp-toc-width = hexo-config('global.sidebar_width')
+$toc-container-width = $temp-toc-width ? convert($temp-toc-width) : 210px
+$without-toc-container-width = calc(100% - $temp-toc-width)
+$gap = 30px
 
-        
-            <div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
-                <div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
-                    <img src="/hexo/img/avatar.jpeg">
-                </div>
-                <div class="info flex flex-col justify-between">
-                    <div class="author flex items-center">
-                        <span class="name text-default-text-color text-lg font-semibold">HiraethEcho</span>
-                        
-                    </div>
-                    <div class="meta-info">
-                        <div class="article-meta-info">
-    <span class="article-date article-meta-item">
-        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2024-02-04 22:34</span>
-        <span class="mobile">2024-02-04 22:34</span>
-        <span class="hover-info">Created</span>
-    </span>
-    
-        <span class="article-date article-meta-item">
-            <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-02-18 00:08:33</span>
-            <span class="mobile">2024-02-18 00:08:33</span>
-            <span class="hover-info">Updated</span>
-        </span>
-    
+.post-page-container
+  gap 0px
 
-    
-        <span class="article-categories article-meta-item">
-            <i class="fa-regular fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/hexo/categories/%E6%97%B6%E9%97%B4%E7%BA%BF/">时间线</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-    
-    
-        <span class="article-tags article-meta-item">
-            <i class="fa-regular fa-tags"></i>&nbsp;
-            <ul>
-                
-                    <li>
-                        <a href="/hexo/tags/life/">life</a>&nbsp;
-                    </li>
-                
-                    <li>
-                        | <a href="/hexo/tags/philosophy/">philosophy</a>&nbsp;
-                    </li>
-                
-                    <li>
-                        | <a href="/hexo/tags/death/">death</a>&nbsp;
-                    </li>
-                
-            </ul>
-        </span>
-    
-
-    
-    
-    
-    
-</div>
-
-                    </div>
-                </div>
-            </div>
-        
-
-        
+  +redefine-mobile()
+    overflow-x hidden
 
 
-        <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-            <!--  TODO: Not finished    -->
+  &.show-toc
+    gap 30px
 
-<h1 id="我的生与死：此时的生活的状态"><a href="#我的生与死：此时的生活的状态" class="headerlink" title="我的生与死：此时的生活的状态"></a>我的生与死：此时的生活的状态</h1><p>随便写一写现在的生活态度，如何看待自己，看待死亡，看待学业等等。</p>
-<p>这一篇可能对精神有巨大的消耗，因此干脆选择做成陆续更新的模式。</p>
-<h2 id="2024-02-06"><a href="#2024-02-06" class="headerlink" title="2024-02-06"></a>2024-02-06</h2><p>长期处于一种脱离的感觉，仿佛观察自己生活。我并不活在世界上，是我的肉体在这个世界上，我在世界之外看着他。他兴奋紧张，他喜怒哀乐，他遇到挫折、克服困难或一蹶不振，他寻欢作乐、纵酒狂欢或意兴阑珊。他活着，但是是在活他的生活，不是我的。他的行为有他的结果，不是我的。他会死，当然，应为每个人都会死；但是我不会死，因为我不是他。他死了，我也随之消失了，但是是他死了，他会死，我不会死。于是我不生不死地看着我。</p>
-<h2 id="2024-02-04"><a href="#2024-02-04" class="headerlink" title="2024-02-04"></a>2024-02-04</h2><p>有一些加缪式的持荒诞激情来反抗生活的虚无，有一些海德格尔式向死而生，有一些犬儒&#x2F;斯多葛&#x2F;伊壁鸠鲁（这三个实在分不清）式的躺平混吃等死无追求。</p>
-<p>事实上，第三种似乎是最接近我本能的情感，非常想躺尸，想要清心寡欲随遇而安毫无追求混吃等死。也有不那么“享乐主义”的心态，即总有最后的退路：一死了之。</p>
-<p>被虚无主义折磨后，尝试读书自救，遇见加缪和《西西弗神话》，以及继而读到的《鼠疫》、萨特和《存在主义是一种人道主义》。丹·哈蒙的《Rick and morty》传达一个清晰的中心思想：“一切毫无意义”这样的观点，虽然正确，但并没有任何结果，没有任何可做的。其实存在主义这种“自欺”式的给自己的事找意义，本质上和信仰宗教并没有区别（所以加缪在《西西弗神话》里对克尔恺郭尔高强度拷打）。加缪看来，世界不仅是虚无的，也是荒诞的；对待荒谬世界的唯一态度，是反抗，荒诞人只能耗尽一切，义无反顾地生活。虽然思想上想要激情地反抗一切，但并不能诚实地实践。真如基里洛夫所言感慨：“我可怕的新自由！”</p>
-<p>生活中的琐碎、死刑犯松开的鞋带，那些对生活中事情的在乎、担忧，是“烦”（sorge）；清醒地认识到人终有一死，认识到人是存在的，于是无对象的全方位渗透进精神本身的恐惧感，是“畏”（angst）。（这里给出托尔斯泰的一个短篇《伊凡·伊里奇之死》，十分震撼地描写死亡。）持有这样的“畏”，才能脱出“常人”（The they），才能真实地做他自己。</p>
+    .toc-content-container
+      display block
+      opacity 1
+      transition opacity 0.2s ease-in 0.2s
+      width $toc-container-width
 
-        </div>
+      &:hover::-webkit-scrollbar-thumb
+        border 3px solid rgba(183, 183, 183, 0.3)
 
-        
-            <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
-                <div class="article-copyright-info-container">
-    <ul>
-        <li><strong>Title:</strong> 我的生与死</li>
-        <li><strong>Author:</strong> HiraethEcho</li>
-        <li><strong>Created at
-                :</strong> 2024-02-04 22:34:00</li>
-        
-            <li>
-                <strong>Updated at
-                    :</strong> 2024-02-18 00:08:33
-            </li>
-        
-        <li>
-            <strong>Link:</strong> https://hiraethecho.github.io/hexo/时间线/deathandlive/
-        </li>
-        <li>
-            <strong>
-                License:
-            </strong>
-            
+      &::-webkit-scrollbar
+        width 6px
+        height 6px
+        transition all 0.2s ease
+        display block
 
-            
-                This work is licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a>.
-            
-        </li>
-    </ul>
-</div>
+      &::-webkit-scrollbar-track
+        background transparent
+        border none
 
-            </div>
-        
+      &::-webkit-scrollbar-thumb
+        border-radius 20px
+        border 3px solid rgba(183, 183, 183, 0)
+        transition all 0.2s ease
 
-        
-            <ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
-                
-                    <li class="tag-item mx-0.5">
-                        <a href="/hexo/tags/life/">#life</a>&nbsp;
-                    </li>
-                
-                    <li class="tag-item mx-0.5">
-                        <a href="/hexo/tags/philosophy/">#philosophy</a>&nbsp;
-                    </li>
-                
-                    <li class="tag-item mx-0.5">
-                        <a href="/hexo/tags/death/">#death</a>&nbsp;
-                    </li>
-                
-            </ul>
-        
+    .article-content-container
+      width calc(100% - 210px) !important
 
-        
+  +redefine-tablet()
+    .toc-content-container
+      display none !important
 
-        
-            <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
-                
-                    <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-                        <a class="prev"
-                        rel="prev"
-                        href="/hexo/%E6%97%B6%E9%97%B4%E7%BA%BF/whim/"
-                        >
-                            <span class="left arrow-icon flex justify-center items-center">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </span>
-                            <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">零碎的奇思妙想</span>
-                                <span class="post-nav-item">Prev posts</span>
-                            </span>
-                        </a>
-                    </div>
-                
-                
-                    <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-                        <a class="next"
-                        rel="next"
-                        href="/hexo/%E7%AE%80%E8%AE%B0/starbuck/"
-                        >
-                            <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">宜宾招待所、北京坊、星巴克的一天</span>
-                                <span class="post-nav-item">Next posts</span>
-                            </span>
-                            <span class="right arrow-icon flex justify-center items-center">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </span>
-                        </a>
-                    </div>
-                
-            </div>
-        
+    .article-content-container
+      width 100% !important
 
+    &.show-toc
+      .toc-content-container
+        display none
 
-        
-            <div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
-                <div class="comments-container mt-10 w-full ">
-    <div id="comment-anchor" class="w-full h-2.5"></div>
-    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
-        Comments
-    </div>
-    
+      .article-content-container
+        width 100% !important
 
-        
-            
-    <div class="twikoo-container">
-        <script data-swup-reload-script
-                src='https://cdn.staticfile.org/twikoo/1.6.10/twikoo.all.min.js'
-        ></script>
-        <div id="twikoo-comment"></div>
-        <script data-swup-reload-script>
-            function loadTwikoo() {
-                twikoo.init({
-                    el: '#twikoo-comment',
-                    envId: 'https://hexohiraeth.netlify.app/.netlify/functions/twikoo',
-                });
-            }
+  .article-content-container
+    width 100%
+    transition width 0.2s ease
+    redefine-container(
+      false,
+      0,
+      0,
+      0,
+      30px
+    )
 
-            if ('true') {
-                const loadTwikooTimeout = setTimeout(() => {
-                    loadTwikoo();
-                    clearTimeout(loadTwikooTimeout);
-                }, 1000);
-            } else {
-                window.addEventListener('DOMContentLoaded', loadTwikoo);
-            }
-        </script>
-    </div>
+    +redefine-mobile()
+      padding 1.2rem 0.2rem
+      box-shadow none !important
+      max-width 100vw
 
+    .article-header .avatar img
+          border-radius: $redefine-border-radius-medium * 0.87
+          width 100%
+          height 100%
+          // background var(--avatar-background-color)
 
-        
-        
-    
-</div>
+    .article-header, .article-header-meta-info
+      margin-top 16px
 
-            </div>
-        
-    </div>
+      +redefine-tablet()
+        transform scale(0.9)
+        transform-origin left top
 
-    
-        <div class="toc-content-container">
-            <div class="post-toc-wrap">
-    <div class="post-toc">
-        <div class="toc-title">On this page</div>
-        <div class="page-title">我的生与死</div>
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%88%91%E7%9A%84%E7%94%9F%E4%B8%8E%E6%AD%BB%EF%BC%9A%E6%AD%A4%E6%97%B6%E7%9A%84%E7%94%9F%E6%B4%BB%E7%9A%84%E7%8A%B6%E6%80%81"><span class="nav-number">1.</span> <span class="nav-text">我的生与死：此时的生活的状态</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2024-02-06"><span class="nav-number">1.1.</span> <span class="nav-text">2024-02-06</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2024-02-04"><span class="nav-number">1.2.</span> <span class="nav-text">2024-02-04</span></a></li></ol></li></ol>
+    .article-content
+      margin-top $spacing-unit
+      padding-bottom 10px
+      word-wrap break-word
+      border-bottom 1px solid var(--border-color)
+      color var(--default-text-color)
 
-    </div>
-</div>
-        </div>
-    
-</div>
+      &>:first-child
+        margin-top 0 !important
 
+    .article-prev, .article-next
 
+        a
+          position relative
+          display block
+          width 100%
+          height 100%
+          box-sizing border-box
+
+          &.prev
+            padding-left $arrow-icon-width
+
+          &.next
+            padding-right $arrow-icon-width
+
+          .arrow-icon
+            position absolute
+            top 0
+            height 100%
+            width $arrow-icon-width
+
+            &.left
+              left 0
+
+            &.right
+              right 0
+
+          .title
+            width 100%
+            height 100%
+
+      .post-nav-item
+        display none
+
+        +redefine-tablet()
+          display inline-block
+
+      .post-nav-title-item
+        overflow hidden
+        text-overflow ellipsis
+        white-space nowrap
+
+        +redefine-tablet()
+          display none
+
+    .recommended-article
+      overflow visible !important
+
+      .recommended-mobile
+        display none
+        +redefine-tablet()
+          display block
+
+      .recommended-desktop
+        display block
+        +redefine-tablet()
+          display none
+
+      .recommended-article-group
+        padding 10px 0
+        display flex
+        justify-content space-between
+        flex-wrap wrap
+        overflow visible !important
+
+        @media screen and (max-width $device-tablet)
+          height 190px
+          overflow scroll
+
+          &::-webkit-scrollbar
+            width 0 !important
+
+          -ms-overflow-style none
+
+        .recommended-article-item
+          redefine-container(
+            false,
+            0,
+            0,
+            10px,
+            0
+          )
+          box-shadow var(--redefine-box-shadow-flat)
+          padding 12px !important
+          display flex
+          flex-wrap wrap
+          align-content center
+          justify-content center
+          align-items center
+          overflow hidden
+          width 32%
+          max-height 200px
+          margin-top: $gap * 0.5
+          margin-right 0
+
+          +redefine-tablet()
+            width 49%
+
+          img
+            display flex
+            width calc(100% + 24px)
+            height 150px
+            object-fit cover
+            border-radius $redefine-border-radius-medium-top
+            margin -12px -12px 0 -12px !important
+
+          span
+            margin-top 0.5rem
+            display block
+            display -webkit-box
+            -webkit-box-orient vertical
+            -webkit-line-clamp 1
+            overflow hidden
+
+  .toc-content-container
+    white-space nowrap
+    opacity 0
+    position sticky
+    top: $navbar-height + $spacing-unit
+    // border-radius $redefine-border-radius-large
+    border-radius $redefine-border-radius-none
+    // display none
+    // visibility hidden
+    // width $toc-container-width
+    width 0
+    height auto
+    max-height calc(100vh - 210px)
+    //margin-left 30px
+    // z-index $z-index-6
+    overflow-y auto
+    overflow-x hidden
+    float right
+    padding 10px
+    box-sizing border-box
+    box-shadow none !important
+    transition opacity 0.3s ease-out 0.3s
+    hover-style(
+      false,
+      0,
+      0
+    )
+    transition-t('display', '0', '0.3', 'ease-out')
+
+    +redefine-tablet()
+      left 0 !important
+      display none !important
+
+  figure.image-caption
+    img
+      margin-bottom 0
+
+    figcaption
+      margin-top 5px
+      margin-bottom 10px
+      text-align center
+      font-size 0.9rem
+      color var(--third-text-color)
 
                 
 

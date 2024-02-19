@@ -665,408 +665,263 @@
             <div class="main-content">
 
                 
-                    <div class="post-page-container flex relative justify-between box-border w-full h-full">
-    <div class="article-content-container">
+                    @import '../common/variables'
 
-        <div class="article-title relative w-full">
-            
-                <div class="w-full flex items-center pt-6 justify-center">
-                    <h1 class="article-title-regular text-second-text-color text-4xl md:text-6xl font-bold px-2 sm:px-6 md:px-8 py-3">redefine readme</h1>
-                </div>
-            
-            </div>
+$arrow-icon-width = 16px
+$post-nav-max-width = 220px
+$article-title-font-size = 3.2rem
+$temp-toc-width = hexo-config('global.sidebar_width')
+$toc-container-width = $temp-toc-width ? convert($temp-toc-width) : 210px
+$without-toc-container-width = calc(100% - $temp-toc-width)
+$gap = 30px
 
-        
-            <div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
-                <div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
-                    <img src="/hexo/img/avatar.jpeg">
-                </div>
-                <div class="info flex flex-col justify-between">
-                    <div class="author flex items-center">
-                        <span class="name text-default-text-color text-lg font-semibold">HiraethEcho</span>
-                        
-                    </div>
-                    <div class="meta-info">
-                        <div class="article-meta-info">
-    <span class="article-date article-meta-item">
-        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2024-02-18 00:11</span>
-        <span class="mobile">2024-02-18 00:11</span>
-        <span class="hover-info">Created</span>
-    </span>
-    
-        <span class="article-date article-meta-item">
-            <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-02-18 00:11</span>
-            <span class="mobile">2024-02-18 00:11</span>
-            <span class="hover-info">Updated</span>
-        </span>
-    
+.post-page-container
+  gap 0px
 
-    
-        <span class="article-categories article-meta-item">
-            <i class="fa-regular fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/hexo/categories/%E7%AE%80%E8%AE%B0/">简记</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-    
-    
-        <span class="article-tags article-meta-item">
-            <i class="fa-regular fa-tags"></i>&nbsp;
-            <ul>
-                
-                    <li>
-                        <a href="/hexo/tags/dota/">dota</a>&nbsp;
-                    </li>
-                
-                    <li>
-                        | <a href="/hexo/tags/game/">game</a>&nbsp;
-                    </li>
-                
-            </ul>
-        </span>
-    
-
-    
-    
-    
-    
-</div>
-
-                    </div>
-                </div>
-            </div>
-        
-
-        
+  +redefine-mobile()
+    overflow-x hidden
 
 
-        <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-            <div align="right">
-  <a title="en" href="README.md"><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://img.shields.io/badge/-English-545759?style=for-the-badge"
-                      alt="english"
-                ></a>
-  <img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://img.shields.io/badge/-%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-A31F34?style=for-the-badge"
-                      alt="简体中文"
-                >
-  <a title="zh-TW" href="README_zh-TW.md"><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://img.shields.io/badge/-%E7%B9%81%E4%BD%93%E4%B8%AD%E6%96%87-545759?style=for-the-badge"
-                      alt="繁体中文"
-                ></a>
-</div>
+  &.show-toc
+    gap 30px
 
-<p><a target="_blank" rel="noopener" href="https://redefine.ohevan.com"><img  align="center" 
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://user-images.githubusercontent.com/68590232/226141917-68124e8f-fde0-4edd-b86d-c62932ec369a.png"
-                       alt="Redefine"
-                ></a></p>
-<h1 id="hexo-theme-redefine"><a href="#hexo-theme-redefine" class="headerlink" title="hexo-theme-redefine"></a>hexo-theme-redefine</h1><p>“Redefine” 是一款简洁、快速、纯粹的 Hexo 主题，其简约之美遥非平凡，让人领略到设计的力量。本主题不仅包含诸多实用丰富的功能，而且赋予了精致而出色的设计理念。</p>
-<p>本主题源自 <a class="link"   target="_blank" rel="noopener" href="https://github.com/XPoet/hexo-theme-keep" >hexo-theme-keep <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 的早期版本，进一步进行了精心打磨和扩展。在保留了原主题的精炼基础上，我们优化了整体样式，引入了丰富的写作模块，并增添了多种插件支持。同时，大幅提高了自定义的灵活度，旨在让您能够更加便捷、顺畅地运用本主题，打造出独具匠心的个人博客。</p>
-<p align="center">
-    <a target="_blank" rel="noopener" href="https://www.npmjs.com/package/hexo-theme-redefine">
-        <img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://img.shields.io/npm/v/hexo-theme-redefine?color=F38181&amp;label=version&amp;logo=npm&amp;logoColor=F38181&amp;style=for-the-badge"
-                      referrerpolicy="no-referrer" alt="NPM version" 
-                >
-    </a>
-    <a target="_blank" rel="noopener" href="https://www.npmjs.com/package/hexo-theme-redefine">
-        <img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://img.shields.io/npm/dm/hexo-theme-redefine?color=FCE38A&amp;logo=npm&amp;logoColor=FCE38A&amp;style=for-the-badge"
-                      referrerpolicy="no-referrer" alt="npm downloads" 
-                >
-    </a>
-    <a target="_blank" rel="noopener" href="https://www.npmjs.com/package/hexo-theme-redefine">
-        <img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://img.shields.io/npm/dt/hexo-theme-redefine?color=95E1D3&amp;label=total&amp;logo=npm&amp;logoColor=95E1D3&amp;style=for-the-badge"
-                      referrerpolicy="no-referrer" alt="npm-total" 
-                >
-    </a>
-    <a target="_blank" rel="noopener" href="https://hexo.io"><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://img.shields.io/badge/hexo-%3E=5.0.0-8caaee?style=for-the-badge&amp;logo=hexo&amp;logoColor=8caaee"
-                      referrerpolicy="no-referrer" alt="Required Hexo version" 
-                ></a>
-    <img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://img.shields.io/badge/node-%3E=12.0-a6d189?style=for-the-badge&amp;logo=node.js&amp;logoColor=a6d189"
-                      referrerpolicy="no-referrer" alt="NodeJS Version" 
-                >
-</p>
+    .toc-content-container
+      display block
+      opacity 1
+      transition opacity 0.2s ease-in 0.2s
+      width $toc-container-width
 
+      &:hover::-webkit-scrollbar-thumb
+        border 3px solid rgba(183, 183, 183, 0.3)
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/EvanNotFound/hexo-theme-redefine/assets/68590232/337c1801-7a59-45af-a02a-583508be69a5" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/EvanNotFound/hexo-theme-redefine/assets/68590232/d88a5544-c86e-46ab-8e52-0582b437f989" />
-  <img  alt="Cover Image" 
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://github.com/EvanNotFound/hexo-theme-redefine/assets/68590232/d88a5544-c86e-46ab-8e52-0582b437f989"
-                      
-                >
-</picture>
+      &::-webkit-scrollbar
+        width 6px
+        height 6px
+        transition all 0.2s ease
+        display block
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/EvanNotFound/hexo-theme-redefine/assets/68590232/5d51b48d-7b08-4da0-a304-933424739203" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/EvanNotFound/hexo-theme-redefine/assets/68590232/c6df4b81-557d-4e0b-8038-b056075d0fa4" />
-  <img  alt="Pages Image" 
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://github.com/EvanNotFound/hexo-theme-redefine/assets/68590232/c6df4b81-557d-4e0b-8038-b056075d0fa4"
-                      
-                >
-</picture>
+      &::-webkit-scrollbar-track
+        background transparent
+        border none
 
-<h2 id="🌐-官方演示站"><a href="#🌐-官方演示站" class="headerlink" title="🌐 官方演示站"></a>🌐 官方演示站</h2><ul>
-<li><a class="link"   target="_blank" rel="noopener" href="https://ohevan.com/" >EvanNotFound’s Blog <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
-<li><a class="link"   target="_blank" rel="noopener" href="https://redefine.ohevan.com/" >Theme Redefine 演示站点 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
-<li><a class="link"   target="_blank" rel="noopener" href="https://redefine.ohevan.com/showcase" >Redefine 用户墙 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
-</ul>
-<p>如果你也在使用 Redefine，欢迎在前往 <a class="link"   target="_blank" rel="noopener" href="https://redefine.ohevan.com/showcase" >Redefine 用户墙 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 添加你的博客链接。</p>
-<h2 id="⛰️-部分功能"><a href="#⛰️-部分功能" class="headerlink" title="⛰️ 部分功能"></a>⛰️ 部分功能</h2><ul>
-<li><a class="link"   target="_blank" rel="noopener" href="https://redefine-docs.ohevan.com/modules/notes" >笔记模块 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
-<li><a class="link"   target="_blank" rel="noopener" href="https://redefine-docs.ohevan.com/page_templates/friends" >友链样式 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
-<li><a class="link"   target="_blank" rel="noopener" href="https://redefine-docs.ohevan.com/plugins/mathjax" >数学公式 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
-<li>代码块语言显示</li>
-<li>Light&#x2F;Dark 模式切换</li>
-<li><a class="link"   target="_blank" rel="noopener" href="https://redefine-docs.ohevan.com/basic/fontawesome" >Font Awesome 6.2.1 Pro <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>（包含 Duotone&#x2F;Regular&#x2F;Thin 等不同样式）</li>
-<li><a class="link"   target="_blank" rel="noopener" href="https://redefine-docs.ohevan.com/dhome/navbar#%E9%93%BE%E6%8E%A5%E5%88%97%E8%A1%A8" >下拉菜单 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
-<li><a class="link"   target="_blank" rel="noopener" href="https://redefine-docs.ohevan.com/footer" >可自定义页脚 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
-<li><a class="link"   target="_blank" rel="noopener" href="https://redefine-docs.ohevan.com/footer#%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4" >网站运行时间显示 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
-<li><a class="link"   target="_blank" rel="noopener" href="https://redefine-docs.ohevan.com/article_customize/banner" >文章头图 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
-<li><a class="link"   target="_blank" rel="noopener" href="https://redefine-docs.ohevan.com/plugins/mermaid" >Mermaid JS 支持 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
-<li>SEO 友好</li>
-<li><a class="link"   target="_blank" rel="noopener" href="https://redefine-docs.ohevan.com/plugins/aplayer" >Aplayer 音乐播放器支持 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
-<li><a class="link"   target="_blank" rel="noopener" href="https://redefine-docs.ohevan.com/shuoshuo" >说说模块 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
-<li><a class="link"   target="_blank" rel="noopener" href="https://redefine-docs.ohevan.com/basic/global#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%AD%97%E4%BD%93" >自定义字体 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
-<li>Tailwind CSS 支持</li>
-</ul>
-<h2 id="☁️-安装"><a href="#☁️-安装" class="headerlink" title="☁️ 安装"></a>☁️ 安装</h2><p>如果你的 Hexo 版本在 <code>5.0</code> 及以上，推荐通过 <code>npm</code> 安装</p>
-<div class="highlight-container" data-rel="Sh"><figure class="iseeu highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> your-hexo-site</span><br><span class="line">$ npm install hexo-theme-redefine@latest</span><br></pre></td></tr></table></figure></div>
+      &::-webkit-scrollbar-thumb
+        border-radius 20px
+        border 3px solid rgba(183, 183, 183, 0)
+        transition all 0.2s ease
 
-<p>或者使用 git 克隆</p>
-<div class="highlight-container" data-rel="Sh"><figure class="iseeu highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> your-hexo-site</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/EvanNotFound/hexo-theme-redefine.git themes/redefine</span><br></pre></td></tr></table></figure></div>
+    .article-content-container
+      width calc(100% - 210px) !important
 
-<p>安装完成后，在 Hexo 配置文件 <code>_config.yml</code> 中将 <code>theme</code> 设置为 <code>Redefine</code>。</p>
-<div class="highlight-container" data-rel="Yaml"><figure class="iseeu highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">redefine</span></span><br></pre></td></tr></table></figure></div>
+  +redefine-tablet()
+    .toc-content-container
+      display none !important
 
+    .article-content-container
+      width 100% !important
 
+    &.show-toc
+      .toc-content-container
+        display none
 
-<h2 id="⏫-更新"><a href="#⏫-更新" class="headerlink" title="⏫ 更新"></a>⏫ 更新</h2><p>Theme Redefine 经常发布新版本，你可以通过如下命令更新 Theme Redefine。</p>
-<p>通过 <code>npm</code> 安装最新版本：</p>
-<div class="highlight-container" data-rel="Sh"><figure class="iseeu highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-theme-redefine@latest</span><br></pre></td></tr></table></figure></div>
+      .article-content-container
+        width 100% !important
 
-<p>通过 <code>git</code> 更新到最新的 <code>main</code> 分支：</p>
-<div class="highlight-container" data-rel="Sh"><figure class="iseeu highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/EvanNotFound/hexo-theme-redefine.git themes/redefine</span><br></pre></td></tr></table></figure></div>
+  .article-content-container
+    width 100%
+    transition width 0.2s ease
+    redefine-container(
+      false,
+      0,
+      0,
+      0,
+      30px
+    )
 
+    +redefine-mobile()
+      padding 1.2rem 0.2rem
+      box-shadow none !important
+      max-width 100vw
 
+    .article-header .avatar img
+          border-radius: $redefine-border-radius-medium * 0.87
+          width 100%
+          height 100%
+          // background var(--avatar-background-color)
 
-<h2 id="📄-文档"><a href="#📄-文档" class="headerlink" title="📄 文档"></a>📄 文档</h2><p>请阅读 <a class="link"   target="_blank" rel="noopener" href="https://redefine-docs.ohevan.com/" >Redefine 主题官方文档 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 进行主题配置与安装，非常简单易懂。</p>
-<h2 id="☕-支持"><a href="#☕-支持" class="headerlink" title="☕ 支持"></a>☕ 支持</h2><p>欢迎 <strong>pull request</strong> 或者 提交 <strong>issues</strong>.</p>
-<p>如有问题，请发邮件到 <a class="link"   href="mailto:contact@ohevan.com" >contact@ohevan.com <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>. 我会及时回复</p>
-<p>如果你觉得主题还不错的话，欢迎给我 Github 点个 Star，谢谢。建议点个 Watch，以便及时获取主题更新。</p>
-<p>如果你在使用 <a class="link"   target="_blank" rel="noopener" href="https://typora.io/" >Typora <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 编辑器写文章，欢迎查看我写的 <a class="link"   target="_blank" rel="noopener" href="https://github.com/EvanNotFound/typora-theme-redefine" >Typora Redefine 主题 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>，按照本 Hexo 主题样式编写，让你可以直接预览文章效果，更好排版。</p>
-<h2 id="💗-赞助"><a href="#💗-赞助" class="headerlink" title="💗 赞助"></a>💗 赞助</h2><p>非常感谢所有赞助者的支持，你们的支持是我维护这个项目的动力。</p>
-<p>如果你觉得这个项目还不错，欢迎给我<a class="link"   target="_blank" rel="noopener" href="https://github.com/EvanNotFound/hexo-theme-redefine/blob/dev/DONATION.md" >买杯咖啡 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>，让我更有动力维护这个项目。</p>
-<p>所有赞助者名单：<a class="link"   target="_blank" rel="noopener" href="https://github.com/EvanNotFound/hexo-theme-redefine/blob/dev/DONATION.md" >赞助者名单 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<p>想要使用OpenAI GPT-4，但不想每月支付 20 美元吗？来看看 <a class="link"   target="_blank" rel="noopener" href="https://gpt.oknice.ca/" >GPT Plus Tokens <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>！可以使用多达 100 个 ChatGPT Plus 账户！</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://github.com/EvanNotFound/hexo-theme-redefine/assets/68590232/b25196a1-3ba4-43bb-9d0f-e23d3527e6ff"
-                      alt="CleanShot 2023-12-08 at 12 47 20@2x"
-                ></p>
-<h2 id="🌟-Star-记录"><a href="#🌟-Star-记录" class="headerlink" title="🌟 Star 记录"></a>🌟 Star 记录</h2><a target="_blank" rel="noopener" href="https://star-history.com/#EvanNotFound/hexo-theme-redefine&Date">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=EvanNotFound/hexo-theme-redefine&type=Date&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=EvanNotFound/hexo-theme-redefine&type=Date" />
-    <img  alt="Star History Chart" 
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://api.star-history.com/svg?repos=EvanNotFound/hexo-theme-redefine&type=Date"
-                      
-                >
-  </picture>
-</a>
+    .article-header, .article-header-meta-info
+      margin-top 16px
 
-<h2 id="💻-主题开发"><a href="#💻-主题开发" class="headerlink" title="💻 主题开发"></a>💻 主题开发</h2><p>如果你想参与主题开发，请 <code>clone</code> 本项目的 <code>dev</code> 分支，然后在 <code>dev</code> 分支上进行开发。</p>
-<p>同时，请查看 <a class="link"   target="_blank" rel="noopener" href="https://redefine-docs.ohevan.com/developer" >Redefine 主题开发文档 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>。</p>
+      +redefine-tablet()
+        transform scale(0.9)
+        transform-origin left top
 
-        </div>
+    .article-content
+      margin-top $spacing-unit
+      padding-bottom 10px
+      word-wrap break-word
+      border-bottom 1px solid var(--border-color)
+      color var(--default-text-color)
 
-        
-            <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
-                <div class="article-copyright-info-container">
-    <ul>
-        <li><strong>Title:</strong> redefine readme</li>
-        <li><strong>Author:</strong> HiraethEcho</li>
-        <li><strong>Created at
-                :</strong> 2024-02-18 00:11:00</li>
-        
-            <li>
-                <strong>Updated at
-                    :</strong> 2024-02-18 00:11:00
-            </li>
-        
-        <li>
-            <strong>Link:</strong> https://hiraethecho.github.io/hexo/简记/test/
-        </li>
-        <li>
-            <strong>
-                License:
-            </strong>
-            
+      &>:first-child
+        margin-top 0 !important
 
-            
-                This work is licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a>.
-            
-        </li>
-    </ul>
-</div>
+    .article-prev, .article-next
 
-            </div>
-        
+        a
+          position relative
+          display block
+          width 100%
+          height 100%
+          box-sizing border-box
 
-        
-            <ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
-                
-                    <li class="tag-item mx-0.5">
-                        <a href="/hexo/tags/dota/">#dota</a>&nbsp;
-                    </li>
-                
-                    <li class="tag-item mx-0.5">
-                        <a href="/hexo/tags/game/">#game</a>&nbsp;
-                    </li>
-                
-            </ul>
-        
+          &.prev
+            padding-left $arrow-icon-width
 
-        
+          &.next
+            padding-right $arrow-icon-width
 
-        
-            <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
-                
-                    <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-                        <a class="prev"
-                        rel="prev"
-                        href="/hexo/%E6%9D%82%E8%B0%88/yolo/"
-                        >
-                            <span class="left arrow-icon flex justify-center items-center">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </span>
-                            <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">《热辣滚烫》观后感</span>
-                                <span class="post-nav-item">Prev posts</span>
-                            </span>
-                        </a>
-                    </div>
-                
-                
-                    <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-                        <a class="next"
-                        rel="next"
-                        href="/hexo/%E6%97%B6%E9%97%B4%E7%BA%BF/whim/"
-                        >
-                            <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">零碎的奇思妙想</span>
-                                <span class="post-nav-item">Next posts</span>
-                            </span>
-                            <span class="right arrow-icon flex justify-center items-center">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </span>
-                        </a>
-                    </div>
-                
-            </div>
-        
+          .arrow-icon
+            position absolute
+            top 0
+            height 100%
+            width $arrow-icon-width
 
+            &.left
+              left 0
 
-        
-            <div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
-                <div class="comments-container mt-10 w-full ">
-    <div id="comment-anchor" class="w-full h-2.5"></div>
-    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
-        Comments
-    </div>
-    
+            &.right
+              right 0
 
-        
-            
-    <div class="twikoo-container">
-        <script data-swup-reload-script
-                src='https://cdn.staticfile.org/twikoo/1.6.10/twikoo.all.min.js'
-        ></script>
-        <div id="twikoo-comment"></div>
-        <script data-swup-reload-script>
-            function loadTwikoo() {
-                twikoo.init({
-                    el: '#twikoo-comment',
-                    envId: 'https://hexohiraeth.netlify.app/.netlify/functions/twikoo',
-                });
-            }
+          .title
+            width 100%
+            height 100%
 
-            if ('true') {
-                const loadTwikooTimeout = setTimeout(() => {
-                    loadTwikoo();
-                    clearTimeout(loadTwikooTimeout);
-                }, 1000);
-            } else {
-                window.addEventListener('DOMContentLoaded', loadTwikoo);
-            }
-        </script>
-    </div>
+      .post-nav-item
+        display none
 
+        +redefine-tablet()
+          display inline-block
 
-        
-        
-    
-</div>
+      .post-nav-title-item
+        overflow hidden
+        text-overflow ellipsis
+        white-space nowrap
 
-            </div>
-        
-    </div>
+        +redefine-tablet()
+          display none
 
-    
-        <div class="toc-content-container">
-            <div class="post-toc-wrap">
-    <div class="post-toc">
-        <div class="toc-title">On this page</div>
-        <div class="page-title">redefine readme</div>
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo-theme-redefine"><span class="nav-number">1.</span> <span class="nav-text">hexo-theme-redefine</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%8C%90-%E5%AE%98%E6%96%B9%E6%BC%94%E7%A4%BA%E7%AB%99"><span class="nav-number">1.1.</span> <span class="nav-text">🌐 官方演示站</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E2%9B%B0%EF%B8%8F-%E9%83%A8%E5%88%86%E5%8A%9F%E8%83%BD"><span class="nav-number">1.2.</span> <span class="nav-text">⛰️ 部分功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E2%98%81%EF%B8%8F-%E5%AE%89%E8%A3%85"><span class="nav-number">1.3.</span> <span class="nav-text">☁️ 安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E2%8F%AB-%E6%9B%B4%E6%96%B0"><span class="nav-number">1.4.</span> <span class="nav-text">⏫ 更新</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%93%84-%E6%96%87%E6%A1%A3"><span class="nav-number">1.5.</span> <span class="nav-text">📄 文档</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E2%98%95-%E6%94%AF%E6%8C%81"><span class="nav-number">1.6.</span> <span class="nav-text">☕ 支持</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%92%97-%E8%B5%9E%E5%8A%A9"><span class="nav-number">1.7.</span> <span class="nav-text">💗 赞助</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%8C%9F-Star-%E8%AE%B0%E5%BD%95"><span class="nav-number">1.8.</span> <span class="nav-text">🌟 Star 记录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%92%BB-%E4%B8%BB%E9%A2%98%E5%BC%80%E5%8F%91"><span class="nav-number">1.9.</span> <span class="nav-text">💻 主题开发</span></a></li></ol></li></ol>
+    .recommended-article
+      overflow visible !important
 
-    </div>
-</div>
-        </div>
-    
-</div>
+      .recommended-mobile
+        display none
+        +redefine-tablet()
+          display block
 
+      .recommended-desktop
+        display block
+        +redefine-tablet()
+          display none
 
+      .recommended-article-group
+        padding 10px 0
+        display flex
+        justify-content space-between
+        flex-wrap wrap
+        overflow visible !important
+
+        @media screen and (max-width $device-tablet)
+          height 190px
+          overflow scroll
+
+          &::-webkit-scrollbar
+            width 0 !important
+
+          -ms-overflow-style none
+
+        .recommended-article-item
+          redefine-container(
+            false,
+            0,
+            0,
+            10px,
+            0
+          )
+          box-shadow var(--redefine-box-shadow-flat)
+          padding 12px !important
+          display flex
+          flex-wrap wrap
+          align-content center
+          justify-content center
+          align-items center
+          overflow hidden
+          width 32%
+          max-height 200px
+          margin-top: $gap * 0.5
+          margin-right 0
+
+          +redefine-tablet()
+            width 49%
+
+          img
+            display flex
+            width calc(100% + 24px)
+            height 150px
+            object-fit cover
+            border-radius $redefine-border-radius-medium-top
+            margin -12px -12px 0 -12px !important
+
+          span
+            margin-top 0.5rem
+            display block
+            display -webkit-box
+            -webkit-box-orient vertical
+            -webkit-line-clamp 1
+            overflow hidden
+
+  .toc-content-container
+    white-space nowrap
+    opacity 0
+    position sticky
+    top: $navbar-height + $spacing-unit
+    // border-radius $redefine-border-radius-large
+    border-radius $redefine-border-radius-none
+    // display none
+    // visibility hidden
+    // width $toc-container-width
+    width 0
+    height auto
+    max-height calc(100vh - 210px)
+    //margin-left 30px
+    // z-index $z-index-6
+    overflow-y auto
+    overflow-x hidden
+    float right
+    padding 10px
+    box-sizing border-box
+    box-shadow none !important
+    transition opacity 0.3s ease-out 0.3s
+    hover-style(
+      false,
+      0,
+      0
+    )
+    transition-t('display', '0', '0.3', 'ease-out')
+
+    +redefine-tablet()
+      left 0 !important
+      display none !important
+
+  figure.image-caption
+    img
+      margin-bottom 0
+
+    figcaption
+      margin-top 5px
+      margin-bottom 10px
+      text-align center
+      font-size 0.9rem
+      color var(--third-text-color)
 
                 
 

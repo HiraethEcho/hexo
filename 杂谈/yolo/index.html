@@ -26,7 +26,7 @@
 <meta property="og:description" content="《热辣滚烫》：制作精良的平庸之作&amp;emsp;&amp;emsp;前两天看了《热辣滚烫》，趁热写个影评。整体来说，全靠同行衬托，是这段时间以来还不错的电影，值得一看。有明显缺点，整体瑕不掩瑜。但是其宣传非常垃圾，令人恶心。 电影本身&amp;emsp;&amp;emsp;故事剧情是，主角杜乐莹在啃老十年后经历一系列重大打击，终于奋起反抗想要赢一次。于是选择练拳击并最终参加比赛完整打了一次拳。（这个也不算剧透吧，基本都在宣传">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-02-18T16:00:00.000Z">
-<meta property="article:modified_time" content="2024-02-19T06:09:49.256Z">
+<meta property="article:modified_time" content="2024-02-19T06:23:59.346Z">
 <meta property="article:author" content="Hiraeth">
 <meta name="twitter:card" content="summary">
     
@@ -649,227 +649,263 @@
             <div class="main-content">
 
                 
-                    <div class="post-page-container flex relative justify-between box-border w-full h-full">
-    <div class="article-content-container">
+                    @import '../common/variables'
 
-        <div class="article-title relative w-full">
-            
-                <div class="w-full flex items-center pt-6 justify-center">
-                    <h1 class="article-title-regular text-second-text-color text-4xl md:text-6xl font-bold px-2 sm:px-6 md:px-8 py-3">《热辣滚烫》观后感</h1>
-                </div>
-            
-            </div>
+$arrow-icon-width = 16px
+$post-nav-max-width = 220px
+$article-title-font-size = 3.2rem
+$temp-toc-width = hexo-config('global.sidebar_width')
+$toc-container-width = $temp-toc-width ? convert($temp-toc-width) : 210px
+$without-toc-container-width = calc(100% - $temp-toc-width)
+$gap = 30px
 
-        
-            <div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
-                <div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
-                    <img src="/hexo/img/avatar.jpeg">
-                </div>
-                <div class="info flex flex-col justify-between">
-                    <div class="author flex items-center">
-                        <span class="name text-default-text-color text-lg font-semibold">HiraethEcho</span>
-                        
-                    </div>
-                    <div class="meta-info">
-                        <div class="article-meta-info">
-    <span class="article-date article-meta-item">
-        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2024-02-19</span>
-        <span class="mobile">2024-02-19</span>
-        <span class="hover-info">Created</span>
-    </span>
-    
-        <span class="article-date article-meta-item">
-            <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-02-19 14:09:49</span>
-            <span class="mobile">2024-02-19 14:09:49</span>
-            <span class="hover-info">Updated</span>
-        </span>
-    
+.post-page-container
+  gap 0px
 
-    
-        <span class="article-categories article-meta-item">
-            <i class="fa-regular fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/hexo/categories/%E6%9D%82%E8%B0%88/">杂谈</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-    
-    
-
-    
-    
-    
-    
-</div>
-
-                    </div>
-                </div>
-            </div>
-        
-
-        
+  +redefine-mobile()
+    overflow-x hidden
 
 
-        <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-            <h1 id="《热辣滚烫》：制作精良的平庸之作"><a href="#《热辣滚烫》：制作精良的平庸之作" class="headerlink" title="《热辣滚烫》：制作精良的平庸之作"></a>《热辣滚烫》：制作精良的平庸之作</h1><p>&emsp;&emsp;前两天看了《热辣滚烫》，趁热写个影评。整体来说，全靠同行衬托，是这段时间以来还不错的电影，值得一看。有明显缺点，整体瑕不掩瑜。但是其宣传非常垃圾，令人恶心。</p>
-<h2 id="电影本身"><a href="#电影本身" class="headerlink" title="电影本身"></a>电影本身</h2><p>&emsp;&emsp;故事剧情是，主角杜乐莹在啃老十年后经历一系列重大打击，终于奋起反抗想要赢一次。于是选择练拳击并最终参加比赛完整打了一次拳。<br>（这个也不算剧透吧，基本都在宣传里了）</p>
-<h3 id="缺点：匮乏、平庸"><a href="#缺点：匮乏、平庸" class="headerlink" title="缺点：匮乏、平庸"></a>缺点：匮乏、平庸</h3><p>&emsp;&emsp;这部电影的最大缺点是<strong>匮乏</strong>。首先是故事的匮乏：电影故事的核心是，一个失败者通过努力做了一件事。然而，她为什么失败和宅家十年、为什么选择做这件事（拳击）、为什么能有这样的决心？这些都是没有说清楚的。从某个夜晚开始，她就毅然决然地去练拳击要打比赛了，这其实是没什么说服力的。最重要的是，拳击这样一个梦想，在这部电影里，太<strong>廉价</strong>了，以至于简直侮辱了梦想这个词。或者，梦想不是拳击，而是“赢一次”，那么这部电影的效果就是牵强和莫名其妙。所谓匮乏，就是说这部电影就只有这么一个朴素的点子：“赢一次”，但并没有让这个点子立住。另一个匮乏，就是角色的匮乏。上文是主角形象的匮乏，然而整部电影里其他角色更加匮乏。妹妹、父母、昊坤、烧烤店老板、前男友和闺蜜等等角色，完全是为了塑造主角而存在的，浅浅地露一下面完成工具人角色，然后就下线了。尤其昊坤，完全成为“失败且放弃梦想”的反面对应，结尾还要拉出来鞭尸一下。比如说，昊坤被主角激励后重新追求梦想呢（当然我觉得他俩不应该“再续前缘”而应该各自努力），那么主旨就不单单是关于主角一个人的努力，还有被她激励着的人，那么观众就更能被角色、导演激励，去做他们想做的事了。然而，实际上这部电影的效果，就是完全只关心主角一个人，而且只关心她努力的部分。</p>
-<p>&emsp;&emsp;另一个缺点是<strong>平庸</strong>。这个故事的主旨是很平庸的，可以说是烂大街的鸡汤，也没有什么特别的深刻道理。这个故事也很平庸，虽然看上去很难实现、很励志，但依然是平庸的故事，和平庸的叙述方式。例如《闻香识女人》，关于学生的线索是，他坚持自己的准则不告密，然而讲述这个故事的方式则一点都不平庸。甚至，《奥本海默》的故事也是平庸的，但是诺兰的叙述手法，使得这部电影非常好看。平庸也不完全算缺点，当然也不算优点，平庸就是平庸，让人有些无话可说。</p>
-<h3 id="优点：高完成度、叙事“标准”"><a href="#优点：高完成度、叙事“标准”" class="headerlink" title="优点：高完成度、叙事“标准”"></a>优点：高完成度、叙事“标准”</h3><p>&emsp;&emsp;在上述缺点之上，这部电影依然可以称之为“值得一看”，是因为它把它想做的都做好了。在叙述结构上，在节奏上，在演员演技上，都没有什么明显的错误。总之就是，在及格线之上。这里我又要鞭尸《消失的她》了，这部电影单从完成度上来说也是一坨答辩，除了朱一龙其他演员都演技便秘，故事莫名其妙胡说八道，强行用恐怖的配乐恶心人，节奏稀烂，还有结尾一个令人大脑萎缩的彩蛋。顺便再鞭尸一下陈思诚的《唐人街探案》系列，也是一坨。</p>
-<h3 id="零碎"><a href="#零碎" class="headerlink" title="零碎"></a>零碎</h3><p>&emsp;&emsp;再说一些零碎的优缺点：</p>
-<ul>
-<li><p>主角几乎全程用很轻声细语、萎靡不振的声音，也许后面可以更自信一点？这有可能是我没get到导演的思路，不过后面有一些片段感到像是配音，有点怪怪的；</p>
-</li>
-<li><p>在健身练拳击的部分，并没有那么大汗淋漓面容憔悴。彩蛋里贾玲减肥的时候，明显更狰狞狼狈一点，这更真实。包括上场拳击的时候，和前面在烧烤店打工的时候，大多时候都太“干净”了，有些不真实</p>
-</li>
-<li><p>开头用杜乐莹逛街的方式放出主演、灯光、剪辑等剧组人员，这个手法我还挺喜欢的</p>
-</li>
-<li><p>结尾主角最后一次爬起来时，交叉剪辑了之前一些片段，还有当时没交代的后续，虽然效果我觉得一般，但这个手法不错</p>
-</li>
-<li><p>整部电影的笑点都挺不错的，不尴尬</p>
-</li>
-</ul>
-<h2 id="电影之外"><a href="#电影之外" class="headerlink" title="电影之外"></a>电影之外</h2><p>&emsp;&emsp;谈谈电影之外对电影的看法。</p>
-<h3 id="导演、拳击和减肥"><a href="#导演、拳击和减肥" class="headerlink" title="导演、拳击和减肥"></a>导演、拳击和减肥</h3><p>&emsp;&emsp;给人的感觉是，贾玲是很“个人化”的导演，或者用贬义一些的词，是“自私”的导演。可能很多导演都是自私的，他们想要拍他们在乎的、想表达的东西。然而，贾玲是把这些与她自己深度绑定的。前作《你好，李焕英》就是她把私人的情感放在荧幕上，这一部是她个人的努力放上来。在这个意义上，我觉得一般（叠甲：这只是我个人口味偏好）。更糟糕的是，这部电影里，贾玲和杜乐莹，除了胖没啥共同点，于是使得这个故事“失真”了。</p>
-<p>&emsp;&emsp;失真的部分在与拳击和减肥，这一部分应该已经被很多人吐槽过了。简单的说，贾玲是有钱人，全职减肥；杜乐莹在烧烤店打工，一个月2500，房租1000，后面打了老板相比也没工作了，哪里有时间和钱去健身房呢？这其实也是电影<strong>匮乏</strong>的一个方面：关于真实性的匮乏。</p>
-<h3 id="宣传"><a href="#宣传" class="headerlink" title="宣传"></a>宣传</h3><p>&emsp;&emsp;令人身体不适的是，这部电影的主要宣传，是关于贾玲减肥。然而这和剧情有什么关系呢，剧情是主角要打拳，减肥是顺便的；这和观众有什么关系呢，贾玲有钱人全职减肥，我们苦逼社畜配吗？接着就是一些恰女权饭的莫名其妙言论，仿佛这个世界任何事都只有女权主义一种叙事观点。这部电影当然反应了一些男女关系问题，也展现一些“女性力量”，但是眼里只有这些，并把一切故事都放进这个框架里，无论是夸&#x2F;骂女性&#x2F;男性，在我看来都是魔怔人。</p>
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><ul>
-<li>最近好多脱口秀演员拍电影，《年会不能停》里也好多，有意思</li>
-<li>推荐《洛奇1》《洛奇6》《铁甲钢拳》</li>
-</ul>
+  &.show-toc
+    gap 30px
 
-        </div>
+    .toc-content-container
+      display block
+      opacity 1
+      transition opacity 0.2s ease-in 0.2s
+      width $toc-container-width
 
-        
-            <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
-                <div class="article-copyright-info-container">
-    <ul>
-        <li><strong>Title:</strong> 《热辣滚烫》观后感</li>
-        <li><strong>Author:</strong> HiraethEcho</li>
-        <li><strong>Created at
-                :</strong> 2024-02-19 00:00:00</li>
-        
-            <li>
-                <strong>Updated at
-                    :</strong> 2024-02-19 14:09:49
-            </li>
-        
-        <li>
-            <strong>Link:</strong> https://hiraethecho.github.io/hexo/杂谈/yolo/
-        </li>
-        <li>
-            <strong>
-                License:
-            </strong>
-            
+      &:hover::-webkit-scrollbar-thumb
+        border 3px solid rgba(183, 183, 183, 0.3)
 
-            
-                This work is licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a>.
-            
-        </li>
-    </ul>
-</div>
+      &::-webkit-scrollbar
+        width 6px
+        height 6px
+        transition all 0.2s ease
+        display block
 
-            </div>
-        
+      &::-webkit-scrollbar-track
+        background transparent
+        border none
 
-        
+      &::-webkit-scrollbar-thumb
+        border-radius 20px
+        border 3px solid rgba(183, 183, 183, 0)
+        transition all 0.2s ease
 
-        
+    .article-content-container
+      width calc(100% - 210px) !important
 
-        
-            <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
-                
-                
-                    <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-                        <a class="next"
-                        rel="next"
-                        href="/hexo/%E7%AE%80%E8%AE%B0/test/"
-                        >
-                            <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">redefine readme</span>
-                                <span class="post-nav-item">Next posts</span>
-                            </span>
-                            <span class="right arrow-icon flex justify-center items-center">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </span>
-                        </a>
-                    </div>
-                
-            </div>
-        
+  +redefine-tablet()
+    .toc-content-container
+      display none !important
 
+    .article-content-container
+      width 100% !important
 
-        
-            <div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
-                <div class="comments-container mt-10 w-full ">
-    <div id="comment-anchor" class="w-full h-2.5"></div>
-    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
-        Comments
-    </div>
-    
+    &.show-toc
+      .toc-content-container
+        display none
 
-        
-            
-    <div class="twikoo-container">
-        <script data-swup-reload-script
-                src='https://cdn.staticfile.org/twikoo/1.6.10/twikoo.all.min.js'
-        ></script>
-        <div id="twikoo-comment"></div>
-        <script data-swup-reload-script>
-            function loadTwikoo() {
-                twikoo.init({
-                    el: '#twikoo-comment',
-                    envId: 'https://hexohiraeth.netlify.app/.netlify/functions/twikoo',
-                });
-            }
+      .article-content-container
+        width 100% !important
 
-            if ('true') {
-                const loadTwikooTimeout = setTimeout(() => {
-                    loadTwikoo();
-                    clearTimeout(loadTwikooTimeout);
-                }, 1000);
-            } else {
-                window.addEventListener('DOMContentLoaded', loadTwikoo);
-            }
-        </script>
-    </div>
+  .article-content-container
+    width 100%
+    transition width 0.2s ease
+    redefine-container(
+      false,
+      0,
+      0,
+      0,
+      30px
+    )
 
+    +redefine-mobile()
+      padding 1.2rem 0.2rem
+      box-shadow none !important
+      max-width 100vw
 
-        
-        
-    
-</div>
+    .article-header .avatar img
+          border-radius: $redefine-border-radius-medium * 0.87
+          width 100%
+          height 100%
+          // background var(--avatar-background-color)
 
-            </div>
-        
-    </div>
+    .article-header, .article-header-meta-info
+      margin-top 16px
 
-    
-        <div class="toc-content-container">
-            <div class="post-toc-wrap">
-    <div class="post-toc">
-        <div class="toc-title">On this page</div>
-        <div class="page-title">《热辣滚烫》观后感</div>
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E3%80%8A%E7%83%AD%E8%BE%A3%E6%BB%9A%E7%83%AB%E3%80%8B%EF%BC%9A%E5%88%B6%E4%BD%9C%E7%B2%BE%E8%89%AF%E7%9A%84%E5%B9%B3%E5%BA%B8%E4%B9%8B%E4%BD%9C"><span class="nav-number">1.</span> <span class="nav-text">《热辣滚烫》：制作精良的平庸之作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%B5%E5%BD%B1%E6%9C%AC%E8%BA%AB"><span class="nav-number">1.1.</span> <span class="nav-text">电影本身</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%BA%E7%82%B9%EF%BC%9A%E5%8C%AE%E4%B9%8F%E3%80%81%E5%B9%B3%E5%BA%B8"><span class="nav-number">1.1.1.</span> <span class="nav-text">缺点：匮乏、平庸</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BC%98%E7%82%B9%EF%BC%9A%E9%AB%98%E5%AE%8C%E6%88%90%E5%BA%A6%E3%80%81%E5%8F%99%E4%BA%8B%E2%80%9C%E6%A0%87%E5%87%86%E2%80%9D"><span class="nav-number">1.1.2.</span> <span class="nav-text">优点：高完成度、叙事“标准”</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9B%B6%E7%A2%8E"><span class="nav-number">1.1.3.</span> <span class="nav-text">零碎</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%B5%E5%BD%B1%E4%B9%8B%E5%A4%96"><span class="nav-number">1.2.</span> <span class="nav-text">电影之外</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%BC%E6%BC%94%E3%80%81%E6%8B%B3%E5%87%BB%E5%92%8C%E5%87%8F%E8%82%A5"><span class="nav-number">1.2.1.</span> <span class="nav-text">导演、拳击和减肥</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%A3%E4%BC%A0"><span class="nav-number">1.2.2.</span> <span class="nav-text">宣传</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E4%BB%96"><span class="nav-number">1.3.</span> <span class="nav-text">其他</span></a></li></ol></li></ol>
+      +redefine-tablet()
+        transform scale(0.9)
+        transform-origin left top
 
-    </div>
-</div>
-        </div>
-    
-</div>
+    .article-content
+      margin-top $spacing-unit
+      padding-bottom 10px
+      word-wrap break-word
+      border-bottom 1px solid var(--border-color)
+      color var(--default-text-color)
 
+      &>:first-child
+        margin-top 0 !important
 
+    .article-prev, .article-next
+
+        a
+          position relative
+          display block
+          width 100%
+          height 100%
+          box-sizing border-box
+
+          &.prev
+            padding-left $arrow-icon-width
+
+          &.next
+            padding-right $arrow-icon-width
+
+          .arrow-icon
+            position absolute
+            top 0
+            height 100%
+            width $arrow-icon-width
+
+            &.left
+              left 0
+
+            &.right
+              right 0
+
+          .title
+            width 100%
+            height 100%
+
+      .post-nav-item
+        display none
+
+        +redefine-tablet()
+          display inline-block
+
+      .post-nav-title-item
+        overflow hidden
+        text-overflow ellipsis
+        white-space nowrap
+
+        +redefine-tablet()
+          display none
+
+    .recommended-article
+      overflow visible !important
+
+      .recommended-mobile
+        display none
+        +redefine-tablet()
+          display block
+
+      .recommended-desktop
+        display block
+        +redefine-tablet()
+          display none
+
+      .recommended-article-group
+        padding 10px 0
+        display flex
+        justify-content space-between
+        flex-wrap wrap
+        overflow visible !important
+
+        @media screen and (max-width $device-tablet)
+          height 190px
+          overflow scroll
+
+          &::-webkit-scrollbar
+            width 0 !important
+
+          -ms-overflow-style none
+
+        .recommended-article-item
+          redefine-container(
+            false,
+            0,
+            0,
+            10px,
+            0
+          )
+          box-shadow var(--redefine-box-shadow-flat)
+          padding 12px !important
+          display flex
+          flex-wrap wrap
+          align-content center
+          justify-content center
+          align-items center
+          overflow hidden
+          width 32%
+          max-height 200px
+          margin-top: $gap * 0.5
+          margin-right 0
+
+          +redefine-tablet()
+            width 49%
+
+          img
+            display flex
+            width calc(100% + 24px)
+            height 150px
+            object-fit cover
+            border-radius $redefine-border-radius-medium-top
+            margin -12px -12px 0 -12px !important
+
+          span
+            margin-top 0.5rem
+            display block
+            display -webkit-box
+            -webkit-box-orient vertical
+            -webkit-line-clamp 1
+            overflow hidden
+
+  .toc-content-container
+    white-space nowrap
+    opacity 0
+    position sticky
+    top: $navbar-height + $spacing-unit
+    // border-radius $redefine-border-radius-large
+    border-radius $redefine-border-radius-none
+    // display none
+    // visibility hidden
+    // width $toc-container-width
+    width 0
+    height auto
+    max-height calc(100vh - 210px)
+    //margin-left 30px
+    // z-index $z-index-6
+    overflow-y auto
+    overflow-x hidden
+    float right
+    padding 10px
+    box-sizing border-box
+    box-shadow none !important
+    transition opacity 0.3s ease-out 0.3s
+    hover-style(
+      false,
+      0,
+      0
+    )
+    transition-t('display', '0', '0.3', 'ease-out')
+
+    +redefine-tablet()
+      left 0 !important
+      display none !important
+
+  figure.image-caption
+    img
+      margin-bottom 0
+
+    figcaption
+      margin-top 5px
+      margin-bottom 10px
+      text-align center
+      font-size 0.9rem
+      color var(--third-text-color)
 
                 
 

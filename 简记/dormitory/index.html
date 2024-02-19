@@ -649,239 +649,263 @@
             <div class="main-content">
 
                 
-                    <div class="post-page-container flex relative justify-between box-border w-full h-full">
-    <div class="article-content-container">
+                    @import '../common/variables'
 
-        <div class="article-title relative w-full">
-            
-                <div class="w-full flex items-center pt-6 justify-center">
-                    <h1 class="article-title-regular text-second-text-color text-4xl md:text-6xl font-bold px-2 sm:px-6 md:px-8 py-3">记又一次搬宿舍</h1>
-                </div>
-            
-            </div>
+$arrow-icon-width = 16px
+$post-nav-max-width = 220px
+$article-title-font-size = 3.2rem
+$temp-toc-width = hexo-config('global.sidebar_width')
+$toc-container-width = $temp-toc-width ? convert($temp-toc-width) : 210px
+$without-toc-container-width = calc(100% - $temp-toc-width)
+$gap = 30px
 
-        
-            <div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
-                <div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
-                    <img src="/hexo/img/avatar.jpeg">
-                </div>
-                <div class="info flex flex-col justify-between">
-                    <div class="author flex items-center">
-                        <span class="name text-default-text-color text-lg font-semibold">HiraethEcho</span>
-                        
-                    </div>
-                    <div class="meta-info">
-                        <div class="article-meta-info">
-    <span class="article-date article-meta-item">
-        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2023-12-20 22:34</span>
-        <span class="mobile">2023-12-20 22:34</span>
-        <span class="hover-info">Created</span>
-    </span>
-    
-        <span class="article-date article-meta-item">
-            <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-01-28 23:48</span>
-            <span class="mobile">2024-01-28 23:48</span>
-            <span class="hover-info">Updated</span>
-        </span>
-    
+.post-page-container
+  gap 0px
 
-    
-        <span class="article-categories article-meta-item">
-            <i class="fa-regular fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/hexo/categories/%E7%AE%80%E8%AE%B0/">简记</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-    
-    
-
-    
-    
-    
-    
-</div>
-
-                    </div>
-                </div>
-            </div>
-        
-
-        
+  +redefine-mobile()
+    overflow-x hidden
 
 
-        <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-            <h1 id="又双叒叕搬宿舍"><a href="#又双叒叕搬宿舍" class="headerlink" title="又双叒叕搬宿舍"></a>又双叒叕搬宿舍</h1><p>关于大概两年里搬宿舍的故事</p>
-<h2 id="碎碎念"><a href="#碎碎念" class="headerlink" title="碎碎念"></a>碎碎念</h2><p>今年（2023）搬了三次了，离谱。</p>
-<p>从到中科院读研究生以来，有如下这些宿舍</p>
-<ol>
-<li>第一年在玉泉路校区，宿舍是没有阳台的四人间，四个上床下桌，水房有洗衣机，每层有一些晾衣房，二层有热水房可以接热水。这些算是常规。但是浴室有点离谱：宿舍在学校西南角的宿舍楼，浴室在东北角的地下大浴室，就是说要抱着换洗衣服和洗浴用品穿过整个校园。冬天穿过校园，头发上的水可以直接结冰，当时一头长发可以立起来，太刺激了。</li>
-<li>第二年到中关村小区，在校外的居民楼（33号楼）宿舍住。两个上下铺，三个小桌子，一个分三栏的衣柜，每一格约40cm宽，这样住三人。就是说四个床位，有一个上铺两个下铺，太抽象了。最恶心的是卫生间，卫生条件极差，每天去学校的动力是，去工位的卫生间排遗&#x2F;泄。</li>
-<li>第三年在国科大中关村校区的青年公寓，变成两人间，有独立卫浴。这个房间显然是宾馆单人间配置，强行塞了两个床和两个书桌。讨厌的是这一学年的冬天遇到新冠封校，在宿舍楼里关了很久。在刚解封的时候立刻去酒吧喜提感染，然后在宿舍高烧中看了世界杯决赛，堪称半死不活。同时错过博士报名，导致毕业后直接失业家里蹲。</li>
-<li>解决办法是延毕一年，下一年再考博。坏消息是延毕的学生中科院不提供住宿。这个夏天（三年硕士后的夏天）申请了晨兴数学中心的住宿，一般是博士和博士后的住处，但是厚着脸皮住了两个月，在回龙观的小区。一个及其豪华的三人宿舍，每个人一间房，还有巨大的没人用的客厅。离校区15公里，骑车40min（因为我有强劲的双腿和优秀的公路车hhhh才能这么快）。但是夏天过去一身汗是有点难受。<br>有趣的是这个宿舍附近有一家老板不错的酒吧。不是酒吧不错，是老板不错，聊得很开心。在离开这个宿舍的前夕，特地买了佩乔苦精送给老板（但是老板甚至不知道这个苦精也不知道相关的鸡尾酒）。酒做的一般，但是聊得不错。</li>
-<li>新的学年是学校不安排宿舍的学年，这一年的计划是蹭师弟的宿舍。有个师弟家在北京，于是他住家我住他宿舍。于是又住进33号楼。不过这一年三人间换成了两人间，和另一个师弟住两个上下铺的下铺。这个B养了个仓鼠，好抽象。</li>
-<li>据说后来学校的领导来视察宿舍，发现33号楼真的烂到令人发指，于是一声令下给整了个更好的（实际上好得多的）宿舍。在奥森附近的小区双泉嘉苑，三人间80平的宿舍，甚至配了冰箱洗衣机。太爽了。</li>
-</ol>
-<p>总之，这一年搬了三次，从青年公寓到回龙观到33号楼到双泉嘉苑。</p>
-<h2 id="平庸之恶"><a href="#平庸之恶" class="headerlink" title="平庸之恶"></a>平庸之恶</h2><p>国科大的行政真是离谱。或许不只是国科大吧。</p>
-<p>所谓“平庸之恶”，是一位哲学家对二战时期迫害犹太人的描述，他们在集中营等流水线式谋杀犹太人的过程里，他们只做了一部分，他们并不直接地主动地谋杀犹太人，但他们确实在谋杀中的一部分有了作用。</p>
-<p>那么为什么我会认为学校行政是这么夸张的“平庸之恶”呢？这个故事就有点卡夫卡味了。行政的每一层都只做自己必须做的一份事，某些责任只要不一定是自己的责任，就被认为一定不是自己的责任。搬宿舍时，时间地点货车行程，不是这一环的问题，他必不可能做一丁点事。例如钥匙的领取。老宿舍说，交还钥匙才能填表；新宿舍说，填表后才能领新钥匙。于是学生必须前一天交还钥匙，然后在宿舍待命，直到搬宿舍到新宿舍。然而很多人没有这样的时间在那个垃圾宿舍待命。类似的情景其实很多，有众多环节，每个环节都只考虑自己的部分，不肯承担风险，最后压迫到无法反抗的人。</p>
-<p>不得不让人想起卡夫卡的《城堡》，确实是现代主义文学的先驱。</p>
-<h2 id="厨房"><a href="#厨房" class="headerlink" title="厨房"></a>厨房</h2><p>&emsp;&emsp;因为双泉嘉苑有了厨房，于是一时兴起开始学做饭。有点消耗时间，但也有几分乐趣。</p>
-<p>自己做饭大概有两样好处：</p>
-<ol>
-<li>其一是可以少油盐。无论食堂还是外卖，油盐都挺重，自己做饭可以少点油盐。油盐或者调味料多，就使得食物几乎完全是调味料的味道。但是少油盐的话，就会有食材本身的味道：香菇土豆油菜茄子，本身也是有味道的。我很喜欢茄子和大片绿叶子的蔬菜的味道，自己做不放盐的饭时能吃到那种味道。</li>
-<li>另一个好处是，可以吃到热乎的食物。同样的，外卖和食堂，都是做好后的食物，都冷却到温热的状态。在外饭店或自己做饭，能吃得到热气腾腾的食物。在这个意义上，甚至泡面都是充满幸福感的食物了。</li>
-</ol>
-<p>计划上以后可以看到我<a href="/hexo/%E7%AE%80%E8%AE%B0/cook">做饭的博客</a>，欢迎来吃～</p>
+  &.show-toc
+    gap 30px
 
-        </div>
+    .toc-content-container
+      display block
+      opacity 1
+      transition opacity 0.2s ease-in 0.2s
+      width $toc-container-width
 
-        
-            <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
-                <div class="article-copyright-info-container">
-    <ul>
-        <li><strong>Title:</strong> 记又一次搬宿舍</li>
-        <li><strong>Author:</strong> HiraethEcho</li>
-        <li><strong>Created at
-                :</strong> 2023-12-20 22:34:00</li>
-        
-            <li>
-                <strong>Updated at
-                    :</strong> 2024-01-28 23:48:00
-            </li>
-        
-        <li>
-            <strong>Link:</strong> https://hiraethecho.github.io/hexo/简记/dormitory/
-        </li>
-        <li>
-            <strong>
-                License:
-            </strong>
-            
+      &:hover::-webkit-scrollbar-thumb
+        border 3px solid rgba(183, 183, 183, 0.3)
 
-            
-                This work is licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a>.
-            
-        </li>
-    </ul>
-</div>
+      &::-webkit-scrollbar
+        width 6px
+        height 6px
+        transition all 0.2s ease
+        display block
 
-            </div>
-        
+      &::-webkit-scrollbar-track
+        background transparent
+        border none
 
-        
+      &::-webkit-scrollbar-thumb
+        border-radius 20px
+        border 3px solid rgba(183, 183, 183, 0)
+        transition all 0.2s ease
 
-        
+    .article-content-container
+      width calc(100% - 210px) !important
 
-        
-            <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
-                
-                    <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-                        <a class="prev"
-                        rel="prev"
-                        href="/hexo/%E6%9D%82%E8%B0%88/JohnnyKeepWalking/"
-                        >
-                            <span class="left arrow-icon flex justify-center items-center">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </span>
-                            <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">《年会不能停》的简单影评</span>
-                                <span class="post-nav-item">Prev posts</span>
-                            </span>
-                        </a>
-                    </div>
-                
-                
-                    <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-                        <a class="next"
-                        rel="next"
-                        href="/hexo/%E9%9A%8F%E6%83%B3/actingparents/"
-                        >
-                            <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">对父母形象的表演</span>
-                                <span class="post-nav-item">Next posts</span>
-                            </span>
-                            <span class="right arrow-icon flex justify-center items-center">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </span>
-                        </a>
-                    </div>
-                
-            </div>
-        
+  +redefine-tablet()
+    .toc-content-container
+      display none !important
 
+    .article-content-container
+      width 100% !important
 
-        
-            <div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
-                <div class="comments-container mt-10 w-full ">
-    <div id="comment-anchor" class="w-full h-2.5"></div>
-    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
-        Comments
-    </div>
-    
+    &.show-toc
+      .toc-content-container
+        display none
 
-        
-            
-    <div class="twikoo-container">
-        <script data-swup-reload-script
-                src='https://cdn.staticfile.org/twikoo/1.6.10/twikoo.all.min.js'
-        ></script>
-        <div id="twikoo-comment"></div>
-        <script data-swup-reload-script>
-            function loadTwikoo() {
-                twikoo.init({
-                    el: '#twikoo-comment',
-                    envId: 'https://hexohiraeth.netlify.app/.netlify/functions/twikoo',
-                });
-            }
+      .article-content-container
+        width 100% !important
 
-            if ('true') {
-                const loadTwikooTimeout = setTimeout(() => {
-                    loadTwikoo();
-                    clearTimeout(loadTwikooTimeout);
-                }, 1000);
-            } else {
-                window.addEventListener('DOMContentLoaded', loadTwikoo);
-            }
-        </script>
-    </div>
+  .article-content-container
+    width 100%
+    transition width 0.2s ease
+    redefine-container(
+      false,
+      0,
+      0,
+      0,
+      30px
+    )
 
+    +redefine-mobile()
+      padding 1.2rem 0.2rem
+      box-shadow none !important
+      max-width 100vw
 
-        
-        
-    
-</div>
+    .article-header .avatar img
+          border-radius: $redefine-border-radius-medium * 0.87
+          width 100%
+          height 100%
+          // background var(--avatar-background-color)
 
-            </div>
-        
-    </div>
+    .article-header, .article-header-meta-info
+      margin-top 16px
 
-    
-        <div class="toc-content-container">
-            <div class="post-toc-wrap">
-    <div class="post-toc">
-        <div class="toc-title">On this page</div>
-        <div class="page-title">记又一次搬宿舍</div>
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%88%E5%8F%8C%E5%8F%92%E5%8F%95%E6%90%AC%E5%AE%BF%E8%88%8D"><span class="nav-number">1.</span> <span class="nav-text">又双叒叕搬宿舍</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A2%8E%E7%A2%8E%E5%BF%B5"><span class="nav-number">1.1.</span> <span class="nav-text">碎碎念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B9%B3%E5%BA%B8%E4%B9%8B%E6%81%B6"><span class="nav-number">1.2.</span> <span class="nav-text">平庸之恶</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8E%A8%E6%88%BF"><span class="nav-number">1.3.</span> <span class="nav-text">厨房</span></a></li></ol></li></ol>
+      +redefine-tablet()
+        transform scale(0.9)
+        transform-origin left top
 
-    </div>
-</div>
-        </div>
-    
-</div>
+    .article-content
+      margin-top $spacing-unit
+      padding-bottom 10px
+      word-wrap break-word
+      border-bottom 1px solid var(--border-color)
+      color var(--default-text-color)
 
+      &>:first-child
+        margin-top 0 !important
 
+    .article-prev, .article-next
+
+        a
+          position relative
+          display block
+          width 100%
+          height 100%
+          box-sizing border-box
+
+          &.prev
+            padding-left $arrow-icon-width
+
+          &.next
+            padding-right $arrow-icon-width
+
+          .arrow-icon
+            position absolute
+            top 0
+            height 100%
+            width $arrow-icon-width
+
+            &.left
+              left 0
+
+            &.right
+              right 0
+
+          .title
+            width 100%
+            height 100%
+
+      .post-nav-item
+        display none
+
+        +redefine-tablet()
+          display inline-block
+
+      .post-nav-title-item
+        overflow hidden
+        text-overflow ellipsis
+        white-space nowrap
+
+        +redefine-tablet()
+          display none
+
+    .recommended-article
+      overflow visible !important
+
+      .recommended-mobile
+        display none
+        +redefine-tablet()
+          display block
+
+      .recommended-desktop
+        display block
+        +redefine-tablet()
+          display none
+
+      .recommended-article-group
+        padding 10px 0
+        display flex
+        justify-content space-between
+        flex-wrap wrap
+        overflow visible !important
+
+        @media screen and (max-width $device-tablet)
+          height 190px
+          overflow scroll
+
+          &::-webkit-scrollbar
+            width 0 !important
+
+          -ms-overflow-style none
+
+        .recommended-article-item
+          redefine-container(
+            false,
+            0,
+            0,
+            10px,
+            0
+          )
+          box-shadow var(--redefine-box-shadow-flat)
+          padding 12px !important
+          display flex
+          flex-wrap wrap
+          align-content center
+          justify-content center
+          align-items center
+          overflow hidden
+          width 32%
+          max-height 200px
+          margin-top: $gap * 0.5
+          margin-right 0
+
+          +redefine-tablet()
+            width 49%
+
+          img
+            display flex
+            width calc(100% + 24px)
+            height 150px
+            object-fit cover
+            border-radius $redefine-border-radius-medium-top
+            margin -12px -12px 0 -12px !important
+
+          span
+            margin-top 0.5rem
+            display block
+            display -webkit-box
+            -webkit-box-orient vertical
+            -webkit-line-clamp 1
+            overflow hidden
+
+  .toc-content-container
+    white-space nowrap
+    opacity 0
+    position sticky
+    top: $navbar-height + $spacing-unit
+    // border-radius $redefine-border-radius-large
+    border-radius $redefine-border-radius-none
+    // display none
+    // visibility hidden
+    // width $toc-container-width
+    width 0
+    height auto
+    max-height calc(100vh - 210px)
+    //margin-left 30px
+    // z-index $z-index-6
+    overflow-y auto
+    overflow-x hidden
+    float right
+    padding 10px
+    box-sizing border-box
+    box-shadow none !important
+    transition opacity 0.3s ease-out 0.3s
+    hover-style(
+      false,
+      0,
+      0
+    )
+    transition-t('display', '0', '0.3', 'ease-out')
+
+    +redefine-tablet()
+      left 0 !important
+      display none !important
+
+  figure.image-caption
+    img
+      margin-bottom 0
+
+    figcaption
+      margin-top 5px
+      margin-bottom 10px
+      text-align center
+      font-size 0.9rem
+      color var(--third-text-color)
 
                 
 

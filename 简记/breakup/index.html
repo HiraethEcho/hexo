@@ -660,314 +660,263 @@
             <div class="main-content">
 
                 
-                    <div class="post-page-container flex relative justify-between box-border w-full h-full">
-    <div class="article-content-container">
+                    @import '../common/variables'
 
-        <div class="article-title relative w-full">
-            
-                <div class="w-full flex items-center pt-6 justify-center">
-                    <h1 class="article-title-regular text-second-text-color text-4xl md:text-6xl font-bold px-2 sm:px-6 md:px-8 py-3">广式早午饭、紫竹院公园和酒吧的一天</h1>
-                </div>
-            
-            </div>
+$arrow-icon-width = 16px
+$post-nav-max-width = 220px
+$article-title-font-size = 3.2rem
+$temp-toc-width = hexo-config('global.sidebar_width')
+$toc-container-width = $temp-toc-width ? convert($temp-toc-width) : 210px
+$without-toc-container-width = calc(100% - $temp-toc-width)
+$gap = 30px
 
-        
-            <div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
-                <div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
-                    <img src="/hexo/img/avatar.jpeg">
-                </div>
-                <div class="info flex flex-col justify-between">
-                    <div class="author flex items-center">
-                        <span class="name text-default-text-color text-lg font-semibold">HiraethEcho</span>
-                        
-                    </div>
-                    <div class="meta-info">
-                        <div class="article-meta-info">
-    <span class="article-date article-meta-item">
-        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2024-01-29 11:32</span>
-        <span class="mobile">2024-01-29 11:32</span>
-        <span class="hover-info">Created</span>
-    </span>
-    
-        <span class="article-date article-meta-item">
-            <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-01-30 12:34</span>
-            <span class="mobile">2024-01-30 12:34</span>
-            <span class="hover-info">Updated</span>
-        </span>
-    
+.post-page-container
+  gap 0px
 
-    
-        <span class="article-categories article-meta-item">
-            <i class="fa-regular fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/hexo/categories/%E7%AE%80%E8%AE%B0/">简记</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-    
-    
-        <span class="article-tags article-meta-item">
-            <i class="fa-regular fa-tags"></i>&nbsp;
-            <ul>
-                
-                    <li>
-                        <a href="/hexo/tags/life/">life</a>&nbsp;
-                    </li>
-                
-                    <li>
-                        | <a href="/hexo/tags/love/">love</a>&nbsp;
-                    </li>
-                
-                    <li>
-                        | <a href="/hexo/tags/friends/">friends</a>&nbsp;
-                    </li>
-                
-            </ul>
-        </span>
-    
-
-    
-    
-    
-    
-</div>
-
-                    </div>
-                </div>
-            </div>
-        
-
-        
+  +redefine-mobile()
+    overflow-x hidden
 
 
-        <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-            <h1 id="广式早午饭、紫竹院公园和酒吧的一天"><a href="#广式早午饭、紫竹院公园和酒吧的一天" class="headerlink" title="广式早午饭、紫竹院公园和酒吧的一天"></a>广式早午饭、紫竹院公园和酒吧的一天</h1><p>&emsp;&emsp;久违的早起出门，和朋友们一起吃喝聊天逛公园。</p>
-<h2 id="流水账与体验"><a href="#流水账与体验" class="headerlink" title="流水账与体验"></a>流水账与体验</h2><h3 id="广东驻京办"><a href="#广东驻京办" class="headerlink" title="广东驻京办"></a>广东驻京办</h3><p>&emsp;&emsp;在广东驻京办吃<a class="link"   target="_blank" rel="noopener" href="https://m.dianping.com/ugcdetail/173193106?bizType=29" >云山茶餐厅 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>，以为是广式早茶小点心，然而点的全是主食，碳水爆炸，好撑。好吃，很满足，有点贵，适合偶尔奢侈一下改善伙食。<br><br><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://hiraethecho.github.io/picgo/branch.6p197b08eug0.jpg"
-                      alt="branch"
-                ></p>
-<h3 id="紫竹院公园"><a href="#紫竹院公园" class="headerlink" title="紫竹院公园"></a>紫竹院公园</h3><p>&emsp;&emsp;附近的一个免费公园（但是可以办北京公园年卡），有一大半在搞冬季冰上、雪上项目<br><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://hiraethecho.github.io/picgo/691f1908b1ba1882fa0e4b9fc40b531.60wia0k7hg40.jpg"
-                      alt="ice"
-                ><br>还有一些广场舞，十分热闹。在一个角落有一些斑竹林、<br><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://hiraethecho.github.io/picgo/bamboo.jvulqw99558.jpg"
-                      alt="bamboo"
-                ><br>小池子、小亭子，这似乎才是公园得名之处，十分冷清。但是有冬日的阳光，<br><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://hiraethecho.github.io/picgo/d2c0564f5f11781e9a2de2bf284ec7b.4yazevjlxbk0.jpg"
-                      alt="dusk"
-                ><br>十分温暖，在亭子里和朋友聊天、草稿博客、逗猫（未遂）。<br><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://hiraethecho.github.io/picgo/309695b9744064cf1af9f1006ced9bd.73klazxg2f40.jpg"
-                      alt="cat"
-                ><br>实在惬意。</p>
-<h3 id="酒吧"><a href="#酒吧" class="headerlink" title="酒吧"></a>酒吧</h3><p>&emsp;&emsp;去了两家酒吧。先去了威士忌吧，纯饮布赫拉迪，好喝。和老板聊天，练两分钟尤克里里，然后被八卦hhhh期间还微信和朋友聊了一会儿相关的话题。之后去找女朋友，聊了今天的行程，还有和朋友的聊天话题。以一种<strong>官方</strong>的方式讨论未来、增进感情。</p>
-<h3 id="骑车"><a href="#骑车" class="headerlink" title="骑车"></a>骑车</h3><p>&emsp;&emsp;再顺便一提，久违地骑车出行，从六道口附近到长安街西单，再到广东大厦，再到五道口直至返回。体验不错，快乐。</p>
-<h2 id="一些聊天话题"><a href="#一些聊天话题" class="headerlink" title="一些聊天话题"></a>一些聊天话题</h2><p>&emsp;&emsp;于是就该谈一谈聊天话题了。聚会的起因是一个朋友的朋友的分手，引起一些我们的交流。</p>
-<h3 id="新时代女性"><a href="#新时代女性" class="headerlink" title="新时代女性"></a>新时代女性</h3><p>&emsp;&emsp;分手的原因大概是觉得一些未来具体的问题无法解决，包括生活习惯、和长辈的家庭关系、未来工作等，虽然仍然有感情但还是选择结束。给我的感觉是，新时代独立自由女性和传统父权制封建大家长结构的矛盾。在经济飞速发展的中国，这样古老的观念依然迟钝地延续着。<code>结婚</code>在这个时代，对女方来说依然常被认为是<strong>嫁入</strong>男方家庭成为其<code>封建大家长体系</code>下的一员，而新时代女性则是希望两个人组成新家庭（事实上这已经不算很<strong>新</strong>的观念了，参考《父权制与资本主义》中上野千鹤子声称的近现代资本主义下新式家庭概念的发明）。<br><br>&emsp;&emsp;上面是经济或社会学的角度，从两人在感情中的角色也有一些有趣的讨论。例如，聊天中的其中一个朋友指出，现在似乎是一些男生更缺爱，而一些女生则“反向恋爱脑”，独立自爱，不肯被迫改变自己曲意逢迎他人。坚持自己的独立人格并试图通过经济独立来实现（例如自己工作自给自足获得户口而不是通过婚姻）。她们敢爱敢恨、当断则断，甚至让人（主要是我hhh）感到（褒义）残忍的决绝。</p>
-<h3 id="思想和思想的对抗"><a href="#思想和思想的对抗" class="headerlink" title="思想和思想的对抗"></a>思想和思想的对抗</h3><p>&emsp;&emsp;在散步时聊到一些如何恋爱的话题，我又提出来“<a href="/hexo/%E6%B2%89%E6%80%9D/loveillusion#%E6%9C%8B%E5%8F%8B">思想上的对抗</a>”的观点（以及时常想pua女朋友多读书）。似乎悲观的是，她们都认为这很困难，甚至进而自嘲“脑袋空空”、想做“快乐的猪”、“思维的懒惰”等（怀疑只不过是上班上的）。<br><br>&emsp;&emsp;大部分人似乎真的被困在琐碎的生活里，而没有精力做思想上的探索。然而人们真的会因为没有精力而没有这样的欲望吗？有一人说，她并没有学习的内驱力，需要外界驱动，例如多邻国那样有打卡、目标、鼓励等反馈才坚持下去，还比如需要帕梅拉那样带有陪伴效果的共同努力，不然很难自己做锻炼。另一个人则单纯的懒（肯定是上班上的）<br><br>&emsp;&emsp;对我来说，我自发地读书、看电影、学习，通常是出于某种好奇、探索欲，以及对生活和世界的某种愤怒和反抗而学习。另一方面，我认为“不思考”是一种很“疲惫”的事。当面对事物时，我很难接受不思考不辩驳（有点杠精的意思了），一些爆米花电影，我很难做到不动脑子地单纯消遣（当然思考累了就放空了，这毕竟是生理上的限制）。<br><br>&emsp;&emsp;不过我这样“怀着荒诞激情的反抗”也是之后才形成的，原本我也是安于现状的咸鱼心态。自一种理想主义破灭后的消沉萎靡，再转向另一种<a href="/hexo/%E6%B2%89%E6%80%9D/idealist">理想主义</a>（这篇还没写完）。我不觉得人当真能诚实地心甘情愿地放弃自我，投降于生活。总应当有一些认识自我、成为自我的愿望，例如去写作、演奏、旅行、运动、表演等等。</p>
-<h3 id="恋爱"><a href="#恋爱" class="headerlink" title="恋爱"></a>恋爱</h3><p>&emsp;&emsp;对恋爱的态度也聊了一些，大家的想法十分多种多样。</p>
-<blockquote>
-<p>恋爱应该如何开始、如何进展呢？</p>
-</blockquote>
-<p>&emsp;&emsp;在开始前，是否应该考虑未来呢？在表白前，是否考虑未来的规划，例如是否适合结婚，以及之后的问题？我个人是倾向于在有充分的信心和勇气后再进一步发展，但也有人觉得要Carpie diem，考虑享受当下，互相喜欢就应该在一起。<br><br>&emsp;&emsp;在恋爱中，关系如何愈发紧密呢？是否应当和如何讨论未来呢？有分歧时怎么办呢？可能有人依然选择及时行乐，因为对那些话题（婚姻等）恐惧，避之不谈。当然也有人一起讨论，有分歧时，可能不肯退步，互相对抗；可能协调、妥协，各自磨合；可能一方卑微委屈依附，改变自己。恰好完美和谐相似又互补以至于无矛盾的“梦中情人”，这种关系如果存在那么实在是一个奇迹；但因此恰当的应该追求的关系就是互相妥协吗，不能“宁为玉碎不为瓦全”吗？<br><br>&emsp;&emsp;如果遇到无法解决的矛盾，两人在某些本质问题上不肯改变自己，那么之后又该怎么办呢？似乎依然有两种态度：当断则断和无视问题延续关系。如果两方态度不同，大概就形成一方对另一方的纠缠。这实在悲剧。</p>
-<blockquote>
-<p>恋爱在生活的重要性呢？</p>
-</blockquote>
-<p>&emsp;&emsp;爱情是生活中重要的事情吗？以获得真爱为人生首要目标，我想这并不完全是恋爱脑。我所说的贬义的恋爱脑，是指被一时的感情蒙蔽而不顾事实不做思考的人；以真爱为目标，也依然可以谨慎并克制情感。当然也有认为爱情并不那么重要的人，爱情并不是必须实现的事，选择宁缺毋滥，也不愿意为之过于努力乃至显著地改变自己。</p>
-<h3 id="婚姻"><a href="#婚姻" class="headerlink" title="婚姻"></a>婚姻</h3><p>&emsp;&emsp;作为新时代的男性，我也一样认为婚姻应当是两人建立新的家庭，而不是并入男方的大家庭中。然而现实是这里依然有很多问题，面临诸多阻力。一个有趣的切入点是婚礼：我和我的朋友们都希望（如果有的话）一个小型的婚礼，只有双方和最亲近的家人朋友。某种意义上代表旧时代的婚礼常常带有巨大的婚宴，有双方家长，和家长的朋友，和朋友，和朋友的家长，和朋友的家长的朋友，和···(You know what I mean)这真的是令人恐惧的事。更不必提更旧时代的代表，包办婚姻，完全是“家族政治”的安排。</p>
-<h3 id="两种两代之间"><a href="#两种两代之间" class="headerlink" title="两种两代之间"></a>两种两代之间</h3><p>&emsp;&emsp;这里说的两种，是指我们与上一代，和我们与下一代。要不要孩子这件事，似乎会逐渐变化。有趣的是，现代大部分年轻人（至少我身边的）似乎都认为自己的原生家庭有各种各样的问题，并且立志“让世代的创伤在我这里停止”。不过我更持悲观的态度，一代人会有一代人的问题，自认为能解决多少有点自大了。当然也可能是我太悲观了，毕竟世界上也是有幸福的家庭的。<br><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://hiraethecho.github.io/picgo/messup.7j2l56j0vlo0.jpg"
-                      alt="messup"
-                ></p>
-<h3 id="分享欲"><a href="#分享欲" class="headerlink" title="分享欲"></a>分享欲</h3><p>&emsp;&emsp;在聊天中经常提到的一个话题是分享欲。有一种观点是，恋爱中应当互相有分享欲，才是真的互相喜欢。有些人想要给对方分享，并且希望对方认真对待。诸如“嗯嗯，好看，你穿什么都好看，就选这个真有眼光”这样的敷衍不行；相反，对分享的话题有所评论甚至反对，则更能说明认真对待对方的分享。也有人喜欢被分享（不仅在恋爱中，朋友之间也有这样的关系模式），喜欢听别人说那些甚至自己一无所知的话题。例如我的分享欲主要出于“这个东西可太有意思了，你不知道可太可惜了”（我自认为没有什么说教心理在里面，但依然可能表现出“爹味”，sad），当对方不觉得有意思时，会让我有些挫败感hhhh。反之，如果对方分享我感兴趣的话题，我会很乐意听，甚至有时候是主动去问（例如在酒吧旁边是陌生人，得知在戏剧学院&#x2F;清华美院后使劲学习）。</p>
-<p>&emsp;&emsp;另一方面，有些人可能是相当自给自足的人，或者（上班上的）精疲力竭无力分享或被分享。于是两人关系呈现出“有去无回”的尴尬境地。过度疲惫的一方没有精力再回应伴侣的互动，是难过的事。然而也许好的关系是，与伴侣的互动是恢复精力的方式。<br><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://hiraethecho.github.io/picgo/medusha.3wii8hticv60.jpg"
-                      alt="medusha"
-                ></p>
-<h3 id="朋友和恋人"><a href="#朋友和恋人" class="headerlink" title="朋友和恋人"></a>朋友和恋人</h3><p>&emsp;&emsp;再谈一点关于恋人和朋友的区别。我和今天一起去玩的朋友，是从初中起就关系很好的。某种意义上，是和现在女朋友相比，在生活上更熟悉和适应的人。在她们面前，可以更不掩饰自己，不用小心翼翼。但是和女朋友时，常常会担心对方感受，不想伤害对方。例如疑似感冒的时候，可能会和朋友吐槽，但不想告诉女朋友以防对方担心。因为更在意，反而有了一点距离感。或者也许是我现在刚刚开始恋爱，还不能在日常生活意义上，对女朋友完全放松。</p>
-<h3 id="照相"><a href="#照相" class="headerlink" title="照相"></a>照相</h3><p>&emsp;&emsp;说点另外的话题，关于照相。这篇的相片有少数几张我拍的，在公园的图都是别人的，我没有拍照。在一些哲学思想里，<strong>摄像是对当下的否认</strong>。</p>
-<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="//player.bilibili.com/player.html?aid=697909159&bvid=BV1Um4y1y76E&cid=1108696246&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;">
-</iframe></div>
-当一些美景出现时，例如公园的竹林，和骑车爬山时巨大的云的影子落在郁郁葱葱的山坡时，当我被震撼时，我会倾向于不去拍照记录：因为如果去拍照，那么欣赏体验这世界的不再是我，而是我的手机了。当拍照时，摄像头和外界形成了一次交互，而我在这之外是第三者，并不真实的在其中；当景色成为影像，那么我所体验的当下，便不完全属于我，而属于那个记录了；当回忆起这件事时，当我拿出图像时，我并不再**我的**回忆里，而在那个真实但不属于我的图像里。[^1]当景物成为图像时，这幅图像在那时和在以后便不再变化，于是它就不是**当下**了。然而，我此时的体验，随时间变化而在记忆中变化，才是对我有意义的**彼时**。图像是不变的，而我和我的记忆是变化的；图像不是属于我的，而记忆是属于我的。然而在另一些思想里，或者说对于一些摄影师来说，摄像更是一种创作而不只是记录，甚至影像和现实有着相同的本体论地位。
+  &.show-toc
+    gap 30px
 
-<p>&emsp;&emsp;显然上述是有点不必要的“多想”，多数人拍照只是随手拍一下而已。</p>
+    .toc-content-container
+      display block
+      opacity 1
+      transition opacity 0.2s ease-in 0.2s
+      width $toc-container-width
 
-        </div>
+      &:hover::-webkit-scrollbar-thumb
+        border 3px solid rgba(183, 183, 183, 0.3)
 
-        
-            <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
-                <div class="article-copyright-info-container">
-    <ul>
-        <li><strong>Title:</strong> 广式早午饭、紫竹院公园和酒吧的一天</li>
-        <li><strong>Author:</strong> HiraethEcho</li>
-        <li><strong>Created at
-                :</strong> 2024-01-29 11:32:00</li>
-        
-            <li>
-                <strong>Updated at
-                    :</strong> 2024-01-30 12:34:00
-            </li>
-        
-        <li>
-            <strong>Link:</strong> https://hiraethecho.github.io/hexo/简记/breakup/
-        </li>
-        <li>
-            <strong>
-                License:
-            </strong>
-            
+      &::-webkit-scrollbar
+        width 6px
+        height 6px
+        transition all 0.2s ease
+        display block
 
-            
-                This work is licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a>.
-            
-        </li>
-    </ul>
-</div>
+      &::-webkit-scrollbar-track
+        background transparent
+        border none
 
-            </div>
-        
+      &::-webkit-scrollbar-thumb
+        border-radius 20px
+        border 3px solid rgba(183, 183, 183, 0)
+        transition all 0.2s ease
 
-        
-            <ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
-                
-                    <li class="tag-item mx-0.5">
-                        <a href="/hexo/tags/life/">#life</a>&nbsp;
-                    </li>
-                
-                    <li class="tag-item mx-0.5">
-                        <a href="/hexo/tags/love/">#love</a>&nbsp;
-                    </li>
-                
-                    <li class="tag-item mx-0.5">
-                        <a href="/hexo/tags/friends/">#friends</a>&nbsp;
-                    </li>
-                
-            </ul>
-        
+    .article-content-container
+      width calc(100% - 210px) !important
 
-        
+  +redefine-tablet()
+    .toc-content-container
+      display none !important
 
-        
-            <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
-                
-                    <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-                        <a class="prev"
-                        rel="prev"
-                        href="/hexo/%E6%9D%82%E8%B0%88/homeless/"
-                        >
-                            <span class="left arrow-icon flex justify-center items-center">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </span>
-                            <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">无家可归之人</span>
-                                <span class="post-nav-item">Prev posts</span>
-                            </span>
-                        </a>
-                    </div>
-                
-                
-                    <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-                        <a class="next"
-                        rel="next"
-                        href="/hexo/%E7%AE%80%E8%AE%B0/cook/"
-                        >
-                            <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">厨艺养成ing</span>
-                                <span class="post-nav-item">Next posts</span>
-                            </span>
-                            <span class="right arrow-icon flex justify-center items-center">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </span>
-                        </a>
-                    </div>
-                
-            </div>
-        
+    .article-content-container
+      width 100% !important
 
+    &.show-toc
+      .toc-content-container
+        display none
 
-        
-            <div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
-                <div class="comments-container mt-10 w-full ">
-    <div id="comment-anchor" class="w-full h-2.5"></div>
-    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
-        Comments
-    </div>
-    
+      .article-content-container
+        width 100% !important
 
-        
-            
-    <div class="twikoo-container">
-        <script data-swup-reload-script
-                src='https://cdn.staticfile.org/twikoo/1.6.10/twikoo.all.min.js'
-        ></script>
-        <div id="twikoo-comment"></div>
-        <script data-swup-reload-script>
-            function loadTwikoo() {
-                twikoo.init({
-                    el: '#twikoo-comment',
-                    envId: 'https://hexohiraeth.netlify.app/.netlify/functions/twikoo',
-                });
-            }
+  .article-content-container
+    width 100%
+    transition width 0.2s ease
+    redefine-container(
+      false,
+      0,
+      0,
+      0,
+      30px
+    )
 
-            if ('true') {
-                const loadTwikooTimeout = setTimeout(() => {
-                    loadTwikoo();
-                    clearTimeout(loadTwikooTimeout);
-                }, 1000);
-            } else {
-                window.addEventListener('DOMContentLoaded', loadTwikoo);
-            }
-        </script>
-    </div>
+    +redefine-mobile()
+      padding 1.2rem 0.2rem
+      box-shadow none !important
+      max-width 100vw
 
+    .article-header .avatar img
+          border-radius: $redefine-border-radius-medium * 0.87
+          width 100%
+          height 100%
+          // background var(--avatar-background-color)
 
-        
-        
-    
-</div>
+    .article-header, .article-header-meta-info
+      margin-top 16px
 
-            </div>
-        
-    </div>
+      +redefine-tablet()
+        transform scale(0.9)
+        transform-origin left top
 
-    
-        <div class="toc-content-container">
-            <div class="post-toc-wrap">
-    <div class="post-toc">
-        <div class="toc-title">On this page</div>
-        <div class="page-title">广式早午饭、紫竹院公园和酒吧的一天</div>
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B9%BF%E5%BC%8F%E6%97%A9%E5%8D%88%E9%A5%AD%E3%80%81%E7%B4%AB%E7%AB%B9%E9%99%A2%E5%85%AC%E5%9B%AD%E5%92%8C%E9%85%92%E5%90%A7%E7%9A%84%E4%B8%80%E5%A4%A9"><span class="nav-number">1.</span> <span class="nav-text">广式早午饭、紫竹院公园和酒吧的一天</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B5%81%E6%B0%B4%E8%B4%A6%E4%B8%8E%E4%BD%93%E9%AA%8C"><span class="nav-number">1.1.</span> <span class="nav-text">流水账与体验</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B9%BF%E4%B8%9C%E9%A9%BB%E4%BA%AC%E5%8A%9E"><span class="nav-number">1.1.1.</span> <span class="nav-text">广东驻京办</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B4%AB%E7%AB%B9%E9%99%A2%E5%85%AC%E5%9B%AD"><span class="nav-number">1.1.2.</span> <span class="nav-text">紫竹院公园</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%92%E5%90%A7"><span class="nav-number">1.1.3.</span> <span class="nav-text">酒吧</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%AA%91%E8%BD%A6"><span class="nav-number">1.1.4.</span> <span class="nav-text">骑车</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E4%BA%9B%E8%81%8A%E5%A4%A9%E8%AF%9D%E9%A2%98"><span class="nav-number">1.2.</span> <span class="nav-text">一些聊天话题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%B0%E6%97%B6%E4%BB%A3%E5%A5%B3%E6%80%A7"><span class="nav-number">1.2.1.</span> <span class="nav-text">新时代女性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%9D%E6%83%B3%E5%92%8C%E6%80%9D%E6%83%B3%E7%9A%84%E5%AF%B9%E6%8A%97"><span class="nav-number">1.2.2.</span> <span class="nav-text">思想和思想的对抗</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%81%8B%E7%88%B1"><span class="nav-number">1.2.3.</span> <span class="nav-text">恋爱</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A9%9A%E5%A7%BB"><span class="nav-number">1.2.4.</span> <span class="nav-text">婚姻</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%A4%E7%A7%8D%E4%B8%A4%E4%BB%A3%E4%B9%8B%E9%97%B4"><span class="nav-number">1.2.5.</span> <span class="nav-text">两种两代之间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%86%E4%BA%AB%E6%AC%B2"><span class="nav-number">1.2.6.</span> <span class="nav-text">分享欲</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%8B%E5%8F%8B%E5%92%8C%E6%81%8B%E4%BA%BA"><span class="nav-number">1.2.7.</span> <span class="nav-text">朋友和恋人</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%85%A7%E7%9B%B8"><span class="nav-number">1.2.8.</span> <span class="nav-text">照相</span></a></li></ol></li></ol></li></ol>
+    .article-content
+      margin-top $spacing-unit
+      padding-bottom 10px
+      word-wrap break-word
+      border-bottom 1px solid var(--border-color)
+      color var(--default-text-color)
 
-    </div>
-</div>
-        </div>
-    
-</div>
+      &>:first-child
+        margin-top 0 !important
 
+    .article-prev, .article-next
 
+        a
+          position relative
+          display block
+          width 100%
+          height 100%
+          box-sizing border-box
+
+          &.prev
+            padding-left $arrow-icon-width
+
+          &.next
+            padding-right $arrow-icon-width
+
+          .arrow-icon
+            position absolute
+            top 0
+            height 100%
+            width $arrow-icon-width
+
+            &.left
+              left 0
+
+            &.right
+              right 0
+
+          .title
+            width 100%
+            height 100%
+
+      .post-nav-item
+        display none
+
+        +redefine-tablet()
+          display inline-block
+
+      .post-nav-title-item
+        overflow hidden
+        text-overflow ellipsis
+        white-space nowrap
+
+        +redefine-tablet()
+          display none
+
+    .recommended-article
+      overflow visible !important
+
+      .recommended-mobile
+        display none
+        +redefine-tablet()
+          display block
+
+      .recommended-desktop
+        display block
+        +redefine-tablet()
+          display none
+
+      .recommended-article-group
+        padding 10px 0
+        display flex
+        justify-content space-between
+        flex-wrap wrap
+        overflow visible !important
+
+        @media screen and (max-width $device-tablet)
+          height 190px
+          overflow scroll
+
+          &::-webkit-scrollbar
+            width 0 !important
+
+          -ms-overflow-style none
+
+        .recommended-article-item
+          redefine-container(
+            false,
+            0,
+            0,
+            10px,
+            0
+          )
+          box-shadow var(--redefine-box-shadow-flat)
+          padding 12px !important
+          display flex
+          flex-wrap wrap
+          align-content center
+          justify-content center
+          align-items center
+          overflow hidden
+          width 32%
+          max-height 200px
+          margin-top: $gap * 0.5
+          margin-right 0
+
+          +redefine-tablet()
+            width 49%
+
+          img
+            display flex
+            width calc(100% + 24px)
+            height 150px
+            object-fit cover
+            border-radius $redefine-border-radius-medium-top
+            margin -12px -12px 0 -12px !important
+
+          span
+            margin-top 0.5rem
+            display block
+            display -webkit-box
+            -webkit-box-orient vertical
+            -webkit-line-clamp 1
+            overflow hidden
+
+  .toc-content-container
+    white-space nowrap
+    opacity 0
+    position sticky
+    top: $navbar-height + $spacing-unit
+    // border-radius $redefine-border-radius-large
+    border-radius $redefine-border-radius-none
+    // display none
+    // visibility hidden
+    // width $toc-container-width
+    width 0
+    height auto
+    max-height calc(100vh - 210px)
+    //margin-left 30px
+    // z-index $z-index-6
+    overflow-y auto
+    overflow-x hidden
+    float right
+    padding 10px
+    box-sizing border-box
+    box-shadow none !important
+    transition opacity 0.3s ease-out 0.3s
+    hover-style(
+      false,
+      0,
+      0
+    )
+    transition-t('display', '0', '0.3', 'ease-out')
+
+    +redefine-tablet()
+      left 0 !important
+      display none !important
+
+  figure.image-caption
+    img
+      margin-bottom 0
+
+    figcaption
+      margin-top 5px
+      margin-bottom 10px
+      text-align center
+      font-size 0.9rem
+      color var(--third-text-color)
 
                 
 

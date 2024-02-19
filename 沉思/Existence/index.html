@@ -26,7 +26,7 @@
 <meta property="og:description" content="焦虑、抑郁和荒诞激情，促使我企图用某种方式消耗掉我自己。我要在我耗尽的过程中写下我自己，非这样不可。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-06-27T03:51:45.000Z">
-<meta property="article:modified_time" content="2024-02-16T17:34:14.720Z">
+<meta property="article:modified_time" content="2024-02-19T06:23:59.350Z">
 <meta property="article:author" content="Hiraeth">
 <meta property="article:tag" content="philosophy">
 <meta property="article:tag" content="existence">
@@ -651,264 +651,263 @@
             <div class="main-content">
 
                 
-                    <div class="post-page-container flex relative justify-between box-border w-full h-full">
-    <div class="article-content-container">
+                    @import '../common/variables'
 
-        <div class="article-title relative w-full">
-            
-                <div class="w-full flex items-center pt-6 justify-center">
-                    <h1 class="article-title-regular text-second-text-color text-4xl md:text-6xl font-bold px-2 sm:px-6 md:px-8 py-3">我存在！</h1>
-                </div>
-            
-            </div>
+$arrow-icon-width = 16px
+$post-nav-max-width = 220px
+$article-title-font-size = 3.2rem
+$temp-toc-width = hexo-config('global.sidebar_width')
+$toc-container-width = $temp-toc-width ? convert($temp-toc-width) : 210px
+$without-toc-container-width = calc(100% - $temp-toc-width)
+$gap = 30px
 
-        
-            <div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
-                <div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
-                    <img src="/hexo/img/avatar.jpeg">
-                </div>
-                <div class="info flex flex-col justify-between">
-                    <div class="author flex items-center">
-                        <span class="name text-default-text-color text-lg font-semibold">HiraethEcho</span>
-                        
-                    </div>
-                    <div class="meta-info">
-                        <div class="article-meta-info">
-    <span class="article-date article-meta-item">
-        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2023-06-27 11:51:45</span>
-        <span class="mobile">2023-06-27 11:51:45</span>
-        <span class="hover-info">Created</span>
-    </span>
-    
-        <span class="article-date article-meta-item">
-            <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-02-17 01:34:14</span>
-            <span class="mobile">2024-02-17 01:34:14</span>
-            <span class="hover-info">Updated</span>
-        </span>
-    
+.post-page-container
+  gap 0px
 
-    
-        <span class="article-categories article-meta-item">
-            <i class="fa-regular fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/hexo/categories/%E6%B2%89%E6%80%9D/">沉思</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-    
-    
-        <span class="article-tags article-meta-item">
-            <i class="fa-regular fa-tags"></i>&nbsp;
-            <ul>
-                
-                    <li>
-                        <a href="/hexo/tags/philosophy/">philosophy</a>&nbsp;
-                    </li>
-                
-                    <li>
-                        | <a href="/hexo/tags/existence/">existence</a>&nbsp;
-                    </li>
-                
-            </ul>
-        </span>
-    
-
-    
-    
-    
-    
-</div>
-
-                    </div>
-                </div>
-            </div>
-        
-
-        
+  +redefine-mobile()
+    overflow-x hidden
 
 
-        <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-            <h1 id="Es-Muss-Sein"><a href="#Es-Muss-Sein" class="headerlink" title="Es Muss Sein!"></a>Es Muss Sein!</h1><p>非这样不可！</p>
-<p>焦虑、抑郁和荒诞激情，促使我企图用某种方式消耗掉我自己。如同伽罗瓦在决斗前写下群论一样（好大言不惭的自比），我要在我耗尽的过程中写下我自己，非这样不可。</p>
-<span id="more"></span>
+  &.show-toc
+    gap 30px
 
-<h2 id="如何是其所是"><a href="#如何是其所是" class="headerlink" title="如何是其所是"></a>如何是其所是</h2><p>亚里士多德用十个范畴来描述事物如何是其所是，例如一个苹果是一个苹果，因为其形状颜色，其所在的位置，其与苹果树的关系。然而若一个苹果并没有被看到从苹果树上摘下来，或者没有被看到其颜色，或者被切成其他形状，它依然被认为是一个苹果。为了解决其同一性问题，需要考虑事物的诸多属性，这些属性“挂靠”在第一属性上，即“实体”。但实体具体是什么，这似乎是一个纯粹形而上学的概念，不同人有不同的看法，例如对笛卡尔来说，事物的第一属性是它的广延。</p>
-<p>或者，如同贝克莱主教的认识，事物不过是观念的集合，存在就是被感知。实体并不存在，并没有可被属性挂靠上去的“第一性”。忒修斯之船是一个佯谬，并没有“忒修斯之船”这样的实体，只有一块块木板、一根根钉子的组成，每一次更换都是与之前不同的船。从来没有“同一性”问题本身，这个问题根本是唯实论的形而上的错误假设。</p>
-<h2 id="人如何是其所是"><a href="#人如何是其所是" class="headerlink" title="人如何是其所是"></a>人如何是其所是</h2><p>那么是如何所是的呢，人如同人之外的事物有一样的存在方式吗？</p>
-<p>或者说，甲如何确实是甲而不是乙？甲和乙如何有这样的确信？甲和过去的甲、未来的甲有和区别或者是否同一？</p>
-<p>人的界限又在哪里？什么是人之内，什么是人之外？手上拿着锤子，锤子当然不是人或人的一部分；但用手工作，手当然是人的一部分。那么使用义肢时，义肢是人的一部分吗？</p>
-<p>倘若人的身体界限模糊不清，如同《攻壳机动队》的全身义体人那样，是否有所谓的“灵魂”或ghost使人的此在不同于人之外的存在？如果是，那么我们的ghost是如何形成？</p>
-<p>《攻壳机动队》95剧场版在素子潜水后的一系列空镜也许正尝试回答这样的问题：是存在过程中的无数细碎的一切的细节，塑造了ghost。</p>
-<p>人<code>是</code>其所是，即是其生存的全部。<code>是</code>就是<code>如何是</code>的答案。</p>
-<h2 id="我将如何存在。"><a href="#我将如何存在。" class="headerlink" title="我将如何存在。"></a>我将如何存在。</h2><p>亚里士多德将事物存在的原因归为四种：物料因、形式因、动力因、目的因。</p>
-<p>例如古希腊雕塑，其物料因是大理石的材料，其形式因是其外形，其动力因是工匠对其的雕琢，其目的因是工匠的计划。立于唯物主义认识论，那么事物的物料因与形式因都是显见的；人造物的动力因与目的因也是明显的。自然物，包括人，如果相信绝对精神的演化，或者第一推动，或者进化论，那么动力因也是一件可以暂时放下的问题。</p>
-<p>那么目的因呢？也许事物存在是自在的存在，世界有源头，但不必有终点。大刘在《朝闻道》的问题“宇宙的目的是什么”同样被斥为错误的问题。</p>
-<p>那么人的此在是什么？人的目的是什么？或者简朴地说，人的意义是什么？人若是自为的存在，人应该如何成为他自己，应该成为怎样的自己？</p>
-<p>也许这同样是一个虚假的问题。尼采声称人生没有意义，只有虚无；萨特回答每个人可以创造自己的意义，即使这是徒劳与荒谬的选择；而加缪，并不在乎。</p>
-<p>或者确实无需在乎存在的意义，也无需追求。宇宙没有目的，人也没有。人存在着。</p>
-<h2 id="我存在"><a href="#我存在" class="headerlink" title="我存在"></a>我存在</h2><p>我此时存在于此，我是我过去一切历史所塑造，我是我所是是因为关于我的一切信息：我的身体，我的记忆，我的知识，我的思想，我的偏向。</p>
-<p>同时，我必须也必将最终成为我自己，我时刻塑造着我自己，时刻不断地成为我自己，非这样不可。</p>
-<p>于是选择在存在的痛苦中，用一些闲笔，实现我过去、当下、未来的存在。</p>
+    .toc-content-container
+      display block
+      opacity 1
+      transition opacity 0.2s ease-in 0.2s
+      width $toc-container-width
 
-        </div>
+      &:hover::-webkit-scrollbar-thumb
+        border 3px solid rgba(183, 183, 183, 0.3)
 
-        
-            <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
-                <div class="article-copyright-info-container">
-    <ul>
-        <li><strong>Title:</strong> 我存在！</li>
-        <li><strong>Author:</strong> HiraethEcho</li>
-        <li><strong>Created at
-                :</strong> 2023-06-27 11:51:45</li>
-        
-            <li>
-                <strong>Updated at
-                    :</strong> 2024-02-17 01:34:14
-            </li>
-        
-        <li>
-            <strong>Link:</strong> https://hiraethecho.github.io/hexo/沉思/Existence/
-        </li>
-        <li>
-            <strong>
-                License:
-            </strong>
-            
+      &::-webkit-scrollbar
+        width 6px
+        height 6px
+        transition all 0.2s ease
+        display block
 
-            
-                This work is licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a>.
-            
-        </li>
-    </ul>
-</div>
+      &::-webkit-scrollbar-track
+        background transparent
+        border none
 
-            </div>
-        
+      &::-webkit-scrollbar-thumb
+        border-radius 20px
+        border 3px solid rgba(183, 183, 183, 0)
+        transition all 0.2s ease
 
-        
-            <ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
-                
-                    <li class="tag-item mx-0.5">
-                        <a href="/hexo/tags/philosophy/">#philosophy</a>&nbsp;
-                    </li>
-                
-                    <li class="tag-item mx-0.5">
-                        <a href="/hexo/tags/existence/">#existence</a>&nbsp;
-                    </li>
-                
-            </ul>
-        
+    .article-content-container
+      width calc(100% - 210px) !important
 
-        
+  +redefine-tablet()
+    .toc-content-container
+      display none !important
 
-        
-            <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
-                
-                    <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-                        <a class="prev"
-                        rel="prev"
-                        href="/hexo/%E9%9A%8F%E6%83%B3/No/"
-                        >
-                            <span class="left arrow-icon flex justify-center items-center">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </span>
-                            <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">No!</span>
-                                <span class="post-nav-item">Prev posts</span>
-                            </span>
-                        </a>
-                    </div>
-                
-                
-                    <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-                        <a class="next"
-                        rel="next"
-                        href="/hexo/%E6%B2%89%E6%80%9D/%E5%93%B2%E5%AD%A6%E6%98%AF%E5%8F%91%E9%97%AE/"
-                        >
-                            <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">哲学是发问</span>
-                                <span class="post-nav-item">Next posts</span>
-                            </span>
-                            <span class="right arrow-icon flex justify-center items-center">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </span>
-                        </a>
-                    </div>
-                
-            </div>
-        
+    .article-content-container
+      width 100% !important
 
+    &.show-toc
+      .toc-content-container
+        display none
 
-        
-            <div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
-                <div class="comments-container mt-10 w-full ">
-    <div id="comment-anchor" class="w-full h-2.5"></div>
-    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
-        Comments
-    </div>
-    
+      .article-content-container
+        width 100% !important
 
-        
-            
-    <div class="twikoo-container">
-        <script data-swup-reload-script
-                src='https://cdn.staticfile.org/twikoo/1.6.10/twikoo.all.min.js'
-        ></script>
-        <div id="twikoo-comment"></div>
-        <script data-swup-reload-script>
-            function loadTwikoo() {
-                twikoo.init({
-                    el: '#twikoo-comment',
-                    envId: 'https://hexohiraeth.netlify.app/.netlify/functions/twikoo',
-                });
-            }
+  .article-content-container
+    width 100%
+    transition width 0.2s ease
+    redefine-container(
+      false,
+      0,
+      0,
+      0,
+      30px
+    )
 
-            if ('true') {
-                const loadTwikooTimeout = setTimeout(() => {
-                    loadTwikoo();
-                    clearTimeout(loadTwikooTimeout);
-                }, 1000);
-            } else {
-                window.addEventListener('DOMContentLoaded', loadTwikoo);
-            }
-        </script>
-    </div>
+    +redefine-mobile()
+      padding 1.2rem 0.2rem
+      box-shadow none !important
+      max-width 100vw
 
+    .article-header .avatar img
+          border-radius: $redefine-border-radius-medium * 0.87
+          width 100%
+          height 100%
+          // background var(--avatar-background-color)
 
-        
-        
-    
-</div>
+    .article-header, .article-header-meta-info
+      margin-top 16px
 
-            </div>
-        
-    </div>
+      +redefine-tablet()
+        transform scale(0.9)
+        transform-origin left top
 
-    
-        <div class="toc-content-container">
-            <div class="post-toc-wrap">
-    <div class="post-toc">
-        <div class="toc-title">On this page</div>
-        <div class="page-title">我存在！</div>
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Es-Muss-Sein"><span class="nav-number">1.</span> <span class="nav-text">Es Muss Sein!</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E6%98%AF%E5%85%B6%E6%89%80%E6%98%AF"><span class="nav-number">1.1.</span> <span class="nav-text">如何是其所是</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%BA%E5%A6%82%E4%BD%95%E6%98%AF%E5%85%B6%E6%89%80%E6%98%AF"><span class="nav-number">1.2.</span> <span class="nav-text">人如何是其所是</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%88%91%E5%B0%86%E5%A6%82%E4%BD%95%E5%AD%98%E5%9C%A8%E3%80%82"><span class="nav-number">1.3.</span> <span class="nav-text">我将如何存在。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%88%91%E5%AD%98%E5%9C%A8"><span class="nav-number">1.4.</span> <span class="nav-text">我存在</span></a></li></ol></li></ol>
+    .article-content
+      margin-top $spacing-unit
+      padding-bottom 10px
+      word-wrap break-word
+      border-bottom 1px solid var(--border-color)
+      color var(--default-text-color)
 
-    </div>
-</div>
-        </div>
-    
-</div>
+      &>:first-child
+        margin-top 0 !important
 
+    .article-prev, .article-next
 
+        a
+          position relative
+          display block
+          width 100%
+          height 100%
+          box-sizing border-box
+
+          &.prev
+            padding-left $arrow-icon-width
+
+          &.next
+            padding-right $arrow-icon-width
+
+          .arrow-icon
+            position absolute
+            top 0
+            height 100%
+            width $arrow-icon-width
+
+            &.left
+              left 0
+
+            &.right
+              right 0
+
+          .title
+            width 100%
+            height 100%
+
+      .post-nav-item
+        display none
+
+        +redefine-tablet()
+          display inline-block
+
+      .post-nav-title-item
+        overflow hidden
+        text-overflow ellipsis
+        white-space nowrap
+
+        +redefine-tablet()
+          display none
+
+    .recommended-article
+      overflow visible !important
+
+      .recommended-mobile
+        display none
+        +redefine-tablet()
+          display block
+
+      .recommended-desktop
+        display block
+        +redefine-tablet()
+          display none
+
+      .recommended-article-group
+        padding 10px 0
+        display flex
+        justify-content space-between
+        flex-wrap wrap
+        overflow visible !important
+
+        @media screen and (max-width $device-tablet)
+          height 190px
+          overflow scroll
+
+          &::-webkit-scrollbar
+            width 0 !important
+
+          -ms-overflow-style none
+
+        .recommended-article-item
+          redefine-container(
+            false,
+            0,
+            0,
+            10px,
+            0
+          )
+          box-shadow var(--redefine-box-shadow-flat)
+          padding 12px !important
+          display flex
+          flex-wrap wrap
+          align-content center
+          justify-content center
+          align-items center
+          overflow hidden
+          width 32%
+          max-height 200px
+          margin-top: $gap * 0.5
+          margin-right 0
+
+          +redefine-tablet()
+            width 49%
+
+          img
+            display flex
+            width calc(100% + 24px)
+            height 150px
+            object-fit cover
+            border-radius $redefine-border-radius-medium-top
+            margin -12px -12px 0 -12px !important
+
+          span
+            margin-top 0.5rem
+            display block
+            display -webkit-box
+            -webkit-box-orient vertical
+            -webkit-line-clamp 1
+            overflow hidden
+
+  .toc-content-container
+    white-space nowrap
+    opacity 0
+    position sticky
+    top: $navbar-height + $spacing-unit
+    // border-radius $redefine-border-radius-large
+    border-radius $redefine-border-radius-none
+    // display none
+    // visibility hidden
+    // width $toc-container-width
+    width 0
+    height auto
+    max-height calc(100vh - 210px)
+    //margin-left 30px
+    // z-index $z-index-6
+    overflow-y auto
+    overflow-x hidden
+    float right
+    padding 10px
+    box-sizing border-box
+    box-shadow none !important
+    transition opacity 0.3s ease-out 0.3s
+    hover-style(
+      false,
+      0,
+      0
+    )
+    transition-t('display', '0', '0.3', 'ease-out')
+
+    +redefine-tablet()
+      left 0 !important
+      display none !important
+
+  figure.image-caption
+    img
+      margin-bottom 0
+
+    figcaption
+      margin-top 5px
+      margin-bottom 10px
+      text-align center
+      font-size 0.9rem
+      color var(--third-text-color)
 
                 
 
