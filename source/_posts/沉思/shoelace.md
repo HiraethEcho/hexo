@@ -9,7 +9,7 @@ tags:
 categories:
 archive:
 password:
-description:
+excerpt:
 published: false
 ---
 <!-- TODO: not finished -->

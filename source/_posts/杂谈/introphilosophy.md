@@ -8,7 +8,7 @@ categories:
 index_img:
 archive:
 password:
-description: 偶然有朋友来问“不想做快乐的猪”该如何入门，所以从我个人知识和看法出发，给出一点入门的思路和推荐。
+excerpt: 偶然有朋友来问“不想做快乐的猪”该如何入门，所以从我个人知识和看法出发，给出一点入门的思路和推荐。
 ---
 
 <!-- TODO: not finished -->

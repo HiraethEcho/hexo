@@ -10,7 +10,7 @@ categories:
 index_img:
 archive:
 password:
-description: 直击痛点但浮于表面的讽刺，愉悦的喜剧，严肃沉重的现实。
+excerpt: 直击痛点但浮于表面的讽刺，愉悦的喜剧，严肃沉重的现实。
 ---
 
 # 无效讽刺

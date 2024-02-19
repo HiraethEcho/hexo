@@ -8,7 +8,7 @@ categories:
 index_img:
 archive:
 password:
-description: 谈一谈对科幻作品的看法，包括小说、漫画、电影等
+excerpt: 谈一谈对科幻作品的看法，包括小说、漫画、电影等
 ---
 
 <!-- TODO: not finished -->

@@ -8,5 +8,5 @@ categories:
 index_img:
 archive:
 password:
-description:
+excerpt:
 ---

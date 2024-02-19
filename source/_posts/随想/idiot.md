@@ -10,7 +10,7 @@ categories:
 index_img:
 archive:
 password:
-description: 陀思妥耶夫斯基是永生不死的！
+excerpt: 陀思妥耶夫斯基是永生不死的！
 ---
 
 # 重看《白痴》电视剧

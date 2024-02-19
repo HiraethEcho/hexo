@@ -3,7 +3,7 @@ title: 凌晨两点半
 date: 2023-06-27 12:40:49
 tags:
   - poem
-description: 凌晨喝酒有感
+excerpt: 凌晨喝酒有感
 ---
 # 凌晨两点半
 教室里的酒鬼，地铁上赶作业的学生</br>

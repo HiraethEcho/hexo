@@ -1,13 +1,14 @@
 ---
 title: 《热辣滚烫》观后感
-tags: []
+tags:
+  - 影评
 published: true
 date: 2024-02-19
-updated:
-categories:
-index_img:
-archive:
-password:
+updated: 
+categories: 
+index_img: 
+archive: 
+password: 
 excerpt: 贾玲私人化的电影，匮乏平庸的故事，高完成度的表达，令人作呕的宣传。
 ---
 

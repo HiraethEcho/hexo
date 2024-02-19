@@ -8,7 +8,7 @@ categories:
 index_img:
 archive:
 password:
-description: 关于做饭的记录和总结
+excerpt: 关于做饭的记录和总结
 ---
 
 # 厨艺养成ing

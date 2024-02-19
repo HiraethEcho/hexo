@@ -8,7 +8,7 @@ categories:
 index_img:
 archive:
 password:
-description: 浅谈一些关于西方艺术作品中的神、人、人造人的意象
+excerpt: 浅谈一些关于西方艺术作品中的神、人、人造人的意象
 ---
 
 <!-- TODO: not finished -->

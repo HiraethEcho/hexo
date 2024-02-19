@@ -8,7 +8,7 @@ categories:
 index_img:
 archive:
 password:
-description: 谈谈和父母的关系，谈谈矛盾。对“父母”形象的表演，是自私的，是以自我满足为目的。
+excerpt: 谈谈和父母的关系，谈谈矛盾。对“父母”形象的表演，是自私的，是以自我满足为目的。
 ---
 
 # 对父母形象的表演

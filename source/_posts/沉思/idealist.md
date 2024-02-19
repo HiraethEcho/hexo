@@ -10,7 +10,7 @@ categories:
 index_img:
 archive:
 password:
-description: 它决不能使我屈服！
+excerpt: 它决不能使我屈服！
 published: false
 ---
 <!-- TODO: not finished -->

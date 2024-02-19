@@ -7,7 +7,7 @@ tags:
 categories:
 archive:
 password:
-description: 过去政治课作业，被我用来当民主政治读书笔记小结。很古老的笔记，并且为了交作业做了很多判断。
+excerpt: 过去政治课作业，被我用来当民主政治读书笔记小结。很古老的笔记，并且为了交作业做了很多判断。
 published:
 ---
 

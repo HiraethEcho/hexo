@@ -9,7 +9,7 @@ categories:
 index_img:
 archive:
 password:
-description: 当有限理性遇上无常命运之藩篱
+excerpt: 当有限理性遇上无常命运之藩篱
 published: true
 ---
 
