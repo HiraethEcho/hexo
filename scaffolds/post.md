@@ -1,12 +1,12 @@
 ---
-title: {{ title }}
-date: 
+title: { { title } }
+date:
 updated:
 tags: []
 categories:
-index_img: 
+index_img:
 archive:
 password:
-description:
+excerpt:
 published: false
 ---

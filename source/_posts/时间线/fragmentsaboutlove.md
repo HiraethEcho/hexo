@@ -11,7 +11,7 @@ index_img:
 archive:
 password: 1113
 message: 4位生日
-description: 这一篇放一些对爱情或其他感情的零碎想法，加上粗糙的时间戳，用来留存自己的想法。
+excerpt: 这一篇放一些对爱情或其他感情的零碎想法，加上粗糙的时间戳，用来留存自己的想法。
 sticky: 
 ---
 

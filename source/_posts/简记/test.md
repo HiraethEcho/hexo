@@ -10,7 +10,7 @@ categories:
 index_img:
 archive:
 password:
-description: 
+excerpt: 
 ---
 <div align="right">
   <a title="en" href="README.md"><img src="https://img.shields.io/badge/-English-545759?style=for-the-badge" alt="english"></a>

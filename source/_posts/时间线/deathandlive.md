@@ -11,8 +11,8 @@ categories:
 index_img:
 archive:
 password:
-description: 关于我如何看待死，和如何生
-sticky: 
+excerpt: 关于我如何看待死，和如何生
+sticky:
 ---
 
 <!--  TODO: Not finished    -->

@@ -177,7 +177,7 @@ home_banner:
 # Docs: https://redefine-docs.ohevan.com/home/navbar
 navbar:
   # Auto hide navbar
-  auto_hide: false
+  auto_hide: true
   # Navbar background color
   color:
     left: "#f78736" #left side 
@@ -189,15 +189,15 @@ navbar:
     pages: 1000px #other pages
   # Navbar links
   links:
-    Home: 
-      path: / 
-      icon: fa-regular fa-house # can be empty
-    Archives: 
+    # 主页: 
+    #   path: / 
+    #   icon: fa-regular fa-house # can be empty
+    文章: 
       icon: fa-regular fa-archive # can be empty
       submenus:
-        timeline: /archives 
-        tags: /tags
-        categories: /categories
+        全部: /archives 
+        标签: /tags
+        分类: /categories
     # Archives: 
     #   icon: fa-regular fa-archive # can be empty
     #   path: /archives
@@ -207,13 +207,16 @@ navbar:
     # categories: 
     #   path: /categories 
     #   icon: fa-regular fa-folder # can be empty
-    essays: 
+    说说: 
       path: /essays 
       icon: fa-regular fa-comment # can be empty
     # Status: 
     #   path: https://status.ohevan.com/
     #   icon: fa-regular fa-chart-bar
-    About: 
+    相册:
+      path: /masonry
+      icon: fa-regular fa-images
+    关于: 
       icon: fa-regular fa-user
       path: /about
     #   submenus:
@@ -221,7 +224,7 @@ navbar:
     #     Github: https://github.com/EvanNotFound/hexo-theme-redefine
     #     Blog: https://ohevan.com
     #     Friends: /friends
-    Links: 
+    链接: 
       icon: fa-regular fa-link
       submenus:
         Academia: https://HiraethEcho.github.io
@@ -248,15 +251,21 @@ home:
     announcement: Einmal ist keinmal # Announcement text
     show_on_mobile: true # Whether to show sidebar navigation on mobile sheet menu
     links:
-      Timeline: 
+      文章: 
         path: /archives 
         icon: fa-regular fa-archive # can be empty
-      Tags: 
+      标签: 
         path: /tags 
         icon: fa-regular fa-tags # can be empty
-      Categories: 
+      分类: 
         path: /categories 
         icon: fa-regular fa-folder # can be empty
+      说说: 
+        path: /essays
+        icon: fa-regular fa-comment-dots
+      相册:
+        path: /masonry
+        icon: fa-regular fa-images
       # ...... # you can add more
   # Article date format
   article_date_format: auto # auto, relative, YYYY-MM-DD, YYYY-MM-DD HH:mm:ss etc.

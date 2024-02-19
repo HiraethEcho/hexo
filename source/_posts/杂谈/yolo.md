@@ -8,7 +8,7 @@ categories:
 index_img:
 archive:
 password:
-description:
+excerpt: 贾玲私人化的电影，匮乏平庸的故事，高完成度的表达，令人作呕的宣传。
 ---
 
 # 《热辣滚烫》：制作精良的平庸之作
