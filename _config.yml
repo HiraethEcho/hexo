@@ -130,9 +130,12 @@ deploy:
 aplayer:
   meting: true
 
+plugins:
+  hexo-generator-feed
+
 feed:
   type: atom
-  path: atom.xml
+  path: hexo/atom.xml
   limit: 20
 
 # Security
@@ -141,8 +144,6 @@ feed:
   # - {name: tagName, password: 密码A}
   # - {name: tagName, password: 密码B}
   # theme: xray
-# plugins:
-#   hexo-generator-feed
 # #Feed Atom
 
 all_minifier: true

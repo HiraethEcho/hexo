@@ -162,7 +162,7 @@ home_banner:
       zhihu:  # your ZhiHu URL
       twitter:  # your twitter URL
       email: wyz2016zxc@outlook.com
-      # fa-regular fa-rss: https://github/HiraethEcho/hexo/atom.xml 
+      fa-regular fa-rss: https://HiraethEcho.github.io/hexo/atom.xml 
       weibo:
       qq:
       # ...... # you can add more
@@ -443,7 +443,7 @@ inject:
 plugins:
   # RSS feed. Requires hexo-generator-feed (npm i hexo-generator-feed). See https://github.com/hexojs/hexo-generator-feed
   feed:
-    enable: true # Whether to enable
+    enable: false # Whether to enable
   # Aplayer. See https://github.com/DIYgod/APlayer
   aplayer:
     enable: false # Whether to enable
