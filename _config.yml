@@ -148,6 +148,11 @@ deploy:
 aplayer:
   meting: true
 
+feed:
+  type: atom
+  path: hexo/atom.xml
+  limit: 20
+
 # Security
 # encrypt: # hexo-blog-encrypt
   # tags:
@@ -157,10 +162,6 @@ aplayer:
 # plugins:
 #   hexo-generator-feed
 # #Feed Atom
-feed:
-  type: atom
-  path: atom.xml
-  limit: 20
 
 all_minifier: true
 

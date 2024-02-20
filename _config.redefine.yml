@@ -162,6 +162,7 @@ home_banner:
       zhihu:  # your ZhiHu URL
       twitter:  # your twitter URL
       email: wyz2016zxc@outlook.com
+      # fa-regular fa-rss: https://github/HiraethEcho/hexo/atom.xml 
       weibo:
       qq:
       # ...... # you can add more
@@ -471,7 +472,6 @@ page_templates:
   friends_column: 2
   # Tags page style
   tags_style: cloud # blur, cloud
-  comments: true
 # PAGE TEMPLATES <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -479,9 +479,9 @@ page_templates:
 # Docs: https://redefine-docs.ohevan.com/cdn
 cdn:
   # Whether to enable CDN
-  enable: false
+  enable: true
   # CDN Provider
-  provider: staticfile # staticfile, bootcdn, cdnjs, jsdelivr, unpkg, custom
+  provider: aliyun # staticfile, bootcdn, cdnjs, jsdelivr, unpkg, custom
   # Custom CDN URL
   # format example: https://cdn.custom.com/hexo-theme-redefine/${version}/source/${path}
   # The ${path} must be in the source folder of the theme
