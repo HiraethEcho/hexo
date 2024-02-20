@@ -20,7 +20,8 @@ Hiraeth: (n.) homesickness to a home to which you cannot return: the grief of th
 - comment
 - contemplation
 - record
-- caprice
+- caprice/whim
+- timeline
 -->
 
 - [杂谈](/hexo/categories/杂谈)：这里是关于具体事或物的评论或想法，包括影评、书评、社评等，是围绕具体话题的看法。
@@ -37,14 +38,16 @@ Hiraeth: (n.) homesickness to a home to which you cannot return: the grief of th
   - 落叶归根 影评
   - 卡夫卡 陀思妥耶夫斯基
   - 神，人，人造人和弑父
+  - 存在主义嗨
 - 沉思
   - 坚持做理想主义者
+  - 饥饿的死刑犯
   - 多元思考，有矛盾的生活 后现代的生活
 - 简记
   - 独居
 - 随想
   - 表演式的伪善
-  - mbti看法
+  - mbti看法/whoami
 - [cafe](/hexo/food) 把我的“小餐馆”的介绍完整一下
 
 ## 关于我
@@ -308,4 +311,4 @@ Hiraeth: (n.) homesickness to a home to which you cannot return: the grief of th
   - 长跑（跑过几次半马勉强可以说是业余爱好者吧）
   - 骑车（这个刚刚开始）
 - [调酒](https://hiraethecho.github.io/wiki/Life/cocktail/)
-- 做饭([搬宿舍后](/hexo/简记/dormitory)刚刚开始学，只会[几个](/hexo/简记/cook))简单的。
+- 做饭（[搬宿舍后](/hexo/简记/dormitory)刚刚开始学，只会[几个](/hexo/简记/cook)简单的。）

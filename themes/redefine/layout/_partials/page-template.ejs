@@ -19,7 +19,7 @@
             && (masonryTypes.includes(page.type) || masonryTitles.includes(page.title))
     )
     %>
-    
+
     <% if (isLoadFriendsLink) { %>
         <%- partial('_widgets/friends-link') %>
     <% } else if (isLoadShuoshuo) { %>
@@ -27,6 +27,7 @@
     <% } else if (isLoadMasonry) { %>
         <%- partial('_widgets/masonry') %>
     <% } %>
+
     <div class="page-template-content markdown-body">
         <% if (isLoadFriendsLink || page.content || isLoadShuoshuo || isLoadMasonry) { %>
             <%- page.content %>
@@ -34,9 +35,8 @@
             <h1><%- page.title %></h1>
         <% } %>
     </div>
+
     <div class="page-template-comments">
-        <% if (page.hasOwnProperty('comment') && (page.comment === true || page.comments === true) ) { %>
             <%- partial('_partials/comments/comment') %>
-        <% } %>
     </div>
 </div>
