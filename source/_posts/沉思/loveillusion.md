@@ -226,9 +226,9 @@ excerpt: 爱情也许是一种幻光，但人总要追逐的幻光，否则如�
 
 > Home is a place where when you have to go there, they have to take you in.
 
-<p class="note note-info">
-Hiraeth: (n.) homesickness to a home to which you cannot return: the grief of the lost places of your past.
-</p>
+{% notel green Hiraeth %}
+(n.) homesickness to a home to which you cannot return, or a home which may never have been: the grief of the lost places of your past.
+{% endnotel %}
 
 ## 尾声
 

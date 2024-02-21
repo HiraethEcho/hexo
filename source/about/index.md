@@ -10,9 +10,9 @@ layout: about
 
 关于小站名字（同时也是我大部分网络id）的解释：
 
-<p class="note note-primary">
-Hiraeth: (n.) homesickness to a home to which you cannot return: the grief of the lost places of your past.
-</p>
+{% notel green Hiraeth %}
+(n.) homesickness to a home to which you cannot return, or a home which may never have been: the grief of the lost places of your past.
+{% endnotel %}
 
 ### 分类 categories
 

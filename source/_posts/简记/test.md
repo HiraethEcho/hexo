@@ -5,13 +5,7 @@ published: true
 date: 2024-02-18 00:11
 updated: 2024-02-18 00:11
 tags:
-  - dota
-  - game
-categories:
-index_img:
-archive:
-password:
-excerpt: 
+  - test
 ---
 # hexo-theme-redefine
 
