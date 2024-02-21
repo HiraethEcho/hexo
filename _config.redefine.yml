@@ -199,7 +199,7 @@ navbar:
         全部: /archives 
         标签: /tags
         分类: /categories
-    # Archives: 
+    # 文章: 
     #   icon: fa-regular fa-archive # can be empty
     #   path: /archives
     # tags: 
@@ -211,7 +211,7 @@ navbar:
     # Café: 
     #   path: /food 
     #   icon: fa-regular fa-user-chef # can be empty
-    # 说说: 
+    # 即刻: 
     #   path: /essays 
     #   icon: fa-regular fa-comment # can be empty
     # 相册:
@@ -231,14 +231,21 @@ navbar:
         Café: /food
         即刻: /essays 
         相册: /masonry
-    链接: 
-      icon: fa-regular fa-link
+    # 链接: 
+    #   icon: fa-regular fa-link
+    #   submenus:
+    #     Academia: https://HiraethEcho.github.io
+    #     Wiki: https://HiraethEcho.github.io/wiki
+    关于:
+      icon: fa-regular fa-user
       submenus:
+        本站: /about
         Academia: https://HiraethEcho.github.io
         Wiki: https://HiraethEcho.github.io/wiki
-    关于: 
-      icon: fa-regular fa-user
-      path: /about
+
+    # 关于: 
+    #   icon: fa-regular fa-user
+    #   path: /about
     #     Link3: /link3
     # ...... # you can add more
   # Navbar search (local search). Requires hexo-generator-searchdb (npm i hexo-generator-searchdb). See https://github.com/theme-next/hexo-generator-searchdb
@@ -259,7 +266,7 @@ home:
     position: left # Sidebar position. left, right
     first_item: info # First item in sidebar. menu, info
     announcement: Einmal ist keinmal # Announcement text
-    show_on_mobile: true # Whether to show sidebar navigation on mobile sheet menu
+    show_on_mobile: false # Whether to show sidebar navigation on mobile sheet menu
     links:
       文章: 
         path: /archives 
@@ -270,7 +277,7 @@ home:
       分类: 
         path: /categories 
         icon: fa-regular fa-folder # can be empty
-      说说: 
+      即刻: 
         path: /essays
         icon: fa-regular fa-comment-dots
       相册:
