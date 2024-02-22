@@ -135,7 +135,7 @@ plugins:
 
 feed:
   type: atom
-  path: hexo/atom.xml
+  path: atom.xml
   limit: 20
 
 # Security
