@@ -16,19 +16,12 @@ layout: about
 
 ### 分类 categories
 
-<!--
-- comment
-- contemplation
-- record
-- caprice/whim
-- timeline
--->
 
-- [杂谈](/hexo/categories/杂谈)：这里是关于具体事或物的评论或想法，包括影评、书评、社评等，是围绕具体话题的看法。
-- [沉思](/hexo/categories/沉思)：_哲学是傍晚起飞的猫头鹰。_ 这里是一些抽象的思想，是关于精神世界的思考。
-- [简记](/hexo/categories/简记)：这里主要是记述性质的，简短记录一些生活中发生的事情，或者作为某种备忘，可能掺杂一些想法。
-- [随想](/hexo/categories/随想)：这里是零碎的想法。大部分没有被深思熟虑，并不完备自洽，比较随意。
-- [时间线](/hexo/categories/时间线)：这里是一些持续更新的博客。
+- [杂谈](/hexo/categories/critique)：这里是关于具体事或物的评论或想法，包括影评、书评、社评等，是围绕具体话题的看法。
+- [沉思](/hexo/categories/contemplation)：_哲学是傍晚起飞的猫头鹰。_ 这里是一些抽象的思想，是关于精神世界的思考。
+- [简记](/hexo/categories/diary)：这里主要是记述性质的，简短记录一些生活中发生的事情，或者作为某种备忘，可能掺杂一些想法，类似于日记。
+- [随想](/hexo/categories/showerthoughts)：这里是零碎的想法，_浴中奇思_。大部分没有被深思熟虑，并不完备自洽，比较随意。
+- [动态](/hexo/categories/dynamic)：这里是一些持续更新的博客。
 
 ### 计划中
 
