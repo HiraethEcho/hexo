@@ -36,10 +36,11 @@
         <% } %>
     </div>
 
+
+        <% if (page.hasOwnProperty('comment') && (page.comment === true || page.comments === true) ) { %>
+            <%- partial('_partials/comments/comment') %>
         <div class="post-tools">
             <%- partial('_widgets/post-tools') %>
         </div>
-    <div class="page-template-comments">
-            <%- partial('_partials/comments/comment') %>
-    </div>
+        <% } %>
 </div>
