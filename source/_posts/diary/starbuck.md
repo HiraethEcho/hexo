@@ -6,13 +6,14 @@ tags:
   - food
   - life
   - love
+  - daily
 published: true
 date: 2024-02-03 18:00
-updated:
-categories:
-index_img:
-archive:
-password:
+updated: 
+categories: 
+index_img: 
+archive: 
+password: 
 excerpt: 和朋友出去玩的流水账的一天
 ---
 

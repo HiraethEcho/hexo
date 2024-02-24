@@ -296,7 +296,7 @@ comment: true
 
 - 计算机
 
-  - 网页（比如这个博客，虽然是用github的模板[Fluid](https://github.com/fluid-dev/hexo-theme-fluid)）
+  - 网页（比如这个博客，虽然是用github的模板[redefine](https://ohevan.com/) ）
   - archlinux 的安装（现在在用btrfs和dwm）和删除（指 `sudo rm -rf /`）
   - (neo)vim 的简单配置使用
 
@@ -305,4 +305,4 @@ comment: true
   - 长跑（跑过几次半马勉强可以说是业余爱好者吧）
   - 骑车（这个刚刚开始）
 - [调酒](https://hiraethecho.github.io/wiki/Life/cocktail/)
-- 做饭（[搬宿舍后](/hexo/简记/dormitory)刚刚开始学，只会[几个](/hexo/简记/cook)简单的。）
+- 做饭（[搬宿舍后](/hexo/diary/dormitory)开始学，会[一些](/hexo/diary/cook)简单的。）[这里开始学，会[一些](/hexo/diary/cook)简单的。）[这里](/hexo/food)是我的小菜单。

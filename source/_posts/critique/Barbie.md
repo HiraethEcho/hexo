@@ -62,4 +62,4 @@ _（这一段我使用了大量我不理解的词汇，用了我也不知道在�
 
 <p class="note note-info">《单向度的人》看完了也写了，但是没写清楚</p>
 
-[这里](/hexo/杂谈/one-dimensional-man) 是《单向度的人》的博客。
+[这里](/hexo/critique/one-dimensional-man) 是《单向度的人》的博客。

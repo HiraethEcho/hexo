@@ -1,13 +1,15 @@
 ---
-title: {{ title }}
-date:
-updated:
+title: dormitory
 tags: []
+published: true
+date: 2023-12-20 22:34
+updated:
 categories:
 index_img:
 archive:
 password:
 excerpt:
-published: false
 mathjax:
 ---
+
+# what
