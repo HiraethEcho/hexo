@@ -7,19 +7,8 @@ updated: 2024-02-18 00:11
 tags:
   - test
 ---
+
 # hexo-theme-redefine
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/EvanNotFound/hexo-theme-redefine/assets/68590232/337c1801-7a59-45af-a02a-583508be69a5" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/EvanNotFound/hexo-theme-redefine/assets/68590232/d88a5544-c86e-46ab-8e52-0582b437f989" />
-  <img alt="Cover Image" src="https://github.com/EvanNotFound/hexo-theme-redefine/assets/68590232/d88a5544-c86e-46ab-8e52-0582b437f989" />
-</picture>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/EvanNotFound/hexo-theme-redefine/assets/68590232/5d51b48d-7b08-4da0-a304-933424739203" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/EvanNotFound/hexo-theme-redefine/assets/68590232/c6df4b81-557d-4e0b-8038-b056075d0fa4" />
-  <img alt="Pages Image" src="https://github.com/EvanNotFound/hexo-theme-redefine/assets/68590232/c6df4b81-557d-4e0b-8038-b056075d0fa4" />
-</picture>
 
 ## 🌐 官方演示站
 
@@ -145,8 +134,6 @@ tip 提示块标签
 
 {% endfolding %}
 
-
-
 {% folding green::Folding 测试： 点击查看更多 %}
 
 {% note danger  %}
@@ -158,8 +145,6 @@ tip 提示块标签
 {% endnote %}
 
 {% endfolding %}
-
-
 
 {% folding blue::Folding 测试： 点击查看更多 %}
 
@@ -180,11 +165,15 @@ tip 提示块标签
 {% btn center large::Tabs 分栏模块文档::https://redefine-docs.ohevan.com/modules/tabs::fa-solid fa-book %}
 
 {% tabs First unique name %}
+
 <!-- tab First Tab-->
+
 **This is Tab 1.**
+
 <!-- endtab -->
 
 <!-- tab Second Tab-->
+
 **This is Tab 2.**
 
 This is Tab 2.
@@ -192,6 +181,7 @@ This is Tab 2.
 <!-- endtab -->
 
 <!-- tab Third Tab-->
+
 **This is Tab 3.**
 
 This is Tab 3.
@@ -199,6 +189,7 @@ This is Tab 3.
 This is Tab 3.
 
 <!-- endtab -->
+
 {% endtabs %}
 
 ### Button 按钮模块
@@ -219,18 +210,10 @@ large 按钮更具有强调作用，建议搭配 center 使用：
 
 请阅读 [Redefine 主题官方文档](https://redefine-docs.ohevan.com/) 进行主题配置与安装，非常简单易懂。
 
-## ☕ 支持
-
 如有问题，请发邮件到 [contact@ohevan.com](mailto:contact@ohevan.com). 我会及时回复
 
 如果你在使用 [Typora](https://typora.io/) 编辑器写文章，欢迎查看我写的 [Typora Redefine 主题](https://github.com/EvanNotFound/typora-theme-redefine)，按照本 Hexo 主题样式编写，让你可以直接预览文章效果，更好排版。
 
-## 💻 主题开发
-
 如果你想参与主题开发，请 `clone` 本项目的 `dev` 分支，然后在 `dev` 分支上进行开发。
 
 同时，请查看 [Redefine 主题开发文档](https://redefine-docs.ohevan.com/developer)。
-
-
-
-

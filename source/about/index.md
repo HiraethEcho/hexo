@@ -79,7 +79,7 @@ comment: true
 - 现代西方哲学史十五讲 张汝伦
 - 我们生活在巨大的差距里
 - 抑郁症的历史
-- 单向度的人
+- [单向度的人](/hexo/critique/one-dimensional-man)
 - 他者的消失
 - 论人类不平等的起源和基础
 - 家庭、私有制和国家的起源
@@ -113,7 +113,7 @@ comment: true
 - 情人
 - 被侮辱与损害的人
 - 卡拉马佐夫兄弟
-- 白痴
+- [白痴](/hexo/showerthoughts/idiot)
 - 罪与罚
 - 群魔
 - 西西弗神话
