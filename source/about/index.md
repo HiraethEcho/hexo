@@ -7,7 +7,7 @@ comment: true
 
 ## 关于本站
 
-这是我的个人博客，是我的学术主页和知识wiki（这两个都没认真搭建）外的，或者说我的“主业”之外的我自己。
+这是我的个人博客，是我的[学术主页](https://hiraethecho.github.io)和[知识wiki](https://hiraethecho.gihub.io/wiki)（这两个都没认真搭建）外的，或者说我的“主业”之外的我自己。
 
 关于小站名字（同时也是我大部分网络id）的解释：
 
@@ -32,7 +32,7 @@ comment: true
   - 落叶归根 影评
   - 卡夫卡 陀思妥耶夫斯基
   - 神，人，人造人和弑父
-  - 存在主义嗨
+  - 存在主义危机和哲学入门
 - 沉思
   - 坚持做理想主义者
   - 饥饿的死刑犯
@@ -54,7 +54,7 @@ comment: true
 
 正在看的书：
 
-《消费社会》（鲍德里亚）<progress max=225 value=80></progress>
+《消费社会》鲍德里亚<progress max=225 value=80></progress>
 
 《女性主义》李银河<progress max=306 value=99></progress>
 
