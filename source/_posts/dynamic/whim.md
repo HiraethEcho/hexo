@@ -9,7 +9,6 @@ index_img:
 archive:
 password:
 excerpt: 一些简短到一两句话的小想法，持续更新
-sticky: 80
 ---
 
 <!-- todo: not finished -->
