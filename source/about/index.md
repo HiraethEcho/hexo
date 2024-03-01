@@ -9,7 +9,7 @@ comment: true
 
 这是我的个人博客，是我的[学术主页](https://hiraethecho.github.io)和[知识wiki](https://hiraethecho.gihub.io/wiki)（这两个都没认真搭建）外的，或者说我的“主业”之外的我自己。
 
-关于小站名字（同时也是我大部分网络id）的解释：
+关于小站名字（同时也是我大部分账号id）的解释：
 
 {% notel green Hiraeth %}
 (n.) homesickness to a home to which you cannot return, or a home which may never have been: the grief of the lost places of your past.
@@ -299,6 +299,7 @@ comment: true
   - 网页（比如这个博客，虽然是用github的模板[redefine](https://ohevan.com/) ）
   - archlinux 的安装（现在在用btrfs和dwm）和删除（指 `sudo rm -rf /`）
   - (neo)vim 的简单配置使用
+  - 尝试装一个lfs
 
 - 运动
   - 足球

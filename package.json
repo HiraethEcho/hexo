@@ -30,6 +30,7 @@
     "hexo-theme-landscape": "^1.0.0",
     "hexo-theme-redefine": "^2.6.1",
     "hexo-theme-volantis": "^5.8.0",
+    "hexo-wordcount": "^6.0.1",
     "remark": "^14.0.3"
   }
 }
