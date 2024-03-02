@@ -27,7 +27,7 @@ mathjax:
 
 书评：
 
-- [《单向度的人》](/hexo/critique/one-dimensional-man)：马尔库塞的经典作品，读得很痛苦，写得也很痛苦。
+- [《单向度的人》](/hexo/essays/one-dimensional-man)：马尔库塞的经典作品，读得很痛苦，写得也很痛苦。
 
 ## 安利
 

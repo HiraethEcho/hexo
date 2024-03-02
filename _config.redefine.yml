@@ -157,7 +157,7 @@ home_banner:
     style: default # default, reverse, center
     # Social links
     links:
-      github: https://github/HiraethEcho  # your GitHub URL
+      github: https://github.com/HiraethEcho  # your GitHub URL
       instagram: # your Instagram URL
       zhihu:  # your ZhiHu URL
       twitter:  # your twitter URL
@@ -229,7 +229,7 @@ navbar:
       icon: fa-regular fa-page
       submenus:
         Café: /food
-        即刻: /essays 
+        即刻: /shuoshuo 
         相册: /masonry
         资源: /resource
     链接: 
@@ -279,7 +279,7 @@ home:
         path: /categories 
         icon: fa-regular fa-folder # can be empty
       即刻: 
-        path: /essays
+        path: /shuoshuo 
         icon: fa-regular fa-comment-dots
       相册:
         path: /masonry

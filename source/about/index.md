@@ -18,7 +18,7 @@ comment: true
 ### 分类 categories
 
 
-- [杂谈](/hexo/categories/critique)：这里是关于具体事或物的评论或想法，包括影评、书评、社评等，是围绕具体话题的看法。
+- [杂谈](/hexo/essays)：这里是关于具体事或物的评论或想法，包括影评、书评、社评等，是围绕具体话题的看法。
 - [沉思](/hexo/categories/contemplation)：_哲学是傍晚起飞的猫头鹰。_ 这里是一些抽象的思想，是关于精神世界的思考。
 - [简记](/hexo/categories/diary)：这里主要是记述性质的，简短记录一些生活中发生的事情，或者作为某种备忘，可能掺杂一些想法，类似于日记。
 - [随想](/hexo/categories/showerthoughts)：这里是零碎的想法，_浴中奇思_。大部分没有被深思熟虑，并不完备自洽，比较随意。
@@ -79,7 +79,7 @@ comment: true
 - 现代西方哲学史十五讲 张汝伦
 - 我们生活在巨大的差距里
 - 抑郁症的历史
-- [单向度的人](/hexo/critique/one-dimensional-man)
+- [单向度的人](/hexo/essays/one-dimensional-man)
 - 他者的消失
 - 论人类不平等的起源和基础
 - 家庭、私有制和国家的起源
