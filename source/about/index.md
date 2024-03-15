@@ -7,7 +7,7 @@ comment: true
 
 ## 关于本站
 
-这是我的个人博客，是我的[学术主页](https://hiraethecho.github.io)和[知识wiki](https://hiraethecho.gihub.io/wiki)（这两个都没认真搭建）外的，或者说我的“主业”之外的我自己。
+这是我的个人博客，是我的[学术主页](https://hiraethecho.github.io)和[知识wiki](https://hiraethecho.github.io/wiki)（这两个都没认真搭建）外的，或者说我的“主业”之外的我自己。
 
 关于小站名字（同时也是我大部分账号id）的解释：
 
