@@ -54,9 +54,9 @@ comment: true
 
 正在看的书：
 
-《消费社会》鲍德里亚<progress max=225 value=80></progress>
 
 《女性主义》李银河<progress max=306 value=99></progress>
+
 
 <details><summary>一些读过并认为值得一记来帮助了解我的书：</summary>
 
@@ -80,6 +80,7 @@ comment: true
 - 我们生活在巨大的差距里
 - 抑郁症的历史
 - [单向度的人](/hexo/essays/one-dimensional-man)
+- 消费社会 2024-03-14
 - 他者的消失
 - 论人类不平等的起源和基础
 - 家庭、私有制和国家的起源
@@ -285,6 +286,7 @@ comment: true
 - 红白蓝三部曲
 - 平原上的夏洛克
 - 法外之徒
+- 宫崎骏
 
 </details>
 
