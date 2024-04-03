@@ -1,13 +1,14 @@
 ---
 title: 前往痛苦之路：个人观点的哲学入门推荐
-tags: []
+tags:
+  - philosophy
 published: false
-date:
-updated:
-categories:
-index_img:
-archive:
-password:
+date: 
+updated: 
+categories: 
+index_img: 
+archive: 
+password: 
 excerpt: 有朋友来问“不想做快乐的猪”该如何入门，或者问“人生的意义是什么？”所以从我个人知识和看法出发，给出一点入门的思路和推荐。
 ---
 

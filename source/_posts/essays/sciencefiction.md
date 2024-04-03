@@ -1,13 +1,14 @@
 ---
 title: 对科幻的一点看法
-tags: []
+tags:
+  - science
 published: false
-date:
-updated:
-categories:
-index_img:
-archive:
-password:
+date: 
+updated: 
+categories: 
+index_img: 
+archive: 
+password: 
 excerpt: 谈一谈对科幻作品的看法，包括小说、漫画、电影等
 ---
 

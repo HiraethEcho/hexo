@@ -17,11 +17,10 @@ comment: true
 
 ### 分类 categories
 
-
 - [杂谈](/hexo/essays)：这里是关于具体事或物的评论或想法，包括影评、书评、社评等，是围绕具体话题的看法。
 - [沉思](/hexo/categories/contemplation)：_哲学是傍晚起飞的猫头鹰。_ 这里是一些抽象的思想，是关于精神世界的思考。
 - [简记](/hexo/categories/diary)：这里主要是记述性质的，简短记录一些生活中发生的事情，或者作为某种备忘，可能掺杂一些想法，类似于日记。
-- [随想](/hexo/categories/showerthoughts)：这里是零碎的想法，_浴中奇思_。大部分没有被深思熟虑，并不完备自洽，比较随意。
+- [随想](/hexo/categories/memo)：这里是零碎的想法，大部分没有被深思熟虑，并不完备自洽，比较随意。
 - [动态](/hexo/categories/dynamic)：这里是一些持续更新的博客。
 
 ### 计划中
@@ -54,9 +53,7 @@ comment: true
 
 正在看的书：
 
-
 《女性主义》李银河<progress max=306 value=99></progress>
-
 
 <details><summary>一些读过并认为值得一记来帮助了解我的书：</summary>
 
@@ -114,7 +111,7 @@ comment: true
 - 情人
 - 被侮辱与损害的人
 - 卡拉马佐夫兄弟
-- [白痴](/hexo/showerthoughts/idiot)
+- [白痴](/hexo/memo/idiot)
 - 罪与罚
 - 群魔
 - 西西弗神话
@@ -134,7 +131,6 @@ comment: true
 
 - 诗人的迟缓
 - 地下室手记
-- 死屋手记
 - 机械复制时代的艺术品
 - 对空演说
 - 全球通史

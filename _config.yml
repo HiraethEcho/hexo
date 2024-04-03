@@ -117,6 +117,7 @@ search:
 ## Themes: https://hexo.io/themes/
 # theme: fluid
 theme: redefine
+# theme: keep
 language: zh-CN
 
 # Deployment

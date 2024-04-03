@@ -4,10 +4,11 @@ published: true
 updated: 2024-01-28 23:48
 date: 2023-12-20 22:34
 tags:
-categories:
-index_img:
-archive:
-password:
+  - daily
+categories: 
+index_img: 
+archive: 
+password: 
 excerpt: 又双叒叕搬宿舍，顺便记录一下这一段时间的跑来跑去
 ---
 

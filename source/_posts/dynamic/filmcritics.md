@@ -1,13 +1,14 @@
 ---
 title: 短影评合集
-tags: []
+tags:
+  - 影评
 published: true
 date: 2024-02-25 10:05
-updated:
-categories:
-index_img:
-archive:
-password:
+updated: 
+categories: 
+index_img: 
+archive: 
+password: 
 excerpt: 持续更新的短影评合集
 mathjax:
 ---

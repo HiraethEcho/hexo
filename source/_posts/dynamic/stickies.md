@@ -8,9 +8,8 @@ categories:
 index_img:
 archive:
 password:
-excerpt: 本站一些推荐阅读的内容合集
+excerpt: 一些推荐阅读的内容合集
 sticky: 100
-mathjax:
 ---
 
 # 推荐阅读列表
@@ -32,10 +31,12 @@ mathjax:
 - [《单向度的人》](/hexo/essays/one-dimensional-man)：马尔库塞的经典作品，读得很痛苦，写得也很痛苦。
 
 ## 安利
+
 - [Dota2](/hexo/diary/ti12)
 
 ## 呓语
+
 - [我存在](/hexo/contemplation/Existence)
 - [感情](/hexo/contemplation/loveillusion)
 - [死亡与自由](/hexo/contemplation/free-and-death)
-- [时间之矢](/hexo/showerthoughts/arrowoftime)
+- [时间之矢](/hexo/memo/arrowoftime)
