@@ -22,9 +22,15 @@ sticky: 100
 
 (好像没几篇值得看的啊)
 
+## 杂谈
+- [民主制度](/hexo/essays/democracyold)：这篇实际上是政治课大作业
+- [科学与认识论](/hexo/essays/science)：这篇也是政治课大作业
+
 ## 影评、书评
 
 影评：
+- [河边的错误](/hexo/essays/onlytheriverflows)
+- [年会不能停](/hexo/essays/JohnnyKeepWalking)
 
 书评：
 
