@@ -196,7 +196,7 @@ navbar:
     文章: 
       icon: fa-regular fa-archive # can be empty
       submenus:
-        全部: /archives 
+        归档: /archives 
         标签: /tags
         分类: /categories
     # 文章: 
@@ -228,9 +228,9 @@ navbar:
     页面:
       icon: fa-regular fa-page
       submenus:
-        Café: /food
+        # Café: /food
         即刻: /shuoshuo 
-        相册: /masonry
+        # 相册: /masonry
         资源: /resource
     链接: 
       icon: fa-regular fa-link

@@ -24,6 +24,7 @@ sticky: 80
 
 - [虚无主义、存在主义与荒诞主义](/hexo/essays/introexistentialism)
 - [考博](/hexo/diary/phd)
+- [考博后续](/hexo/diary/intophd)
 
 # 有更新的文章
 
