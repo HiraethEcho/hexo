@@ -1,5 +1,5 @@
 ---
-title: 新时间表
+title: deathnote
 tags: []
 published: false
 date:
@@ -8,6 +8,6 @@ categories:
 index_img:
 archive:
 password:
-excerpt: 企图实行一个新的时间表
+excerpt: 高强度刷完死亡笔记后的一些看法
 mathjax:
 ---
