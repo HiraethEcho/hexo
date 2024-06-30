@@ -211,9 +211,9 @@ navbar:
     # Café: 
     #   path: /food 
     #   icon: fa-regular fa-user-chef # can be empty
-    # 即刻: 
-    #   path: /essays 
-    #   icon: fa-regular fa-comment # can be empty
+    即刻: 
+      path: /shuoshuo
+      icon: fa-regular fa-comment # can be empty
     # 相册:
     #   path: /masonry
     #   icon: fa-regular fa-images
@@ -225,7 +225,6 @@ navbar:
     #     Github: https://github.com/EvanNotFound/hexo-theme-redefine
     #     Blog: https://ohevan.com
     #     Friends: /friends
-    即刻: /shuoshuo 
     # 页面:
     #   icon: fa-regular fa-page
     #   submenus:
