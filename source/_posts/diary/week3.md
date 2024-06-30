@@ -2,7 +2,7 @@
 title: 每周一记3
 tags: [daily]
 published: true
-date: 
+date:
 updated:
 categories:
 index_img:
@@ -11,25 +11,52 @@ password:
 excerpt: 因为想要保持写作，决定至少每周都写点东西。
 mathjax:
 ---
+
 # 每周一记
+
 这周好忙，随便水水
+
 ## 学习
+
 周一和Jihao Liu讨论问题，第二天就在overleaf上写完关键证明。学了一个月被一天秒了，悲。
 
-setting比较强，要Q-factorial，并且需要two minimal model as outputs. 核心思路就是分析log canonical places (centers), 这样让ample divisor可以拉回和strict  transform一样。由于是Q-factorial所以不需要在ample model上做东西，也不用归纳。
+setting比较强，要Q-factorial，并且需要two minimal model as outputs. 核心思路就是分析log canonical places (centers), 这样让ample divisor可以拉回和strict transform一样。由于是Q-factorial所以不需要在ample model上做东西，也不用归纳。
 
 在考虑能不能把outputs去掉，改成 iso in codim 1之类的。以及能不能去掉Q-factorial。
 
 ## 书影音
+
 这周没看书。
 
+## 运动
+
+除了搬家，没运动，一点没动。悲。
+
+记个体重吧，希望能借此作为减下去的动力。
+
+- 2024-06-30 83
+
 ## 琐事
+
 又搬家，离谱。
 
 我怎么会有这么多垃圾袋。以及怎么有这么多
+
 > “这是你的吗？”<br>
 > “不是我以为是你的”<br>
 > "那这是谁的？"<br>
-的东西，难道说宿舍长期偷偷住着另外一个人？
+> 的东西，难道说宿舍长期偷偷住着另外一个人？
 
 小区里捡垃圾的大妈们到了大丰收的时刻，让人想起角马大迁徙时对老弱病残虎视眈眈的鬣狗。开着个电动轮椅转来转去，后来直接堵在单元门口一个个审查，像地铁安检一样，太变态了。
+
+## 玩
+
+这周似乎玩了很多次。周一晚上子涵来北京，和女朋友一起吃饭。付小姐在成都，还行。之后一起喝酒聊天。开心。
+
+周二无聊去酒吧找女朋友，喝酒聊天，开心。
+
+周五上午先搬了一次宿舍，晚上去喝酒，开心。先去了威士忌吧，老板又菜又爱玩，尼格罗尼居然创新成朗姆雪莉阿佩罗，虽然不算难喝，但是和尼格罗尼没有任何关系。为了弥补收到的创伤，又去找女朋友喝酒，喝到了路易斯安那和正经尼格罗尼，开心。
+
+周日和研一的室友去喝酒，开心。喝了Old pal和绿茶特的阿拉斯加，好哦。
+
+## 碎碎念

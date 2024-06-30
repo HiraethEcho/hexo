@@ -17,8 +17,8 @@ comment: true
 
 ### 分类 categories
 
-- [杂谈](/hexo/essays)：这里是关于具体事或物的评论或想法，包括影评、书评、社评等，是围绕具体话题的看法。
-- [沉思](/hexo/categories/contemplation)：_哲学是傍晚起飞的猫头鹰。_ 这里是一些抽象的思想，是关于精神世界的思考。
+- [杂谈](/hexo/essays)：这里是关于具体事或物的评论或想法，包括影评、书评、社评等，是围绕具体现实话题的看法。
+- [沉思](/hexo/categories/contemplation)：**哲学是傍晚起飞的猫头鹰。** 这里是一些抽象的思想，是关于精神世界的思考。
 - [简记](/hexo/categories/diary)：这里主要是记述性质的，简短记录一些生活中发生的事情，或者作为某种备忘，可能掺杂一些想法，类似于日记。
 - [随想](/hexo/categories/memo)：这里是零碎的想法，大部分没有被深思熟虑，并不完备自洽，比较随意。
 - [动态](/hexo/categories/dynamic)：这里是一些持续更新的博客。
@@ -31,17 +31,16 @@ comment: true
   - 落叶归根 影评
   - 卡夫卡 陀思妥耶夫斯基
   - 神，人，人造人和弑父
-  - 存在主义危机和哲学入门
+  - 哲学入门推荐
 - 沉思
   - 坚持做理想主义者
   - 饥饿的死刑犯
   - 多元思考，有矛盾的生活 后现代的生活
 - 简记
-  - 独居
+  - 周记
 - 随想
   - 表演式的伪善
   - mbti看法/whoami
-- [cafe](/hexo/food) 把我的“小餐馆”的介绍完整一下
 
 ## 关于我
 
@@ -283,25 +282,22 @@ comment: true
 - 平原上的夏洛克
 - 法外之徒
 - 宫崎骏
+- 寄生兽
 
 </details>
-
-### 歌单
 
 ## 我的小技能和爱好
 
 莫名其妙地习得了许多奇奇怪怪的知识、技能，我想这些是对“我是谁”的重要补充：人不只靠那些主要的特征定义，而是靠那些繁复的细节同其他人区分开来。
 
 - 计算机
-
   - 网页（比如这个博客，虽然是用github的模板[redefine](https://ohevan.com/) ）
   - archlinux 的安装（现在在用btrfs和dwm）和删除（指 `sudo rm -rf /`）
   - (neo)vim 的简单配置使用
   - 尝试装一个lfs
-
 - 运动
   - 足球
   - 长跑（跑过几次半马勉强可以说是业余爱好者吧）
   - 骑车（这个刚刚开始）
 - [调酒](https://hiraethecho.github.io/wiki/Life/cocktail/)
-- 做饭（[搬宿舍后](/hexo/diary/dormitory)开始学，会[一些](/hexo/diary/cook)简单的。）[这里开始学，会[一些](/hexo/diary/cook)简单的。）[这里](/hexo/food)是我的小菜单。
+- 做饭（[搬宿舍后](/hexo/diary/dormitory)开始学，会[一些](/hexo/diary/cook)简单的。）
