@@ -2,7 +2,7 @@
 title: 做题家、数学家和无良媒体
 tags: []
 published: true
-date:
+date: 2024-06-15
 updated:
 categories:
 index_img:
