@@ -1326,27 +1326,12 @@ hexo-tag-aplayer@^3.0.4:
     hexo-util "^0.1.7"
     meting "^1.2.0"
 
-hexo-theme-keep@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.npmjs.org/hexo-theme-keep/-/hexo-theme-keep-4.1.0.tgz"
-  integrity sha512-DD02mKZ9NchyzWkhoM1BsMSScwhdlQMYJcRBlm8jjvMOg6+f1YWhVCt1VzccXVZO0OFUDY/kuysyByS+QXRmMA==
-
-hexo-theme-landscape@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/hexo-theme-landscape/-/hexo-theme-landscape-1.0.0.tgz"
-  integrity sha512-bWQJWMqQI78wWiJPQZq5pJBH20TM442ShCaHGRetuEgMraxH0OKxB3NTupJzNEkzEk8DV2yrdizkXdKN6i501A==
-
 hexo-theme-redefine@^2.6.1:
   version "2.6.1"
   resolved "https://registry.npmmirror.com/hexo-theme-redefine/-/hexo-theme-redefine-2.6.1.tgz"
   integrity sha512-Ebn3/6dr0j9Tt9MmI2jD7EOyMQuxY0wc67S9JyGp/W2pTTC363NxTUKgHU8RHXWXhYGDG/bbYFttK/Actpnnaw==
   dependencies:
     postcss "^8.4.28"
-
-hexo-theme-volantis@^5.8.0:
-  version "5.8.0"
-  resolved "https://registry.npmmirror.com/hexo-theme-volantis/-/hexo-theme-volantis-5.8.0.tgz"
-  integrity sha512-Ap8xHssnfEj6eNIoGMVJNiGUza0azPlXcnMaoVa+N69981W9VQ4QSWiylw4kyhE7uu21nCUWxFH7RptyLzDxkw==
 
 hexo-util@^0.1.7:
   version "0.1.7"
@@ -2686,11 +2671,6 @@ rimraf@~2.4.0:
   integrity sha512-J5xnxTyqaiw06JjMftq7L9ouA448dw/E7dKghkP9WpKNuwmARNNg+Gk8/u5ryb9N/Yo2+z3MCwuqFK/+qPOPfQ==
   dependencies:
     glob "^6.0.1"
-
-s@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/s/-/s-1.0.0.tgz"
-  integrity sha512-Tz63UXhdEBvvIV6Q0a+AV2Dx1TPq+vVWNYBxyCT9TG0uqn9kySwFTjfq3C1YuGBRwYtt9Tof11L6GCKi88foqw==
 
 sade@^1.7.3:
   version "1.8.1"
