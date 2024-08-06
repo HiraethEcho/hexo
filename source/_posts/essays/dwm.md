@@ -8,7 +8,7 @@ categories:
 index_img:
 archive:
 password:
-excerpt:
+excerpt: 关于linux C dwm等
 mathjax:
 ---
 # 近期折腾的archlinux
