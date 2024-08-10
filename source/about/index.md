@@ -41,6 +41,7 @@ comment: true
 - 随想
   - 表演式的伪善
   - mbti看法/whoami
+  - linus Richard Matthew Stallman, RMS 开源，自由；技术，政治。
 
 ## 关于我
 
@@ -52,7 +53,7 @@ comment: true
 
 正在看的书：
 
-《女性主义》李银河<progress max=306 value=99></progress>
+<!-- 《女性主义》李银河<progress max=306 value=99></progress> -->
 
 <details><summary>一些读过并认为值得一记来帮助了解我的书：</summary>
 
@@ -77,6 +78,7 @@ comment: true
 - 抑郁症的历史
 - [单向度的人](/hexo/essays/one-dimensional-man)
 - 消费社会 2024-03-14
+- 工作，消费主义和新穷人 2024-08-09
 - 他者的消失
 - 论人类不平等的起源和基础
 - 家庭、私有制和国家的起源
@@ -102,6 +104,7 @@ comment: true
 - 生命是什么
 - 物理学的困惑
 - 未来五十年
+- Just for fun, Linus 自传
 </details>
 
 <details><summary>一些读过并且喜欢的书，或者对我影响明显的书</summary>
@@ -130,6 +133,7 @@ comment: true
 
 - 诗人的迟缓
 - 地下室手记
+- 景观社会
 - 机械复制时代的艺术品
 - 对空演说
 - 全球通史
@@ -139,7 +143,6 @@ comment: true
 - 科学革命的结构
 - 博尔赫斯
 - 鲁迅
-- 鲍德里亚
 - 卡夫卡
 </details>
 
@@ -153,6 +156,7 @@ comment: true
 - 瑞士军刀男
 - 甲方乙方
 - 瞬息全宇宙
+- 从21世纪安全撤离
 - 罗小黑战记
 - JOJO 动画1-6 漫画飙马野郎
 - 动物狂想曲
@@ -247,7 +251,7 @@ comment: true
 - 酒精计划
 - 困在时间里的父亲
 - 落叶归根
-- 婚姻故事
+- [婚姻故事](/hexo/essays/marriage)
 - 红辣椒 千年女优 东京教父 未麻的部屋
 - 海边的曼彻斯特
 - 搏击俱乐部

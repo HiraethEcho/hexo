@@ -6,7 +6,7 @@ comment: true
 ---
 # 即刻
 ## 动态
-下面是用Airtalk搭建的动态，部署在Netify和LeanCloud。网络连接比较慢，可以多刷新几次试试。
+下面是用Airtalk搭建的动态，函数部署在Netify，数据在LeanCloud。网络连接比较慢，可以多刷新几次试试。
 <!-- 引用 artitalk -->
 <script type="text/javascript" src="https://unpkg.com/artitalk"></script>
 <!-- 存放说说的容器 -->
