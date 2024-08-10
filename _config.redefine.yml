@@ -25,9 +25,9 @@ defaults:
   # Favicon
   favicon: /img/web_icon.jpeg
   # Site logo
-  logo: /img/web_icon.jpeg 
+  logo: /img/icon.jpeg 
   # Site avatar
-  avatar: /img/avatar.jpeg
+  avatar: /img/avatar.png
 # IMAGE CONFIGURATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -39,7 +39,7 @@ colors:
   # Secondary color (TBD)
   secondary:
   # Default theme mode initial value (will be overwritten by prefer-color-scheme)
-  default_mode: light # light, dark
+  default_mode: dark # light, dark
 # COLORS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
