@@ -2,7 +2,7 @@
 title: 每周一记 06/24 - 06/30
 tags: [daily]
 published: true
-date:
+date: 2024-06-30
 updated:
 categories:
 index_img:
