@@ -24,13 +24,11 @@ sticky: 80
 ## 近期文章
 
 - [虚无主义、存在主义与荒诞主义](/hexo/essays/introexistentialism)
-- [考博](/hexo/diary/phd)
-- [考博后续](/hexo/diary/intophd) (new)
+- [考博后续](/hexo/diary/intophd) 
 
 ### 有更新的文章
 
-- [死于生](/hexo/dynamic/deathandlive) 2024-04-01 更新
-
+- [短影评](/hexo/dynamic/bookfilmmusicreview)
 
 
 ## 推荐阅读列表
@@ -59,7 +57,6 @@ sticky: 80
 ### 呓语
 
 - [我存在](/hexo/contemplation/Existence)
-- [感情](/hexo/contemplation/loveillusion)
 - [死亡与自由](/hexo/contemplation/free-and-death)
 - [时间之矢](/hexo/memo/arrowoftime)
 
