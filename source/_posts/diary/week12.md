@@ -2,7 +2,7 @@
 title: 每周一记 08/26 - 08/31
 tags:
   - daily
-published: false
+published: true
 excerpt: 在上海开会的一周
 date:
 updated:
@@ -23,3 +23,4 @@ mathjax:
 周二吃完晚宴去喝酒。上次去复旦开会，某个晚上出去喝酒，和一个调酒师聊得开心，这次还去找他。  
 去了新的酒吧，小小一个，很喜欢。喝了血与沙、hanky panky，挺好。还被送了一杯山崎，真不错。  
 然后就吹空调感冒了，后面几天好难受。
+
