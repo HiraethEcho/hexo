@@ -4,7 +4,7 @@ tags:
   - daily
 published: true
 excerpt: 在上海开会的一周
-date:
+date: 2024-08-31
 updated:
 categories:
 index_img:
