@@ -4,7 +4,7 @@ tags:
   - daily
 published: true
 excerpt: 开学第一周
-date:
+date: 2024-09-07
 updated:
 categories:
 index_img:
