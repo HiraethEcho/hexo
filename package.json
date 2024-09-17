@@ -23,12 +23,13 @@
     "hexo-generator-searchdb": "^1.4.1",
     "hexo-generator-tag": "^2.0.0",
     "hexo-renderer-ejs": "^2.0.0",
-    "hexo-renderer-marked": "^6.1.1",
+    "hexo-renderer-markdown-it-plus": "^1.0.6",
     "hexo-renderer-stylus": "^3.0.0",
     "hexo-server": "^3.0.0",
     "hexo-tag-aplayer": "^3.0.4",
     "hexo-theme-redefine": "^2.6.1",
     "hexo-wordcount": "^6.0.1",
+    "mdit-plugin-callouts": "^1.2.0",
     "remark": "^14.0.3"
   }
 }

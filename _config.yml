@@ -98,7 +98,7 @@ pagination_dir: page
 # Automatically Excerpt. Not recommend.
 # Please use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
-  enable: true
+  enable: false
   length: 10
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
@@ -174,30 +174,13 @@ marked:
   descriptionLists: true
   markdown:
     indent: 2
-# markdown:
-#   preset: 'default'
-#   render:
-#     html: true
-#     xhtmlOut: false
-#     langPrefix: 'language-'
-#     breaks: true
-#     linkify: true
-#     typographer: true
-#     quotes: '“”‘’'
-#   enable_rules:
-#   disable_rules:
-#   plugins:
-#   anchors:
-#     level: 2
-#     collisionSuffix: ''
-#     permalink: false
-#     permalinkClass: 'header-anchor'
-#     permalinkSide: 'left'
-#     permalinkSymbol: '¶'
-#     case: 0
-#     separator: '-'
-#   images:
-#     lazyload: false
-#     prepend_root: true
-#     post_asset: false
-#   inline: false  # https://markdown-it.github.io/markdown-it/#MarkdownIt.renderInline
+
+# markdown_it_plus 语法渲染插件选项
+markdown_it_plus:
+    plugins:
+        # Obsidian Callouts
+        - plugin:
+            name: mdit-plugin-callouts
+            enable: true
+            options:
+                # this is plugin option
