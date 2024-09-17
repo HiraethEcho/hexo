@@ -2,10 +2,10 @@
 title: 每周一记 09/08 - 09/14
 tags:
   - daily
-published: false
+published: true
 excerpt: 上课第一周
 date: 2024-09-14
-updated:
+updated: 2024-09-17 14:06
 categories:
 index_img:
 archive:
@@ -25,6 +25,11 @@ post-bchm主要是lc或者non-Q-factorial的情况，但是同样是复杂的归
 除此之外还有很多别的topics，例如canonical bundle formula之类的。
 
 周五大佬突然发消息，问我foliated flop的情况，然后指点了一番，发现non-Q-fac的情况似乎有很简单的做法。关键在于potential klt的情况可以直接做Q-factorialization，和lc的情况方法是不一样的，结论也不一样。但是要学Q-factorialization lift，检查。
+
+> update:
+> 第二周周一又讨论了一会儿，然后大佬开始咔咔敲字，在overleaf上写完初稿。毫无参与感，心态爆炸。  
+> 然后说接下来干foliated sarkisov program，9/23线下见面讨论。
+
 ## 书影音
 开始看《景观社会》，完全看不懂。《时髦的空话》含金量还在上升。开始尝试《规劝与惩罚导读》
 
