@@ -13,6 +13,81 @@ tags:
 
 ## 功能展示
 
+### callouts
+:::row:::
+   :::column span="2":::
+      **This is a 2-span column with lots of text.**
+
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum mollis nunc
+      ornare commodo. Nullam ac metus imperdiet, rutrum justo vel, vulputate leo. Donec
+      rutrum non eros eget consectetur.
+   :::column-end:::
+   :::column span="":::
+      **This is a single-span column with an image in it.**
+
+   :::column-end:::
+:::row-end:::
+
+why?
+
+<div class="callout success">这是一个成功提示的内容。</div>
+<div class="callout info">这是一个信息提示的内容。</div>
+<div class="callout warning">这是一个警告提示的内容。</div>
+<div class="callout danger">这是一个危险提示的内容。</div>
+
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+
+> [!note]
+> Useful information that users should know, even when skimming content.
+
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
+
+more
+
+> [!seealso]
+> test for seealso
+
+
+> [!TODO]
+
+> [!bug]
+
+> [!example]
+
+> [!info]
+
+> [!quote]
+
+> [!cite]
+
+> [!success]
+
+> [!failure]
+
+> [!question]
+
+> [!help]
+
+> [!attention]
+> why
+>> [!note]
+>> what
+> a hell
+
+> [!abstract]
+
+- [ ] checkbox empty
+- [-] checkbox on going
+- [x] checkbox done
+
 ### Note Large大号提示块
 
 {% btn center large::Note Large大号提示块文档::https://redefine-docs.ohevan.com/modules/notes#%E5%A4%A7%E5%8F%B7%E6%8F%90%E7%A4%BA%E5%9D%97::fa-solid fa-book %}
@@ -176,59 +251,6 @@ regular 按钮适合独立于段落之外：
 large 按钮更具有强调作用，建议搭配 center 使用：
 
 {% btn center large::Button 按钮模块 开始使用::https://redefine-docs.ohevan.com/modules/buttons::fa-solid fa-book %}
-
-### callouts
-why?
-
-
-> [!TIP]
-> Helpful advice for doing things better or more easily.
-
-> [!NOTE]
-> Useful information that users should know, even when skimming content.
-
-> [!IMPORTANT]
-> Key information users need to know to achieve their goal.
-
-> [!WARNING]
-> Urgent info that needs immediate user attention to avoid problems.
-
-> [!CAUTION]
-> Advises about risks or negative outcomes of certain actions.
-
-> [!seealso]
-> test for seealso
-
-more
-
-> [!TODO]
-
-> [!bug]
-
-> [!example]
-
-> [!info]
-
-> [!quote]
-
-> [!cite]
-
-> [!success]
-
-> [!failure]
-
-> [!question]
-
-> [!help]
-
-> [!attention]
-
-> [!abstract]
-
-- [ ] checkbox empty
-- [-] checkbox on going
-- [x] checkbox done
-
 ## 📄 文档
 
 请阅读 [Redefine 主题官方文档](https://redefine-docs.ohevan.com/) 进行主题配置与安装，非常简单易懂。
