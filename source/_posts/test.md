@@ -178,12 +178,14 @@ large 按钮更具有强调作用，建议搭配 center 使用：
 {% btn center large::Button 按钮模块 开始使用::https://redefine-docs.ohevan.com/modules/buttons::fa-solid fa-book %}
 
 ### callouts
+why?
 
-> [!NOTE]
-> Useful information that users should know, even when skimming content.
 
 > [!TIP]
 > Helpful advice for doing things better or more easily.
+
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
 
 > [!IMPORTANT]
 > Key information users need to know to achieve their goal.
@@ -193,6 +195,9 @@ large 按钮更具有强调作用，建议搭配 center 使用：
 
 > [!CAUTION]
 > Advises about risks or negative outcomes of certain actions.
+
+> [!seealso]
+> test for seealso
 
 more
 

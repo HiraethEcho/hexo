@@ -436,7 +436,7 @@ inject:
   enable: true
   # Inject custom head html code
   head: 
-    - <link rel="stylesheet" href="/css/callouts.css">
+    - <link rel="stylesheet" href="/css/callouts.css?1">
     # 静态文件后面加个  ?任意内容  可以在每次更新之后用户自动重新请求.
     # 例如添加 ?1 ,在修改此文件后改成 ?2 ,用户访问你的网站时,不会使用本地的缓存,而是请求新的内容。没修改的话就不用动。
   # Inject custom footer html code
