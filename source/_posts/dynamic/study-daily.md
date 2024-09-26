@@ -1,7 +1,7 @@
 ---
 title: 学习日记
-tags: []
-published: false
+tags: [study]
+published: true
 date: 2024-09-26
 updated: 2024-09-26 09:40
 categories:
@@ -14,6 +14,10 @@ sticky: 90
 # 学习记录
 
 希望能（几乎）每天都保持学习，每天都学到一点东西，或者做一点努力。目标是每天的学习工作，能写下至少一句话。
+
+## 2024-09-26 周四
+上午师弟讲foliation，没听。  
+吃完饭和老板讲了一下看的例子。toric似乎很有搞头。
 
 ## 2024-09-25 周三
 继续看flip/flop的例子，查了一些文献，发现其实总够就两个，一个是最原始的（用来证明三维MMP不可行的）例子，一个是Debarre的projective cone over segre embedding of $\mathbb{P}^r\times \mathbb{P}^s$.  
