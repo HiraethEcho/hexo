@@ -2,7 +2,7 @@
 title: 对脱口秀的一些看法
 tags: [comedy, life]
 published: true
-date:
+date: 2024-09-18
 updated:
 categories:
 index_img:
