@@ -14,6 +14,7 @@ sticky: 90
 # 学习记录
 
 希望能（几乎）每天都保持学习，每天都学到一点东西，或者做一点努力。目标是每天的学习工作，能写下至少一句话。
+## 2024-09-27 周五
 
 ## 2024-09-26 周四
 上午师弟讲foliation，没听。  
@@ -33,6 +34,3 @@ sticky: 90
 中午讨论了一下，主要是关于foliated Sarkisov Program. Liu的意思是，似乎可以考虑adjoint foliation，即$K=tK_{\mathcal{F}}+(1-t)K_X +B+M_X$，这个太复杂了。  
 我的想法是用Hacon McKernan的方法，用divisor的polytope分解。可能要把BCHM的主要定理全部重写，不过应该不怎么用归纳。重点是decomposition的定理，和finiteness of LCM/AM/WLCM/LTM。难点是所有对klt的toggle boundary操作都要放到nef part。这样polytope $\mathcal{E}_A(V)$的定义要修改，要把nef part也放进去。   
 有机会，但是也许不大。
-
-
-

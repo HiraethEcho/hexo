@@ -15,36 +15,34 @@ sticky: 80
 
 **想要追更的朋友可以在下方评论留言（需要邮箱），有值得看的更新时会邮件通知。**
 
-{% note danger  %}
-施工中
-{% endnote %}
-
 这个博客有些是留作自己记录的，也有一些是想要写下来给朋友看的，有时候过去的文章也有更新。总之，因此在这里放一些链接，可以从这里跳转
 
 ## 近期文章
+暂时没啥值得看的
 
-- [虚无主义、存在主义与荒诞主义](/hexo/essays/introexistentialism)
-- [考博后续](/hexo/diary/intophd) 
 
-### 有更新的文章
-
-- [短影评](/hexo/dynamic/bookfilmmusicreview)
+## 长期更新的
+- [周记](/hexo/diary/week)
+- [学习记录](/hexo/dynamic/study-daily)
 
 
 ## 推荐阅读列表
-&emsp;&emsp;这里是一些我觉得自己写的值得一读的文章：
-
-(好像没几篇值得看的啊)
 
 ### 杂谈
 - [民主制度](/hexo/essays/democracyold)：这篇实际上是政治课大作业
 - [科学与认识论](/hexo/essays/science)：这篇也是政治课大作业
+- [第九艺术](/hexo/essays/art9game)：猿神视频观后感
+- [神、人、人造人](/hexo/essays/replicant)：神话中神依自身形象创造人的形象，而现实中人依照自身形象创造了神的形象，并且模仿神的形象企图创造“人造人”以使自身成为神。这一篇列举了一些与此现象相关的文艺作品，但暂时没能总结或分析出来什么东西。
+- [脱口秀](/hexo/essays/talkshow)：谈谈脱口秀，我的认知和喜好
+- [对父母形象的表演](/hexo/memo/actingparents)：某些情况下，为人父母是一种表演。扮演父母的角色以获得某种满足感
 
 ### 影评、书评
 
 影评：
 - [河边的错误](/hexo/essays/onlytheriverflows)
 - [年会不能停](/hexo/essays/JohnnyKeepWalking)
+- [从21世纪安全撤离](/hexo/essays/evacuate)
+- [芭比](/hexo/essays/Barbie)：写的头几篇影评之一。
 
 书评：
 
@@ -53,12 +51,14 @@ sticky: 80
 ### 安利
 
 - [Dota2](/hexo/diary/ti12)
+- [dwm和linux](/hexo/essays/dwm)：btw, I use arch. 关于折腾linux和dwm的非技术细节记录。
+- [存在主义哲学](/hexo/essays/introexistentialism)：对存在主义哲学的粗浅理解
 
 ### 呓语
 
-- [我存在](/hexo/contemplation/Existence)
 - [死亡与自由](/hexo/contemplation/free-and-death)
 - [时间之矢](/hexo/memo/arrowoftime)
+- [一首小诗](/hexo/memo/No)
 
 ## 关于了解我的文章
 - [原生家庭](/hexo/essays/homeless)
