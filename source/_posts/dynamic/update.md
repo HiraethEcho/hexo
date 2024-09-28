@@ -9,7 +9,7 @@ index_img:
 archive:
 password:
 excerpt: 近期更新或过去的，可能值得一看（希望被看）的文章
-sticky: 80
+sticky: 100
 ---
 # 更新与推荐
 

@@ -14,7 +14,13 @@ sticky: 90
 # 学习记录
 
 希望能（几乎）每天都保持学习，每天都学到一点东西，或者做一点努力。目标是每天的学习工作，能写下至少一句话。
+## 2024-09-28 周六
+把昨天的内容敲了点latex，在overleaf上共享给老板了。希望国庆假期可以搞完并且最终加到论文里。
+
 ## 2024-09-27 周五
+学了projective bundle的toric描述，主要是$\mathbb(\oplus \mathcal{O}(a_i)) \to \mathbb{P}^s$的情况。这个情况就是之前atiyah flop及其推广的例子，可以做一些具体的计算。大概是清楚各自的fan是什么，以及blow up对应的是什么。  
+但是intersection number还没算清楚，能搞出来foliation flop，但是还没搞出来minimal model.  
+另外，这些和那个rolled surface或者说$\mathbb{F}_n$的elementary transform似乎有关系，也能推广。如果这样的话，可能可以把这些和toric foliation联系起来。
 
 ## 2024-09-26 周四
 上午师弟讲foliation，没听。  
