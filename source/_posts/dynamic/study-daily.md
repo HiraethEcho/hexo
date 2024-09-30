@@ -14,7 +14,17 @@ sticky: 90
 # 学习记录
 
 希望能（几乎）每天都保持学习，每天都学到一点东西，或者做一点努力。目标是每天的学习工作，能写下至少一句话。
+## 2024-09-30 周一
+中午和老板讲了一下前几天学的东西。
+## 2024-09-29 周日
+又看了那个nagata surface的分解，也是projective bundle. 有一个blow up搞不明白
+$$
+\mathcal{F}_{n-1,n}^{n} \to \mathcal{F}_n
+$$
+多学了一些相交数，但是其实$\overline{NE}(X_\Sigma)$还是不清楚，这样的话构造minimal model 有点费劲，除非加个boundary得到trival foliated log canonical divisor。只是这样的话有点丑陋。  
+除此之外还差一个lc的singularity条件要验证。
 ## 2024-09-28 周六
+白天骑车，没学习。
 把昨天的内容敲了点latex，在overleaf上共享给老板了。希望国庆假期可以搞完并且最终加到论文里。
 
 ## 2024-09-27 周五
