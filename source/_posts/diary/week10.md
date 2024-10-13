@@ -1,13 +1,14 @@
 ---
 title: 每周一记 08/12 - 08/18
-tags: [daily]
-published: false
+tags:
+  - daily
+published: true
 date: 2024-08-18
-updated:
-categories:
-index_img:
-archive:
-password:
+updated: 
+categories: 
+index_img: 
+archive: 
+password: 
 excerpt: 比流水账更无聊的周记，但比什么都不记好
 mathjax:
 ---
