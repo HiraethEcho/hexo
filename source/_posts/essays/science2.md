@@ -1,5 +1,5 @@
 ---
-title: science2
+title: 作为一种认识论与方法论的科学
 tags: []
 published: false
 date:
