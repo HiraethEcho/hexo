@@ -5,7 +5,7 @@ layout: about
 comment: true
 ---
 
-## 关于本站
+# 关于本站
 
 这是我的个人博客，是我的[学术主页](https://hiraethecho.github.io)和[知识wiki](https://hiraethecho.github.io/wiki)（这两个都没认真搭建）外的，或者说我的“主业”之外的我自己。
 
@@ -15,7 +15,7 @@ comment: true
 (n.) homesickness to a home to which you cannot return, or a home which may never have been: the grief of the lost places of your past.
 {% endnotel %}
 
-### 分类 categories
+## 分类 categories
 
 - [杂谈](/hexo/essays)：这里是关于具体事或物的评论或想法，包括影评、书评、社评等，是围绕具体现实话题的看法。
 - [沉思](/hexo/categories/contemplation)：**哲学是傍晚起飞的猫头鹰。** 这里是一些抽象的思想，是关于精神世界的思考。
@@ -23,9 +23,11 @@ comment: true
 - [随想](/hexo/categories/memo)：这里是零碎的想法，大部分没有被深思熟虑，并不完备自洽，比较随意。
 - [动态](/hexo/categories/dynamic)：这里是一些持续更新的博客。
 
-### 计划中
+## 计划中
 
-&emsp;&emsp;一些计划中要写的博客:
+[这里](/hexo/dynamic/kanban)是我的写作计划。实际上使用`obsidian`的`kanban`插件构造的，表示博客处于哪个阶段。
+
+&emsp;&emsp;下面是按类型分类未完成的博客:
 
 - 杂谈
   - 落叶归根 影评
@@ -45,7 +47,7 @@ comment: true
 
 ## 关于我
 
-中科院基础数学在读研究生
+中科院基础数学在读博士。
 
 不知道如何介绍我自己，姑且先放一点列表在这里。
 
@@ -53,7 +55,7 @@ comment: true
 
 正在看的书：
 
-<!-- 《女性主义》李银河<progress max=306 value=99></progress> -->
+《女性主义》李银河<progress max=306 value=1></progress>
 
 <details><summary>一些读过并认为值得一记来帮助了解我的书：</summary>
 
@@ -156,7 +158,7 @@ comment: true
 - 瑞士军刀男
 - 甲方乙方
 - 瞬息全宇宙
-- 从21世纪安全撤离
+- [从21世纪安全撤离](/hexo/essays/evacuate)
 - 罗小黑战记
 - JOJO 动画1-6 漫画飙马野郎
 - 动物狂想曲
@@ -192,7 +194,7 @@ comment: true
 - 了不起的盖茨比
 - 伯德小姐
 - 小妇人
-- 芭比
+- [芭比](/hexo/essays/Barbie)
 - 人工智能
 - 返老还童
 - 普罗米修斯 异形：契约
@@ -206,6 +208,7 @@ comment: true
 - 追凶者也
 - 后会无期
 - 飞驰人生
+- [飞驰人生2](/hexo/essays/pegasus2)
 - 宇宙探索俱乐部
 - 一出好戏
 - 呆头鹅
@@ -231,6 +234,8 @@ comment: true
 - 白日焰火
 - 老无所依
 - 无名之辈
+- 无问西东
+- 寄生兽
 </details>
 
 <details><summary>一些看过并且喜欢的电影</summary>
@@ -251,7 +256,8 @@ comment: true
 - 酒精计划
 - 困在时间里的父亲
 - 落叶归根
-- [婚姻故事](/hexo/essays/marriage)
+- 婚姻故事
+<!-- - [婚姻故事](/hexo/essays/marriage) -->
 - 红辣椒 千年女优 东京教父 未麻的部屋
 - 海边的曼彻斯特
 - 搏击俱乐部
@@ -286,7 +292,6 @@ comment: true
 - 平原上的夏洛克
 - 法外之徒
 - 宫崎骏
-- 寄生兽
 
 </details>
 

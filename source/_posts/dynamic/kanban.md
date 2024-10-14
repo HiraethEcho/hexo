@@ -1,54 +1,63 @@
 ---
+
 kanban-plugin: board
 title: 博客计划
-tags: [plan]
+tags:
+  - plan
 published: true
 date: 2024-10-14
 updated: 2024-10-14
-categories:
-index_img:
-archive:
-password:
+categories: 
+index_img: 
+archive: 
+password: 
 excerpt: 我的博客计划。实际上是obsidan的kanban插件格式，但也能用hexo写和渲染
-mathjax:
+mathjax: 
+
 ---
 
-## 灵感 in my mind
+## 博客计划
+
+- [ ] 为了`obsidian`和`hexo`的协调，这些内容要用checkbox格式写，这几句也是。借用软件发布的阶段划分。
+- [x] **Ideas in my mind**包含想法、纸质草稿，没有电子版
+- [x] **alpha version**有电子版，但没有发布。不同于内部测试版，这里主要是没写完的意思。
+- [x] **Beta version**是刚写完的草稿，以及在修改中的版本。
+- [x] **rc version**是调整后的版本，但不确定是否最终版。
+- [x] **Stable version**是确定不再修改的版本。
+
+
+## Ideas in my mind
 
 - [ ] 饥饿的死刑犯
 - [ ] 后现代
-- [ ] 女性主义者男性
+- [ ] 身为男性的女性主义者
 - [ ] copyleft
+- [ ] 理性主义者的辩白
 
 
-## 构思/沉淀 on my book
-
-- [ ] 理性主义者
-
-
-## 草稿 in hexo
+## Alpha version (unpublished) 草稿
 
 - [-] [再评脱口秀](/hexo/essays/talkshow-patch)
 
 
-## 冷静期 not published
+## Beta version (published)
 
-- [ ] [反思](/hexo/essays/introspection)
-
-
-## 完善中 rewrite
+- [x] [反思](/hexo/essays/introspection)
 
 
+## rc version
 
-## 已发布 published
 
-- [ ] [脱口秀](/hexo/essays/talkshow)
+
+## stable version
+
+- [x] [脱口秀](/hexo/essays/talkshow)
 
 
 
 
 %% kanban:settings
 ```
-{"kanban-plugin":"board","list-collapse":[false,false,false,false,false,false]}
+{"kanban-plugin":"board","list-collapse":[true,false,false,false,false,true]}
 ```
 %%
