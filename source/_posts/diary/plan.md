@@ -1,13 +1,14 @@
 ---
 title: 做点计划
-tags: []
+tags:
+  - plan
 published: true
 date: 2024-10-02
-updated:
-categories:
-index_img:
-archive:
-password:
+updated: 
+categories: 
+index_img: 
+archive: 
+password: 
 excerpt: 做一些必执行不了的计划吧
 mathjax:
 ---

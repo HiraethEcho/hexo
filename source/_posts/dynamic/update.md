@@ -20,11 +20,11 @@ sticky: 100
 ## 近期文章
 一个系列：
 - [脱口秀](/hexo/essays/talkshow)：谈谈脱口秀，我的认知和喜好
+- [反思](/hexo/essays/introspection)：对上一篇内容的反思
 
-## 长期更新的
+长期更新的：
 - [周记](/hexo/diary/week)
 - [学习记录](/hexo/dynamic/study-daily)
-
 
 ## 一个阅读列表
 

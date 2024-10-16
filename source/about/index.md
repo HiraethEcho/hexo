@@ -24,9 +24,12 @@ comment: true
 - [动态](/hexo/categories/dynamic)：这里是一些持续更新的博客。
 
 ## 计划中
-
-[这里](/hexo/dynamic/kanban)是我的写作计划。实际上使用`obsidian`的`kanban`插件构造的，表示博客处于哪个阶段。
-
+在[看板](/hexo/dynamic/kanban)中按进度分类的文章。这个看板实际是用`obsidian`的`kanban`插件管理的，所以格式有些奇怪。其中进度划分是借鉴程序开发的版本概念，具体来说：
+- **Ideas in my mind**包含想法、纸质草稿和电子版草稿。
+- **alpha version**有电子版，但没有发布。不同于内部测试版，这里主要是没写完的意思。或许可以加密发布，给有意愿的朋友“内部测试”。
+- **Beta version**是刚写完的、首个公开发布版本，以及在修改中的版本。
+- **rc version**是调整后的版本，但不确定是否最终版。（似乎有点多余，可以和上个阶段合并）
+- **Stable version**是确定不再修改的版本。
 &emsp;&emsp;下面是按类型分类未完成的博客:
 
 - 杂谈
@@ -55,7 +58,7 @@ comment: true
 
 正在看的书：
 
-《女性主义》李银河<progress max=306 value=1></progress>
+- 《女性主义》李银河<progress max=306 value=1></progress>
 
 <details><summary>一些读过并认为值得一记来帮助了解我的书：</summary>
 
