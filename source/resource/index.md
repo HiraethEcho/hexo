@@ -6,9 +6,8 @@ comment: true
 
 # 常用资源
 
-{% note danger  %}
-施工中
-{% endnote %}
+> [!warning] 
+> 施工中
 
 这里有一些我常用或觉得好用的网页，或者资料来源。
 

@@ -11,9 +11,8 @@ comment: true
 
 关于小站名字（同时也是我大部分账号id）的解释：
 
-{% notel green Hiraeth %}
-(n.) homesickness to a home to which you cannot return, or a home which may never have been: the grief of the lost places of your past.
-{% endnotel %}
+> [!note]
+> (n.) homesickness to a home to which you cannot return, or a home which may never have been: the grief of the lost places of your past.
 
 ## 分类 categories
 

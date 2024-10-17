@@ -97,9 +97,9 @@ pagination_dir: page
   
 # Automatically Excerpt. Not recommend.
 # Please use <!-- more --> in the post to control excerpt accurately.
-auto_excerpt:
-  enable: false
-  length: 10
+# auto_excerpt:
+#   enable: false
+#   length: 10
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
 # include:
@@ -116,6 +116,7 @@ search:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 # theme: fluid
+# theme: butterfly
 theme: redefine
 # theme: keep
 language: zh-CN
@@ -140,11 +141,7 @@ feed:
 
 # Security
 # encrypt: # hexo-blog-encrypt
-  # tags:
-  # - {name: tagName, password: 密码A}
-  # - {name: tagName, password: 密码B}
-  # theme: xray
-# #Feed Atom
+#   theme: xray
 
 all_minifier: true
 
