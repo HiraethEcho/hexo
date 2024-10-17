@@ -21,13 +21,13 @@ excerpt: 关于做饭的记录和总结
 > 不可能了，因为又要搬宿舍了，没有做饭的地方了
 
 ## 成果展示
-![鸡肉意面和麻婆豆腐](/hexoimg/food1.jpg)
-![鸡蛋羹](/hexoimg/food2.jpg)
-![地三鲜与焖饭](/hexoimg/food3.jpg)
-![火锅和烤肉](/hexoimg/food4.jpg)
-![炖菜](/hexoimg/food5.jpg)
-![宫保鸡丁](/hexoimg/food6.jpg)
-![腊肉青椒蛋炒饭](/hexoimg/food7.jpg)
+![鸡肉意面和麻婆豆腐](/hexo/img/food1.jpg)
+![鸡蛋羹](/hexo/img/food2.jpg)
+![地三鲜与焖饭](/hexo/img/food3.jpg)
+![火锅和烤肉](/hexo/img/food4.jpg)
+![炖菜](/hexo/img/food5.jpg)
+![宫保鸡丁](/hexo/img/food6.jpg)
+![腊肉青椒蛋炒饭](/hexo/img/food7.jpg)
 
 ## 学习做饭后的理论总结
 

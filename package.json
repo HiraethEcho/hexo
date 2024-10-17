@@ -37,7 +37,6 @@
   },
   "description": "This is my blog site.",
   "main": "index.js",
-  "devDependencies": {},
   "keywords": [],
   "author": "",
   "license": "ISC"
