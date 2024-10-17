@@ -9,7 +9,7 @@
     "server": "hexo server"
   },
   "hexo": {
-    "version": "6.3.0"
+    "version": "7.3.0"
   },
   "dependencies": {
     "css": "^3.0.0",
@@ -30,8 +30,15 @@
     "hexo-theme-butterfly": "^5.0.0",
     "hexo-theme-fluid": "^1.9.8",
     "hexo-theme-redefine": "^2.6.1",
+    "hexo-util": "^3.3.0",
     "hexo-wordcount": "^6.0.1",
     "mdit-plugin-callouts": "^1.2.0",
     "remark": "^15.0.1"
-  }
+  },
+  "description": "This is my blog site.",
+  "main": "index.js",
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

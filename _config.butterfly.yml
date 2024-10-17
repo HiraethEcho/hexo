@@ -53,6 +53,7 @@ social:
 # --------------------------------------
 
 favicon: /img/favicon.png
+# favicon: /img/icon.jpeg
 
 avatar:
   img: /img/butterfly-icon.png
@@ -1016,7 +1017,7 @@ css_prefix: true
 inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
-      - <link rel="stylesheet" href="/css/callout_blocks.css">
+      - <link rel="stylesheet" href="/css/callout.css">
   bottom:
     # - <script src="xxxx"></script>
 
