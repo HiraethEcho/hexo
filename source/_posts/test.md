@@ -57,6 +57,12 @@ details:
     <p>a line</p>
 </div>
 </details>
+
+<details class="custom-callout note" open=""><summary class="callout-title"><div class="callout-icon"></div><div>Note</div>
+</div></summary><div class="callout-body">
+<p>(n.) homesickness to a home to which you cannot return, or a home which may never have been: the grief of the lost places of your past.</p>
+</div>
+</details>
 ```
 > [!note]
 > note
@@ -98,12 +104,19 @@ details:
 </details>
 
 
-<details class="custom-callout note" open=""><summary class="callout-title"><div class="callout-icon"></div><div>旧方案仍然可以工作，不过操作繁琐。详见 <a href="/p/7f51af81/">这篇文章</a>。</div>
+<details class="custom-callout note" open=""><summary class="callout-title"><div class="callout-icon"></div><div>NOTE</div>
 </summary>
 <div class="callout-body">
     <p>a line</p>
 </div>
 </details>
+
+<details class="custom-callout note" open=""><summary class="callout-title"><div class="callout-icon"></div><div>Note</div>
+</summary><div class="callout-body">
+<p>(n.) homesickness to a home to which you cannot return, or a home which may never have been: the grief of the lost places of your past.</p>
+</div>
+</details>
+
 ## mark
 ```
 ==a==

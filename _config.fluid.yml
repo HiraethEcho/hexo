@@ -241,7 +241,8 @@ custom_js:
 custom_css:
   - /css/iconfont.css
   # - /css/callouts.css
-  - /css/callout.css
+  # - /css/callout.css
+  - /css/copy_callout.css
   # - /css/font.css
   - /css/glass.css
   - /css/scrollanimation.css
