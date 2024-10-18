@@ -140,8 +140,10 @@ feed:
   limit: 20
 
 # Security
-# encrypt: # hexo-blog-encrypt
-#   theme: xray
+encrypt: # hexo-blog-encrypt
+  enable: true
+  message: password
+  theme: xray
 
 all_minifier: true
 

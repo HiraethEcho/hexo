@@ -10,7 +10,6 @@ categories:
 index_img:
 archive:
 password: 1113
-message:
 excerpt: 这一篇放一些对爱情或其他感情的零碎想法
 sticky:
 ---

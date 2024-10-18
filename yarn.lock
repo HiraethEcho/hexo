@@ -1115,6 +1115,11 @@ hasown@^2.0.0, hasown@^2.0.2:
   dependencies:
     function-bind "^1.1.2"
 
+hexo-blog-encrypt@^3.1.9:
+  version "3.1.9"
+  resolved "https://registry.npmjs.org/hexo-blog-encrypt/-/hexo-blog-encrypt-3.1.9.tgz"
+  integrity sha512-dzuZiW5mD8t1FOhJXqc+IgV1Tc45YtatJb/w8k4PyT9McQxsROQXsBw+zbDembzuqMnbnkCeT2SapZ/r9AgAcw==
+
 hexo-bunyan@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/hexo-bunyan/-/hexo-bunyan-1.0.0.tgz"
