@@ -12,21 +12,91 @@ password:
 This is a test post.
 
 ## callouts
+```
 > [!note]
 > note
 
 > [!tip]
 > tip
+>> [!warning]
+>> nest
 
-> [!caution]
-> fuck
+> plain
+> text
+>> nest
 
+details:
+<details class="custom-callout note" open=""><summary class="callout-title"><div class="callout-icon"></div><div>Note</div>
+<div class="callout-fold"></div></summary><div class="callout-body">
+<p>(n.) homesickness to a home to which you cannot return, or a home which may never have been: the grief of the lost places of your past.</p>
+</div>
+</details>
+
+<details class="custom-callout tip" open=""><summary class="callout-title"><div class="callout-icon"></div><div>Tip</div>
+<div class="callout-fold"></div></summary><div class="callout-body">
+<p>tip</p>
+</div>
+</details>
+
+<details class="custom-callout tip" open=""><summary class="callout-title"><div class="callout-icon"></div><div>Tip</div>
+<div class="callout-fold"></div></summary><div class="callout-body">
+<p>tip</p>
+<details class="custom-callout warning" open=""><summary class="callout-title"><div class="callout-icon"></div><div>Warning</div>
+<div class="callout-fold"></div></summary><div class="callout-body">
+<p>nest</p>
+</div>
+</details></div>
+</details>
+```
+> [!note]
+> note
+
+
+> [!tip]
+> tip
+>> [!warning]
+>> nest
+
+> plain
+> text
+>> nest
+details:
 
 <details class="custom-callout note" open=""><summary class="callout-title"><div class="callout-icon"></div><div>Note</div>
 <div class="callout-fold"></div></summary><div class="callout-body">
 <p>(n.) homesickness to a home to which you cannot return, or a home which may never have been: the grief of the lost places of your past.</p>
 </div>
 </details>
+
+<details class="custom-callout tip" open=""><summary class="callout-title"><div class="callout-icon"></div><div>Tip</div>
+<div class="callout-fold"></div></summary><div class="callout-body">
+<p>tip</p>
+</div>
+</details>
+
+<details class="custom-callout tip" open=""><summary class="callout-title"><div class="callout-icon"></div><div>Tip</div>
+<div class="callout-fold"></div></summary><div class="callout-body">
+<p>tip</p>
+<details class="custom-callout warning" open=""><summary class="callout-title"><div class="callout-icon"></div><div>Warning</div>
+<div class="callout-fold"></div></summary><div class="callout-body">
+<p>nest</p>
+</div>
+</details></div>
+</details>
+
+## mark
+```
+==a==
+
+a~c~a
+
+a^c^
+```
+==a==
+
+a~c~a
+
+a^c^
 
 ## checkbox
 - [ ] 1

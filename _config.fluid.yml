@@ -239,9 +239,10 @@ custom_js:
 # 指定自定义 .css 文件路径，用法和 custom_js 相同
 # The usage is the same as custom_js
 custom_css:
-  - /css/custom.css
+  - /css/iconfont.css
   # - /css/callouts.css
-  - /css/font.css
+  - /css/callout.css
+  # - /css/font.css
   - /css/glass.css
   - /css/scrollanimation.css
   - https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css #调用字体
