@@ -115,9 +115,9 @@ search:
   limit: 1000
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-# theme: fluid
+theme: fluid
 # theme: butterfly
-theme: redefine
+# theme: redefine
 # theme: keep
 language: zh-CN
 
@@ -144,33 +144,6 @@ feed:
 #   theme: xray
 
 all_minifier: true
-
-marked:
-  gfm: true
-  pedantic: false
-  breaks: true
-  smartLists: true
-  smartypants: true
-  quotes: '“”‘’'
-  modifyAnchors: 0
-  anchorAlias: true
-  autolink: true
-  mangle: true
-  sanitizeUrl: false
-  dompurify: false
-  headerIds: true
-  lazyload: false
-  figcaption: false
-  prependRoot: true
-  postAsset: false
-  external_link:
-    enable: false
-    exclude: []
-    nofollow: false
-  disableNunjucks: false
-  descriptionLists: true
-  markdown:
-    indent: 2
 
 # markdown_it_plus 语法渲染插件选项
 markdown_it_plus:
