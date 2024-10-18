@@ -146,13 +146,15 @@ encrypt: # hexo-blog-encrypt
   theme: xray
 
 all_minifier: true
-
 # markdown_it_plus 语法渲染插件选项
 markdown_it_plus:
     plugins:
         # Obsidian Callouts
-        - plugin:
-            name: mdit-plugin-callouts
-            enable: true
-            options:
+      - plugin:
+          # name: markdown-it-checkbox
+          # enable: true
+      # - plugin
+          name: mdit-plugin-callouts
+          enable: true
+      #     options:
                 # this is plugin option

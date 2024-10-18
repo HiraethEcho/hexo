@@ -32,6 +32,7 @@
     "hexo-theme-fluid": "^1.9.8",
     "hexo-theme-redefine": "^2.6.1",
     "hexo-wordcount": "^6.0.1",
+    "markdown-it-checkbox": "^1.1.0",
     "mdit-plugin-callouts": "^1.2.0",
     "remark": "^15.0.1"
   }
