@@ -1,6 +1,6 @@
 ---
 title: 测试
-tags: []
+tags: [test]
 published: true
 date: 2024-10-18
 updated:
@@ -12,110 +12,65 @@ password:
 This is a test post.
 
 ## callouts
-```
+> [!important]
+> what if 
+
 > [!note]
 > note
 
 > [!tip]
 > tip
->> [!warning]
->> nest
 
-> plain
-> text
->> nest
-
-details:
-<details class="custom-callout note" open=""><summary class="callout-title"><div class="callout-icon"></div><div>Note</div>
-<div class="callout-fold"></div></summary><div class="callout-body">
-<p>(n.) homesickness to a home to which you cannot return, or a home which may never have been: the grief of the lost places of your past.</p>
-</div>
-</details>
-
-<details class="custom-callout tip" open=""><summary class="callout-title"><div class="callout-icon"></div><div>Tip</div>
-<div class="callout-fold"></div></summary><div class="callout-body">
-<p>tip</p>
-</div>
-</details>
-
-<details class="custom-callout tip" open=""><summary class="callout-title"><div class="callout-icon"></div><div>Tip</div>
-<div class="callout-fold"></div></summary><div class="callout-body">
-<p>tip</p>
-</details>
-
-
-<details class="custom-callout warning" open=""><summary class="callout-title"><div class="callout-icon"></div><div>Warning</div>
-<div class="callout-fold"></div></summary><div class="callout-body">
-<p>nest</p>
-</div>
-</details></div>
-</details>
-
-<details class="custom-callout note" open=""><summary class="callout-title"><div class="callout-icon"></div><div>旧方案仍然可以工作，不过操作繁琐。详见 <a href="/p/7f51af81/">这篇文章</a>。</div>
-</summary>
-<div class="callout-body">
-    <p>a line</p>
-</div>
-</details>
-
-<details class="custom-callout note" open=""><summary class="callout-title"><div class="callout-icon"></div><div>Note</div>
-</div></summary><div class="callout-body">
-<p>(n.) homesickness to a home to which you cannot return, or a home which may never have been: the grief of the lost places of your past.</p>
-</div>
-</details>
-```
-> [!note]
-> note
-
+> [!caution]
+> caution
 
 > [!tip]
 > tip
->> [!warning]
->> nest
 
-> plain
-> text
->> nest
+more:
+> [!faq]
+> 
 
-details:
+> [!danger]
 
-<details class="custom-callout note" open=""><summary class="callout-title"><div class="callout-icon"></div><div>Note</div>
-<div class="callout-fold"></div></summary><div class="callout-body">
-<p>(n.) homesickness to a home to which you cannot return, or a home which may never have been: the grief of the lost places of your past.</p>
-</div>
-</details>
+> [!bug]
+> 
 
-<details class="custom-callout tip" open=""><summary class="callout-title"><div class="callout-icon"></div><div>Tip</div>
-<div class="callout-fold"></div></summary><div class="callout-body">
-<p>tip</p>
-</div>
-</details>
+> [!warning]
+> a
 
-<details class="custom-callout tip" open=""><summary class="callout-title"><div class="callout-icon"></div><div>Tip</div>
-<div class="callout-fold"></div></summary><div class="callout-body">
-<p>tip</p>
-</details>
+> [!success]
 
-<details class="custom-callout warning" open=""><summary class="callout-title"><div class="callout-icon"></div><div>Warning</div>
-<div class="callout-fold"></div></summary><div class="callout-body">
-<p>nest</p>
-</div>
-</details></div>
-</details>
+> [!example]
+> h
 
+> [!cite]
 
-<details class="custom-callout note" open=""><summary class="callout-title"><div class="callout-icon"></div><div>NOTE</div>
-</summary>
-<div class="callout-body">
-    <p>a line</p>
-</div>
-</details>
+> [!info] test
 
-<details class="custom-callout note" open=""><summary class="callout-title"><div class="callout-icon"></div><div>Note</div>
-</summary><div class="callout-body">
-<p>(n.) homesickness to a home to which you cannot return, or a home which may never have been: the grief of the lost places of your past.</p>
-</div>
-</details>
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
+## fluid tags
+
+{% fold info @title %}
+需要折叠的一段内容，支持 markdown
+{% endfold %}
+
+{% note success %}
+文字 或者 `markdown` 均可
+{% endnote %}
 
 ## mark
 ```

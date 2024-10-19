@@ -240,9 +240,7 @@ custom_js:
 # The usage is the same as custom_js
 custom_css:
   - /css/iconfont.css
-  # - /css/callouts.css
-  # - /css/callout.css
-  - /css/copy_callout.css
+  - /css/callouts.css
   # - /css/font.css
   - /css/glass.css
   - /css/scrollanimation.css

@@ -1,32 +1,218 @@
- /*
- * @Author: cumany cuman@qq.com
- * @Source: Pkmer.cn
-*/
 :root {
     --un-ring-offset-shadow: 0 0 transparent;
     --un-ring-shadow: 0 0 transparent
 }
 
-.callout {
-  border:none;
-  box-shadow: inset 0 0 0 2px rgba(var(--callout-color), 0.25), 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1) !important;
-}
- .callout .callout-title {
-  padding: 6px;
-  background-color: rgba(var(--callout-color), 0.4);
-}
-
-
-.callout .callout-content {
-  background-color: rgba(var(--callout-color), 0.1);
+.custom-callout {
+    border-left: 3px solid;
+    border-radius: var(--callout-radius);
+    box-shadow: var(--un-ring-offset-shadow), var(--un-ring-shadow), var(--un-shadow);
+    margin: 1rem 0;
+    padding: 0 !important;
 }
 
+:root {
+    --callout-default: 158, 158, 158;
+    --callout-tip: 0, 191, 165;
+    --callout-info: 0, 184, 212;
+    --callout-note: 68, 138, 255;
+    --callout-important: 124, 77, 255;
+    --callout-warning: 255, 23, 68;
+    --callout-caution: 255, 145, 0;
 
-.callout {
-  padding: 0;
-  background-color:var(--admonition-bg-color);
+    --callout-radius: 5px;
+    --callout-border-opacity: 0.5;
+    --callout-title-bg-opacity: 0.08
 }
 
-.callout-content {
-  padding: 5px 15px;
+.callout-fold:before {
+    align-self: center;
+    content: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="chevron-down"><path d="m6 9 6 6 6-6"/></svg>')
+}
+
+.callout-fold {
+    display: flex;
+    transform: rotate(-90deg);
+    transition: .5s cubic-bezier(.075, .82, .165, 1)
+}
+
+.custom-callout[open] > summary > .callout-fold {
+    transform: rotate(0deg)
+}
+
+.custom-callout > summary {
+    border-top-left-radius: var(--callout-radius);
+    border-top-right-radius: var(--callout-radius);
+    cursor: pointer;
+    margin: 0;
+    padding: 1rem;
+    display: flex
+}
+
+.custom-callout > summary::marker {
+    content: ""
+}
+
+.custom-callout > summary:before {
+    margin-right: .5rem
+}
+
+.custom-callout > summary::-webkit-details-marker {
+    display: none
+}
+
+.callout-title {
+    display: flex;
+    justify-content: space-between
+}
+
+.custom-callout > .callout-body {
+    background: transparent !important;
+    border-left: none;
+    margin: 0 !important;
+    padding: .5rem 1rem;
+    position: relative
+}
+
+.custom-callout > .callout-body > p {
+    margin: 8px 0
+}
+
+.custom-callout > .callout-body > pre {
+    margin: 1.25rem -1rem
+}
+
+.custom-callout > .callout-body > pre:first-child {
+    margin-top: -.75rem
+}
+
+.custom-callout > .callout-body > pre:last-child {
+    margin-bottom: -.75rem
+}
+
+
+
+.callout-title > .callout-icon + div {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 0%;
+    -webkit-flex: 1 1 0%;
+    flex: 1 1 0%;
+    margin-left: .25rem
+}
+
+.callout-icon {
+    align-items: center;
+    color: #000;
+    display: flex
+}
+
+.callout-icon:before {
+    height: 20px;
+    width: 20px
+}
+
+
+
+/* note */
+.custom-callout.note {
+    border-color: rgba(var(--callout-note), var(--callout-border-opacity))
+}
+
+.custom-callout.note > summary {
+    background-color: rgba(var(--callout-note), var(--callout-title-bg-opacity))
+}
+
+.custom-callout.note > .callout-title > .callout-icon:before {
+    content: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="%23448AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-pencil"><path d="m18 2 4 4M7.5 20.5 19 9l-4-4L3.5 16.5 2 22z"/></svg>')
+}
+
+
+.custom-callout.note> .callout-title > .callout-icon + div{
+    color: rgba(var(--callout-note));
+}
+/* tip */
+.custom-callout.tip {
+    border-color: rgba(var(--callout-tip), var(--callout-border-opacity))
+}
+
+.custom-callout.tip > summary {
+    background-color: rgba(var(--callout-tip), var(--callout-title-bg-opacity))
+}
+
+.custom-callout.tip > .callout-title > .callout-icon:before {
+    content: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="%2300BFA5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-flame"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>')
+}
+
+.custom-callout.tip> .callout-title > .callout-icon + div{
+    color: rgba(var(--callout-tip));
+}
+
+/* important */
+.custom-callout.important {
+    border-color: rgba(var(--callout-important), var(--callout-border-opacity))
+}
+
+.custom-callout.important > summary {
+    background-color: rgba(var(--callout-important), var(--callout-title-bg-opacity))
+}
+
+.custom-callout.important > .callout-title > .callout-icon:before {
+    content: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="%237C4DFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-list"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>')
+}
+
+.custom-callout.important> .callout-title > .callout-icon + div{
+    color: rgba(var(--callout-important));
+}
+/* warning */
+
+.custom-callout.warning {
+    border-color: rgba(var(--callout-warning), var(--callout-border-opacity))
+}
+
+.custom-callout.warning > summary {
+    background-color: rgba(var(--callout-warning), var(--callout-title-bg-opacity))
+}
+
+.custom-callout.warning > .callout-title > .callout-icon:before {
+    content: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="%23FF1744" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-zap"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>')
+}
+
+.custom-callout.warning> .callout-title > .callout-icon + div{
+    color: rgba(var(--callout-warning));
+}
+
+/* caution */
+.custom-callout.caution {
+    border-color: rgba(var(--callout-caution), var(--callout-border-opacity))
+}
+
+.custom-callout.caution > summary {
+    background-color: rgba(var(--callout-caution), var(--callout-title-bg-opacity))
+}
+
+.custom-callout.caution > .callout-title > .callout-icon:before {
+    content: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="%23FF9100" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-alert-triangle"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3ZM12 9v4M12 17h.01"/></svg>')
+}
+
+.custom-callout.caution> .callout-title > .callout-icon + div{
+    color: rgba(var(--callout-caution));
+}
+
+/* default */
+
+.custom-callout {
+    border-color: rgba(var(--callout-default), var(--callout-border-opacity))
+}
+
+.custom-callout > summary {
+    background-color: rgba(var(--callout-default), var(--callout-title-bg-opacity))
+}
+
+.custom-callout .callout-title > .callout-icon + div{
+    font-weight: bold;
+    color: rgba(var(--callout-default)); /* 默认颜色 */
+}
+
+.custom-callout > .callout-title > .callout-icon:before {
+    content: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="%239E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-quote"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1zM15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>')
 }
