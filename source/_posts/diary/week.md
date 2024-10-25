@@ -1,9 +1,9 @@
 ---
 title: 每周一记
-tags: [diary]
+tags: [daily]
 published: true
 date: 2024-09-27
-updated: 2024-10-12 22:51
+updated: 2024-10-23 11:40
 categories:
 index_img:
 archive:
@@ -14,6 +14,9 @@ mathjax:
 # 周记
 每周都单独一篇，感觉有点麻烦，所以决定汇总在一起。每周一段，简要记录这一周的事情。  
 从09/23开始学习的内容在[另一篇](/hexo/dynamic/study-daily)单独记录，尽量每天更新。
+
+## 10/21 - 10/27
+听报告的一周
 
 ## 10/14 - 10/20
 咸鱼的一周。
