@@ -1,5 +1,5 @@
 ---
-kanban-plugin: list
+kanban-plugin: board
 title: 博客计划
 tags:
   - plan
@@ -22,16 +22,18 @@ mathjax:
 - [ ] copyleft
 - [ ] 理性主义者的辩白
 - [ ] [诺顿穹顶](/hexo/essays/dome)
+- [ ] [fucklinus](/hexo/memo/fucklinus)
 
 
 ## Alpha version (unpublished) 草稿
 
-- [-] [再评脱口秀](/hexo/essays/talkshow-patch)
 
 
 ## Beta version (published)
 
 - [x] [反思](/hexo/essays/introspection)
+- [-] [再评脱口秀](/hexo/essays/talkshow-patch)
+- [ ] [单向度的人](/hexo/essays/one-dimensional-man)
 
 
 ## rc version
@@ -47,6 +49,6 @@ mathjax:
 
 %% kanban:settings
 ```
-{"kanban-plugin":"table","list-collapse":[false,false,false,false,false,true],"table-sizing":{"card":286,"lane":304}}
+{"kanban-plugin":"list","list-collapse":[false,false,false,false,false,true],"table-sizing":{"card":286,"lane":304}}
 ```
 %%

@@ -29,6 +29,9 @@ comment: true
 - **Beta version**是刚写完的、首个公开发布版本，以及在修改中的版本。
 - **rc version**是调整后的版本，但不确定是否最终版。（似乎有点多余，可以和上个阶段合并）
 - **Stable version**是确定不再修改的版本。
+
+在[这里](/hexo/dynamic/update)是一些近期更新或持续更新的博客，和一些推荐。
+
 &emsp;&emsp;下面是按类型分类未完成的博客:
 
 - 杂谈

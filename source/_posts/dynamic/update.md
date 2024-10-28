@@ -20,12 +20,14 @@ sticky: 100
 ## 近期文章
 一个系列：
 - [脱口秀](/hexo/essays/talkshow)：谈谈脱口秀，我的认知和喜好
-- [反思](/hexo/essays/introspection)：对上一篇内容的反思
+- [反思](/hexo/essays/introspection)：对上一篇内容的反思。beta版本，期待修改反馈。
+- [再谈脱口秀](/hexo/essays/talkshow-patch)：对第一篇的补充。也是beta，没写完，没修改，但是先放出来，因为拖太久了。同样期待修改反馈。
 
 长期更新的：
 - [周记](/hexo/diary/week)
 - [学习记录](/hexo/dynamic/study-daily)
 
+或者[看板](/hexo/dynamic/kanban)是按进度分类的文章。这个看板实际是用`obsidian`的`kanban`插件管理的，所以格式有些奇怪。
 ## 一个阅读列表
 
 ### 杂谈
@@ -50,7 +52,6 @@ sticky: 100
 ### 安利
 
 - [Dota2](/hexo/diary/ti12)
-- [dwm和linux](/hexo/essays/dwm)：btw, I use arch. 关于折腾linux和dwm的非技术细节记录。
 - [存在主义哲学](/hexo/essays/introexistentialism)：对存在主义哲学的粗浅理解
 
 ### 呓语
