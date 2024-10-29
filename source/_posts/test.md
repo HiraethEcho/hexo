@@ -7,6 +7,7 @@ updated:
 categories:
 index_img:
 password:
+archive: true
 ---
 # test
 This is a test post.

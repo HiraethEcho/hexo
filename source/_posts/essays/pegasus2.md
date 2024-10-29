@@ -1,5 +1,5 @@
 ---
-title: 《飞驰人生2》简评
+title: 《飞驰人生2》观后感
 tags:
   - 影评
 published: true
