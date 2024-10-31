@@ -307,7 +307,7 @@ comment: true
 
 - 计算机
   - 网页（比如这个博客，虽然是用github的模板[fluid](https://hexo.fluid-dev.com/) ）
-  - archlinux 的[安装](https://hiraethecho.github.io/wiki/Code/archinstall/)（现在在用btrfs和dwm）和删除（指 `sudo rm -rf /`）
+  - archlinux 的[安装](https://hiraethecho.github.io/wiki/code/archinstall/)（现在在用btrfs和dwm）和删除（指 `sudo rm -rf /`）
   - (neo)vim 的简单配置使用
   - 尝试装一个lfs
 - 运动

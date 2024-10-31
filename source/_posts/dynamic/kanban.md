@@ -22,7 +22,7 @@ mathjax:
 - [ ] 后现代(也许系列)
 - [ ] 身为男性的女性主义者
 - [ ] copyleft
-- [ ] 理性主义者的辩白
+- [ ] [理想主义者的辩白](/hexo/contemplation/idealist)
 - [ ] [诺顿穹顶](/hexo/essays/dome)
 - [ ] [fucklinus](/hexo/memo/fucklinus)
 - [ ] [公路电影](/hexo/essays/road)
@@ -43,6 +43,7 @@ mathjax:
 ## rc version
 
 - [ ] [思政作业-民主](/hexo/essays/democracyold)
+- [ ] [对父母形象的表演](/hexo/memo/actingparents)
 
 
 ## stable version
