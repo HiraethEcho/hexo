@@ -5,7 +5,7 @@ tags:
   - life
 published: true
 date: 2024-02-24 17:55
-updated:
+updated: 2024-10-31
 katex: true
 excerpt: 新学期开始，面临一些实在的问题，突然想一扫之前的萎靡，开始好好学习规律作息。（看看这次能坚持几天hhh）
 ---

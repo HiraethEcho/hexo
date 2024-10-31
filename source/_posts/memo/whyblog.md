@@ -3,7 +3,7 @@ title: 为什么写博客？
 tags: [memo]
 published: true
 date: 2024-08-17
-updated:
+updated: 2024-10-31
 categories:
 index_img:
 archive:

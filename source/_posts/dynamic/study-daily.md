@@ -3,21 +3,23 @@ title: 学习日记
 tags: [study]
 published: true
 date: 2024-09-26
-updated: 2024-09-26 09:40
+updated: 2024-10-31
 categories:
 index_img:
 archive:
 password:
 excerpt: 每天学习内容的记录。
-sticky: 90
+sticky:
 ---
 # 学习记录
 
 希望能（几乎）每天都保持学习，每天都学到一点东西，或者做一点努力。目标是每天的学习工作，能写下至少一句话。
 
-> [!note] 2024-10-31
+> [!note] update: 2024-10-31
 > 能个P，我实在是太懒了
 
+## 2024/10/31 周四
+复习
 ## 2024/10/30 周三
 听课。放弃抵抗，不搞例子了，没意思。
 ## 2024/10/29 周二
