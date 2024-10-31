@@ -16,6 +16,10 @@ mathjax:
 <div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113054209540612&bvid=BV1ijn9eWE2k&cid=25666849975&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div>
 总之，一时兴起谈谈游戏。
 
+> [!note] 更新
+>  出了更帅的视频～
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113312427675283&bvid=BV1ZKmFYREqs&cid=26306546071&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div>
+
 ## 七/八/九大艺术
 先来回顾一下九大艺术吧：
 > 绘画、舞蹈、雕塑、文学、戏剧、建筑、音乐、电影、游戏

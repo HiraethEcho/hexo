@@ -16,11 +16,11 @@ comment: true
 
 ## 分类 categories
 
-- [杂谈](/hexo/essays)：这里是关于具体事或物的评论或想法，包括影评、书评、社评等，是围绕具体现实话题的看法。
-- [沉思](/hexo/categories/contemplation)：**哲学是傍晚起飞的猫头鹰。** 这里是一些抽象的思想，是关于精神世界的思考。
-- [简记](/hexo/categories/diary)：这里主要是记述性质的，简短记录一些生活中发生的事情，或者作为某种备忘，可能掺杂一些想法，类似于日记。
-- [随想](/hexo/categories/memo)：这里是零碎的想法，大部分没有被深思熟虑，并不完备自洽，比较随意。
-- [动态](/hexo/categories/dynamic)：这里是一些持续更新的博客。
+- [杂谈(essays)](/hexo/essays)：这里是关于具体事或物的评论或想法，包括影评、书评、社评等，是围绕具体现实话题的看法。
+- [沉思(contemplation)](/hexo/categories/contemplation)：**哲学是傍晚起飞的猫头鹰。** 这里是一些抽象的思想，是关于精神世界的思考。
+- [简记(diary)](/hexo/categories/diary)：这里主要是记述性质的，简短记录一些生活中发生的事情，或者作为某种备忘，可能掺杂一些想法，类似于日记。
+- [随想(memo)](/hexo/categories/memo)：这里是零碎的想法，大部分没有被深思熟虑，并不完备自洽，比较随意。
+- [动态(dynamic)](/hexo/categories/dynamic)：这里是一些持续更新的博客。
 
 ## 计划中
 在[看板](/hexo/dynamic/kanban)中按进度分类的文章。这个看板实际是用`obsidian`的`kanban`插件管理的，所以格式有些奇怪。其中进度划分是借鉴程序开发的版本概念，具体来说：
@@ -29,6 +29,9 @@ comment: true
 - **Beta version**是刚写完的、首个公开发布版本，以及在修改中的版本。
 - **rc version**是调整后的版本，但不确定是否最终版。（似乎有点多余，可以和上个阶段合并）
 - **Stable version**是确定不再修改的版本。
+
+在[这里](/hexo/dynamic/update)是一些近期更新或持续更新的博客，和一些推荐。
+
 &emsp;&emsp;下面是按类型分类未完成的博客:
 
 - 杂谈
@@ -148,6 +151,7 @@ comment: true
 - 博尔赫斯
 - 鲁迅
 - 卡夫卡
+- 阿多诺
 </details>
 
 ### 影单
@@ -302,13 +306,13 @@ comment: true
 莫名其妙地习得了许多奇奇怪怪的知识、技能，我想这些是对“我是谁”的重要补充：人不只靠那些主要的特征定义，而是靠那些繁复的细节同其他人区分开来。
 
 - 计算机
-  - 网页（比如这个博客，虽然是用github的模板[redefine](https://ohevan.com/) ）
-  - archlinux 的安装（现在在用btrfs和dwm）和删除（指 `sudo rm -rf /`）
+  - 网页（比如这个博客，虽然是用github的模板[fluid](https://hexo.fluid-dev.com/) ）
+  - archlinux 的[安装](https://hiraethecho.github.io/wiki/Code/archinstall/)（现在在用btrfs和dwm）和删除（指 `sudo rm -rf /`）
   - (neo)vim 的简单配置使用
   - 尝试装一个lfs
 - 运动
   - 足球
   - 长跑（跑过几次半马勉强可以说是业余爱好者吧）
-  - 骑车（这个刚刚开始）
+  - 骑车
 - [调酒](https://hiraethecho.github.io/wiki/Life/cocktail/)
 - 做饭（[搬宿舍后](/hexo/diary/dormitory)开始学，会[一些](/hexo/diary/cook)简单的。）
