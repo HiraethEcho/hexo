@@ -27,7 +27,7 @@ excerpt: 在和朋友交流后的反思，和其他思考。
 <div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="//player.bilibili.com/player.html?isOutside=true&aid=34951246&bvid=BV1kb411A7oi&cid=61232242&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div>
 
 > [!warning] 2024-10-27 update:
-> 事实证明，linus就是个asshole，他的一些方面也不配大家尊重。
+> 事实证明，linus就是个asshole，他的~~一些~~很多方面也不配大家尊重。
 
 ## 无法共情的男性
 除了“傲慢”外，朋友还指出“男的永远无法共情女性的”。
