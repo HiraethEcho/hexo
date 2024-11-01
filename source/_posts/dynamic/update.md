@@ -25,7 +25,7 @@ sticky: 100
 
 长期更新的：
 - [周记](/hexo/diary/week)
-- [学习记录](/hexo/dynamic/study-daily)
+- [学习记录](/hexo/diary/study-daily)
 
 或者[看板](/hexo/dynamic/kanban)是按进度分类的文章。这个看板实际是用`obsidian`的`kanban`插件管理的，所以格式有些奇怪。
 ## 一个阅读列表

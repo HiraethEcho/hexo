@@ -44,6 +44,7 @@ mathjax:
 
 - [ ] [思政作业-民主](/hexo/essays/democracyold)
 - [ ] [对父母形象的表演](/hexo/memo/actingparents)
+- [ ] [自由与自杀](/hexo/contemplation/free-and-death)
 
 
 ## stable version
