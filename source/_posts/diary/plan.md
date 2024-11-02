@@ -21,10 +21,12 @@ mathjax:
 - lnd的基本知识，和foliation的联系
 - foliated Sarkisov program。估计要用geography of divisors
 - BCHM 讨论班，并且尝试到foliation上
+- 和其他老师交流 arround 11/08
 
 初次之外，学校的任务
-- 复几何的课程，要考试
-- 晨兴的讨论班
+- 复几何的课程，要考试 11/06
+- 晨兴的讨论班 11/12
+
 
 ## 运动
 运动的首要目标是健康，其次是减肥。

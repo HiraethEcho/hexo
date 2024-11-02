@@ -16,15 +16,14 @@ excerpt: 谈谈和父母的关系，谈谈矛盾。对“父母”形象的表�
 &emsp;&emsp;前几天和一位在美国工作的同学聊天，谈到其长辈去美国看望，结果和长辈间产生了类似于室友矛盾的不适感。进一步的感到仿佛终于进入了叛逆期（我是这么总结概括她的逆反心理的），从乖乖女状态转化成认为长辈行为举止不合理，开始不想顺从。
 ## 和父母做室友
 &emsp;&emsp;先谈一下这个和父母做室友的感受。就我个人而言，自大学以来每次放假回家都有这种感受。我并没有把那个父母的房子当作一个家，而是一个暂居之处。当然，在学校的宿舍也是一个暂居之处。
-> Home is the place where when you have to go there, they have to take you in.<br>
+> Home is the place where when you have to go there, they have to take you in.      
 
 _（顺便一提这一句我是从动画电影里跟达米安学的，大米和渡鸦真好磕）_
 
 事实上，也许正如`人生如逆旅，我亦是行人`，我们根本都是无家可归。这也是我使用`Hiraeth`的缘由：
 
-<p class="note note-primary">
-Hiraeth: (n.) homesickness to a home to which you cannot return: the grief of the lost places of your past.
-</p>
+> [!note]
+> Hiraeth: (n.) homesickness to a home to which you cannot return: the grief of the lost places of your past.
 
 &emsp;&emsp;扯远了，说回室友。室友相处的难受之处（并不是说和室友相处总是难受的，而是说其中难受的部分），我想可以说是双方都没有错、但是互相不习惯、却又不得不迁就，这样一种无从反抗的糟糕体验。这里有两个重点：第一是双方都没有错，比如早睡早起和晚睡晚起（可能后者有一丝不符合积极向上好好学习的大学生形象），或者对冷热的不同感受（导致开关空调等问题）；第二是不得不一起居住，然后互相难受。这两点都是在学校宿舍和回家与父母同住时的难受之处。在家的时候，例如作息时间，例如吃饭时间，甚至例如洗衣服等安排，都互相冲突，但又没有什么对错之分。同时又不能提前返校或者不在家住，所以算是被迫一起。
 
