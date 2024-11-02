@@ -29,25 +29,6 @@ more:
 > [!CAUTION]
 > Advises about risks or negative outcomes of certain actions.
 
-> [!faq]
-> 
-
-> [!danger]
-
-> [!bug]
-> 
-
-> [!warning]
-> a
-
-> [!success]
-
-> [!example]
-> h
-
-> [!cite]
-
-> [!info] test
 
 ## fluid tags
 

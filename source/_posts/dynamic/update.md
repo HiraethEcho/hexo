@@ -15,38 +15,30 @@ sticky: 100
 
 **想要追更的朋友可以在下方评论留言（需要邮箱），有值得看的更新时会邮件通知。**
 
-这个博客有些是留作自己记录的，也有一些是想要写下来给朋友看的，有时候过去的文章也有更新。总之，因此在这里放一些链接，可以从这里跳转
-
-## 近期文章
+这个博客有些是留作自己记录的，也有一些是想要写下来给朋友看的，有时候过去的文章也有更新。总之，因此在这里放一些链接，可以从这里跳转。  
+或者[看板](/hexo/dynamic/kanban)是按进度分类的文章。这个看板实际是用`obsidian`的`kanban`插件管理的，所以格式有些奇怪。
+## 一些阅读列表
 一个系列：
 - [脱口秀](/hexo/essays/talkshow)：谈谈脱口秀，我的认知和喜好
 - [反思](/hexo/essays/introspection)：对上一篇内容的反思。beta版本，期待修改反馈。
-- [再谈脱口秀](/hexo/essays/talkshow-patch)：对第一篇的补充。也是beta，没写完，没修改，但是先放出来，因为拖太久了。同样期待修改反馈。
-
-长期更新的：
-- [周记](/hexo/diary/week)
-- [学习记录](/hexo/diary/study-daily)
-
-或者[看板](/hexo/dynamic/kanban)是按进度分类的文章。这个看板实际是用`obsidian`的`kanban`插件管理的，所以格式有些奇怪。
-## 一个阅读列表
+- [再谈脱口秀](/hexo/essays/talkshow-patch)：对第一篇的补充。也是beta，没修改，同样期待修改反馈。
 
 ### 杂谈
 - [民主制度](/hexo/essays/democracyold)：这篇实际上是政治课大作业
 - [科学与认识论](/hexo/essays/science)：这篇也是政治课大作业
 - [第九艺术](/hexo/essays/art9game)：猿神视频观后感
 - [神、人、人造人](/hexo/essays/replicant)：神话中神依自身形象创造人的形象，而现实中人依照自身形象创造了神的形象，并且模仿神的形象企图创造“人造人”以使自身成为神。这一篇列举了一些与此现象相关的文艺作品，但暂时没能总结或分析出来什么东西。
-- [对父母形象的表演](/hexo/memo/actingparents)：某些情况下，为人父母是一种表演。扮演父母的角色以获得某种满足感
+- [对父母形象的表演](/hexo/memo/actingparents)：某些情况下，为人父母是一种表演。扮演父母的角色以获得某种满足感。
 
 ### 影评、书评
 
-影评：
+**影评**
 - [河边的错误](/hexo/essays/onlytheriverflows)
 - [年会不能停](/hexo/essays/JohnnyKeepWalking)
 - [从21世纪安全撤离](/hexo/essays/evacuate)
 - [芭比](/hexo/essays/Barbie)：写的头几篇影评之一。
 
-书评：
-
+**书评**
 - [《单向度的人》](/hexo/essays/one-dimensional-man)：马尔库塞的经典作品，读得很痛苦，写得也很痛苦。
 
 ### 安利

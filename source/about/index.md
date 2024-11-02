@@ -18,11 +18,12 @@ comment: true
 
 - [杂谈(essays)](/hexo/essays)：这里是关于具体事或物的评论或想法，包括影评、书评、社评等，是围绕具体现实话题的看法。
 - [沉思(contemplation)](/hexo/categories/contemplation)：**哲学是傍晚起飞的猫头鹰。** 这里是一些抽象的思想，是关于精神世界的思考。
-- [简记(diary)](/hexo/categories/diary)：这里主要是记述性质的，简短记录一些生活中发生的事情，或者作为某种备忘，可能掺杂一些想法，类似于日记。
+- [日常(diary)](/hexo/categories/diary)：这里主要是记述性质的，简短记录一些生活中发生的事情，或者作为某种备忘，可能掺杂一些想法，类似于日记。
 - [随想(memo)](/hexo/categories/memo)：这里是零碎的想法，大部分没有被深思熟虑，并不完备自洽，比较随意。
 - [动态(dynamic)](/hexo/categories/dynamic)：这里是一些持续更新的博客。
 
 ## 计划中
+在[这里](/hexo/dynamic/update)是一些近期更新或持续更新的博客，和一些推荐。  
 在[看板](/hexo/dynamic/kanban)中按进度分类的文章。这个看板实际是用`obsidian`的`kanban`插件管理的，所以格式有些奇怪。其中进度划分是借鉴程序开发的版本概念，具体来说：
 - **Ideas in my mind**包含想法、纸质草稿和电子版草稿。
 - **alpha version**有电子版，但没有发布。不同于内部测试版，这里主要是没写完的意思。或许可以加密发布，给有意愿的朋友“内部测试”。
@@ -30,31 +31,25 @@ comment: true
 - **rc version**是调整后的版本，但不确定是否最终版。（似乎有点多余，可以和上个阶段合并）
 - **Stable version**是确定不再修改的版本。
 
-在[这里](/hexo/dynamic/update)是一些近期更新或持续更新的博客，和一些推荐。
-
-&emsp;&emsp;下面是按类型分类未完成的博客:
-
+下面是按类型分类有想法的博客:
 - 杂谈
   - 落叶归根 影评
   - 卡夫卡 陀思妥耶夫斯基
-  - 神，人，人造人和弑父
   - 哲学入门推荐
+  - 关于科学的系列
+  - 关于后现代的一个系列
 - 沉思
-  - 坚持做理想主义者
+  - 一个理想主义者的辩白
   - 饥饿的死刑犯
-  - 多元思考，有矛盾的生活 后现代的生活
-- 简记
-  - 周记
 - 随想
   - 表演式的伪善
   - mbti看法/whoami
   - linus Richard Matthew Stallman, RMS 开源，自由；技术，政治。
+  - fuck linus
 
 ## 关于我
 
 中科院基础数学在读博士。
-
-不知道如何介绍我自己，姑且先放一点列表在这里。
 
 ### 书单
 
@@ -306,13 +301,13 @@ comment: true
 莫名其妙地习得了许多奇奇怪怪的知识、技能，我想这些是对“我是谁”的重要补充：人不只靠那些主要的特征定义，而是靠那些繁复的细节同其他人区分开来。
 
 - 计算机
-  - 网页（比如这个博客，虽然是用github的模板[fluid](https://hexo.fluid-dev.com/) ）
-  - archlinux 的[安装](https://hiraethecho.github.io/wiki/code/archinstall/)（现在在用btrfs和dwm）和删除（指 `sudo rm -rf /`）
+  - 网页（比如这个博客，虽然是用github的模板[fluid](https://hexo.fluid-dev.com/) ，还有[搭建中](https://hiraethecho.github.io/wiki/code/3in1wiki)的[在线wiki](https://hiraethecho.github.io/wiki)）
+  - archlinux 的[安装](https://hiraethecho.github.io/wiki/code/archinstall/)（现在在用[btrfs和dwm](/hexo/essays/dwm)）和删除（指 `sudo rm -rf /`）
   - (neo)vim 的简单配置使用
   - 尝试装一个lfs
 - 运动
   - 足球
-  - 长跑（跑过几次半马勉强可以说是业余爱好者吧）
+  - 长跑（跑过几次半马勉强可以说是业余爱好者吧）（现在已经完全跑不动了）
   - 骑车
 - [调酒](https://hiraethecho.github.io/wiki/Life/cocktail/)
 - 做饭（[搬宿舍后](/hexo/diary/dormitory)开始学，会[一些](/hexo/diary/cook)简单的。）
