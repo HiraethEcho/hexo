@@ -2,9 +2,9 @@
 title: 做点计划
 tags:
   - plan
-published: false
+published: true
 date: 2024-10-02
-updated: 
+updated: 2024-11-03
 categories: 
 index_img: 
 archive: 
@@ -15,6 +15,9 @@ mathjax:
 # 做点计划
 生活就是间歇性踌躇满志，持续性混吃等死。但是趁着踌躇满志的时候，略微做一点计划看看吧。
 
+> [!note] update：2024-11-2
+> 转移到 [这里](/hexo/dynamic/timetable)做计划
+
 ## 学习
 目标是，首先flop的论文搞出来。然后有的topic是
 - 上三角仿射空间自同构的projective bundle风格分解，可能也和foliation有关
@@ -23,7 +26,7 @@ mathjax:
 - BCHM 讨论班，并且尝试到foliation上
 - 和其他老师交流 arround 11/08
 
-初次之外，学校的任务
+除此之外，学校的任务
 - 复几何的课程，要考试 11/06
 - 晨兴的讨论班 11/12
 

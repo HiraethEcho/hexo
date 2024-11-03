@@ -17,7 +17,11 @@ excerpt: 从诺顿穹顶谈起
 看到一个诺顿穹顶的实验。牛顿力学的物理模型，以一种意外简单的方式崩溃了。
 
 ## 诺顿穹顶
-
+  [诺顿穹顶 Norton's Dome](https://www.zhihu.com/question/397610640/answer/2617547404)，一个在经典牛顿力学模型下对<s>自由意志</s>决定论的挑战，有趣。
+    
+  [这里有一个墨西哥帽型穹顶](https://www.douban.com/note/836428024/?_i=8594614QoOgRwS)
+    
+  [还有一个毕导视频](https://www.bilibili.com/video/BV18Q4y1E7i7/)
 ## 牛顿力学
 花费了一些功夫才找到bug在哪里。
 
