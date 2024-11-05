@@ -14,3 +14,6 @@ password:
 excerpt:
 mathjax:
 ---
+# 婚姻故事
+> 离婚的根本原因是什么？  
+> 是结婚。
