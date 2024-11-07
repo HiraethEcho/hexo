@@ -1,15 +1,16 @@
 ---
 title: 折腾的linux+X11+dwm
-tags: [linux]
+tags:
+  - linux
+  - daily
 published: true
 date: 2024-07-29
-updated:
-categories:
-index_img:
-archive:
-password:
+updated: 
+categories: 
+index_img: 
+archive: 
+password: 
 excerpt: 关于linux C dwm等
-mathjax:
 ---
 # 近期折腾的archlinux
 也算是一些业余学习吧。先叠个甲，业余学习所以可能有错误，只是个人理解。

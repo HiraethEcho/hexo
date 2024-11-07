@@ -1,13 +1,14 @@
 ---
 title: 做题家、数学家和无良媒体
-tags: []
+tags:
+  - media
 published: true
 date: 2024-06-15
 updated: 2024-11-04
-categories:
-index_img:
-archive:
-password:
+categories: 
+index_img: 
+archive: 
+password: 
 excerpt: 从阿里巴巴数学竞赛出发的一些想法
 mathjax:
 ---

@@ -26,7 +26,7 @@ mathjax:
 
 ## Alpha version (unpublished) 草稿
 
-- [ ] 饥饿的死刑犯
+- [ ] [饥饿的死刑犯](/hexo/contemplation/shoelace)
 - [ ] 性别与主义
 - [ ] [诺顿穹顶](/hexo/essays/dome)
 - [ ] [理想主义者的辩白](/hexo/contemplation/idealist)
@@ -60,6 +60,6 @@ mathjax:
 
 %% kanban:settings
 ```
-{"kanban-plugin":"board","list-collapse":[true,false,false,false,true,true],"table-sizing":{"card":286,"lane":304}}
+{"kanban-plugin":"board","list-collapse":[false,false,false,false,true,true],"table-sizing":{"card":286,"lane":304}}
 ```
 %%
