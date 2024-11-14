@@ -1,14 +1,16 @@
 ---
 title: 厨艺养成ing
-tags: [food]
+tags:
+  - food
 published: true
 date: 2024-01-25 11:31
 updated: 2024-09-22
-categories:
-index_img:
-archive:
-password:
+categories: 
+index_img: 
+archive: 
+password: 
 excerpt: 关于做饭的记录和总结
+version: beta
 ---
 
 # 厨艺养成ing

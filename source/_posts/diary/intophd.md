@@ -4,13 +4,14 @@ tags:
   - life
 published: true
 date: 2024-05-22 19:01
-updated:
-categories:
-index_img:
-archive:
-password:
+updated: 
+categories: 
+index_img: 
+archive: 
+password: 
 excerpt: 总之，考上了
-mathjax:
+mathjax: 
+version: stable
 ---
 # 漫长等待后的考博后续
 总之，拟录取了。

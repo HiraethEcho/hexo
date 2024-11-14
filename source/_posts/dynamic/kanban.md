@@ -56,10 +56,15 @@ mathjax:
 - [ ] [考博结果](/hexo/diary/intophd)
 
 
+## deprecated
+
+- [ ] [plan](/hexo/diary/plan)
+
+
 
 
 %% kanban:settings
 ```
-{"kanban-plugin":"board","list-collapse":[false,false,false,false,true,true],"table-sizing":{"card":286,"lane":304}}
+{"kanban-plugin":"board","list-collapse":[false,false,false,false,true,false,false],"table-sizing":{"card":286,"lane":304}}
 ```
 %%

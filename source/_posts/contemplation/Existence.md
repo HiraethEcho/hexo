@@ -5,6 +5,7 @@ tags: [existence, philosophy]
 published: true
 sticky:
 excerpt: 焦虑、抑郁和荒诞激情，促使我企图用某种方式消耗掉我自己。我要在我耗尽的过程中写下我自己，非这样不可。
+version: rc
 ---
 
 # Es Muss Sein!

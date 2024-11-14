@@ -7,11 +7,12 @@ tags:
 published: true
 date: 2024-01-29 11:32
 updated: 2024-01-30 12:34
-categories:
-index_img:
-archive:
-password:
+categories: 
+index_img: 
+archive: 
+password: 
 excerpt: 记一次与朋友的聚会聊天
+version: stable
 ---
 
 # 广式早午饭、紫竹院公园和酒吧的一天

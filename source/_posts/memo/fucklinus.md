@@ -10,6 +10,7 @@ archive:
 password:
 excerpt:
 mathjax:
+version: draft
 ---
 # So Linus, fuck 
 这也许是互联网巴别塔陨落的开始。

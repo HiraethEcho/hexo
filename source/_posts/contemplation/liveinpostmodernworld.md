@@ -11,7 +11,8 @@ categories:
 index_img: 
 archive: 
 password: 
-excerpt:
+excerpt: 
+version: draft
 ---
 <!-- TODO: not finished -->
 # 在混乱的矛盾中生活

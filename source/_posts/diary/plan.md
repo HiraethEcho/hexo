@@ -2,15 +2,14 @@
 title: 做点计划
 tags:
   - plan
-published: false
+published: true
 date: 2024-10-02
 updated: 2024-11-03
 categories: 
 index_img: 
-archive: 
-password: 
+archive: true
 excerpt: 做一些必执行不了的计划吧
-mathjax:
+version: deprecated
 ---
 # 做点计划
 生活就是间歇性踌躇满志，持续性混吃等死。但是趁着踌躇满志的时候，略微做一点计划看看吧。

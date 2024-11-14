@@ -10,6 +10,7 @@ index_img:
 archive: 
 password: 
 excerpt: 又双叒叕搬宿舍，顺便记录一下这一段时间的跑来跑去
+version: stable
 ---
 
 # 又双叒叕搬宿舍

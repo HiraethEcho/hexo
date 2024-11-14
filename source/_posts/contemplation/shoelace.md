@@ -1,16 +1,17 @@
 ---
 title: 饥饿的死刑犯
-date:
-updated:
+date: 
+updated: 
 tags:
   - philosophy
   - life
   - death
-categories:
-archive:
-password:
-excerpt:
+categories: 
+archive: 
+password: 
+excerpt: 
 published: false
+version: draft
 ---
 <!-- TODO: not finished -->
 # 饥饿的死刑犯：如何度过这一生
