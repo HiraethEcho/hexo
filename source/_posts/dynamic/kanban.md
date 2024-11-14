@@ -19,7 +19,7 @@ mathjax:
 ## Ideas in my mind
 
 - [ ] 后现代(也许系列)
-- [ ] copyleft
+- [ ] [copyleft](/hexo/essays/copyleft)
 - [ ] [fucklinus](/hexo/memo/fucklinus)
 - [ ] [公路电影](/hexo/essays/road)
 
@@ -27,7 +27,7 @@ mathjax:
 ## Alpha version (unpublished) 草稿
 
 - [ ] [饥饿的死刑犯](/hexo/contemplation/shoelace)
-- [ ] 性别与主义
+- [ ] [男性与女权](/hexo/essays/man-femalist)
 - [ ] [诺顿穹顶](/hexo/essays/dome)
 - [ ] [理想主义者的辩白](/hexo/contemplation/idealist)
 
