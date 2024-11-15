@@ -18,6 +18,27 @@ sticky:
 > [!note] update: 2024-10-31
 > 能个P，我实在是太懒了
 
+## 2024/11/15 周五
+讨论flop decomposition.  
+如果条件只是isomorphic in codimension 1，那么能用多个flops连接吗？更像Sarkisov program那样？
+## 2024/11/14 周四
+讲BCHM，FM implies T
+## 2024/11/13 周三
+摸鱼
+## 2024/11/12 周二
+讲toric
+## 2024/11/11 周一
+看了一会儿toric foliation
+## 2024/11/10 周日
+摸鱼
+## 2024/11/09 周六
+摸鱼
+## 2024/11/08 周五
+和胡勇讲sarkisov program和一点affine automorphism分解的例子
+## 2024/11/07 周四
+讲toric foliation flip，但是没讲明白。
+## 2024/11/06 周三
+考完，丸辣
 ## 2024/11/05 周二
 上午下午两个报告，没仔细听，依然徒劳无功地复习。
 ## 2024/11/04 周一

@@ -6,12 +6,8 @@ comment: true
 ---
 
 # 关于本站
-
 这是我的个人博客，是我的[学术主页](https://hiraethecho.github.io)和[知识wiki](https://hiraethecho.github.io/wiki)（这两个都没认真搭建）外的，或者说我的“主业”之外的我自己。
-
-关于小站名字（同时也是我大部分账号id）的解释：
-
-> [!note]
+> [!note] Hiraeth
 > (n.) homesickness to a home to which you cannot return, or a home which may never have been: the grief of the lost places of your past.
 
 ## 分类 categories
@@ -31,7 +27,7 @@ comment: true
 - **rc version**是调整后的版本，但不确定是否最终版。（似乎有点多余，可以和上个阶段合并）
 - **Stable version**是确定不再修改的版本。
 
-下面是按类型分类有想法的博客:
+下面是按类型分类想写的博客:
 - 杂谈
   - 落叶归根 影评
   - 卡夫卡 陀思妥耶夫斯基
@@ -55,7 +51,7 @@ comment: true
 
 正在看的书：
 
-- 《女性主义》李银河<progress max=306 value=1></progress>
+- 《女性主义》李银河<progress max=306 value=98></progress> 98/306
 
 <details><summary>一些读过并认为值得一记来帮助了解我的书：</summary>
 
@@ -302,7 +298,7 @@ comment: true
 
 - 计算机
   - 网页（比如这个博客，虽然是用github的模板[fluid](https://hexo.fluid-dev.com/) ，还有[搭建中](https://hiraethecho.github.io/wiki/code/3in1wiki)的[在线wiki](https://hiraethecho.github.io/wiki)）
-  - archlinux 的[安装](https://hiraethecho.github.io/wiki/code/archinstall/)（现在在用[btrfs和dwm](/hexo/essays/dwm)）和删除（指 `sudo rm -rf /`）
+  - archlinux 的[安装](https://hiraethecho.github.io/wiki/code/archinstall/)（现在在用btrfs和[dwm](/hexo/essays/dwm)）和删除（指 `sudo rm -rf /`）
   - (neo)vim 的简单配置使用
   - 尝试装一个lfs
 - 运动

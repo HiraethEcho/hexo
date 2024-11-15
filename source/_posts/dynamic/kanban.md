@@ -54,6 +54,7 @@ mathjax:
 - [ ] [自然科学何以可能](/hexo/essays/science)
 - [ ] [思政作业-民主](/hexo/essays/democracyold)
 - [ ] [考博结果](/hexo/diary/intophd)
+- [ ] [消失的她](/hexo/essays/消失的她)
 
 
 ## deprecated
@@ -65,6 +66,6 @@ mathjax:
 
 %% kanban:settings
 ```
-{"kanban-plugin":"board","list-collapse":[false,false,false,false,true,false,false],"table-sizing":{"card":286,"lane":304}}
+{"kanban-plugin":"board","list-collapse":[false,false,false,false,false,false,false],"table-sizing":{"card":286,"lane":304}}
 ```
 %%

@@ -1,15 +1,17 @@
 ---
 title: 《从21世纪安全撤离》影评
-tags: [影评]
+tags:
+  - 影评
 published: true
 date: 2024-08-17 20:08
-updated:
-categories:
-index_img:
-archive:
-password:
+updated: 
+categories: 
+index_img: 
+archive: 
+password: 
 excerpt: 形式大于内容，但是真的很大。
-mathjax:
+mathjax: 
+version: rc
 ---
 # 超雄少年团
 关于《从21世纪安全撤离》的一些想法。

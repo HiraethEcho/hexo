@@ -11,7 +11,8 @@ index_img:
 archive: 
 password: 
 excerpt: 久违的假期出游
-mathjax:
+mathjax: 
+version: stable
 ---
 
 # 记一次（幸福快乐的）旅游

@@ -15,6 +15,7 @@ index_img:
 archive: 
 password: 
 excerpt: 和朋友出去玩的流水账的一天
+version: stable
 ---
 
 # 又一次吃饭聊天的流水账
