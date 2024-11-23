@@ -9,7 +9,7 @@ date: 2024-10-14
 updated: 2024-11-05
 categories: 
 index_img: 
-archive: 
+archive: true
 password: 
 excerpt: 我的博客计划。实际上是obsidan的kanban插件格式，但也能用hexo写和渲染
 mathjax: 

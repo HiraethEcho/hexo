@@ -281,6 +281,7 @@ comment: true
 - 超脱
 - 梅尔罗斯
 - 犬之力
+- [好东西](/hexo/essays/herstory)
 </details>
 
 <details><summary>一些想看还没看的电影/剧</summary>
@@ -300,7 +301,7 @@ comment: true
   - 网页（比如这个博客，虽然是用github的模板[fluid](https://hexo.fluid-dev.com/) ，还有[搭建中](https://hiraethecho.github.io/wiki/code/3in1wiki)的[在线wiki](https://hiraethecho.github.io/wiki)）
   - archlinux 的[安装](https://hiraethecho.github.io/wiki/code/archinstall/)（现在在用btrfs和[dwm](/hexo/essays/dwm)）和删除（指 `sudo rm -rf /`）
   - (neo)vim 的简单配置使用
-  - 尝试装一个lfs
+  - ~~尝试装一个lfs~~
 - 运动
   - 足球
   - 长跑（跑过几次半马勉强可以说是业余爱好者吧）（现在已经完全跑不动了）
