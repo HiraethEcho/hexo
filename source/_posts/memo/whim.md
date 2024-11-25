@@ -9,7 +9,7 @@ date: 2024-02-13 17:39
 updated: 2024-02-17 00:44
 categories: 
 index_img: 
-archive: 
+archive: true
 password: 
 excerpt: 一些简短到一两句话的小想法，持续更新
 ---

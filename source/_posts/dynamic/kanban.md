@@ -30,6 +30,7 @@ mathjax:
 - [ ] [男性与女权](/hexo/essays/man-femalist)
 - [ ] [诺顿穹顶](/hexo/essays/dome)
 - [ ] [理想主义者的辩白](/hexo/contemplation/idealist)
+- [ ] [好东西](/hexo/essays/herstory)
 
 
 ## Beta version (published)
@@ -66,6 +67,6 @@ mathjax:
 
 %% kanban:settings
 ```
-{"kanban-plugin":"board","list-collapse":[false,false,false,false,false,false,false],"table-sizing":{"card":286,"lane":304}}
+{"kanban-plugin":"board","list-collapse":[true,false,false,false,false,true,false],"table-sizing":{"card":286,"lane":304}}
 ```
 %%
