@@ -1,15 +1,18 @@
 ---
 title: 为什么写博客？
-tags: [memo]
+tags:
+  - memo
+  - life
 published: true
 date: 2024-08-17
 updated: 2024-10-31
-categories:
-index_img:
-archive:
-password:
+categories: 
+index_img: 
+archive: 
+password: 
 excerpt: 假如博客是为了记录，那又为什么要记录呢？
-mathjax:
+mathjax: 
+version: rc
 ---
 # 通过记录来对抗时间 
 
