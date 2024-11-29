@@ -24,13 +24,12 @@ mathjax:
 - [ ] [公路电影](/hexo/essays/road)
 
 
-## Alpha version (unpublished) 草稿
+## draft version (unpublished) 草稿
 
 - [ ] [饥饿的死刑犯](/hexo/contemplation/shoelace)
 - [ ] [男性与女权](/hexo/essays/man-femalist)
 - [ ] [诺顿穹顶](/hexo/essays/dome)
 - [ ] [理想主义者的辩白](/hexo/contemplation/idealist)
-- [ ] [好东西](/hexo/essays/herstory)
 
 
 ## Beta version (published)
@@ -39,6 +38,7 @@ mathjax:
 - [-] [再评脱口秀](/hexo/essays/talkshow-patch)
 - [ ] [单向度的人](/hexo/essays/one-dimensional-man)
 - [ ] [神、人、人造人与弑父](/hexo/essays/replicant)
+- [ ] [好东西](/hexo/essays/herstory)
 
 
 ## rc version

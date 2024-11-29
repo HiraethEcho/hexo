@@ -5,11 +5,12 @@ tags:
   - tears
 published: true
 date: 2024-04-04
-updated:
-index_img:
-archive:
-password:
+updated: 
+index_img: 
+archive: 
+password: 
 excerpt: 记录一下考博前后的事情，和心情
+version: rc
 ---
 
 # 关于考博的悲喜与反思

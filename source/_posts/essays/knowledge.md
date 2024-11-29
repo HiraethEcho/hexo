@@ -1,9 +1,9 @@
 ---
-title: {{ title }}
-date:
-updated:
+title: knowledge
 tags: []
-excerpt:
 published: false
 version: draft
+date:
+updated:
+excerpt:
 ---
