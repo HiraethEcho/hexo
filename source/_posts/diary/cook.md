@@ -10,7 +10,7 @@ index_img:
 archive: 
 password: 
 excerpt: 关于做饭的记录和总结
-version: beta
+version: rc
 ---
 
 # 厨艺养成ing

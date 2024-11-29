@@ -6,12 +6,13 @@ tags:
 published: true
 date: 2024-01-19 00:12
 updated: 2024-02-27 01:02
-categories:
-index_img:
-archive:
+categories: 
+index_img: 
+archive: true
 password: 1113
 excerpt: 这一篇放一些对爱情或其他感情的零碎想法
-sticky:
+sticky: 
+version: deprecated
 ---
 
 # 一些碎碎念，关于恋爱或其他

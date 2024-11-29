@@ -1,14 +1,16 @@
 ---
 title: 一些反思
-tags: [talkshow]
+tags:
+  - talkshow
 published: true
 date: 2024-10-13
 updated: 2024-10-15
-categories:
-index_img:
-archive:
-password:
+categories: 
+index_img: 
+archive: 
+password: 
 excerpt: 在和朋友交流后的反思，和其他思考。
+version: rc
 ---
 
 # 一些反思

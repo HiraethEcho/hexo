@@ -2,12 +2,12 @@
 title: 神、人、人造人和弑父
 published: true
 date: 2024-08-30 22:01
-updated:
-tags:
-categories:
-index_img:
-archive:
-password:
+updated: 
+tags: 
+categories: 
+index_img: 
+archive: 
+password: 
 excerpt: 浅谈一些关于西方艺术作品中的神、人、人造人的意象
 ---
 

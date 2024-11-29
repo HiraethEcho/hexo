@@ -8,6 +8,7 @@ tags:
 archive: 
 password: 
 excerpt: 过去自然哲学史课程的大作业，被我用来记下一点关于认识论的读书笔记
+version: stable
 ---
 
 # 自然科学何以可能？

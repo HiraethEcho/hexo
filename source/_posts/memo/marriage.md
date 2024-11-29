@@ -7,13 +7,12 @@ tags:
 published: false
 date:
 updated:
-categories:
 index_img:
-archive:
 password:
 excerpt:
-mathjax:
 ---
 # 婚姻故事
 > 离婚的根本原因是什么？  
 > 是结婚。
+
+现代世界的割裂和现代人的孤独

@@ -34,7 +34,6 @@ mathjax:
 
 ## Beta version (published)
 
-- [x] [反思](/hexo/essays/introspection)
 - [-] [再评脱口秀](/hexo/essays/talkshow-patch)
 - [ ] [单向度的人](/hexo/essays/one-dimensional-man)
 - [ ] [神、人、人造人与弑父](/hexo/essays/replicant)
@@ -45,6 +44,7 @@ mathjax:
 
 - [ ] [对父母形象的表演](/hexo/memo/actingparents)
 - [ ] [自由与自杀](/hexo/contemplation/free-and-death)
+- [x] [反思](/hexo/essays/introspection)
 - [ ] [dwm](/hexo/essays/dwm)
 - [ ] [火山炙恋](/hexo/essays/fire-of-love)
 
