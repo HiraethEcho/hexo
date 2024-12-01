@@ -2,8 +2,8 @@
 title: 《好东西》影评摘要
 tags: []
 published: true
-version: draft
-date:
+version: rc
+date: 2024-12-01
 updated:
 hide: true
 excerpt: 《好东西》影评的摘要
