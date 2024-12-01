@@ -6,7 +6,7 @@ date: 2024-11-29
 updated:
 categories:
 index_img:
-excerpt: 姜萍实践的后续
+excerpt: 姜萍事件的后续
 version: beta
 ---
 

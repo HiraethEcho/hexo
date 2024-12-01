@@ -7,10 +7,11 @@ published: true
 date: 2024-11-29
 updated: 
 index_img: 
-excerpt:
+excerpt: I'm so tired, exhausted
 version: beta
 ---
 # 疲惫地入世
+
 > [!note] 想到哪写到哪。
 
 最近写《好东西》的影评，写了一周才搞了个草稿。期间高强度看影评、评论，思考要写的内容。在这个过程中感到自己高强度共情各种观点，或者说明显地`入世`，非常疲惫。
