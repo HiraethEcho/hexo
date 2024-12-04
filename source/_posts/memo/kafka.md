@@ -5,14 +5,10 @@ date: 2023-10-18 23:03:07
 updated: 
 tags:
   - 书评
-categories: 
 index_img: 
 archive: 
-password: 
 excerpt:
 ---
-<!-- TODO: 放在读书和写作那篇，或者放在持续更新的书评里 -->
-
 # 卡夫卡，现代的困境
 
 > 我认为，只应该去读那些会咬人的书。  
