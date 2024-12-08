@@ -67,6 +67,6 @@ mathjax:
 
 %% kanban:settings
 ```
-{"kanban-plugin":"board","list-collapse":[true,false,false,false,false,true,false],"table-sizing":{"card":286,"lane":304}}
+{"kanban-plugin":"board","list-collapse":[false,false,false,false,false,true,false],"table-sizing":{"card":286,"lane":304}}
 ```
 %%

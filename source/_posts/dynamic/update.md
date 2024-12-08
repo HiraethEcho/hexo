@@ -37,6 +37,7 @@ sticky: 100
 - [年会不能停](/hexo/essays/JohnnyKeepWalking)
 - [从21世纪安全撤离](/hexo/essays/evacuate)
 - [芭比](/hexo/essays/Barbie)：写的头几篇影评之一。
+- [好东西](/hexo/essays/herstory)
 
 **书评**
 - [《单向度的人》](/hexo/essays/one-dimensional-man)：马尔库塞的经典作品，读得很痛苦，写得也很痛苦。
@@ -51,8 +52,3 @@ sticky: 100
 - [死亡与自由](/hexo/contemplation/free-and-death)
 - [时间之矢](/hexo/memo/arrowoftime)
 - [一首小诗](/hexo/memo/No)
-
-## 关于了解我的文章
-- [原生家庭](/hexo/essays/homeless)
-- [我的存在](/hexo/contemplation/Existence)
-- [死亡与自由](/hexo/contemplation/free-and-death)

@@ -1,6 +1,6 @@
 ---
 title: 测试
-tags: [test]
+tags:
 published: true
 date: 2024-10-18
 updated:
