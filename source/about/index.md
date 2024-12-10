@@ -6,7 +6,9 @@ comment: true
 ---
 
 # 关于本站
+
 这是我的个人博客，是我的[学术主页](https://hiraethecho.github.io)和[知识wiki](https://hiraethecho.github.io/wiki)（这两个都没认真搭建）外的，或者说我的“主业”之外的我自己。
+
 > [!note] Hiraeth
 > (n.) homesickness to a home to which you cannot return, or a home which may never have been: the grief of the lost places of your past.
 
@@ -19,15 +21,18 @@ comment: true
 - [动态(dynamic)](/hexo/categories/dynamic)：这里是一些持续更新的博客。
 
 ## 计划中
+
 在[这里](/hexo/dynamic/update)是一些近期更新或持续更新的博客，和一些推荐。  
 在[看板](/hexo/dynamic/kanban)中按进度分类的文章。这个看板实际是用`obsidian`的`kanban`插件管理的，所以格式有些奇怪。其中进度划分是借鉴程序开发的版本概念，具体来说：
+
 - **Ideas in my mind**包含想法、纸质草稿和电子版草稿。
 - **alpha version**有电子版，但没有发布。不同于内部测试版，这里主要是没写完的意思。或许可以加密发布，给有意愿的朋友“内部测试”。
 - **Beta version**是刚写完的、首个公开发布版本，以及在修改中的版本。
 - **rc version**是调整后的版本，但不确定是否最终版。（似乎有点多余，可以和上个阶段合并）
 - **Stable version**是确定不再修改的版本。
-
+<!--
 下面是按类型分类想写的博客:
+
 - 杂谈
   - 落叶归根 影评
   - 卡夫卡 陀思妥耶夫斯基
@@ -42,10 +47,16 @@ comment: true
   - mbti看法/whoami
   - linus Richard Matthew Stallman, RMS 开源，自由；技术，政治。
   - fuck linus
-
+-->
 ## 关于我
 
-中科院基础数学在读博士。
+中科院基础数学在读博士。  
+一些生活碎片：
+
+- [周记](/hexo/diary/week)
+- [学习记录](/hexo/diary/study-daily)
+- [计划](/hexo/dynamic/timetable)
+- [碎碎念](/hexo/dynamic/fragmentsaboutlove)
 
 ### 书单
 
@@ -74,7 +85,7 @@ comment: true
 - 现代西方哲学史十五讲 张汝伦
 - 我们生活在巨大的差距里
 - 抑郁症的历史
-- [单向度的人](/hexo/essays/one-dimensional-man)
+- 单向度的人 [书评](/hexo/essays/one-dimensional-man)
 - 消费社会 2024-03-14
 - 工作，消费主义和新穷人 2024-08-09
 - 他者的消失
@@ -111,7 +122,7 @@ comment: true
 - 情人
 - 被侮辱与损害的人
 - 卡拉马佐夫兄弟
-- [白痴](/hexo/memo/idiot)
+- 白痴 [书评(呓语)](/hexo/memo/idiot)
 - 罪与罚
 - 群魔
 - 西西弗神话
@@ -155,7 +166,7 @@ comment: true
 - 瑞士军刀男
 - 甲方乙方
 - 瞬息全宇宙
-- [从21世纪安全撤离](/hexo/essays/evacuate)
+- 从21世纪安全撤离 [影评](/hexo/essays/evacuate)
 - 罗小黑战记
 - JOJO 动画1-6 漫画飙马野郎
 - 动物狂想曲
@@ -191,7 +202,7 @@ comment: true
 - 了不起的盖茨比
 - 伯德小姐
 - 小妇人
-- [芭比](/hexo/essays/Barbie)
+- 芭比 [影评](/hexo/essays/Barbie)
 - 人工智能
 - 返老还童
 - 普罗米修斯 异形：契约
@@ -205,7 +216,7 @@ comment: true
 - 追凶者也
 - 后会无期
 - 飞驰人生
-- [飞驰人生2](/hexo/essays/pegasus2)
+- 飞驰人生2 [影评](/hexo/essays/pegasus2)
 - 宇宙探索俱乐部
 - 一出好戏
 - 呆头鹅
@@ -281,7 +292,7 @@ comment: true
 - 超脱
 - 梅尔罗斯
 - 犬之力
-- [好东西](/hexo/essays/herstory)
+- 好东西 [影评](/hexo/essays/herstory)
 </details>
 
 <details><summary>一些想看还没看的电影/剧</summary>
@@ -306,5 +317,5 @@ comment: true
   - 足球
   - 长跑（跑过几次半马勉强可以说是业余爱好者吧）（现在已经完全跑不动了）
   - 骑车
-- [调酒](https://hiraethecho.github.io/wiki/Life/cocktail/)
+- [调酒](https://hiraethecho.github.io/wiki/life/cocktail/)
 - 做饭（[搬宿舍后](/hexo/diary/dormitory)开始学，会[一些](/hexo/diary/cook)简单的。）

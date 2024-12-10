@@ -5,13 +5,9 @@ tags:
 published: true
 date: 2024-09-26
 updated: 2024-11-05
-categories: 
-index_img: 
-archive: 
-password: 
+hide: true
+password: password
 excerpt: 每天学习内容的记录。
-sticky: 
-version: stable
 ---
 # 学习记录
 

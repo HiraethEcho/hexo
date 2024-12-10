@@ -6,8 +6,7 @@ published: true
 date: 2024-10-02
 updated: 2024-11-03
 categories: 
-index_img: 
-archive: true
+hide: true
 excerpt: 做一些必执行不了的计划吧
 version: deprecated
 ---

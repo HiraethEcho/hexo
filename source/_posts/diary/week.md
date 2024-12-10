@@ -4,12 +4,9 @@ tags: [daily]
 published: true
 date: 2024-09-27
 updated: 2024-11-05
-categories:
-index_img:
-archive:
-password:
+hide: true
+password: password
 excerpt: 每周一次小总结
-mathjax:
 ---
 # 周记
 每周都单独一篇，感觉有点麻烦，所以决定汇总在一起。每周一段，简要记录这一周的事情。  
