@@ -8,4 +8,4 @@ public/
 _multiconfig.yml
 desktop.ini
 source/_posts/img
-
+*.sync.ffs_db
