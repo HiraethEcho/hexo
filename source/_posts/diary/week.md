@@ -162,7 +162,7 @@ post-bchm主要是lc或者non-Q-factorial的情况，但是同样是复杂的归
 ### btw
 关于献血的事，又和女朋友有些矛盾。我想献血，她不想让我去。发现我通常从动机的角度做道德或价值判断，但是女朋友通常从结果判断。头疼。  
 这里放一个视频链接，里面关于康德的介绍甚至使我简直要落泪。
-<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="//player.bilibili.com/player.html?isOutside=true&aid=234341850&bvid=BV1L8411y7Qu&cid=1289971097&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div>
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=234341850&bvid=BV1L8411y7Qu&cid=1289971097&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div>
 ## 08/26 - 08/31
 ### 学习
 开会听了好多报告，也没听明白多少。学到一些例子，开心。  

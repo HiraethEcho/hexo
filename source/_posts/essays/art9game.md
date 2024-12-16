@@ -10,12 +10,12 @@ version: beta
 ---
 # 游戏：交互与创作
 近日（事实上已经快一个月了）《黑神话：悟空》大火，玩不来游戏的我（电脑也带不动），只能看直播平台通关了。前两天看到这个无伤武侠风寅虎的视频，突然意识到之前没发现的第九艺术游戏的独特魅力：使玩家成为创作者。
-<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113054209540612&bvid=BV1ijn9eWE2k&cid=25666849975&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div>
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=113054209540612&bvid=BV1ijn9eWE2k&cid=25666849975&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div>
 总之，一时兴起谈谈游戏。
 
 > [!note] 更新
 >  出了更帅的视频～
-<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113312427675283&bvid=BV1ZKmFYREqs&cid=26306546071&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div>
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=113312427675283&bvid=BV1ZKmFYREqs&cid=26306546071&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div>
 
 ## 七/八/九大艺术
 先来回顾一下九大艺术吧：

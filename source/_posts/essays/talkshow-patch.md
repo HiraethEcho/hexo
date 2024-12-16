@@ -116,7 +116,7 @@ excerpt: 对上一篇关于脱口秀的补充
 然而，我并没有这样愤怒的权力和立场，我没有资格去愤怒。一方面，作者并不一定真的是因为懒惰或者选择“向下的自由”而用这样的表达方式,我们并没有证据去做类似于“挑起对立、吃女拳饭”这样的指控；另一方面，作品被符号化也许并不是作者的本意，更多取决于社会环境等外在因素，作者被裹挟至那个口诛笔伐的风口浪尖，甚至作者在恶劣环境下被迫选择符号化自身，才能有声音。在这个意义上，我的**失望**大于愤怒，或者说愤怒来自于失望。这失望不是对作者的，而是迫使作者如此选择的这样一个环境。
 
 另一方面，《芭比》的作者不止有导演，还有主演兼制片人兼发起者玛各特·罗比。我对导演的认知实际上是停留在前两部电影上的，并延续到了《芭比》；但是还有另一个视角，就是“芭比”的视角。这个视频启发了我（使我注意到这个视角），我也没有自信说得更清楚，所以直接放连接（但是广告部分感觉有点生硬）：
-<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113367608001505&bvid=BV19FyUYVEzz&cid=26456228322&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div>
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=113367608001505&bvid=BV19FyUYVEzz&cid=26456228322&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div>
 离开创作者的角度，而考虑传播观点的角度。不得不承认，在表达女性主义内容的作品中，我并没有也没能力真的站在女性的处境去考虑，我没有去重视她们的困境、她们需要发出声音的迫切需要，而是非常旁观者的角度从“创作者”的立场去分析。杨笠、颜怡颜悦、echo、山河、唐香玉、小鹿、鸭绒、菜菜等，还有黑灯、小佳，都在努力发出声音，让人们注意到被忽视的群体，看到他们的处境、社会的不公平。人不是高高在上或者在象牙塔内的，有时纯粹的理想主义不过是幻想，我们**就是**生活在一个会令我们失望的世界里，这是一件使人悲伤的事情。“被误解是表达者的宿命”，但保持沉默不会让世界变好。我不同意“矫枉必须过正”的说法，但糟糕的是，我并没有更正确的答案。所以在这一节，我不知道该说些什么，我没有完整的想法。也许我至少可以努力限制我自己，理智冷静地思考，接受其他视角、坦诚承认错误，不去“懒惰”地符号化他人，或者省略论证地输出观点，沦为我所鄙夷的“懒惰”的创作者。
 
 > [!important]
@@ -161,7 +161,7 @@ excerpt: 对上一篇关于脱口秀的补充
 - 阎鹤祥：用相声技术硬讲脱口秀，不容易。
 - 唐香玉：她被杨笠激励，但没有我不喜欢杨笠的那些点，所以对我来说她是青出于蓝的感觉。
 - 小鹿：没啥感觉，和周奇墨类似类型，我愿称之为“脱口秀熟练工”hhh后来听说一些决赛讲完搞凉场子的情况，还有周奇墨的反应。结合我后来补的那种一个小时专场的脱口秀，确实会有很长的故事，在专场里确实效果好，在线上尤其比赛的场合确实不行。但这些他们当然清楚，自己选的就自己受者，有啥好说的呢。顺便放一个视频：
-<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113390206851421&bvid=BV1moS4YpES5&cid=26518817992&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div>
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=113390206851421&bvid=BV1moS4YpES5&cid=26518817992&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div>
 
 - 付航：接着上一个话题说一下付航是怎么解决“时间太短不够专场”的，他一整季的几段作品，可以连起来做专场，这个“专场”切成几段，都能使他晋级，而且能让观众保持记忆。比如说passion，有点东西，猴等等，这几个梗一直连续到最后一场，实际上达成了专场的效果。另一方面，他最后的底子“我在家里等你”，确实是一个男性视角的叙事，好像没那么“正确”。可是，这就是活生生的他自己，他讲的故事都完全是他自己。结合“喜剧之王”这样一个模因，付航讲的就是一个小人物的故事，就像星爷塑造的一个个小人物。他对生活的嘲笑，不只是对生活不合理的嘲笑，还是“你无法打倒我”的嘲笑。看到知乎某个回答的一个总结，这就是大家厌倦了后现代解构一切的讽刺，重新喜欢这种真诚、实在的故事。而且，这是一个正向的故事，他只冒犯了自己，他尊重所有人。  
 

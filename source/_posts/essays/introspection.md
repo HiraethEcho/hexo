@@ -23,10 +23,10 @@ version: rc
 另一方面，也许可以称之为某种狡辩，我想要放两件事在这里。不过要声明，我只是放在这里，不代表赞同，而是提供一些思考材料。  
 第一件事是对乔布斯的采访纪录片《遗失的访谈》，大概是视频42:10左右。大意总结为
 > 与优秀自信的人合作，不用太在乎他们的自尊。大家的心思都放在工作上……如果他们的工作不合格，你要做的无非是提醒他们，清晰明了地提醒他们恢复工作状态，同时不能让对方怀疑你的权威性。要用无可置疑的方式告诉他们工作不合格，这很不容易，所以我总是采取最直截了当的方式。有些同事觉得这种方式很好，但有些人接受不了。
-<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="//player.bilibili.com/player.html?isOutside=true&aid=914020063&bvid=BV1jM4y1W7gM&cid=25734483456&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div>
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=914020063&bvid=BV1jM4y1W7gM&cid=25734483456&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div>
 
 另一件事是对Linus的采访。众所周知Linus的嘴很臭，还经常在linux内核项目的邮件列表里公开喷人，在采访中有观众提出关于尊重他人的话题，Linus的回应是：我不知道你们在什么环境中成长，在我成长的环境里，你需要赢得尊重。我是个烂人，我就这样，受不了可以去找你能忍受的人合作。
-<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="//player.bilibili.com/player.html?isOutside=true&aid=34951246&bvid=BV1kb411A7oi&cid=61232242&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div>
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=34951246&bvid=BV1kb411A7oi&cid=61232242&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div>
 
 > [!warning] 2024-10-27 update:
 > 事实证明，linus就是个asshole，他的~~一些~~很多方面也不配大家尊重。
