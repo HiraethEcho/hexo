@@ -9,7 +9,7 @@ excerpt: 突然关于重复的效果
 ---
 # 重复，重复
 想法的开始是这个视频：
-<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113558113227868&bvid=BV1T4zcYQEiV&cid=27067549059&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div>
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=113558113227868&bvid=BV1T4zcYQEiV&cid=27067549059&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div>
 
 这个视频谈到有趣的知识点，比如剪辑的一个注意是事项是，让观众注意不到，这样就能沉浸其中。  
 然而一些刻意的重复，效果就是产生间离效果。
@@ -28,3 +28,9 @@ excerpt: 突然关于重复的效果
 > 我早知这世界，  
 > 如露水般短暂，  
 > 然而，然而
+
+## 历史
+一个联想：历史总是重复自身，或者
+> 历史也许不会重复，但会押韵。  
+> History doesn't repeat itself, but it often rhymes
+> -- Mark Twain
