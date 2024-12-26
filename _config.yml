@@ -94,22 +94,11 @@ updated_option: 'mtime'
 ## Set per_page to 0 to disable pagination
 per_page: 15
 pagination_dir: page
-  
-# Automatically Excerpt. Not recommend.
-# Please use <!-- more --> in the post to control excerpt accurately.
-# auto_excerpt:
-#   enable: false
-#   length: 10
-# Include / Exclude file(s)
-## include:/exclude: options only apply to the 'source/' folder
-# include:
-# exclude:
-# ignore:
 
 # Extensions
 # search
 search:
-  path: search.json #之前就是这里出了问题导致图标错误，错误的教程是 search.xml
+  path: search.json
   field: post
   format: html
   limit: 1000
@@ -118,7 +107,6 @@ search:
 theme: fluid
 # theme: butterfly
 # theme: redefine
-# theme: keep
 language: zh-CN
 
 # Deployment
@@ -128,8 +116,8 @@ deploy:
   repo: git@github.com:HiraethEcho/hexo.git
   branch : gh-pages
 
-aplayer:
-  meting: true
+# aplayer:
+#   meting: true
 
 plugins:
   hexo-generator-feed
@@ -149,11 +137,7 @@ all_minifier: true
 # markdown_it_plus 语法渲染插件选项
 markdown_it_plus:
     plugins:
-        # Obsidian Callouts
       - plugin:
-          # name: markdown-it-checkbox
-          # enable: true
-      # - plugin
           name: mdit-plugin-callouts
           enable: true
       #     options:
