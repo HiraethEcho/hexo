@@ -3,7 +3,7 @@ title: 每周一记
 tags: [daily]
 published: true
 date: 2024-09-27
-updated: 2024-11-05
+updated: 2025-01-01
 hide: true
 password: password
 excerpt: 每周一次小总结
@@ -13,6 +13,8 @@ excerpt: 每周一次小总结
 
 每周都单独一篇，感觉有点麻烦，所以决定汇总在一起。每周一段，简要记录这一周的事情。  
 从09/23开始学习的内容在[另一篇](/hexo/diary/study-daily)单独记录，尽量每天更新。
+
+## 01/01 - 01/05
 
 ## 11/18 - 12/31
 
