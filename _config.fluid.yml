@@ -751,7 +751,7 @@ post:
     # 指定的插件，需要同时设置对应插件的必要参数
     # The specified plugin needs to set the necessary parameters at the same time
     # Options: utterances | disqus | gitalk | valine | waline | changyan | livere | remark42 | twikoo | cusdis | giscus
-    type: twikoo
+    type: waline
 
 
 #---------------------------
@@ -833,7 +833,7 @@ valine:
 # Derived from Valine, with self-hosted service and new features
 # See: https://waline.js.org/
 waline:
-  serverURL: 'https://hexo-3gzoao2t25f5fe98-1324287150.ap-shanghai.app.tcloudbase.com/waline'
+  serverURL: 'https://hexowaline.netlify.app/.netlify/functions/comment'
   path: window.location.pathname
   meta: ['nick', 'mail', 'link']
   requiredMeta: ['nick']
