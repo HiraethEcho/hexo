@@ -1,11 +1,11 @@
 ---
 title: 什么是知识
-tags: []
+tags: [philosophy]
 published: false
 version: draft
 date:
 updated:
-excerpt:
+excerpt: 关于知识论的话题
 ---
 # 什么是知识？
 获得辩护的真信念；无穷后退的困难。
