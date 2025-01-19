@@ -51,12 +51,6 @@ comment: waline
 ## 关于我
 
 中科院基础数学在读博士。  
-一些生活碎片：
-
-- [周记](/hexo/diary/week)
-- [学习记录](/hexo/diary/study-daily)
-- [计划](/hexo/dynamic/timetable)
-- [碎碎念](/hexo/dynamic/fragmentsaboutlove)
 
 ### 书单
 
