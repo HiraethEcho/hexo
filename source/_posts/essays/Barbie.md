@@ -61,4 +61,4 @@ version: stable
 _（这一段我使用了大量我不理解的词汇，用了我也不知道在比喻什么的比喻。这大概是一种无知的自卑导致的伪装。等我努力看完《单向度的人》我一定好好写写这一段。）_
 > [!note]
 > 《单向度的人》看完了也写了，但是没写清楚。  
-> [这里](/hexo/essays/one-dimensional-man) 是《单向度的人》的博客。
+> [这里](https://hiraethecho.github.io/wiki/reading/one-dimensional-man) 是《单向度的人》的读后感。

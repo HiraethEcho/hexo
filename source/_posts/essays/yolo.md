@@ -5,10 +5,6 @@ tags:
 published: true
 date: 2024-02-19
 updated: 2024-02-20 10:25
-categories:
-index_img:
-archive:
-password:
 excerpt: 贾玲私人化的电影，匮乏平庸的故事，高完成度的表达，令人作呕的宣传。
 ---
 
@@ -20,6 +16,7 @@ excerpt: 贾玲私人化的电影，匮乏平庸的故事，高完成度的表�
 
 > [!note] update: 2024/11/2
 > 关于创作者的懒惰，[这里](/hexo/essays/talkshow-patch)有关于类似的脱口秀的看法。
+
 ## 电影本身
 
 故事剧情是，主角杜乐莹在啃老十年后经历一系列重大打击，终于奋起反抗想要赢一次。于是选择练拳击并最终参加比赛完整打了一次拳。

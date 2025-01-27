@@ -35,7 +35,6 @@ mathjax:
 ## Beta version (published)
 
 - [-] [再评脱口秀](/hexo/essays/talkshow-patch)
-- [ ] [单向度的人](/hexo/essays/one-dimensional-man)
 - [ ] [神、人、人造人与弑父](/hexo/essays/replicant)
 - [ ] [好东西](/hexo/essays/herstory)
 

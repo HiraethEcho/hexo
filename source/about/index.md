@@ -79,7 +79,7 @@ comment: waline
 - 现代西方哲学史十五讲 张汝伦
 - 我们生活在巨大的差距里
 - 抑郁症的历史
-- 单向度的人 [书评](/hexo/essays/one-dimensional-man)
+- 单向度的人 [书评](https://hiraethecho.github.io/wiki/reading/one-dimensional-man)
 - 消费社会 2024-03-14
 - 工作，消费主义和新穷人 2024-08-09
 - 他者的消失
