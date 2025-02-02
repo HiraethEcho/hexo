@@ -1,7 +1,7 @@
 ---
 title: 从智能底盘说起
 tags:
-  - life
+  - memo
 published: true
 version: beta
 date: 2024-12-27

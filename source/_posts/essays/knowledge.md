@@ -7,14 +7,14 @@ date:
 updated:
 excerpt: 关于知识论的话题
 ---
+
 # 什么是知识？
+
 获得辩护的真信念；无穷后退的困难。
 
 知识存在吗？元知识论
 
 可能依赖不确定的知识吗？事实上我们正在这么做
-
-
 
 1. 假命题是知识吗？例如，太阳西升东落。
 2. 如何判断一个命题的真假？
@@ -29,9 +29,7 @@ excerpt: 关于知识论的话题
 
 于是当谈论如何认识世界，或者当谈论关于世界的知识时，我们还需要分析什么是知识。
 
-
 > [!tip]
 > 还有一些其他的参考视频
 >
 > <div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=508135692&bvid=BV1Xu41127FJ&cid=483778846&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div>
-
