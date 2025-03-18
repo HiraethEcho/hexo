@@ -39,3 +39,6 @@ version: draft
 
 拉康：女人不存在 - Caeiro的文章 - 知乎
 https://zhuanlan.zhihu.com/p/572271019
+
+
+男性方差，大于是精英是男性废物也是男性
