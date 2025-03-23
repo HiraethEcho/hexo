@@ -44,7 +44,6 @@ mathjax:
 - [ ] [对父母形象的表演](/hexo/memo/actingparents)
 - [ ] [自由与自杀](/hexo/contemplation/free-and-death)
 - [x] [反思](/hexo/essays/introspection)
-- [ ] [dwm](/hexo/essays/dwm)
 - [ ] [火山炙恋](/hexo/essays/fire-of-love)
 
 
