@@ -18,14 +18,15 @@ fuck this
 
 ## links
 
-[hexo/test](hexo/test)
-[test](test)
-[/test](/test)
-[/hexo/test](/hexo/test)
-![hexo/img/bg.png](hexo/img/bg.png)
-![/hexo/img/bg.png](/hexo/img/bg.png)
-![img/bg.png](img/bg.png)
-![/img/bg.png](/img/bg.png)
+- [hexo/test](hexo/test) to https://hiraethecho.github.io/hexo/test/hexo/test
+- [test](test) as above
+- [/test](/test) to https://hiraethecho.github.io/test
+- [/hexo/test](/hexo/test) yes
+
+- ![hexo/img/bg.png](hexo/img/bg.png)
+- ![/hexo/img/bg.png](/hexo/img/bg.png) only pic that works
+- ![img/bg.png](img/bg.png)
+- ![/img/bg.png](/img/bg.png)
 
 ## callouts
 more:
