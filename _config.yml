@@ -13,7 +13,7 @@ timezone: 'Asia/Shanghai'
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 # url: http://example.com
-url: http://HiraethEcho.github.io/hexo
+url: https://HiraethEcho.github.io/hexo
 root: /hexo
 permalink: :title/
 permalink_defaults:
@@ -46,7 +46,7 @@ external_link:
 filename_case: 0
 render_drafts: false
 post_asset_folder: false
-relative_link: false
+relative_link: true
 future: true
 
 # highlight:
