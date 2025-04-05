@@ -16,6 +16,17 @@ write this in ob, after adding deploy key in hexo repo
 
 fuck this
 
+## links
+
+[hexo/test](hexo/test)
+[test](test)
+[/test](/test)
+[/hexo/test](/hexo/test)
+![hexo/img/bg.png](hexo/img/bg.png)
+![/hexo/img/bg.png](/hexo/img/bg.png)
+![img/bg.png](img/bg.png)
+![/img/bg.png](/img/bg.png)
+
 ## callouts
 more:
 > [!NOTE]
