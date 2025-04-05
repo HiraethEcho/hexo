@@ -5,7 +5,7 @@ tags:
   - friends
   - life
 published: true
-date: 2024-01-29 11:32
+date: 2024-01-29
 updated: 2024-01-30 12:34
 categories: 
 index_img: 

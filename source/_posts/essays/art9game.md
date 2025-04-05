@@ -2,7 +2,7 @@
 title: 第九艺术
 tags: [art]
 published: true
-date: 2024-09-14 13:17
+date: 2024-09-14
 updated:
 index_img:
 excerpt: 作为第九艺术的游戏

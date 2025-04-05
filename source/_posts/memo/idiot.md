@@ -1,7 +1,7 @@
 ---
 title: 《白痴》！
 published: true
-date: 2023-10-23 16:39:14
+date: 2023-10-23
 updated:
 tags:
   - 书评

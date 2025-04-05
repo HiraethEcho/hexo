@@ -1,6 +1,6 @@
 ---
 title: 'No!'
-date: 2023-06-27 12:38:22
+date: 2023-06-27
 tags:
   - poem
 excerpt: 读《西西弗神话》有感

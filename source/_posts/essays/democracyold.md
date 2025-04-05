@@ -1,6 +1,6 @@
 ---
 title: 关于民主共和制度粗糙浅显的小结
-date: 2023-10-15 11:02
+date: 2023-10-15
 updated:
 tags:
   - society

@@ -1,6 +1,6 @@
 ---
 title: 自然科学何以可能
-date: 2023-10-14 23:54:32
+date: 2023-10-14
 updated: 2024-11-05
 tags:
   - philosophy

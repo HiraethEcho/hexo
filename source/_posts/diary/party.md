@@ -3,7 +3,7 @@ title: party
 tags:
   - friends
   - alcohol
-date: 2023-06-27 22:38:22
+date: 2023-06-27
 archive: 
 excerpt: <p>关于6.21去朋友生日派对客座调酒师首先把自己灌醉卫生间里呕吐不止最后在附近朋友家沙发过夜的故事。</p></br>但是遇到了新朋友。
 version: stable

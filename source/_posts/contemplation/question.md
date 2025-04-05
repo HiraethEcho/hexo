@@ -3,7 +3,7 @@ title: 哲学是发问
 tags:
   - philosophy
   - existence
-date: 2023-06-24 22:25:50
+date: 2023-06-24
 excerpt: 与其回答“哲学是什么”，不如考虑“什么是哲学”。在我看来，不断地提问，是哲学的重要部分。
 version: rc
 ---

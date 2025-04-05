@@ -4,7 +4,7 @@ tags:
   - 影评
   - feminism
 excerpt: 丰富但流于表面的内容，难以维持一致性和连贯性的情节，被商品化的批判
-date: 2023-08-03 03:05:39
+date: 2023-08-03
 archive: 
 updated: 2023-11-11
 version: stable

@@ -8,7 +8,7 @@ tags:
   - love
   - daily
 published: true
-date: 2024-02-03 18:00
+date: 2024-02-03
 updated:
 categories:
 index_img:

@@ -5,7 +5,7 @@ tags:
   - life
   - existence
 published: true
-date: 2024-03-02 00:17
+date: 2024-03-02
 updated: 2024-11-2
 categories: 
 index_img: 

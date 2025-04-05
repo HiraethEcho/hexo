@@ -1,6 +1,6 @@
 ---
 title: 我存在！
-date: 2023-06-27 11:51:45
+date: 2023-06-27
 tags: [existence, philosophy]
 published: true
 sticky:

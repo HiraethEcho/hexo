@@ -1,6 +1,6 @@
 ---
 title: 凌晨两点半
-date: 2023-06-27 12:40:49
+date: 2023-06-27
 tags:
   - poem
 excerpt: 凌晨喝酒有感

@@ -2,7 +2,7 @@
 title: 记又一次搬宿舍
 published: true
 updated: 2024-01-28 23:48
-date: 2023-12-20 22:34
+date: 2023-12-20
 tags:
   - daily
 categories: 

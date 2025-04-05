@@ -1,6 +1,6 @@
 ---
 title: 时间是一种幻觉
-date: 2023-10-29 23:13
+date: 2023-10-29
 updated:
 tags:
   - time

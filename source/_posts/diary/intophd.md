@@ -3,7 +3,7 @@ title: 考博后续
 tags:
   - life
 published: true
-date: 2024-05-22 19:01
+date: 2024-05-22
 updated: 
 categories: 
 index_img: 

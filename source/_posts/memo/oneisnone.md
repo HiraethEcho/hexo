@@ -5,7 +5,7 @@ tags:
   - arch
   - love
 published: true
-date: 2024-07-01 02:02
+date: 2024-07-01
 updated:
 categories:
 index_img:

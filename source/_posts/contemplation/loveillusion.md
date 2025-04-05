@@ -6,7 +6,7 @@ tags:
   - life
   - poem
 published: true
-date: 2024-01-14 13:21
+date: 2024-01-14
 updated: 
 categories: 
 index_img: 

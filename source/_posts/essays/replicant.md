@@ -1,7 +1,7 @@
 ---
 title: 神、人、人造人和弑父
 published: true
-date: 2024-08-30 22:01
+date: 2024-08-30
 updated:
 tags:
 categories:

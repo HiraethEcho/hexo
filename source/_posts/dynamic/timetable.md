@@ -4,7 +4,7 @@ tags:
   - daily
   - life
 published: true
-date: 2024-02-24 17:55
+date: 2024-02-24
 updated: 2025-01-02
 hide: true
 katex: true

@@ -2,7 +2,7 @@
 title: readandwrite
 tags: [read]
 published: false
-date: 2024-01-18 23:50:58
+date: 2024-01-18
 updated:
 categories:
 index_img:
