@@ -356,16 +356,17 @@ navbar:
       }
     - { key: "即刻", link: "/shuoshuo/", icon: "iconfont icon-wechat2-fill" }
     - { key: "关于", link: "/about/", icon: "iconfont icon-user-fill" }
-    - {
-        key: '链接',
-        icon: 'iconfont icon-user-fill',
-        submenu: [
-           # { key: "关于本站", link: "/about/", icon: "iconfont icon-user-fill" },
-           { key: "个人维基", link: "https://HiraethEcho.github.io/wiki", icon: "iconfont icon-wiki" },
-           { key: "学术主页", link: "https://HiraethEcho.github.io", icon: "iconfont icon-googlescholar" },
-           { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
-          ]
-      }
+    - { key: "链接", link: "/links/", icon: "iconfont icon-link-fill" }
+    # - {
+    #     key: '链接',
+    #     icon: 'iconfont icon-user-fill',
+    #     submenu: [
+    #        { key: "关于本站", link: "/about/", icon: "iconfont icon-user-fill" },
+    #        { key: "个人维基", link: "https://HiraethEcho.github.io/wiki", icon: "iconfont icon-wiki" },
+    #        { key: "学术主页", link: "https://HiraethEcho.github.io", icon: "iconfont icon-googlescholar" },
+    #        { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
+    #       ]
+    #   }
     # - { key: "归档", link: "/archives/", icon: "iconfont icon-archive-fill" }
     # - { key: "分类", link: "/categories/", icon: "iconfont icon-category-fill" }
     # - { key: "标签", link: "/tags/", icon: "iconfont icon-tags-fill" }
