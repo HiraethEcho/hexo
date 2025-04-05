@@ -246,7 +246,7 @@ custom_css:
   - /css/scrollanimation.css
   - https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css #调用字体
   - https://jsd.cdn.zzko.cn/gh/EmoryHuang/BlogBeautify@1.1/scroll.css #滚动条
-  # - https://jsd.cdn.zzko.cn/gh/EmoryHuang/BlogBeautify@1.1/gradient.css #渐变打字机
+  - https://jsd.cdn.zzko.cn/gh/EmoryHuang/BlogBeautify@1.1/gradient.css #渐变打字机
   # - //at.alicdn.com/t/c/font_4158762_h20pjeooe3v.js
   # - //at.alicdn.com/t/c/font_4158762_elc2qsghhz7.css
 # 网页访问统计
@@ -355,11 +355,12 @@ navbar:
           ]
       }
     - { key: "即刻", link: "/shuoshuo/", icon: "iconfont icon-wechat2-fill" }
+    - { key: "关于", link: "/about/", icon: "iconfont icon-user-fill" }
     - {
-        key: '关于',
+        key: '链接',
         icon: 'iconfont icon-user-fill',
         submenu: [
-           { key: "关于本站", link: "/about/", icon: "iconfont icon-user-fill" },
+           # { key: "关于本站", link: "/about/", icon: "iconfont icon-user-fill" },
            { key: "个人维基", link: "https://HiraethEcho.github.io/wiki", icon: "iconfont icon-wiki" },
            { key: "学术主页", link: "https://HiraethEcho.github.io", icon: "iconfont icon-googlescholar" },
            { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
@@ -368,7 +369,6 @@ navbar:
     # - { key: "归档", link: "/archives/", icon: "iconfont icon-archive-fill" }
     # - { key: "分类", link: "/categories/", icon: "iconfont icon-category-fill" }
     # - { key: "标签", link: "/tags/", icon: "iconfont icon-tags-fill" }
-    # - { key: "关于", link: "/about/", icon: "iconfont icon-user-fill" }
     # - { key: "café ", link: "/food/", icon: "iconfont icon-food" }
     # - { key: "Wiki ", link: "https://HiraethEcho.github.io/wiki", icon: "iconfont icon-wiki" }
     # - { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }

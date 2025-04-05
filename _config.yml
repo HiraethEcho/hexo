@@ -125,7 +125,7 @@ plugins:
 feed:
   type: atom
   path: atom.xml
-  limit: 20
+  limit: 100
 
 # Security
 encrypt: # hexo-blog-encrypt
