@@ -7,6 +7,7 @@ date: 2024-10-13
 updated: 2024-10-15
 excerpt: 在和朋友交流后的反思，和其他思考。
 version: rc
+dg-publish: true
 ---
 
 # 一些反思

@@ -1,15 +1,16 @@
 ---
 title: 作为一种方法论的科学
-tags: []
+tags: 
 published: false
-date:
-updated:
-categories:
-index_img:
-archive:
-password:
-excerpt:
-mathjax:
+date: 
+updated: 
+categories: 
+index_img: 
+archive: 
+password: 
+excerpt: 
+mathjax: 
+dg-publish: true
 ---
 
 # 作为一种方法论的科学

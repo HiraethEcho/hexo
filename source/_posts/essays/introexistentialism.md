@@ -7,11 +7,12 @@ tags:
 published: true
 date: 2024-03-02 00:17
 updated: 2024-11-2
-categories:
-index_img:
-archive:
-password:
+categories: 
+index_img: 
+archive: 
+password: 
 excerpt: 不负责任地介绍一下存在主义危机和应对
+dg-publish: true
 ---
 
 # 虚无主义、存在主义与荒诞主义

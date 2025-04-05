@@ -6,6 +6,7 @@ published: true
 date: 2024-02-19
 updated: 2024-02-20 10:25
 excerpt: 贾玲私人化的电影，匮乏平庸的故事，高完成度的表达，令人作呕的宣传。
+dg-publish: true
 ---
 
 # 《热辣滚烫》：制作精良的平庸之作
