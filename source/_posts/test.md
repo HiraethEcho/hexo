@@ -9,7 +9,9 @@ index_img:
 password:
 archive: true
 ---
+
 # test
+
 This is a test post.
 
 write this in ob, after adding deploy key in hexo repo
@@ -29,7 +31,9 @@ fuck this
 - ![/img/bg.png](/img/bg.png)
 
 ## callouts
+
 more:
+
 > [!NOTE]
 > Useful information that users should know, even when skimming content.
 
@@ -45,7 +49,6 @@ more:
 > [!CAUTION]
 > Advises about risks or negative outcomes of certain actions.
 
-
 ## fluid tags
 
 {% fold info @title %}
@@ -57,6 +60,7 @@ more:
 {% endnote %}
 
 ## mark
+
 ```
 ==a==
 
@@ -64,6 +68,7 @@ a~c~a
 
 a^c^
 ```
+
 ==a==
 
 a~c~a
@@ -71,7 +76,7 @@ a~c~a
 a^c^
 
 ## checkbox
+
 - [ ] 1
 - [-] 2
 - [x] 3
-
