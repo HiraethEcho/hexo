@@ -1,12 +1,12 @@
 ---
-title: 每周一记
+title: 一些周记
 tags: [daily]
 published: true
 date: 2024-09-27
 updated: 2025-02-02
 hide: true
 password: password
-excerpt: 每周一次小总结
+excerpt: 每周一次小总结，2024/06/10 - 2024/12/31
 ---
 
 # 周记
