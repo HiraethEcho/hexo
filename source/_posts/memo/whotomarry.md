@@ -1,10 +1,9 @@
 ---
 title: 生活在一起
 tags:
-  - love
-  - life
+    - love
+    - life
 published: true
-version: draft
 date: 2025-02-26
 updated: 2025-03-02
 excerpt: 通常来说，也许是两个人一起生活。那么和谁生活在一起，如何选择？
@@ -82,8 +81,7 @@ excerpt: 通常来说，也许是两个人一起生活。那么和谁生活在�
 > Somebody pull me of short  
 > And pull me through hell  
 > And give me support for being alive  
-> Make me alive
-> Make me alive  
+> Make me alive Make me alive  
 > Make me confused  
 > Mock me with praise  
 > Let me be used  

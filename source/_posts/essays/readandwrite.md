@@ -3,12 +3,10 @@ title: readandwrite
 tags: [read]
 published: false
 date: 2024-01-18
-updated:
-categories:
-index_img:
 archive:
 password:
-excerpt:
+excerpt: 为什么读书与写作？
+version: draft
 ---
 
 <!-- TODO: not finished -->
